@@ -1,0 +1,47 @@
+baseurl = "http://phills.me.uk/"
+title = "Phill Sparks"
+languageCode = "en-GB"
+theme = "phills"
+enableRobotsTxt = true
+# googleAnalytics = "UA-2556883-4"
+ignoreFiles = [ "^\\." ]
+
+[Params]
+  Author = "Phill Sparks"
+
+[Social]
+  Twitter = "@PhillSparks"
+  Email = "me@phills.me.uk"
+
+[permalinks]
+  experience = "/:section/:filename/"
+
+[[menu.main]]
+   name = "About"
+   weight = 0
+   identifier = "experience"
+   url = "/"
+
+[[menu.main]]
+  name = "Blog"
+  weight = 10
+  identifier = "post"
+  url = "/post/"
+
+[[menu.main]]
+  name = "Projects"
+  weight = 10
+  identifier = "project"
+  url = "/project/"
+
+[[menu.main]]
+  name = "Snips"
+  weight = 10
+  identifier = "snip"
+  url = "/snip/"
+
+[[menu.main]]
+  name = "GitHub"
+  weight = 100
+  identifier = "github"
+  url = "https://github.com/sparksp/"

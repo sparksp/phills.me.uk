@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ .Site.Params.Author }}" />
+  	<meta name="dcterms.rights" content="Copyright (c) {{ .Site.Params.Author }}. All rights reserved.">
+    {{- if .Site.Params.Description }}<meta name="description" content="{{ .Site.Params.Description }}">{{ end }}
+    <title>
+    {{- $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" -}}
+    {{- if eq $url "" -}}
+      {{- .Site.Title -}}
+    {{- else -}}
+      {{- if .Params.heading -}} {{- .Params.heading -}} {{- else -}} {{- .Title -}} {{- end -}}
+      {{- " - " -}}{{- .Site.Title -}}
+    {{- end -}}
+	</title>
+    {{ .Hugo.Generator }}
+    <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relURL }}">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="{{ "/css/phills.css" | relURL }}" media="screen">
+    <link rel="self" href="{{ .Permalink }}" title="{{ .Title }}">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="site-title"><a href="{{ "/" | relURL }}">Phill S<em>parks</em></a></h1>
+        </div>
+        <div class="pure-menu pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            {{- $currentNode := . -}}
+            {{- range .Site.Menus.main }}
+            <li class="pure-menu-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} pure-menu-selected{{end}}"><a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a></li>
+            {{- end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="layout">
+      <div class="pure-g">

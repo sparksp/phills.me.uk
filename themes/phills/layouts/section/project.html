@@ -1,0 +1,8 @@
+{{ partial "header" . }}
+<div class="content pure-u-1"><div class="content-inner">
+  <h1>{{ .Title }}</h1>
+  {{ range .Data.Pages.ByPublishDate }}
+    {{ .Render "item" }}
+  {{ end }}
+</div></div>
+{{ partial "footer" . }}

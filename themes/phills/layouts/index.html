@@ -1,0 +1,55 @@
+{{ partial "header" . }}
+
+<div class="sidebar pure-u-1 pure-u-md-1-4">
+  <div class="sidebar-inner">
+    <img src="img/phills.jpg" class="polaroid pure-img">
+
+    <div class="pure-menu sidebar-menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item"><a href="#programming-experience" class="pure-menu-link">Programming Experience</a></li>
+        <li class="pure-menu-item"><a href="#climbing-experience" class="pure-menu-link">Climbing Experience</a></li>
+        <li class="pure-menu-item"><a href="#volunteering-experience" class="pure-menu-link">Volunteering &amp; Youth Experience</a></li>
+        <li class="pure-menu-item"><a href="#education" class="pure-menu-link">Education</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="content pure-u-1 pure-u-md-3-4">
+  <div class="content-inner">
+    {{ with where .Data.Pages "Section" "experience" }}
+      <article class="programming-experience">
+        <a name="programming-experience" id="programming-experience"></a>
+        <h1>Programming Experience</h1>
+        {{ range where . ".Params.category" "Programming Experience" }}
+          {{ .Render "item" }}
+        {{ end }}
+      </article>
+
+      <article class="climbing-experience">
+        <a name="climbing-experience" id="climbing-experience"></a>
+        <h1>Climbing Experience</h1>
+        {{ range where . ".Params.category" "Climbing Experience" }}
+          {{ .Render "item" }}
+        {{ end }}
+      </article>
+
+      <article class="volunteering-experience">
+        <a name="volunteering-experience" id="volunteering-experience"></a>
+        <h1>Volunteering &amp; Youth Experience</h1>
+        {{ range where . ".Params.category" "Volunteering & Youth Experience" }}
+          {{ .Render "item" }}
+        {{ end }}
+      </article>
+
+      <article class="education">
+        <a name="education" id="education"></a>
+        <h1>Education</h1>
+        {{ range where . ".Params.category" "Education" }}
+          {{ .Render "item" }}
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+</div>
+
+{{ partial "footer" . }}

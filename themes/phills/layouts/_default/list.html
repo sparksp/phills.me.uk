@@ -1,0 +1,14 @@
+{{ partial "header" . }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <div class="container">
+    <h1>{{ .Title }}</h1>
+    <ul class="panel-body">
+    {{ range .Data.Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+    {{ end }}
+    </ul>
+  </div>
+
+</div></div>
+{{ partial "footer" . }}

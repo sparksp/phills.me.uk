@@ -1,0 +1,11 @@
+{{ partial "header" . }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h1>{{ .Title }}</h1>
+    <p class="post-date">{{ .Date.Format "Monday, 2 January 2006" }}</p>
+    {{ .Content }}
+  </article>
+
+</div></div>
+{{ partial "footer" . }}

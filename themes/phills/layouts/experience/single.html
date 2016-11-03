@@ -1,0 +1,6 @@
+{{ partial "header" . }}
+<div class="content pure-u-1"><div class="content-inner">
+  <h1>{{ .Params.category }}</h1>
+  {{ .Render "item" }}
+</div></div>
+{{ partial "footer" . }}
