@@ -3,8 +3,7 @@ title = "Phill Sparks"
 languageCode = "en-GB"
 theme = "phills"
 enableRobotsTxt = true
-# googleAnalytics = "UA-2556883-4"
-ignoreFiles = [ "^\\." ]
+googleAnalytics = "UA-2556883-4"
 
 [Params]
   Author = "Phill Sparks"
