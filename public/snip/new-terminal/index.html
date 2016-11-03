@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Phill Sparks" />
+  	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
+    <title>New Terminal - Phill Sparks</title>
+    <meta name="generator" content="Hugo 0.17" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/phills.css" media="screen">
+    <link rel="self" href="http://phills.me.uk/snip/new-terminal/" title="New Terminal">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="site-title"><a href="/">Phill S<em>parks</em></a></h1>
+        </div>
+        <div class="pure-menu pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/">About</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/post/">Blog</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/project/">Projects</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/snip/">Snips</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/sparksp/">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="layout">
+      <div class="pure-g">
+
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h1>New Terminal</h1>
+    <p class="post-date">Sunday, 11 November 2007</p>
+    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;System Events&quot;</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(count</span> <span style="color: #f8f8f2">(processes</span> <span style="color: #f8f8f2">whose</span> <span style="color: #a6e22e">name</span> <span style="color: #f92672">is</span> <span style="color: #e6db74">&quot;Terminal&quot;</span><span style="color: #f8f8f2">))</span> <span style="color: #f92672">is</span> <span style="color: #ae81ff">0</span> <span style="color: #66d9ef">then</span>
+        <span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;Terminal&quot;</span>
+            <span style="color: #f8f8f2">activate</span>
+        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
+    <span style="color: #66d9ef">else</span>
+        <span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;Terminal&quot;</span>
+            <span style="color: #f8f8f2">activate</span>
+            <span style="color: #f8f8f2">do</span> <span style="color: #f8f8f2">script</span> <span style="color: #e6db74">&quot;&quot;</span>
+        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
+    <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">if</span>
+<span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
+</pre></div>
+
+
+  </article>
+
+</div></div>
+      </div>
+      <div class="footer"><div class="footer-inner">
+        <p class="footer-menu">
+          <span class="footer-menu-item">
+            &copy; <a href="http://phills.me.uk/">Phill Sparks</a>.
+            Built with <a href="https://gohugo.io">Hugo</a>.
+            Web Hosting by <a href="http://www.site5.com/in.php?id=51960">site5</a>.
+            UK Domains by <a href="http://www.1and1.co.uk/?k_id=7309666">1and1.co.uk</a>.
+          </span>
+          <span class="footer-menu-item footer-menu-right">
+            <a href="#">Back to top</a>
+          </span>
+        </p>
+      </div></div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-2556883-4', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
+
