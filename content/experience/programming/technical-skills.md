@@ -2,8 +2,9 @@
 weight = -2100
 title = "Technical Skills"
 category = "Programming Experience"
-[menu.main]
-  parent = "experience"
+[menu]
+  [menu.main]
+    parent = "programming"
 +++
 
 - Ruby on Rails

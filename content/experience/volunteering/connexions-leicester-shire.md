@@ -7,8 +7,9 @@ category = "Volunteering & Youth Experience"
 duration = "2004 &ndash; 2006"
 [company]
   name = "Connexions Leicester Shire"
-[menu.main]
-  parent = "experience"
+[menu]
+  [menu.main]
+    parent = "volunteering"
 +++
 
 A part-time job; supporting and leading groups of young people to carry out various activities including attending meetings.

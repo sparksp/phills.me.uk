@@ -1,0 +1,16 @@
+{{ partial "header" . }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    {{- $title := .Title }}
+    {{- with where .Site.Pages "Section" "experience" }}
+      {{- range where . ".Params.category" $title }}
+        {{- .Render "item" }}
+      {{- end }}
+    {{- end }}
+  </article>
+
+</div></div>
+{{ partial "footer" . }}

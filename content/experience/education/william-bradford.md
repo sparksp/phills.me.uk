@@ -5,8 +5,9 @@ title = "William Bradford CC, Earl Shilton"
 linktitle = "William Bradford CC"
 category = "Education"
 duration = "1999 &ndash; 2003"
-[menu.main]
-  parent = "experience"
+[menu]
+  [menu.main]
+    parent = "education"
 +++
 A-Level
 : B Computer Studies

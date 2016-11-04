@@ -12,9 +12,6 @@ googleAnalytics = "UA-2556883-4"
   Twitter = "@PhillSparks"
   Email = "me@phills.me.uk"
 
-[permalinks]
-  experience = "/:section/:filename/"
-
 [[menu.main]]
   name = "About"
   weight = 0

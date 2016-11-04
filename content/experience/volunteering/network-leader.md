@@ -7,8 +7,9 @@ category = "Volunteering & Youth Experience"
 duration = "2011 &ndash; 2012"
 [company]
   name = "Hinckley Unit"
-[menu.main]
-  parent = "experience"
+[menu]
+  [menu.main]
+    parent = "volunteering"
 +++
 
 I set up the Network in Hinckley Area, forming links with local groups and Explorer units.
