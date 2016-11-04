@@ -16,10 +16,10 @@ googleAnalytics = "UA-2556883-4"
   experience = "/:section/:filename/"
 
 [[menu.main]]
-   name = "About"
-   weight = 0
-   identifier = "experience"
-   url = "/"
+  name = "About"
+  weight = 0
+  identifier = "experience"
+  url = "/"
 
 [[menu.main]]
   name = "Blog"
