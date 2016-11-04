@@ -7,5 +7,7 @@ category = "Programming Experience"
 duration = "Summer 2005"
 [company]
   name = "Churchhill Systems"
+[menu.main]
+  parent = "experience"
 +++
 A summer job; developing and maintaining a few internal MS Access databases and some improvements to their website.

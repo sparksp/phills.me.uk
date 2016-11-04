@@ -3,6 +3,8 @@ weight = -2100
 title = "Qualifications"
 linktitle = "Climbing Qualifications"
 category = "Climbing Experience"
+[menu.main]
+  parent = "experience"
 +++
 
 - [Climbing Wall Leading Award][CWLA]

@@ -3,6 +3,8 @@ date = "2007-11-19T16:05:00Z"
 title = "Factor Test (by lavalamp)"
 aliases = ["/snips/4-factor-test", "/pb/04"]
 tags = ["php"]
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight php >}}
 <?php

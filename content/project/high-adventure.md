@@ -2,6 +2,8 @@
 date = "2012-11-02T09:03:59Z"
 title = "High Adventure"
 image = "high-adventure.png"
+[menu.main]
+  parent = "project"
 +++
 High Adventure is an annual mountain exercise, taking place at a different, secret location each year.
 

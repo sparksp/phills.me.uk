@@ -3,6 +3,8 @@ date = "2007-10-02T13:38:00Z"
 title = "Dynamic Cacher"
 aliases = ["/snips/2-dynamic-cacher", "/pb/02"]
 tags = ["php"]
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight php >}}
 <?php

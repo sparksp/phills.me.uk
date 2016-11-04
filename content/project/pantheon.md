@@ -2,6 +2,8 @@
 date = "2011-11-02T09:08:53Z"
 title = "Pantheon"
 image = "pantheon.jpg"
+[menu.main]
+  parent = "project"
 +++
 
 This app was built for Pantheon's 2011 Annual Investor Meeting. Installed on strategically-placed iPads, it was used throughout the conference weekend to provide information to and gather feedback from attendees.

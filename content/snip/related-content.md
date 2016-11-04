@@ -4,6 +4,8 @@ modified = "2008-05-02T19:47:00Z"
 title = "Related Content"
 aliases = ["/snips/8-related-content", "/pb/08"]
 tags = ["sql"]
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight sql >}}
 SELECT uri, COUNT(tag) AS related_tag_count

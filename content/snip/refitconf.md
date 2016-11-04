@@ -4,6 +4,8 @@ modified = "2011-10-09T14:58:00Z"
 title = "refit.conf"
 aliases = ["/snips/7-refitconf", "/pb/07"]
 tags = ["refit.conf"]
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight text >}}
 timeout 10

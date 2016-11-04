@@ -3,6 +3,8 @@ date = "2008-06-16T22:54:00Z"
 title = "SSH Avahi Service"
 aliases = ["/snips/11-ssh-avahi-service", "/pb/11"]
 tags = ["xml"]
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight xml >}}
 <?xml version="1.0" standalone='no'?>

@@ -1,5 +1,4 @@
 +++
-category = "Programming Experience"
 [menu.main]
   parent = "experience"
 +++
