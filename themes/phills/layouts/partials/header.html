@@ -31,9 +31,8 @@
         </div>
         <div class="pure-menu pure-menu-horizontal">
           <ul class="pure-menu-list">
-            {{- $currentNode := . -}}
             {{- range .Site.Menus.main }}
-            <li class="pure-menu-item{{if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} pure-menu-selected{{end}}"><a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a></li>
+            <li class="pure-menu-item{{if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} pure-menu-selected{{end}}"><a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a></li>
             {{- end }}
           </ul>
         </div>
