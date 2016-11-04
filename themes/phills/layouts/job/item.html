@@ -1,12 +1,9 @@
 <article>
   <h2>
     {{ .Title }}
-    {{- with .Params.company }}
-      at
-      {{ with .url }}<a href="{{ . }}">{{ end }}
-      {{ .name }}
-      {{ with .url }}</a>{{ end }}
-    {{ end }}
+    {{ with .Params.company -}}
+      at {{ with .url }}<a href="{{ . }}">{{ end }}{{ .name }}{{- with .url }}</a>{{ end }}
+    {{- end }}
     {{ with .Params.duration }}<small>{{ . | markdownify }}</small>{{ end }}
   </h2>
 
