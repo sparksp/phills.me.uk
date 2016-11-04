@@ -92,8 +92,14 @@ article {
 }
 
 h2 > small {
-  float: right;
   font-weight: normal;
+  float: right;
+  margin-bottom: .83em;
+  margin-left: .5em;
+  line-height: 1.7;
+}
+h2 + p {
+  clear: right;
 }
 
 .highlight {
