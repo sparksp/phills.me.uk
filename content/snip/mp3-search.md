@@ -3,8 +3,9 @@ date = "2007-12-07T23:35:00Z"
 title = "MP3 Search"
 aliases = ["/snips/5-mp3-search", "/pb/05"]
 tags = ["javascript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight javascript >}}
 if (t = prompt("Song Title"))

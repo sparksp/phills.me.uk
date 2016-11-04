@@ -4,8 +4,9 @@ modified = "2008-05-22T22:13:00Z"
 title = "New Item Alert"
 aliases = ["/snips/9-new-item-alert", "/pb/09"]
 tags = ["applescript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight applescript >}}
 (*

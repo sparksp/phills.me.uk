@@ -4,8 +4,9 @@ modified = "2011-10-09T00:28:00Z"
 title = "JS Page Navigation"
 aliases = ["/snips/10-js-page-navigation", "/pb/10"]
 tags = ["javascript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight javascript >}}
 function go(rel) {

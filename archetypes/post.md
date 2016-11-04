@@ -1,4 +1,5 @@
 +++
-[menu.main]
-  parent = "post"
+[menu]
+  [menu.main]
+    parent = "post"
 +++

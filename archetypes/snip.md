@@ -1,4 +1,5 @@
 +++
-[menu.main]
-  parent = "experience"
+[menu]
+  [menu.main]
+    parent = "experience"
 +++

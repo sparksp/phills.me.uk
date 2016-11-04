@@ -4,8 +4,9 @@ modified = "2008-10-20T19:56:00Z"
 title = "iSync Reactor"
 aliases = ["/snips/12-isync-reactor", "/pb/12"]
 tags = ["applescript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight applescript >}}
 (*

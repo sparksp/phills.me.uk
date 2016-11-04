@@ -2,8 +2,9 @@
 date = "2012-11-02T09:04:32Z"
 title = "Womble"
 image = "womble.png"
-[menu.main]
-  parent = "project"
+[menu]
+  [menu.main]
+    parent = "project"
 +++
 
 Womble was a new event for 2012. The website features some basic information about the activities and an online group booking form.

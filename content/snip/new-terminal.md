@@ -4,8 +4,9 @@ modified = "2008-11-01T23:47:00Z"
 title = "New Terminal"
 aliases = ["/snips/3-new-terminal", "/pb/03"]
 tags = ["applescript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight applescript >}}
 tell application "System Events"

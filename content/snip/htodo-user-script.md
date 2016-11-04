@@ -4,8 +4,9 @@ modified = "2010-07-13T13:05:00Z"
 title = "hTodo User Script"
 aliases = ["/snips/13-htodo-user-script", "/pb/13"]
 tags = ["javascript"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight javascript >}}
 /**

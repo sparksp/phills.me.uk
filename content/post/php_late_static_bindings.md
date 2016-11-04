@@ -4,8 +4,9 @@ slug = "php_late_static_bindings"
 title = "PHP: Late Static Bindings"
 tags = ["web design", "php", "software"]
 aliases = ["/blog/2008/01/23/php_late_static_bindings"]
-[menu.main]
-  parent = "post"
+[menu]
+  [menu.main]
+    parent = "post"
 +++
 New to PHP 5.3.0 will be **late static bindings**.  Currently you can use the `self` keyword in PHP to access static methods of the current class, the new `static` keyword allows you to access static methods through the inheritance tree.  This example from the PHP website explains best...
 

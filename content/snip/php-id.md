@@ -3,8 +3,9 @@ date = "2007-12-19T15:29:00Z"
 title = "PHP Id"
 aliases = ["/snips/6-php-id", "/pb/06"]
 tags = ["bash"]
-[menu.main]
-  parent = "snip"
+[menu]
+  [menu.main]
+    parent = "snip"
 +++
 {{< highlight bash >}}
 #!/bin/bash
