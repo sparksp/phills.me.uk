@@ -6,8 +6,24 @@
     <description>Recent content in Project-rsses on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Fri, 02 Nov 2012 09:04:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 02 Nov 2016 09:11:20 +0000</lastBuildDate>
     <atom:link href="http://phills.me.uk/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>CrowdLab</title>
+      <link>http://phills.me.uk/project/crowdlab/</link>
+      <pubDate>Wed, 02 Nov 2016 09:11:20 +0000</pubDate>
+      
+      <guid>http://phills.me.uk/project/crowdlab/</guid>
+      <description>&lt;p&gt;Initially, I migrated the CrowdLab API from CodeIgniter (PHP) &amp;amp; MySQL to Ruby on Rails &amp;amp; PostgreSQL - re-engineering many of the features based on the company&amp;rsquo;s experiences of having run the system for a year.&lt;/p&gt;
+
+&lt;p&gt;One of the biggest improvements was enabling content additions and amends to be made by the client services team through a web interface.  In the early versions of CrowdLab, such work was done by the development team.&lt;/p&gt;
+
+&lt;p&gt;After the migration was complete, I designed and implemented new features from the API / Database point of view, and considered the wider reaching affects of features.&lt;/p&gt;
+
+&lt;p&gt;I also managed the cloud servers for the staging and production environments, working toward automating as many processes as possible with Ansible.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Womble</title>
