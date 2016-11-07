@@ -21,4 +21,4 @@ Duke of Edinburgh's Award
 : Bronze and Silver
 
 GCSE
-: 5 As, 2 Bs and 2 Cs; including English and Double Science
+: 5 A's, 2 B's and 2 C's; including English and Double Science

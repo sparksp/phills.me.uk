@@ -11,5 +11,4 @@ duration = "2004 &ndash; 2006"
   [menu.main]
     parent = "volunteering"
 +++
-
-A part-time job; supporting and leading groups of young people to carry out various activities including attending meetings.
+A part-time job where I supported and lead groups of young people to carry out various activities including attending meetings.

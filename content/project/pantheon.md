@@ -6,16 +6,15 @@ image = "pantheon.jpg"
   [menu.main]
     parent = "project"
 +++
-
-This app was built for Pantheon's 2011 Annual Investor Meeting. Installed on strategically-placed iPads, it was used throughout the conference weekend to provide information to and gather feedback from attendees.
+I built this app for Pantheon’s 2011 Annual Investor Meeting. The app got installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
 
 Features include:
 
 - A 10 question survey
 - A short feedback form
-- A photo gallery, downloaded from the web on launch
-- A tabbed screen of event information
-- 2 map screens with information points
+- A photo gallery downloaded from the web on launch
+- A tabbed view of event information
+- Two map screens with information points
 
 The app was written in JavaScript using the Appcelerator Titanium mobile SDK.
 
