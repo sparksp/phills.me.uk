@@ -44,6 +44,20 @@
     </item>
     
     <item>
+      <title>Domigoals 2012</title>
+      <link>http://phills.me.uk/project/domigoals/</link>
+      <pubDate>Sat, 02 Jun 2012 15:41:45 +0000</pubDate>
+      
+      <guid>http://phills.me.uk/project/domigoals/</guid>
+      <description>&lt;p&gt;Domino&amp;rsquo;s UK wanted to give away vouchers for every goal scored during Euro 2012.  The first 1000 people to tap the &amp;ldquo;Goal!&amp;rdquo; button would win a voucher – &amp;pound;5 for the first goal, &amp;pound;10 for the second by the same player, and &amp;pound;20 for a hatrick.&lt;/p&gt;
+
+&lt;p&gt;My role was to develop the server infrastructure to support the apps, including fetching the game data from a 3rd party, registering new users, serving game data to the apps, and correctly awarding vouchers for each goal.&lt;/p&gt;
+
+&lt;p&gt;The biggest challenge for me was in handling the huge spikes users all wanting to win vouchers as each goal was scored without dropping or blocking any requests.  This required me think outside of my normal RDBMS box when allocating vouchers and aligning them with the winners.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Laravel</title>
       <link>http://phills.me.uk/project/laravel/</link>
       <pubDate>Wed, 02 Nov 2011 09:09:23 +0000</pubDate>
