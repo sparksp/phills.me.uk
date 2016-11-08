@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Phill Sparks" />
+  	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
+    <title>PHP Id - Phill Sparks</title>
+    <meta name="generator" content="Hugo 0.17" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+    <link rel="stylesheet" href="/css/phills.css" media="screen">
+    <link rel="self" href="http://phills.me.uk/snip/php-id/" title="PHP Id">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="site-title"><a href="/">Phill S<em>parks</em></a></h1>
+        </div>
+        <div class="pure-menu pure-menu-horizontal">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/">About</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/post/">Blog</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/project/">Projects</a></li>
+            <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link" href="/snip/">Snips</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/sparksp/">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="layout">
+      <div class="pure-g">
+
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h1>PHP Id</h1>
+    <p class="post-date">Wednesday, 19 December 2007</p>
+    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">#!/bin/bash</span>
+
+<span style="color: #66d9ef">case</span> <span style="color: #f8f8f2">$#</span> in
+    1<span style="color: #f92672">)</span><span style="color: #f8f8f2">;;</span>
+    *<span style="color: #f92672">)</span> <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;Usage: </span><span style="color: #f8f8f2">$0</span><span style="color: #e6db74"> file&quot;</span><span style="color: #f8f8f2">;</span>exit<span style="color: #f8f8f2">;;</span>
+<span style="color: #66d9ef">esac</span><span style="color: #f8f8f2">;</span>
+
+<span style="color: #75715e"># File exists?</span>
+<span style="color: #66d9ef">if</span> <span style="color: #f92672">[[</span> -e <span style="color: #f8f8f2">$1</span> <span style="color: #f92672">]]</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">then</span>
+
+    <span style="color: #75715e"># File already has $Id$ in it?</span>
+    <span style="color: #66d9ef">if</span> grep -q <span style="color: #e6db74">&#39;\$Id.*\$$&#39;</span> <span style="color: #f8f8f2">$1</span> <span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">then</span>
+        <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74"> [skipped]&quot;</span>
+    <span style="color: #66d9ef">else</span>
+
+        <span style="color: #75715e"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment</span>
+        sed <span style="color: #e6db74">&#39;</span>
+<span style="color: #e6db74">        /&lt;?php/ {</span>
+<span style="color: #e6db74">            /?&gt;/ !{</span>
+<span style="color: #e6db74">                x</span>
+<span style="color: #e6db74">                /^$/ {</span>
+<span style="color: #e6db74">                    g</span>
+<span style="color: #e6db74">                    a \</span>
+<span style="color: #e6db74">/*\</span>
+<span style="color: #e6db74"> * $Id$\</span>
+<span style="color: #e6db74"> */</span>
+<span style="color: #e6db74">                    h</span>
+<span style="color: #e6db74">                }</span>
+<span style="color: #e6db74">                g</span>
+<span style="color: #e6db74">            }</span>
+<span style="color: #e6db74">        }</span>
+<span style="color: #e6db74">        &#39;</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span> &gt;/tmp/sk
+        mv /tmp/sk <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span>
+        <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span>
+
+    <span style="color: #66d9ef">fi</span>
+
+<span style="color: #66d9ef">else</span>
+    <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74"> [missing]&quot;</span>
+<span style="color: #66d9ef">fi</span>
+</pre></div>
+
+
+  </article>
+
+</div></div>
+      </div>
+      <div class="footer"><div class="footer-inner">
+        <p class="footer-menu">
+          <span class="footer-menu-item">
+            &copy; <a href="http://phills.me.uk/">Phill Sparks</a>.
+            Built with <a href="https://gohugo.io">Hugo</a>.
+            Web Hosting by <a href="http://www.site5.com/in.php?id=51960">site5</a>.
+            UK Domains by <a href="http://www.1and1.co.uk/?k_id=7309666">1and1.co.uk</a>.
+          </span>
+          <span class="footer-menu-item footer-menu-right">
+            <a href="#">Back to top</a>
+          </span>
+        </p>
+      </div></div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-2556883-4', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
+

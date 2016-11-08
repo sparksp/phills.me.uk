@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Phill Sparks</title>
+    <link>http://phills.me.uk/tags/error/index.xml</link>
+    <description>Recent content on Phill Sparks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <atom:link href="http://phills.me.uk/tags/error/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>cURL Error 26: Failed to open/read local data from file/application</title>
+      <link>http://phills.me.uk/post/curl_error_26/</link>
+      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
+      
+      <guid>http://phills.me.uk/post/curl_error_26/</guid>
+      <description>&lt;p&gt;Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems.  Most were simple quirks of &lt;a href=&#34;http://www.site5.com/in.php?id=51960&#34;&gt;site5&lt;/a&gt; fixed by getting the permissions right.  The thing that kept bugging me was Phlickr, and more specifically its use of &lt;a href=&#34;http://curl.haxx.se/&#34;&gt;cURL&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://phlickr.sourceforge.net&#34;&gt;Phlickr&lt;/a&gt; is an open source PHP5 based API kit used to access the Flickr API.  It uses the &lt;a href=&#34;http://en.wikipedia.org/wiki/REST&#34;&gt;REST&lt;/a&gt; method which requires that some actions are POSTs.  The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).  As soon as I disabled the &lt;code&gt;CURLOPT_POST&lt;/code&gt; (making a GET request) cURL made no errors, though the Flickr API didn&amp;rsquo;t like it.&lt;/p&gt;
+
+&lt;p&gt;After much searching later I found the solution was very simple&amp;hellip;  If you&amp;rsquo;re not submitting any post fields then set &lt;code&gt;CURLOPT_POSTFIELDS&lt;/code&gt; to blank, like this&amp;hellip;&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;$ch&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_init($url);&lt;/span&gt;
+&lt;span style=&#34;color: #75715e&#34;&gt;// make sure we submit this as a post&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POST&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(isset($postParams))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;$postParams);&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&lt;/span&gt;
+&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I can see that this makes sense; a POST is used for submitting data to a server so you need to submit something, even if it&amp;rsquo;s blank.  It would be nice if the error message was a bit more useful or better documented.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

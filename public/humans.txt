@@ -1,0 +1,7 @@
+/* TEAM */
+	Developer: Phill Sparks
+	Twitter: @PhillSparks
+
+/* SITE */
+	Language: en-GB
+	Software: Atom.io
