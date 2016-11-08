@@ -13,8 +13,8 @@ type Redirect struct {
 	to   string
 }
 
-func (redirect Redirect) String() string {
-	return redirect.from + " " + redirect.to
+func (r Redirect) String() string {
+	return fmt.Sprintf("RewriteRule ^%s$ %s [redirect=permanent,last]", r.from, r.to)
 }
 
 func getCanonical(t html.Token) (href string, ok bool) {
