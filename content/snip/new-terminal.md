@@ -2,7 +2,7 @@
 date = "2007-11-11T23:47:00Z"
 modified = "2008-11-01T23:47:00Z"
 title = "New Terminal"
-aliases = ["/snips/3-new-terminal", "/pb/03"]
+aliases = ["/snips/3-new-terminal", "/snips/3"]
 tags = ["applescript"]
 [menu]
   [menu.main]

@@ -2,7 +2,7 @@
 date = "2008-05-21T22:13:00Z"
 modified = "2008-05-22T22:13:00Z"
 title = "New Item Alert"
-aliases = ["/snips/9-new-item-alert", "/pb/09"]
+aliases = ["/snips/9-new-item-alert", "/snips/9"]
 tags = ["applescript"]
 [menu]
   [menu.main]

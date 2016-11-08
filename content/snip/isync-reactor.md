@@ -2,7 +2,7 @@
 date = "2008-10-02T19:56:00Z"
 modified = "2008-10-20T19:56:00Z"
 title = "iSync Reactor"
-aliases = ["/snips/12-isync-reactor", "/pb/12"]
+aliases = ["/snips/12-isync-reactor", "/snips/12"]
 tags = ["applescript"]
 [menu]
   [menu.main]

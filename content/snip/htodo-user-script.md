@@ -2,7 +2,7 @@
 date = "2009-05-29T13:05:00Z"
 modified = "2010-07-13T13:05:00Z"
 title = "hTodo User Script"
-aliases = ["/snips/13-htodo-user-script", "/pb/13"]
+aliases = ["/snips/13-htodo-user-script", "/snips/13"]
 tags = ["javascript"]
 [menu]
   [menu.main]

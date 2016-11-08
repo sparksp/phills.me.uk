@@ -2,7 +2,7 @@
 date = "2008-05-01T19:47:00Z"
 modified = "2008-05-02T19:47:00Z"
 title = "Related Content"
-aliases = ["/snips/8-related-content", "/pb/08"]
+aliases = ["/snips/8-related-content", "/snips/8"]
 tags = ["sql"]
 [menu]
   [menu.main]

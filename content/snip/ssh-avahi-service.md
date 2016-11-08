@@ -1,7 +1,7 @@
 +++
 date = "2008-06-16T22:54:00Z"
 title = "SSH Avahi Service"
-aliases = ["/snips/11-ssh-avahi-service", "/pb/11"]
+aliases = ["/snips/11-ssh-avahi-service", "/snips/11"]
 tags = ["xml"]
 [menu]
   [menu.main]

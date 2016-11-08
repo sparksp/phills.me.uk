@@ -1,7 +1,7 @@
 +++
 date = "2007-12-19T15:29:00Z"
 title = "PHP Id"
-aliases = ["/snips/6-php-id", "/pb/06"]
+aliases = ["/snips/6-php-id", "/snips/6"]
 tags = ["bash"]
 [menu]
   [menu.main]
