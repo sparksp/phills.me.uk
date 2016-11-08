@@ -30,4 +30,4 @@ function goNext() {
 function goLast() {
     go('last') || alert('No last found.');
 }
-{{< /highlight }}
+{{< /highlight >}}
