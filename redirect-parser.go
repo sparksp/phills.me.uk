@@ -33,7 +33,17 @@ func getCanonical(t html.Token) (href string, ok bool) {
 	return
 }
 
-func pathIndex(filename string) string {
+func stripRoot(filename string, root string) string {
+	if len(filename) < len(root) {
+		return filename
+	}
+	if filename[:len(root)] != root {
+		return filename
+	}
+	return filename[len(root):]
+}
+
+func removePathIndex(filename string) string {
 	if path.Base(filename) != "index.html" {
 		return filename
 	}
@@ -45,7 +55,7 @@ func crawl(filename string, chRedirect chan Redirect, chFinished chan bool) {
 		chFinished <- true
 	}()
 	var (
-		from = pathIndex(filename)
+		from = stripRoot(removePathIndex(filename), "public/")
 		to   string
 	)
 	defer func() {
