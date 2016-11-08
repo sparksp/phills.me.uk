@@ -3,11 +3,14 @@ ErrorDocument 403 /404.html
 Options -Indexes
 
 RewriteEngine On
+RewriteRule ^about/?$ http://phills.me.uk/ [redirect=permanent,last]
+RewriteRule ^blog/?$ http://phills.me.uk/post/ [redirect=permanent,last]
 RewriteRule ^blog/2007/04/14/css_for_poker_players/?$ http://phills.me.uk/post/css_for_poker_players/ [redirect=permanent,last]
 RewriteRule ^blog/2008/01/23/php_late_static_bindings/?$ http://phills.me.uk/post/php_late_static_bindings/ [redirect=permanent,last]
 RewriteRule ^blog/2008/04/13/how_to_customise_your_ssh_config/?$ http://phills.me.uk/post/how_to_customise_your_ssh_config/ [redirect=permanent,last]
 RewriteRule ^blog/2008/04/13/how_to_stop_iphoto_from_opening_automatically/?$ http://phills.me.uk/post/how_to_stop_iphoto_from_opening_automatically/ [redirect=permanent,last]
 RewriteRule ^blog/2008/08/26/curl_error_26/?$ http://phills.me.uk/post/curl_error_26/ [redirect=permanent,last]
+RewriteRule ^projects/?$ http://phills.me.uk/project/ [redirect=permanent,last]
 RewriteRule ^(pb|snips)/?$ http://phills.me.uk/snip/ [redirect=permanent,last]
 RewriteRule ^(pb|snips)/0?1(-tvrenamerrc)?/?$ http://phills.me.uk/snip/tvrenamerrc/ [redirect=permanent,last]
 RewriteRule ^(pb|snips)/0?2(-dynamic-cacher)?/?$ http://phills.me.uk/snip/dynamic-cacher/ [redirect=permanent,last]
