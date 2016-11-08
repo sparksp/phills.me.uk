@@ -25,3 +25,5 @@ RewriteRule ^(pb|snips)/10(-js-page-navigation)?/?$ http://phills.me.uk/snip/js-
 RewriteRule ^(pb|snips)/11(-ssh-avahi-service)?/?$ http://phills.me.uk/snip/ssh-avahi-service/ [redirect=permanent,last]
 RewriteRule ^(pb|snips)/12(-isync-reactor)?/?$ http://phills.me.uk/snip/isync-reactor/ [redirect=permanent,last]
 RewriteRule ^(pb|snips)/13(-htodo-user-script)?/?$ http://phills.me.uk/snip/htodo-user-script/ [redirect=permanent,last]
+
+RewriteRule ^blog/tag/(.*)$ http://phills.me.uk/tags/$1/ [redirect=permanent,last]
