@@ -1,5 +1,6 @@
 ErrorDocument 404 /404.html
 ErrorDocument 403 /404.html
+ErrorDocument 410 /404.html
 Options -Indexes
 
 RewriteEngine On
@@ -27,3 +28,13 @@ RewriteRule ^(pb|snips)/12(-isync-reactor)?/?$ http://phills.me.uk/snip/isync-re
 RewriteRule ^(pb|snips)/13(-htodo-user-script)?/?$ http://phills.me.uk/snip/htodo-user-script/ [redirect=permanent,last]
 
 RewriteRule ^blog/tag/(.*)$ http://phills.me.uk/tags/$1/ [redirect=permanent,last]
+
+RedirectMatch gone ^/bookmarks
+RedirectMatch gone ^/changelog
+RedirectMatch gone ^/comments
+RedirectMatch gone ^/directory
+RedirectMatch gone ^/fortune
+RedirectMatch gone ^/login
+RedirectMatch gone ^/mods
+RedirectMatch gone ^/register
+RedirectMatch gone ^/users
