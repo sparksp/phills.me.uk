@@ -6,7 +6,7 @@ linktitle = "Developer at Churchhill Systems"
 category = "Programming Experience"
 duration = "Summer 2005"
 [company]
-  name = "Churchhill Systems"
+  name = "Churchhill Systems Ltd"
 [menu]
   [menu.main]
     parent = "programming"

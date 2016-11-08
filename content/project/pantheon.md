@@ -6,9 +6,9 @@ image = "pantheon.jpg"
   [menu.main]
     parent = "project"
 +++
-I built this app for Pantheon’s 2011 Annual Investor Meeting. The app got installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
+I built this app for Pantheon’s 2011 Annual Investor Meeting. The app was installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
 
-Features include:
+Features included:
 
 - A 10 question survey
 - A short feedback form

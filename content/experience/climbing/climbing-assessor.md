@@ -12,4 +12,4 @@ duration = "2016 &ndash; Present"
   [menu.main]
     parent = "climbing"
 +++
-I assess candidates for artificial climbing and abseiling permits making recommendations to their manager for a permit to run activities unsupervised.
+I assess candidates for artificial climbing and abseiling permits.
