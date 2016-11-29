@@ -6,4 +6,4 @@ image = "pineapster-tickets.png"
   [menu.main]
     parent = "project"
 +++
-An event aggregator that imports from various ticket sources, including Ticketline and WeGotTickets, then it removes any duplicates.  Every morning, it tweets the day's events to many city-based Twitter accounts.
+An event aggregator that imports from various ticket sources, including Ticketline and WeGotTickets, then it removes any duplicates. Every morning it tweets the day’s events to many city-based Twitter accounts.
