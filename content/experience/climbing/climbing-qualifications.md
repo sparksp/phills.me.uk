@@ -8,9 +8,9 @@ category = "Climbing Experience"
     parent = "climbing"
 +++
 
-- [Climbing Wall Leading Award][CWLA]
-- [Single Pitch Award][SPA]
-- [Climbing Wall Award][CWA] (with Abseiling)
+- [Climbing Wall Leading Award][CWLA] since 2015
+- [Single Pitch Award][SPA] since 2013
+- [Climbing Wall Award][CWA] (with Abseiling) since 2012
 
 [CWA]: http://www.mountain-training.org/award-schemes/cwa
 [SPA]: http://www.mountain-training.org/award-schemes/spa

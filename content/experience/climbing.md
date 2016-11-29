@@ -7,3 +7,4 @@ weight = -80
     identifier = "climbing"
     parent = "experience"
 +++
+In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor.
