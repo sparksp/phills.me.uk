@@ -7,7 +7,7 @@ category = "Programming Experience"
     parent = "programming"
 +++
 
-- RESTful APIs
+- RESTful API Design
 - Ruby on Rails
 - Test Driven Development
 - PostgreSQL
