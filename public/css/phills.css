@@ -1,3 +1,7 @@
+body {
+  color: #333;
+}
+
 a {
   color: #DD7201;
   text-decoration: none;
@@ -13,8 +17,8 @@ a:hover {
 }
 
 .header-wrapper {
-  background: #F5F4EF;
-  color: #DD7201;
+  background: #eaeaea;
+  color: #333;
   border-bottom: 1px solid #ddd;
   padding-top: 1px;
 }
@@ -37,6 +41,7 @@ a:hover {
   overflow: hidden;
 }
 .pure-menu-link:hover {
+  background: #fff;
   overflow: visible;
   text-decoration: none;
 }
@@ -83,12 +88,12 @@ article {
 }
 
 .site-title, .site-title a {
-  color: #000;
+  color: #333;
   text-decoration: none;
 }
 .site-title em {
   font-style: normal;
-  color: #999;
+  color: #DD7201;
 }
 
 h3 > small {
@@ -97,6 +102,7 @@ h3 > small {
   margin-bottom: .83em;
   margin-left: .5em;
   line-height: 1.7;
+  color: #999;
 }
 h3 + p {
   clear: right;
