@@ -3,7 +3,7 @@ body {
 }
 
 a {
-  color: #DD7201;
+  color: #de641a;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -96,7 +96,7 @@ a:hover, a:focus {
 }
 .site-title em {
   font-style: normal;
-  color: #DD7201;
+  color: #de641a;
 }
 
 #layout {
