@@ -7,11 +7,12 @@ category = "Programming Experience"
     parent = "programming"
 +++
 
-- Ruby on Rails
 - RESTful APIs
+- Ruby on Rails
+- Test Driven Development
 - PostgreSQL
-- Sidekiq
-- TDD with RSpec
+- Sidekiq (Workers)
+- Unix
 - Ansible
 - Nginx
 - Git

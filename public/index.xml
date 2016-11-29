@@ -29,11 +29,12 @@
       
       <guid>http://phills.me.uk/experience/programming/technical-skills/</guid>
       <description>&lt;ul&gt;
-&lt;li&gt;Ruby on Rails&lt;/li&gt;
 &lt;li&gt;RESTful APIs&lt;/li&gt;
+&lt;li&gt;Ruby on Rails&lt;/li&gt;
+&lt;li&gt;Test Driven Development&lt;/li&gt;
 &lt;li&gt;PostgreSQL&lt;/li&gt;
-&lt;li&gt;Sidekiq&lt;/li&gt;
-&lt;li&gt;TDD with RSpec&lt;/li&gt;
+&lt;li&gt;Sidekiq (Workers)&lt;/li&gt;
+&lt;li&gt;Unix&lt;/li&gt;
 &lt;li&gt;Ansible&lt;/li&gt;
 &lt;li&gt;Nginx&lt;/li&gt;
 &lt;li&gt;Git&lt;/li&gt;
