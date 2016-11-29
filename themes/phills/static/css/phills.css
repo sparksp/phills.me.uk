@@ -91,14 +91,14 @@ article {
   color: #999;
 }
 
-h2 > small {
+h3 > small {
   font-weight: normal;
   float: right;
   margin-bottom: .83em;
   margin-left: .5em;
   line-height: 1.7;
 }
-h2 + p {
+h3 + p {
   clear: right;
 }
 

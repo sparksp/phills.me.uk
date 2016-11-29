@@ -2,7 +2,7 @@
 <div class="content pure-u-1"><div class="content-inner">
 
   <article>
-    <h1>{{ .Title }}</h1>
+    <h2>{{ .Title }}</h2>
     <ul class="panel-body">
     {{ range .Data.Pages }}
       <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
