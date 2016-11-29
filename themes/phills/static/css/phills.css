@@ -6,7 +6,7 @@ a {
   color: #DD7201;
   text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
 }
 
@@ -30,7 +30,7 @@ a:hover {
   margin-right: 1em;
 }
 .sidebar-inner {
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .sidebar-menu {
@@ -40,8 +40,9 @@ a:hover {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-.pure-menu-link:hover {
-  background: #fff;
+.pure-menu-link:hover,
+.pure-menu-link:focus {
+  color: #333;
   overflow: visible;
   text-decoration: none;
 }
@@ -57,6 +58,11 @@ a:hover {
   border: 1px solid #ddd;
   border-bottom-color: #fff
 }
+.header .pure-menu-link:hover,
+.header .pure-menu-link:focus {
+  background: #fff;
+  color: #333;
+}
 .header .pure-menu-selected > .pure-menu-link,
 .header .pure-menu-selected .pure-menu-link:hover,
 .header .pure-menu-selected .pure-menu-link:focus {
@@ -66,6 +72,7 @@ a:hover {
 .footer {
   border-top: 1px solid #ddd;
   margin-top: 1em;
+  margin-bottom: .5em;
 }
 .footer-menu {
   display: flex;
@@ -83,10 +90,6 @@ a:hover {
   padding-left: 1em;
 }
 
-article {
-  margin: 2em 0;
-}
-
 .site-title, .site-title a {
   color: #333;
   text-decoration: none;
@@ -96,10 +99,26 @@ article {
   color: #DD7201;
 }
 
+#layout {
+  line-height: 1.2;
+}
+h2 {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+h3 {
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+p, figure, .highlight {
+  margin-top: .5em;
+  margin-bottom: 0;
+}
+
+
 h3 > small {
   font-weight: normal;
   float: right;
-  margin-bottom: .83em;
   margin-left: .5em;
   line-height: 1.7;
   color: #999;
@@ -112,7 +131,6 @@ h3 + p {
   background: #272822; /* Pygments' */
   color: #fff;
   padding: .5em;
-  margin: 1em 0;
 }
 .highlight pre {
   margin: 0;
