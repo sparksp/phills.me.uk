@@ -3,7 +3,7 @@ weight = -2001
 type = "job"
 title = "Youth Democracy in Leicestershire"
 category = "Volunteering & Youth Experience"
-duration = "2001 &ndash; 2011"
+duration = "2001 – 2011"
 [menu]
   [menu.main]
     parent = "volunteering"

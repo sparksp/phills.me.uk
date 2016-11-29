@@ -3,7 +3,7 @@ weight = 10
 type = "job"
 title = "Loughborough University"
 category = "Education"
-duration = "2003 &ndash; 2009"
+duration = "2003 – 2009"
 [menu]
   [menu.main]
     parent = "education"

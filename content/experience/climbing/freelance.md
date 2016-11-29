@@ -3,7 +3,7 @@ weight = -2012
 type = "job"
 title = "Freelance Climbing Instructor"
 category = "Climbing Experience"
-duration = "2012 &ndash; Present"
+duration = "2012 – Present"
 [menu]
   [menu.main]
     parent = "climbing"

@@ -4,7 +4,7 @@ type = "job"
 title = "Graduate Developer"
 linktitle = "Developer at Cuttlefish"
 category = "Programming Experience"
-duration = "2005 &ndash; 2012"
+duration = "2005 – 2012"
 [company]
   name = "Cuttlefish"
   url = "http://cuttlefish.com"

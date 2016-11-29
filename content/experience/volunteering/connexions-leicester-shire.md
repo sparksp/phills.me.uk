@@ -4,7 +4,7 @@ type = "job"
 title = "Senior Sessional Support Worker"
 linktitle = "Sessional Worker at Connexions"
 category = "Volunteering & Youth Experience"
-duration = "2004 &ndash; 2006"
+duration = "2004 – 2006"
 [company]
   name = "Connexions Leicester Shire"
 [menu]
