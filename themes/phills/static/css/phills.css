@@ -7,9 +7,9 @@ a:hover {
 }
 
 #layout, .header {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .header-wrapper {
@@ -33,12 +33,12 @@ a:hover {
   margin-top: 2em;
 }
 .pure-menu-link {
-    text-overflow: ellipsis;
-    overflow: hidden;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .pure-menu-link:hover {
-    overflow: visible;
-    text-decoration: none;
+  overflow: visible;
+  text-decoration: none;
 }
 .header .pure-menu {
   margin-bottom: -1px;
@@ -48,14 +48,14 @@ a:hover {
   border: 1px solid transparent;
 }
 .header .pure-menu-selected {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-bottom-color: #fff
+  background: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: #fff
 }
 .header .pure-menu-selected > .pure-menu-link,
 .header .pure-menu-selected .pure-menu-link:hover,
 .header .pure-menu-selected .pure-menu-link:focus {
-    background: inherit;
+  background: inherit;
 }
 
 .footer {
@@ -79,7 +79,7 @@ a:hover {
 }
 
 article {
-    margin: 2em 0;
+  margin: 2em 0;
 }
 
 .site-title, .site-title a {
@@ -114,15 +114,15 @@ h3 + p {
 }
 
 .polaroid {
-    background: #F1B04B;
-    border-color: #e6af63;
-    border-style: solid;
-    border-width: 15px 15px 25px 15px;
+  background: #F1B04B;
+  border-color: #e6af63;
+  border-style: solid;
+  border-width: 15px 15px 25px 15px;
 
-    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
-    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
-    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
 
-    width: 15em;
-    box-sizing: border-box;
+  width: 15em;
+  box-sizing: border-box;
 }
