@@ -12,4 +12,4 @@ duration = "2005 &ndash; 2012"
   [menu.main]
     parent = "programming"
 +++
-I worked on a range of projects including implementing designs, building page structures, creating databases, writing APIs, and working with a wide variety of data sources. I helped Cuttlefish to develop their in-house CMSs and Frameworks, adding new and extending existing features, with a particular focus on enabling new ways of reading data in and sharing data out. I supported the projects I had developed after launch and regularly recommended improvements.
+I worked on a range of projects including implementing designs, building page structures, creating databases, writing APIs, and working with a wide variety of data sources. I helped Cuttlefish to develop their in-house CMSs and Frameworks, adding new and extending existing features, with a focus on enabling new ways of reading data in and sharing data out. I supported the projects I had developed after launch and regularly recommended improvements.
