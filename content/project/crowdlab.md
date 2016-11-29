@@ -12,4 +12,4 @@ One of the biggest improvements was enabling content additions and amends to be 
 
 After the migration was complete, I designed and implemented new features from the API / Database point of view, and considered the wider reaching effects of features.
 
-I also managed the cloud servers for the staging and production environments, working toward automating as many processes as possible with Ansible.
+I also managed the cloud servers for the staging and production environments, working toward automating as many processes as possible with Ansible and Jenkins.
