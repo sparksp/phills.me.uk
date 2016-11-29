@@ -7,10 +7,8 @@ image = "womble.png"
     parent = "project"
 +++
 
-Womble was a new event for 2012. The website features some basic information about the activities and an online group booking form.
+Womble was a new Scouting event in 2012. The website featured some basic information about the activities and an online group booking form.  In subsequent years the event content was moved to WordPress to allow the organisers to quickly make updates, while the bookings site was redeveloped using Laravel.
 
-The success of the online booking form will be carried forward to next year's High Adventure and other events, providing a consistent and flexible booking experience for both participants and organisers.
-
-The event has had an active Facebook and Twitter presence from the start with design elements being shared with both, as much as possible.
+The event also had an active Facebook and Twitter presence from the start, with design elements shared across both where possible.
 
 Visit [womble.me.uk](http://womble.me.uk)
