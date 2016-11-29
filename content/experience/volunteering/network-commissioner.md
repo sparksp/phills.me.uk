@@ -13,4 +13,4 @@ duration = "2012 &ndash; 2016"
     parent = "volunteering"
 +++
 
-After 18 months as a County Scout Network Leader, I took the step up to Commissioner where I manage the other Network Leaders and support the Network Chairman. I attend County Scout Executive meetings and work to grow and develop Scout Network in the county by creating new opportunities for young people to engage with Scout Network.
+After 18 months as a Network Leader, I took the step up to Commissioner where I managed the other Network Leaders and supported the Network Chairman. I attended County Scout Executive meetings and worked to grow and develop Scout Network in the county by creating new opportunities for young people to engage with Scout Network.
