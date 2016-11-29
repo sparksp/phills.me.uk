@@ -8,10 +8,6 @@ image = "high-adventure.png"
 +++
 High Adventure is an annual mountain exercise, taking place at a different, secret location each year.
 
-I joined the team in 2012 to develop a website that provides lots of useful information for participants before the event and holds a record of past high adventures.
-
-The event has a strong Facebook following that we are keen to maintain; we have also added Twitter to the pool, automatically getting posts from the Facebook page.
-
-The design was inspired by the Scout Association website and customised to suit our needs.
+I joined the team in 2012 to develop a website giving details of each upcoming event and holding a record of past events.  I created the design, inspired by the Scout Association website, and customised it to suit the content.  Finally, I populated the site before training other users to update information themselves.
 
 Visit [high-adventure.org.uk](http://high-adventure.org.uk)
