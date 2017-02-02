@@ -2,10 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://phills.me.uk/</loc>
-  </url>
-  
-  <url>
     <loc>http://phills.me.uk/experience/climbing/climbing-qualifications/</loc>
   </url>
   
@@ -87,6 +83,14 @@
   
   <url>
     <loc>http://phills.me.uk/experience/education/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/experience/education/loughborough-university/</loc>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/experience/education/william-bradford/</loc>
   </url>
   
   <url>
@@ -225,11 +229,157 @@
   </url>
   
   <url>
-    <loc>http://phills.me.uk/experience/education/loughborough-university/</loc>
+    <loc>http://phills.me.uk/tags/applescript/</loc>
+    <lastmod>2008-10-02T19:56:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phills.me.uk/experience/education/william-bradford/</loc>
+    <loc>http://phills.me.uk/tags/bash/</loc>
+    <lastmod>2007-12-19T15:29:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/code/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/config/</loc>
+    <lastmod>2008-04-13T21:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/css/</loc>
+    <lastmod>2007-04-14T13:27:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/curl/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/error/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/experience/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/howto/</loc>
+    <lastmod>2008-04-13T21:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/iphoto/</loc>
+    <lastmod>2008-04-13T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/javascript/</loc>
+    <lastmod>2009-05-29T13:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/osx/</loc>
+    <lastmod>2008-04-13T12:36:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/</loc>
+    <lastmod>2016-11-02T09:11:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/php/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/post/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/project/</loc>
+    <lastmod>2016-11-02T09:11:20+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/refit/index.conf/</loc>
+    <lastmod>2008-03-12T14:58:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/snip/</loc>
+    <lastmod>2009-05-29T13:05:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/software/</loc>
+    <lastmod>2008-01-23T12:09:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/sql/</loc>
+    <lastmod>2008-05-01T19:47:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/ssh/</loc>
+    <lastmod>2008-04-13T21:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/tvrenamer/index.rc/</loc>
+    <lastmod>2007-08-18T12:48:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/unix/</loc>
+    <lastmod>2008-04-13T21:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/web-design/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://phills.me.uk/tags/xml/</loc>
+    <lastmod>2008-06-16T22:54:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

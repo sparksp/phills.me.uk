@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Phill Sparks</title>
+    <title>Ssh on Phill Sparks</title>
     <link>http://phills.me.uk/tags/ssh/index.xml</link>
-    <description>Recent content on Phill Sparks</description>
+    <description>Recent content in Ssh on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <atom:link href="http://phills.me.uk/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
