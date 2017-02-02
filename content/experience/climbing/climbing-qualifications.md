@@ -8,6 +8,7 @@ category = "Climbing Experience"
     parent = "climbing"
 +++
 
+- ITC Certificate in Outdoor First Aid
 - [Climbing Wall Leading Award][CWLA] since 2015
 - [Single Pitch Award][SPA] since 2013
 - [Climbing Wall Award][CWA] (with Abseiling) since 2012
