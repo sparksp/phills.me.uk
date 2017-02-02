@@ -150,3 +150,16 @@ h3 + p {
   width: 15em;
   box-sizing: border-box;
 }
+
+@media (min-width: 600px) {
+  .columns {
+    column-count: 2;
+    column-gap: 40px;
+  }
+}
+@media (min-width: 1024px) {
+  .columns {
+    column-count: 3;
+    column-gap: 40px;
+  }
+}
