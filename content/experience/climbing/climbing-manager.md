@@ -1,7 +1,7 @@
 +++
 weight = -2012
 type = "job"
-title = "Climbing Manager"
+title = "Volunteer Climbing Manager"
 linktitle = "Campsite Climbing Manager"
 category = "Climbing Experience"
 duration = "2012 – Present"

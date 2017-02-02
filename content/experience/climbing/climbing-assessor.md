@@ -1,7 +1,7 @@
 +++
 weight = -2016
 type = "job"
-title = "Climbing Assessor"
+title = "Volunteer Climbing Assessor"
 linktitle = "Scout Climbing Assessor"
 category = "Climbing Experience"
 duration = "2016 – Present"

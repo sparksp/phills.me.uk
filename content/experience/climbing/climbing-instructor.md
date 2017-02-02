@@ -1,7 +1,7 @@
 +++
 weight = -2009
 type = "job"
-title = "Climbing Instructor"
+title = "Volunteer Climbing Instructor"
 linktitle = "Scout Climbing Instructor"
 category = "Climbing Experience"
 duration = "2009 – Present"
