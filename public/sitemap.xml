@@ -245,6 +245,11 @@
   </url>
   
   <url>
+    <loc>http://phills.me.uk/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://phills.me.uk/tags/code/</loc>
     <lastmod>2008-08-26T12:55:00+00:00</lastmod>
     <priority>0</priority>
@@ -328,7 +333,7 @@
   </url>
   
   <url>
-    <loc>http://phills.me.uk/tags/refit/index.conf/</loc>
+    <loc>http://phills.me.uk/tags/refit.conf/</loc>
     <lastmod>2008-03-12T14:58:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -359,11 +364,12 @@
   
   <url>
     <loc>http://phills.me.uk/tags/</loc>
+    <lastmod>2008-10-02T19:56:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://phills.me.uk/tags/tvrenamer/index.rc/</loc>
+    <loc>http://phills.me.uk/tags/tvrenamer.rc/</loc>
     <lastmod>2007-08-18T12:48:00+00:00</lastmod>
     <priority>0</priority>
   </url>

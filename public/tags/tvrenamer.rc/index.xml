@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tvrenamer.Rc on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/tvrenamer.rc/index.xml</link>
+    <link>http://phills.me.uk/tags/tvrenamer.rc/</link>
     <description>Recent content in Tvrenamer.Rc on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <atom:link href="http://phills.me.uk/tags/tvrenamer.rc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Aug 2007 12:48:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://phills.me.uk/tags/tvrenamer.rc/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>tvrenamer.rc</title>
@@ -14,16 +17,7 @@
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/tvrenamerrc/</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;--include_series
---cache
---pad=2
---detailed
---gap= -
---nogroup
---postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
+      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g;  </description>
     </item>
     
   </channel>

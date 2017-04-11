@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applescript on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/applescript/index.xml</link>
+    <link>http://phills.me.uk/tags/applescript/</link>
     <description>Recent content in Applescript on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <atom:link href="http://phills.me.uk/tags/applescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Oct 2008 19:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://phills.me.uk/tags/applescript/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>iSync Reactor</title>
@@ -14,65 +17,7 @@
       <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/isync-reactor/</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;(*&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;iSync Reactor&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;This script will launch iSync and ask it to syncronize and terminate.  It will also refresh calendars in iCal.  &lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Copyright © Phill Sparks 2008&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;http://milk-hub.net&lt;/span&gt;
-
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;(http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;You are free:&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * to copy, distribute, display, and perform the work&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * to make derivative works&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Under the following conditions:&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/12)&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;*)&lt;/span&gt;
-
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;property&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sync_frequency&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;900&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;-- seconds&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;-- Find out if iCal and iSync are already running&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;System Events&amp;quot;&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;iCalRunning&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(count&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(every&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;process&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;whose&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;iCal&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is greater than&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;iSyncRunning&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(count&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(every&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;process&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;whose&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;iSync&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is greater than&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;-- Syncronize using iSync, at most every 15 minutes&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;iSync&amp;quot;&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;last&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sync&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is less than&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;((current date)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;sync_frequency)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- Refresh all calendars&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;iCal&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #f8f8f2&#34;&gt;reload&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;calendars&lt;/span&gt;
-
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;iCalRunning&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;quit&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- Do the sync&lt;/span&gt;
-        &lt;span style=&#34;color: #f8f8f2&#34;&gt;synchronize&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt;
-
-    &lt;span style=&#34;color: #75715e&#34;&gt;-- If this script started iSync then hide it, wait for it to finish syncing and quit&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;not&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;iSyncRunning&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;System Events&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;visible&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;process&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;iSync&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;false&lt;/span&gt;
-
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;repeat&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;while&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(syncing&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
-            &lt;span style=&#34;color: #75715e&#34;&gt;-- Wait&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;repeat&lt;/span&gt;
-
-        &lt;span style=&#34;color: #f8f8f2&#34;&gt;quit&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
+      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal.  Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
     </item>
     
     <item>
@@ -81,78 +26,7 @@
       <pubDate>Wed, 21 May 2008 22:13:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/new-item-alert/</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;(*&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;New Item Alert&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;This Folder Action handler is triggered whenever items are added to the attached folder.&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;The script will display a growl message containing the number of items added.&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Copyright © Phill Sparks 2008&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;http://milk-hub.net&lt;/span&gt;
-
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;You are free:&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * to copy, distribute, display, and perform the work&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * to make derivative works&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;Under the following conditions:&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;*)&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;property&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;dialog_timeout&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;-- set the amount of time before dialogs auto-answer.&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;on&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;adding&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;folder&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;items&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;this_folder&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;after&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;receiving&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;added_items&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;try&lt;/span&gt;
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- Determine if Growl is running&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;System Events&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;hasGrowl&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(count&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(every&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;process&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;whose&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;GrowlHelperApp&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Finder&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #75715e&#34;&gt;-- Get the name of the folder&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;folder_name&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;this_folder&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- Find out how many new items have been placed in the folder&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;item_count&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;number&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;items&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;in&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;added_items&lt;/span&gt;
-
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- Create the alert string&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as &lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;Unicode text&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;item_count&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is greater than&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;item_count&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as &lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; new items have &amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_title&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;New Items&amp;quot;&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;One new item has &amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_title&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;New Item&amp;quot;&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;been placed in the &amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; «&lt;span style=&#34;color: #f8f8f2&#34;&gt;data utxt201C&lt;/span&gt;» &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;folder_name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; «&lt;span style=&#34;color: #f8f8f2&#34;&gt;data utxt201D&lt;/span&gt;» &lt;span style=&#34;color: #f92672&#34;&gt;&amp;amp;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot; folder.&amp;quot;&lt;/span&gt;
-
-        &lt;span style=&#34;color: #75715e&#34;&gt;-- If Growl is running then show the notification, otherwise use a prompt&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;hasGrowl&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;GrowlHelperApp&amp;quot;&lt;/span&gt;
-                &lt;span style=&#34;color: #75715e&#34;&gt;-- List the notifications for Growl&lt;/span&gt;
-                &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;allNotificationsList&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;New Item&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-
-                &lt;span style=&#34;color: #75715e&#34;&gt;-- Enable the notfications&lt;/span&gt;
-                &lt;span style=&#34;color: #66d9ef&#34;&gt;set&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;enabledNotificationsList&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;New Item&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-
-                &lt;span style=&#34;color: #75715e&#34;&gt;-- Let Growl know who we are&lt;/span&gt;
-                &lt;span style=&#34;color: #f8f8f2&#34;&gt;register&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;as&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Directory Monitor&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;all&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;notifications&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;allNotificationsList&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;notifications&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;enabledNotificationsList&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;icon&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Finder&amp;quot;&lt;/span&gt;
-
-                &lt;span style=&#34;color: #75715e&#34;&gt;-- Do the notify&lt;/span&gt;
-                &lt;span style=&#34;color: #f8f8f2&#34;&gt;notify&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;New Item&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_title&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;description&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Directory Monitor&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
-            &lt;span style=&#34;color: #f8f8f2&#34;&gt;display dialog&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;the&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_message&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;title&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;alert_title&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;buttons&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;OK&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;cancel&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;button&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;icon&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;giving&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;up&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;after&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;dialog_timeout&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;try&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;adding&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;folder&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;items&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;to&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
+      <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
     </item>
     
     <item>
@@ -161,21 +35,7 @@
       <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/new-terminal/</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;System Events&amp;quot;&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(count&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(processes&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;whose&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;name&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Terminal&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;is&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Terminal&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #f8f8f2&#34;&gt;activate&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;application&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Terminal&amp;quot;&lt;/span&gt;
-            &lt;span style=&#34;color: #f8f8f2&#34;&gt;activate&lt;/span&gt;
-            &lt;span style=&#34;color: #f8f8f2&#34;&gt;do&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;script&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&amp;quot;&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;tell&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
+      <description>tell application &amp;quot;System Events&amp;quot; if (count (processes whose name is &amp;quot;Terminal&amp;quot;)) is 0 then tell application &amp;quot;Terminal&amp;quot; activate end tell else tell application &amp;quot;Terminal&amp;quot; activate do script &amp;quot;&amp;quot; end tell end if end tell  </description>
     </item>
     
   </channel>

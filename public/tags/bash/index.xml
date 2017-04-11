@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/bash/index.xml</link>
+    <link>http://phills.me.uk/tags/bash/</link>
     <description>Recent content in Bash on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <atom:link href="http://phills.me.uk/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Dec 2007 15:29:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://phills.me.uk/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>PHP Id</title>
@@ -14,49 +17,7 @@
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/php-id/</guid>
-      <description>&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;#!/bin/bash&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;case&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;$#&lt;/span&gt; in
-    1&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;;&lt;/span&gt;
-    *&lt;span style=&#34;color: #f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Usage: &lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$0&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt; file&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;exit&lt;span style=&#34;color: #f8f8f2&#34;&gt;;;&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;esac&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
-
-&lt;span style=&#34;color: #75715e&#34;&gt;# File exists?&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;[[&lt;/span&gt; -e &lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;]]&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-
-    &lt;span style=&#34;color: #75715e&#34;&gt;# File already has $Id$ in it?&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; grep -q &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;\$Id.*\$$&amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;then&lt;/span&gt;
-        &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt; [skipped]&amp;quot;&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
-
-        &lt;span style=&#34;color: #75715e&#34;&gt;# After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment&lt;/span&gt;
-        sed &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;        /&amp;lt;?php/ {&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;            /?&amp;gt;/ !{&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                x&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                /^$/ {&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                    g&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                    a \&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;/*\&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt; * $Id$\&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt; */&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                    h&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                }&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;                g&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;            }&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;        }&lt;/span&gt;
-&lt;span style=&#34;color: #e6db74&#34;&gt;        &amp;#39;&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt; &amp;gt;/tmp/sk
-        mv /tmp/sk &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;
-        &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;
-
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;fi&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;$1&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt; [missing]&amp;quot;&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;fi&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
+      <description>#!/bin/bash case $# in 1);; *) echo &amp;quot;Usage: $0file&amp;quot;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it? if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;quot;$1[skipped]&amp;quot; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;quot;$1&amp;quot; &amp;gt;/tmp/sk mv /tmp/sk &amp;quot;$1&amp;quot; echo &amp;quot;$1&amp;quot; fi else echo &amp;quot;$1[missing]&amp;quot; fi  </description>
     </item>
     
   </channel>

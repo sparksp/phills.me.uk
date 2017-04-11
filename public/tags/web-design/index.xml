@@ -2,11 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web Design on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/web-design/index.xml</link>
+    <link>http://phills.me.uk/tags/web-design/</link>
     <description>Recent content in Web Design on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <atom:link href="http://phills.me.uk/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 26 Aug 2008 12:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://phills.me.uk/tags/web-design/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>cURL Error 26: Failed to open/read local data from file/application</title>
@@ -14,27 +17,8 @@
       <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/post/curl_error_26/</guid>
-      <description>&lt;p&gt;Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems.  Most were simple quirks of &lt;a href=&#34;http://www.site5.com/in.php?id=51960&#34;&gt;site5&lt;/a&gt; fixed by getting the permissions right.  The thing that kept bugging me was Phlickr, and more specifically its use of &lt;a href=&#34;http://curl.haxx.se/&#34;&gt;cURL&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://phlickr.sourceforge.net&#34;&gt;Phlickr&lt;/a&gt; is an open source PHP5 based API kit used to access the Flickr API.  It uses the &lt;a href=&#34;http://en.wikipedia.org/wiki/REST&#34;&gt;REST&lt;/a&gt; method which requires that some actions are POSTs.  The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).  As soon as I disabled the &lt;code&gt;CURLOPT_POST&lt;/code&gt; (making a GET request) cURL made no errors, though the Flickr API didn&amp;rsquo;t like it.&lt;/p&gt;
-
-&lt;p&gt;After much searching later I found the solution was very simple&amp;hellip;  If you&amp;rsquo;re not submitting any post fields then set &lt;code&gt;CURLOPT_POSTFIELDS&lt;/code&gt; to blank, like this&amp;hellip;&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;$ch&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_init($url);&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;// make sure we submit this as a post&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POST&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(isset($postParams))&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;$postParams);&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;curl_setopt($ch,&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;);&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;p&gt;I can see that this makes sense; a POST is used for submitting data to a server so you need to submit something, even if it&amp;rsquo;s blank.  It would be nice if the error message was a bit more useful or better documented.&lt;/p&gt;
-</description>
+      <description>Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems. Most were simple quirks of site5 fixed by getting the permissions right. The thing that kept bugging me was Phlickr, and more specifically its use of cURL.
+Phlickr is an open source PHP5 based API kit used to access the Flickr API. It uses the REST method which requires that some actions are POSTs. The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).</description>
     </item>
     
     <item>
@@ -43,40 +27,8 @@
       <pubDate>Wed, 23 Jan 2008 12:09:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/post/php_late_static_bindings/</guid>
-      <description>
-
-&lt;p&gt;New to PHP 5.3.0 will be &lt;strong&gt;late static bindings&lt;/strong&gt;.  Currently you can use the &lt;code&gt;self&lt;/code&gt; keyword in PHP to access static methods of the current class, the new &lt;code&gt;static&lt;/code&gt; keyword allows you to access static methods through the inheritance tree.  This example from the PHP website explains best&amp;hellip;&lt;/p&gt;
-
-&lt;h3 id=&#34;code&#34;&gt;Code&lt;/h3&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #75715e&#34;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;who&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;__CLASS__&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-        &lt;span style=&#34;color: #66d9ef&#34;&gt;static&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;who&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;();&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;// Here comes Late Static Bindings     &lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;  
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;  
-&lt;span style=&#34;color: #66d9ef&#34;&gt;class&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;B&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;extends&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;A&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;      
-    &lt;span style=&#34;color: #66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;static&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;who&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-         &lt;span style=&#34;color: #66d9ef&#34;&gt;echo&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;__CLASS__&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;;&lt;/span&gt;
-    &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;  
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;   
-&lt;span style=&#34;color: #a6e22e&#34;&gt;A&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;();&lt;/span&gt;
-&lt;span style=&#34;color: #a6e22e&#34;&gt;B&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;::&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;();&lt;/span&gt;
-&lt;span style=&#34;color: #75715e&#34;&gt;?&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-
-&lt;h3 id=&#34;output&#34;&gt;Output&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;AB&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;There are more examples in the PHP manual about &lt;a href=&#34;http://uk3.php.net/manual/en/language.oop5.late-static-bindings.php&#34;&gt;Late Static Bindings&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>New to PHP 5.3.0 will be late static bindings. Currently you can use the self keyword in PHP to access static methods of the current class, the new static keyword allows you to access static methods through the inheritance tree. This example from the PHP website explains best&amp;hellip;
+Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } public static function test() { static::who(); // Here comes Late Static Bindings  } } class B extends A { public static function who() { echo __CLASS__; } } A::test(); B::test(); ?</description>
     </item>
     
     <item>
@@ -85,16 +37,9 @@
       <pubDate>Sat, 14 Apr 2007 13:27:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/post/css_for_poker_players/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve just read an excellent explanation of &lt;a href=&#34;http://iamacamera.org/default.aspx?section=design/css&amp;amp;id=95&#34;&gt;CSS Specificity using a poker analogy&lt;/a&gt; and it just makes it so clear to hear it like that.  The author covers everything in terms of the basic hands available in a game of poker.  This can help explain some of the many mysteries of CSS!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Carl wrote:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Some folks getting on board with CSS tend to get stuck on CSS specificity. The descriptions of which rules override other rules tend to make more sense to programmers than designers, since programmers are used to the concepts of inheritance and overriding properties.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re not from the programming world and CSS seems a bit confusing, perhaps this analogy may help clear some concepts up. Think of CSS rules as poker hands. The best hand determines an element&amp;rsquo;s style.&lt;/blockquote&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+      <description>I&amp;rsquo;ve just read an excellent explanation of CSS Specificity using a poker analogy and it just makes it so clear to hear it like that. The author covers everything in terms of the basic hands available in a game of poker. This can help explain some of the many mysteries of CSS!
+Carl wrote:
+ Some folks getting on board with CSS tend to get stuck on CSS specificity. The descriptions of which rules override other rules tend to make more sense to programmers than designers, since programmers are used to the concepts of inheritance and overriding properties.</description>
     </item>
     
   </channel>
