@@ -4,7 +4,7 @@ type = "job"
 title = "Programmer"
 linktitle = "Programmer at Bulb Studios"
 category = "Programming Experience"
-duration = "2012 – 2013"
+duration = "2012–2013"
 [company]
   name = "Bulb Studios"
   url = "http://bulbstudios.com"

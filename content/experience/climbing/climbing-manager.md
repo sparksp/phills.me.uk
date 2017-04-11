@@ -4,7 +4,7 @@ type = "job"
 title = "Volunteer Climbing Manager"
 linktitle = "Campsite Climbing Manager"
 category = "Climbing Experience"
-duration = "2012 – Present"
+duration = "2012–Present"
 [company]
   name = "Fox Coverts Campsite"
   url = "http://foxcoverts.co.uk"

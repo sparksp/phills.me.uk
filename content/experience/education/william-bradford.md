@@ -4,7 +4,7 @@ type = "job"
 title = "William Bradford CC, Earl Shilton"
 linktitle = "William Bradford CC"
 category = "Education"
-duration = "1999 – 2003"
+duration = "1999–2003"
 [menu]
   [menu.main]
     parent = "education"

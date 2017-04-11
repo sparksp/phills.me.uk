@@ -4,7 +4,7 @@ type = "job"
 title = "County Scout Network Commissioner"
 linktitle = "Leicestershire Network Commissioner"
 category = "Volunteering & Youth Experience"
-duration = "2012 – 2016"
+duration = "2012–2016"
 [company]
   name = "Leicestershire Scouts"
   url = "http://www.leicestershirescouts.org.uk"

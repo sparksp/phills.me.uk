@@ -1,7 +1,7 @@
 +++
 type = "job"
 category = "Programming Experience"
-duration = "2016 &ndash; Present"
+duration = "2016–Present"
 [company]
   name = ""
   url = ""

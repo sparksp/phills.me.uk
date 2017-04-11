@@ -4,7 +4,7 @@ type = "job"
 title = "Assistant Youth Work Leader"
 linktitle = "Youth Worker at Leicestershire Youth Service"
 category = "Volunteering & Youth Experience"
-duration = "2005 – 2011"
+duration = "2005–2011"
 [company]
   name = "Leicestershire Youth Service"
 [menu]

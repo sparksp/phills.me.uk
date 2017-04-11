@@ -4,7 +4,7 @@ type = "job"
 title = "API Engineer & Tech Team Lead"
 linktitle = "Tech Team Lead at CrowdLab"
 category = "Programming Experience"
-duration = "2013 &amp; 2014 – 2016"
+duration = "2013 &amp; 2014–2016"
 [company]
   name = "CrowdLab"
   url = "http://crowdlab.com"

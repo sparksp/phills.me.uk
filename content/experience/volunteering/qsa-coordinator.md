@@ -4,7 +4,7 @@ type = "job"
 title = "Queen's Scout Award Coordinator"
 linktitle = "Leicestershire QSA Coordinator"
 category = "Volunteering & Youth Experience"
-duration = "2016 – Present"
+duration = "2016–Present"
 [company]
   name = "Leicestershire Scouts"
   url = "http://www.leicestershirescouts.org.uk"

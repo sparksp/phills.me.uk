@@ -4,7 +4,7 @@ type = "job"
 title = "Volunteer Climbing Instructor"
 linktitle = "Scout Climbing Instructor"
 category = "Climbing Experience"
-duration = "2009 – Present"
+duration = "2009–Present"
 [company]
   name = "Leicestershire Scouts"
   url = "http://www.leicestershirescouts.org.uk"
