@@ -1,7 +1,7 @@
 +++
 title = "Programming Experience"
 type = "experience-list"
-weight = -100
+weight = -60
 [menu]
   [menu.main]
     parent = "experience"

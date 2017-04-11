@@ -1,7 +1,7 @@
 +++
 type = "experience-list"
 title = "Climbing Experience"
-weight = -80
+weight = -100
 [menu]
   [menu.main]
     identifier = "climbing"

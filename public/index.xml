@@ -175,15 +175,6 @@ My responsibilities gradually expanded from leading (in 2014) to managing (from 
     </item>
     
     <item>
-      <title>Programming Experience</title>
-      <link>http://phills.me.uk/experience/programming/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://phills.me.uk/experience/programming/</guid>
-      <description>I have been involved in web development since arriving at university in 2003, I have worked with several programming languages and I have a working knowledge of Unix systems. I have most recently worked with Ruby on Rails, PostgreSQL and Nginx. Before that I was working with PHP (Laravel Framework) and MySQL. I prefer to plan and build back end systems, allowing others to design and craft the front end.</description>
-    </item>
-    
-    <item>
       <title>Climbing Experience</title>
       <link>http://phills.me.uk/experience/climbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -199,6 +190,15 @@ My responsibilities gradually expanded from leading (in 2014) to managing (from 
       
       <guid>http://phills.me.uk/experience/volunteering/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Programming Experience</title>
+      <link>http://phills.me.uk/experience/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://phills.me.uk/experience/programming/</guid>
+      <description>I have been involved in web development since arriving at university in 2003, I have worked with several programming languages and I have a working knowledge of Unix systems. I have most recently worked with Ruby on Rails, PostgreSQL and Nginx. Before that I was working with PHP (Laravel Framework) and MySQL. I prefer to plan and build back end systems, allowing others to design and craft the front end.</description>
     </item>
     
     <item>
