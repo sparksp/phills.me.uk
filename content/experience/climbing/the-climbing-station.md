@@ -14,4 +14,4 @@ duration = "2012–Present"
     parent = "climbing"
 +++
 
-Leading sessions of bouldering and top-rope climbing with groups of children, young people and adults.  Between 2012 and 2016 I regularly lead the kids clubs, teaching NICAS 1–3 and coaching bouldering.  As needed, I continue to supervise climbing parties, inductions, and other crash courses.
+Leading sessions of bouldering and top-rope climbing with groups of children, young people and adults.  Between 2012 and 2016 I regularly led the kids clubs, teaching NICAS 1–3 and coaching bouldering.  As needed, I continue to supervise climbing parties, inductions, and other crash courses.
