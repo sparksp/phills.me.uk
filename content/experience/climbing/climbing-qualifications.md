@@ -1,5 +1,5 @@
 +++
-weight = -2100
+weight = -900000
 title = "Qualifications"
 linktitle = "Climbing Qualifications"
 category = "Climbing Experience"
