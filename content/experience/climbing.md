@@ -7,4 +7,4 @@ weight = -100
     identifier = "climbing"
     parent = "experience"
 +++
-In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor.  I now work Freelance and Casual around Leicestershire and the Midlands.
+In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor.  I am now Chief Instructor at The Climbing Station where I am continuing to develop my instructor training and client coaching skills.
