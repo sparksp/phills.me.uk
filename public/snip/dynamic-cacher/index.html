@@ -7,7 +7,7 @@
     <meta name="author" content="Phill Sparks" />
   	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
     <title>Dynamic Cacher - Phill Sparks</title>
-    <meta name="generator" content="Hugo 0.27" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
@@ -39,235 +39,233 @@
   <article>
     <h2>Dynamic Cacher</h2>
     <p class="post-date">Tuesday, 2 October 2007</p>
-    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">&lt;?php</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
 
-<span style="color: #f8f8f2">set_time_limit(</span><span style="color: #ae81ff">3600</span><span style="color: #f8f8f2">);</span>
+<span style="color:#a6e22e">set_time_limit</span>(<span style="color:#ae81ff">3600</span>);
 
-<span style="color: #66d9ef">global</span> <span style="color: #f8f8f2">$fp,</span> <span style="color: #f8f8f2">$headers;</span>
-<span style="color: #f8f8f2">$fp</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">null</span><span style="color: #f8f8f2">;</span> <span style="color: #f8f8f2">$headers</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">array</span><span style="color: #f8f8f2">();</span>
+<span style="color:#66d9ef">global</span> $fp, $headers;
+$fp <span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span>; $headers <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>();
 
-<span style="color: #f8f8f2">$url</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;http://milk-hub.net/&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">($path</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">trim($_SERVER[</span><span style="color: #e6db74">&#39;REQUEST_URI&#39;</span><span style="color: #f8f8f2">],</span> <span style="color: #e6db74">&#39;/&#39;</span><span style="color: #f8f8f2">));</span>
-<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($path</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;&#39;</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">$path</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;index&#39;</span><span style="color: #f8f8f2">;</span>
-<span style="color: #f8f8f2">$nfopath</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">dirname($path)</span><span style="color: #f92672">.</span><span style="color: #e6db74">&#39;/._&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">basename($path);</span>
+$url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://milk-hub.net/&#39;</span><span style="color:#f92672">.</span>($path <span style="color:#f92672">=</span> <span style="color:#a6e22e">trim</span>($_SERVER[<span style="color:#e6db74">&#39;REQUEST_URI&#39;</span>], <span style="color:#e6db74">&#39;/&#39;</span>));
+<span style="color:#66d9ef">if</span> ($path <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;&#39;</span>) $path <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;index&#39;</span>;
+$nfopath <span style="color:#f92672">=</span> <span style="color:#a6e22e">dirname</span>($path)<span style="color:#f92672">.</span><span style="color:#e6db74">&#39;/._&#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">basename</span>($path);
 
-<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($path[</span><span style="color: #ae81ff">0</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;.&#39;</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">$path</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&#39;index.php&#39;</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;HTTP/1.0 403 &#39;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">403</span><span style="color: #f8f8f2">));</span>
-    <span style="color: #66d9ef">echo</span> <span style="color: #e6db74">&#39;403 &#39;</span><span style="color: #f92672">.</span> <span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">403</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #66d9ef">exit</span><span style="color: #f8f8f2">;</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">else</span> <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(is_dir($path))</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;HTTP/1.0 403 &#39;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">403</span><span style="color: #f8f8f2">));</span>
-    <span style="color: #66d9ef">echo</span> <span style="color: #e6db74">&#39;403 &#39;</span><span style="color: #f92672">.</span> <span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">403</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #66d9ef">exit</span><span style="color: #f8f8f2">;</span>
-<span style="color: #f8f8f2">}</span>
+<span style="color:#66d9ef">if</span> ($path[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;.&#39;</span> <span style="color:#f92672">||</span> $path <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;index.php&#39;</span>) {
+    <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;HTTP/1.0 403 &#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">403</span>));
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;403 &#39;</span><span style="color:#f92672">.</span> <span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">403</span>);
+    <span style="color:#66d9ef">exit</span>;
+}
+<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">is_dir</span>($path)) {
+    <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;HTTP/1.0 403 &#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">403</span>));
+    <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;403 &#39;</span><span style="color:#f92672">.</span> <span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">403</span>);
+    <span style="color:#66d9ef">exit</span>;
+}
 
-<span style="color: #75715e">// Make dir for file</span>
-<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">!</span><span style="color: #f8f8f2">is_dir(dirname($path)))</span> <span style="color: #f8f8f2">mkdir(dirname($path),</span> <span style="color: #ae81ff">0755</span><span style="color: #f8f8f2">,</span> <span style="color: #66d9ef">true</span><span style="color: #f8f8f2">);</span>
+<span style="color:#75715e">// Make dir for file
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span><span style="color:#a6e22e">is_dir</span>(<span style="color:#a6e22e">dirname</span>($path))) <span style="color:#a6e22e">mkdir</span>(<span style="color:#a6e22e">dirname</span>($path), <span style="color:#ae81ff">0755</span>, <span style="color:#66d9ef">true</span>);
 
-<span style="color: #75715e">// Do the fetch</span>
-<span style="color: #f8f8f2">$date</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">(file_exists($path)</span> <span style="color: #f92672">&amp;&amp;</span> <span style="color: #f8f8f2">file_exists($nfopath))</span> <span style="color: #f92672">?</span> <span style="color: #f8f8f2">filemtime($path)</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">false</span><span style="color: #f8f8f2">;</span>
+<span style="color:#75715e">// Do the fetch
+</span><span style="color:#75715e"></span>$date <span style="color:#f92672">=</span> (<span style="color:#a6e22e">file_exists</span>($path) <span style="color:#f92672">&amp;&amp;</span> <span style="color:#a6e22e">file_exists</span>($nfopath)) <span style="color:#f92672">?</span> <span style="color:#a6e22e">filemtime</span>($path) <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>;
 
-<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($date</span> <span style="color: #f92672">&lt;</span> <span style="color: #f8f8f2">time()</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">60</span><span style="color: #f92672">*</span><span style="color: #ae81ff">60</span><span style="color: #f92672">*</span><span style="color: #ae81ff">24</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">$_GET[</span><span style="color: #e6db74">&#39;nocache&#39;</span><span style="color: #f8f8f2">])</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #f8f8f2">$date</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">$date</span> <span style="color: #f92672">?</span> <span style="color: #f8f8f2">date(</span><span style="color: #e6db74">&#39;r&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">$date)</span> <span style="color: #f92672">:</span> <span style="color: #66d9ef">false</span><span style="color: #f8f8f2">;</span>
+<span style="color:#66d9ef">if</span> ($date <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">time</span>() <span style="color:#f92672">-</span> <span style="color:#ae81ff">60</span><span style="color:#f92672">*</span><span style="color:#ae81ff">60</span><span style="color:#f92672">*</span><span style="color:#ae81ff">24</span> <span style="color:#f92672">||</span> $_GET[<span style="color:#e6db74">&#39;nocache&#39;</span>]) {
+    $date <span style="color:#f92672">=</span> $date <span style="color:#f92672">?</span> <span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;r&#39;</span>, $date) <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>;
 
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(file_exists($path))</span>    <span style="color: #f8f8f2">unlink($path);</span>
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(file_exists($nfopath))</span> <span style="color: #f8f8f2">unlink($nfopath);</span>
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>($path))    <span style="color:#a6e22e">unlink</span>($path);
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>($nfopath)) <span style="color:#a6e22e">unlink</span>($nfopath);
 
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($fp</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">fopen($path,</span> <span style="color: #e6db74">&#39;wb&#39;</span><span style="color: #f8f8f2">))</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">ignore_user_abort(</span><span style="color: #66d9ef">true</span><span style="color: #f8f8f2">);</span> <span style="color: #75715e">// Even if the user stops fetching the file we need to finish caching it!</span>
+    <span style="color:#66d9ef">if</span> ($fp <span style="color:#f92672">=</span> <span style="color:#a6e22e">fopen</span>($path, <span style="color:#e6db74">&#39;wb&#39;</span>)) {
+        <span style="color:#a6e22e">ignore_user_abort</span>(<span style="color:#66d9ef">true</span>); <span style="color:#75715e">// Even if the user stops fetching the file we need to finish caching it!
+</span><span style="color:#75715e"></span>
+        $info <span style="color:#f92672">=</span> <span style="color:#a6e22e">download</span>($url, $date);
+        $info[<span style="color:#e6db74">&#39;headers&#39;</span>] <span style="color:#f92672">=</span> $headers;
+        <span style="color:#a6e22e">file_put_contents</span>($nfopath, <span style="color:#a6e22e">serialize</span>($info));
 
-        <span style="color: #f8f8f2">$info</span> <span style="color: #f92672">=</span> <span style="color: #a6e22e">download</span><span style="color: #f8f8f2">($url,</span> <span style="color: #f8f8f2">$date);</span>
-        <span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;headers&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">$headers;</span>
-        <span style="color: #f8f8f2">file_put_contents($nfopath,</span> <span style="color: #f8f8f2">serialize($info));</span>
+        <span style="color:#a6e22e">fclose</span>($fp);
+        <span style="color:#a6e22e">chmod</span>($path, <span style="color:#ae81ff">0644</span>);
+    }
+    <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;HTTP/1.0 500 &#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">500</span>));
+        <span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#39;500 &#39;</span><span style="color:#f92672">.</span> <span style="color:#a6e22e">statusmessage</span>(<span style="color:#ae81ff">500</span>);
+        <span style="color:#66d9ef">exit</span>;
+    }
+}
+<span style="color:#66d9ef">else</span> {
+    $info <span style="color:#f92672">=</span> <span style="color:#a6e22e">unserialize</span>(<span style="color:#a6e22e">file_get_contents</span>($nfopath));
 
-        <span style="color: #f8f8f2">fclose($fp);</span>
-        <span style="color: #f8f8f2">chmod($path,</span> <span style="color: #ae81ff">0644</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #f8f8f2">}</span>
-    <span style="color: #66d9ef">else</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;HTTP/1.0 500 &#39;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">500</span><span style="color: #f8f8f2">));</span>
-        <span style="color: #66d9ef">echo</span> <span style="color: #e6db74">&#39;500 &#39;</span><span style="color: #f92672">.</span> <span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">(</span><span style="color: #ae81ff">500</span><span style="color: #f8f8f2">);</span>
-        <span style="color: #66d9ef">exit</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #f8f8f2">}</span>
-<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">else</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #f8f8f2">$info</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">unserialize(file_get_contents($nfopath));</span>
+    <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;HTTP/1.0 &#39;</span><span style="color:#f92672">.</span>$info[<span style="color:#e6db74">&#39;http_code&#39;</span>]<span style="color:#f92672">.</span><span style="color:#e6db74">&#39; &#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">statusmessage</span>($info[<span style="color:#e6db74">&#39;http_code&#39;</span>]));
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">is_array</span>($info[<span style="color:#e6db74">&#39;headers&#39;</span>])) {
+        <span style="color:#66d9ef">foreach</span> ($info[<span style="color:#e6db74">&#39;headers&#39;</span>] <span style="color:#66d9ef">as</span> $header) {
+            <span style="color:#a6e22e">header</span>($header);
+        }
+    }
+    <span style="color:#66d9ef">else</span> {
+        <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Content-type: &#39;</span><span style="color:#f92672">.</span>$info[<span style="color:#e6db74">&#39;content_type&#39;</span>]);
+        <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Content-Length: &#39;</span><span style="color:#f92672">.</span>$info[<span style="color:#e6db74">&#39;download_content_length&#39;</span>]);
+        <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Last-Modified: &#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">date</span>(<span style="color:#e6db74">&#39;r&#39;</span>, <span style="color:#a6e22e">filemtime</span>($path)));
+        <span style="color:#a6e22e">header</span>(<span style="color:#e6db74">&#39;Content-Disposition: inline; filename=&#39;</span><span style="color:#f92672">.</span><span style="color:#a6e22e">basename</span>($path));
+    }
+    <span style="color:#a6e22e">readfile</span>($path);
+}
 
-    <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;HTTP/1.0 &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;http_code&#39;</span><span style="color: #f8f8f2">]</span><span style="color: #f92672">.</span><span style="color: #e6db74">&#39; &#39;</span><span style="color: #f92672">.</span><span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">($info[</span><span style="color: #e6db74">&#39;http_code&#39;</span><span style="color: #f8f8f2">]));</span>
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(is_array($info[</span><span style="color: #e6db74">&#39;headers&#39;</span><span style="color: #f8f8f2">]))</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #66d9ef">foreach</span> <span style="color: #f8f8f2">($info[</span><span style="color: #e6db74">&#39;headers&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">$header)</span> <span style="color: #f8f8f2">{</span>
-            <span style="color: #f8f8f2">header($header);</span>
-        <span style="color: #f8f8f2">}</span>
-    <span style="color: #f8f8f2">}</span>
-    <span style="color: #66d9ef">else</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;Content-type: &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;content_type&#39;</span><span style="color: #f8f8f2">]);</span>
-        <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;Content-Length: &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;download_content_length&#39;</span><span style="color: #f8f8f2">]);</span>
-        <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;Last-Modified: &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">date(</span><span style="color: #e6db74">&#39;r&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">filemtime($path)));</span>
-        <span style="color: #f8f8f2">header(</span><span style="color: #e6db74">&#39;Content-Disposition: inline; filename=&#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">basename($path));</span>
-    <span style="color: #f8f8f2">}</span>
-    <span style="color: #f8f8f2">readfile($path);</span>
-<span style="color: #f8f8f2">}</span>
+$fsize <span style="color:#f92672">=</span> <span style="color:#a6e22e">filesize</span>($path);
+<span style="color:#66d9ef">if</span> ($info[<span style="color:#e6db74">&#39;http_code&#39;</span>] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">200</span> <span style="color:#f92672">||</span> $info[<span style="color:#e6db74">&#39;http_code&#39;</span>] <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">400</span> <span style="color:#f92672">||</span> $info[<span style="color:#e6db74">&#39;download_content_length&#39;</span>] <span style="color:#f92672">!=</span> $fsize <span style="color:#f92672">||</span> $fsize <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>) {
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>($path))    <span style="color:#a6e22e">unlink</span>($path);
+    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">file_exists</span>($nfopath)) <span style="color:#a6e22e">unlink</span>($nfopath);
+}
 
-<span style="color: #f8f8f2">$fsize</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">filesize($path);</span>
-<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($info[</span><span style="color: #e6db74">&#39;http_code&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">200</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;http_code&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">&gt;=</span> <span style="color: #ae81ff">400</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">$info[</span><span style="color: #e6db74">&#39;download_content_length&#39;</span><span style="color: #f8f8f2">]</span> <span style="color: #f92672">!=</span> <span style="color: #f8f8f2">$fsize</span> <span style="color: #f92672">||</span> <span style="color: #f8f8f2">$fsize</span> <span style="color: #f92672">==</span> <span style="color: #ae81ff">0</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(file_exists($path))</span>    <span style="color: #f8f8f2">unlink($path);</span>
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">(file_exists($nfopath))</span> <span style="color: #f8f8f2">unlink($nfopath);</span>
-<span style="color: #f8f8f2">}</span>
+<span style="color:#66d9ef">exit</span>;
 
-<span style="color: #66d9ef">exit</span><span style="color: #f8f8f2">;</span>
+<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">download</span>($url, $date) {
+    <span style="color:#66d9ef">global</span> $fp;
 
-<span style="color: #66d9ef">function</span> <span style="color: #a6e22e">download</span><span style="color: #f8f8f2">($url,</span> <span style="color: #f8f8f2">$date)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">global</span> <span style="color: #f8f8f2">$fp;</span>
+    $ch <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_init</span>($url);
 
-    <span style="color: #f8f8f2">$ch</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">curl_init($url);</span>
+    $header <span style="color:#f92672">=</span> <span style="color:#66d9ef">array</span>(
+        <span style="color:#e6db74">&#39;Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5&#39;</span>,
+        <span style="color:#e6db74">&#39;Cache-Control: max-age=0&#39;</span>,
+        <span style="color:#e6db74">&#39;Connection: keep-alive&#39;</span>,
+        <span style="color:#e6db74">&#39;Keep-Alive: 300&#39;</span>,
+        <span style="color:#e6db74">&#39;Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7&#39;</span>,
+        <span style="color:#e6db74">&#39;Accept-Language: en-us,en;q=0.5&#39;</span>,
+        <span style="color:#e6db74">&#39;Pragma: &#39;</span>, <span style="color:#75715e">// browsers keep this blank.
+</span><span style="color:#75715e"></span>    );
+    <span style="color:#66d9ef">if</span> ($date) {
+        $header[] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;If-Modified-Since: &#39;</span><span style="color:#f92672">.</span>$date;
+    }
 
-    <span style="color: #f8f8f2">$header</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">array</span><span style="color: #f8f8f2">(</span>
-        <span style="color: #e6db74">&#39;Accept: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Cache-Control: max-age=0&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Connection: keep-alive&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Keep-Alive: 300&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.7&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Accept-Language: en-us,en;q=0.5&#39;</span><span style="color: #f8f8f2">,</span>
-        <span style="color: #e6db74">&#39;Pragma: &#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #75715e">// browsers keep this blank.</span>
-    <span style="color: #f8f8f2">);</span>
-    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">($date)</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #f8f8f2">$header[]</span> <span style="color: #f92672">=</span> <span style="color: #e6db74">&#39;If-Modified-Since: &#39;</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">$date;</span>
-    <span style="color: #f8f8f2">}</span>
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_BINARYTRANSFER</span>, <span style="color:#ae81ff">1</span>);
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_ENCODING</span>,    <span style="color:#e6db74">&#39;gzip,deflate&#39;</span>);
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_FILE</span>, $fp);
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_HTTPHEADER</span>,  $header);
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_REFERER</span>,     $_SERVER[<span style="color:#e6db74">&#39;HTTP_REFERER&#39;</span>]);
+    <span style="color:#75715e">// curl_setopt($ch, CURLOPT_TIMEOUT,     10);
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_USERAGENT</span>,  <span style="color:#e6db74">&#39;CacheBot/1.0 (+http://cache.milk-hub.net)&#39;</span>);
 
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_BINARYTRANSFER</span><span style="color: #f8f8f2">,</span> <span style="color: #ae81ff">1</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_ENCODING</span><span style="color: #f8f8f2">,</span>    <span style="color: #e6db74">&#39;gzip,deflate&#39;</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_FILE</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">$fp);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_HTTPHEADER</span><span style="color: #f8f8f2">,</span>  <span style="color: #f8f8f2">$header);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_REFERER</span><span style="color: #f8f8f2">,</span>     <span style="color: #f8f8f2">$_SERVER[</span><span style="color: #e6db74">&#39;HTTP_REFERER&#39;</span><span style="color: #f8f8f2">]);</span>
-    <span style="color: #75715e">// curl_setopt($ch, CURLOPT_TIMEOUT,     10);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_USERAGENT</span><span style="color: #f8f8f2">,</span>  <span style="color: #e6db74">&#39;CacheBot/1.0 (+http://cache.milk-hub.net)&#39;</span><span style="color: #f8f8f2">);</span>
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_HEADERFUNCTION</span>, <span style="color:#e6db74">&#39;read_header&#39;</span>);
+    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_WRITEFUNCTION</span>, <span style="color:#e6db74">&#39;read_body&#39;</span>);
 
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_HEADERFUNCTION</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;read_header&#39;</span><span style="color: #f8f8f2">);</span>
-    <span style="color: #f8f8f2">curl_setopt($ch,</span> <span style="color: #a6e22e">CURLOPT_WRITEFUNCTION</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;read_body&#39;</span><span style="color: #f8f8f2">);</span>
+    <span style="color:#a6e22e">curl_exec</span>($ch);
+    $info <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_getinfo</span>($ch);
+    <span style="color:#a6e22e">curl_close</span>($ch);
 
-    <span style="color: #f8f8f2">curl_exec($ch);</span>
-    <span style="color: #f8f8f2">$info</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">curl_getinfo($ch);</span>
-    <span style="color: #f8f8f2">curl_close($ch);</span>
+    <span style="color:#66d9ef">return</span> $info;
+}
 
-    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">$info;</span>
-<span style="color: #f8f8f2">}</span>
+<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">read_header</span>($ch, $data) {
+    <span style="color:#66d9ef">global</span> $headers;
 
-<span style="color: #66d9ef">function</span> <span style="color: #a6e22e">read_header</span><span style="color: #f8f8f2">($ch,</span> <span style="color: #f8f8f2">$data)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">global</span> <span style="color: #f8f8f2">$headers;</span>
+    <span style="color:#66d9ef">list</span>($field, $value) <span style="color:#f92672">=</span> <span style="color:#a6e22e">explode</span>(<span style="color:#e6db74">&#39;:&#39;</span>, $data, <span style="color:#ae81ff">2</span>);
 
-    <span style="color: #66d9ef">list</span><span style="color: #f8f8f2">($field,</span> <span style="color: #f8f8f2">$value)</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">explode(</span><span style="color: #e6db74">&#39;:&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">$data,</span> <span style="color: #ae81ff">2</span><span style="color: #f8f8f2">);</span>
+    <span style="color:#66d9ef">switch</span> ($field) {
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Content-type&#39;</span><span style="color:#f92672">:</span>
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Content-Disposition&#39;</span><span style="color:#f92672">:</span>
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Content-Length&#39;</span><span style="color:#f92672">:</span>
+        <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#39;Last-Modified&#39;</span><span style="color:#f92672">:</span>
+            <span style="color:#a6e22e">header</span>($data);
+            $headers[] <span style="color:#f92672">=</span> $data;
+        <span style="color:#66d9ef">break</span>;
+    }
 
-    <span style="color: #66d9ef">switch</span> <span style="color: #f8f8f2">($field)</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;Content-type&#39;</span><span style="color: #f92672">:</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;Content-Disposition&#39;</span><span style="color: #f92672">:</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;Content-Length&#39;</span><span style="color: #f92672">:</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #e6db74">&#39;Last-Modified&#39;</span><span style="color: #f92672">:</span>
-            <span style="color: #f8f8f2">header($data);</span>
-            <span style="color: #f8f8f2">$headers[]</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">$data;</span>
-        <span style="color: #66d9ef">break</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #f8f8f2">}</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">strlen</span>($data);
+}
 
-    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">strlen($data);</span>
-<span style="color: #f8f8f2">}</span>
+<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">read_body</span>($ch, $data) {
+    <span style="color:#66d9ef">global</span> $fp;
 
-<span style="color: #66d9ef">function</span> <span style="color: #a6e22e">read_body</span><span style="color: #f8f8f2">($ch,</span> <span style="color: #f8f8f2">$data)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">global</span> <span style="color: #f8f8f2">$fp;</span>
+    <span style="color:#a6e22e">fwrite</span>($fp, $data);
+    <span style="color:#66d9ef">echo</span> $data; <span style="color:#a6e22e">flush</span>();
 
-    <span style="color: #f8f8f2">fwrite($fp,</span> <span style="color: #f8f8f2">$data);</span>
-    <span style="color: #66d9ef">echo</span> <span style="color: #f8f8f2">$data;</span> <span style="color: #f8f8f2">flush();</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">strlen</span>($data);
+}
 
-    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">strlen($data);</span>
-<span style="color: #f8f8f2">}</span>
-
-<span style="color: #66d9ef">function</span> <span style="color: #a6e22e">statusmessage</span><span style="color: #f8f8f2">($statuscode)</span> <span style="color: #f8f8f2">{</span>
-    <span style="color: #66d9ef">switch</span><span style="color: #f8f8f2">($statuscode)</span> <span style="color: #f8f8f2">{</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">100</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Continue&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">101</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Switching Protocols&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">200</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;OK&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">201</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Created&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">202</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Accepted&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">203</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Non-Authoritative Information&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">204</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;No Content&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">205</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Reset Content&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">206</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Partial Content&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">300</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Multiple Choices&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">301</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Moved Permanently&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">302</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Found&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">303</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;See Other&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">304</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Not Modified&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">305</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Use Proxy&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">306</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;No Longer Used&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">307</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Temporary Redirect&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">400</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Bad Request&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">401</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Not Authorised&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">402</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Payment Required&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">403</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Forbidden&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">404</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Not Found&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">405</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Method Not Allowed&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">406</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Not Acceptable&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">407</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Proxy Authentication Required&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">408</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Request Timeout&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">409</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Conflict&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">410</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Gone&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">411</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Length Required&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">412</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Precondition Failed&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">413</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Request Entity Too Large&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">414</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Request URI Too Long&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">415</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Unsupported Media Type&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">416</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Requested Range Not Satisfiable&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">417</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Expectation Failed&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">500</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Internal Server Error&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">501</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Not Implemented&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">502</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Bad Gateway&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">503</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Service Unavailable&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">504</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Gateway Timeout&#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">case</span> <span style="color: #ae81ff">505</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;HTTP Version Not Supported &#39;</span><span style="color: #f8f8f2">;</span>
-        <span style="color: #66d9ef">default</span><span style="color: #f92672">:</span>
-            <span style="color: #66d9ef">return</span> <span style="color: #e6db74">&#39;Unknown&#39;</span><span style="color: #f8f8f2">;</span>
-    <span style="color: #f8f8f2">}</span>
-<span style="color: #f8f8f2">}</span>
-</pre></div>
-
+<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">statusmessage</span>($statuscode) {
+    <span style="color:#66d9ef">switch</span>($statuscode) {
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">100</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Continue&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">101</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Switching Protocols&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">200</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;OK&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">201</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Created&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">202</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Accepted&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">203</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Non-Authoritative Information&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">204</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;No Content&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">205</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Reset Content&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">206</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Partial Content&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">300</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Multiple Choices&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">301</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Moved Permanently&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">302</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Found&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">303</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;See Other&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">304</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Not Modified&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">305</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Use Proxy&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">306</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;No Longer Used&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">307</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Temporary Redirect&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">400</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Bad Request&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">401</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Not Authorised&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">402</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Payment Required&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">403</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Forbidden&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">404</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Not Found&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">405</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Method Not Allowed&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">406</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Not Acceptable&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">407</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Proxy Authentication Required&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">408</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Request Timeout&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">409</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Conflict&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">410</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Gone&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">411</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Length Required&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">412</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Precondition Failed&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">413</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Request Entity Too Large&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">414</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Request URI Too Long&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">415</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Unsupported Media Type&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">416</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Requested Range Not Satisfiable&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">417</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Expectation Failed&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">500</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Internal Server Error&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">501</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Not Implemented&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">502</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Bad Gateway&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">503</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Service Unavailable&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">504</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Gateway Timeout&#39;</span>;
+        <span style="color:#66d9ef">case</span> <span style="color:#ae81ff">505</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;HTTP Version Not Supported &#39;</span>;
+        <span style="color:#66d9ef">default</span><span style="color:#f92672">:</span>
+            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;Unknown&#39;</span>;
+    }
+}</code></pre></div>
 
   </article>
 

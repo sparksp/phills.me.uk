@@ -7,7 +7,7 @@
     <meta name="author" content="Phill Sparks" />
   	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
     <title>PHP Id - Phill Sparks</title>
-    <meta name="generator" content="Hugo 0.27" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
@@ -39,48 +39,46 @@
   <article>
     <h2>PHP Id</h2>
     <p class="post-date">Wednesday, 19 December 2007</p>
-    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">#!/bin/bash</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+<span style="color:#66d9ef">case</span> $# in
+    <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span>;;
+    *<span style="color:#f92672">)</span> echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> file&#34;</span>;exit;;
+<span style="color:#66d9ef">esac</span>;
 
-<span style="color: #66d9ef">case</span> <span style="color: #f8f8f2">$#</span> in
-    1<span style="color: #f92672">)</span><span style="color: #f8f8f2">;;</span>
-    *<span style="color: #f92672">)</span> <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;Usage: </span><span style="color: #f8f8f2">$0</span><span style="color: #e6db74"> file&quot;</span><span style="color: #f8f8f2">;</span>exit<span style="color: #f8f8f2">;;</span>
-<span style="color: #66d9ef">esac</span><span style="color: #f8f8f2">;</span>
+<span style="color:#75715e"># File exists?
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -e $1 <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
 
-<span style="color: #75715e"># File exists?</span>
-<span style="color: #66d9ef">if</span> <span style="color: #f92672">[[</span> -e <span style="color: #f8f8f2">$1</span> <span style="color: #f92672">]]</span><span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">then</span>
+    <span style="color:#75715e"># File already has $Id$ in it?
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> grep -q <span style="color:#e6db74">&#39;\$Id.*\$$&#39;</span> $1 ; <span style="color:#66d9ef">then</span>
+        echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74"> [skipped]&#34;</span>
+    <span style="color:#66d9ef">else</span>
 
-    <span style="color: #75715e"># File already has $Id$ in it?</span>
-    <span style="color: #66d9ef">if</span> grep -q <span style="color: #e6db74">&#39;\$Id.*\$$&#39;</span> <span style="color: #f8f8f2">$1</span> <span style="color: #f8f8f2">;</span> <span style="color: #66d9ef">then</span>
-        <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74"> [skipped]&quot;</span>
-    <span style="color: #66d9ef">else</span>
+        <span style="color:#75715e"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment
+</span><span style="color:#75715e"></span>        sed <span style="color:#e6db74">&#39;
+</span><span style="color:#e6db74">        /&lt;?php/ {
+</span><span style="color:#e6db74">            /?&gt;/ !{
+</span><span style="color:#e6db74">                x
+</span><span style="color:#e6db74">                /^$/ {
+</span><span style="color:#e6db74">                    g
+</span><span style="color:#e6db74">                    a \
+</span><span style="color:#e6db74">/*\
+</span><span style="color:#e6db74"> * $Id$\
+</span><span style="color:#e6db74"> */
+</span><span style="color:#e6db74">                    h
+</span><span style="color:#e6db74">                }
+</span><span style="color:#e6db74">                g
+</span><span style="color:#e6db74">            }
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">        &#39;</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> &gt;/tmp/sk
+        mv /tmp/sk <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+        echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
 
-        <span style="color: #75715e"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment</span>
-        sed <span style="color: #e6db74">&#39;</span>
-<span style="color: #e6db74">        /&lt;?php/ {</span>
-<span style="color: #e6db74">            /?&gt;/ !{</span>
-<span style="color: #e6db74">                x</span>
-<span style="color: #e6db74">                /^$/ {</span>
-<span style="color: #e6db74">                    g</span>
-<span style="color: #e6db74">                    a \</span>
-<span style="color: #e6db74">/*\</span>
-<span style="color: #e6db74"> * $Id$\</span>
-<span style="color: #e6db74"> */</span>
-<span style="color: #e6db74">                    h</span>
-<span style="color: #e6db74">                }</span>
-<span style="color: #e6db74">                g</span>
-<span style="color: #e6db74">            }</span>
-<span style="color: #e6db74">        }</span>
-<span style="color: #e6db74">        &#39;</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span> &gt;/tmp/sk
-        mv /tmp/sk <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span>
-        <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74">&quot;</span>
+    <span style="color:#66d9ef">fi</span>
 
-    <span style="color: #66d9ef">fi</span>
-
-<span style="color: #66d9ef">else</span>
-    <span style="color: #f8f8f2">echo</span> <span style="color: #e6db74">&quot;</span><span style="color: #f8f8f2">$1</span><span style="color: #e6db74"> [missing]&quot;</span>
-<span style="color: #66d9ef">fi</span>
-</pre></div>
-
+<span style="color:#66d9ef">else</span>
+    echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74"> [missing]&#34;</span>
+<span style="color:#66d9ef">fi</span></code></pre></div>
 
   </article>
 

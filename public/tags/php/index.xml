@@ -37,7 +37,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/factor-test/</guid>
-      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;quot;0&amp;quot;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;quot;True!&amp;quot;: &amp;quot;False!&amp;quot;; ?&amp;gt;  </description>
+      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>

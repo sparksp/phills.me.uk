@@ -7,7 +7,7 @@
     <meta name="author" content="Phill Sparks" />
   	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
     <title>Factor Test (by lavalamp) - Phill Sparks</title>
-    <meta name="generator" content="Hugo 0.27" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
@@ -39,24 +39,22 @@
   <article>
     <h2>Factor Test (by lavalamp)</h2>
     <p class="post-date">Monday, 19 November 2007</p>
-    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">&lt;?php</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
 
-<span style="color: #66d9ef">function</span> <span style="color: #a6e22e">check_factor</span><span style="color: #f8f8f2">($factor,</span> <span style="color: #f8f8f2">$k,</span> <span style="color: #f8f8f2">$base,</span> <span style="color: #f8f8f2">$exponent,</span> <span style="color: #f8f8f2">$c</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;-1&#39;</span><span style="color: #f8f8f2">){</span>
+<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">check_factor</span>($factor, $k, $base, $exponent, $c<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-1&#39;</span>){
 
-  <span style="color: #f8f8f2">$out</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bcpowmod($base,</span> <span style="color: #f8f8f2">$exponent,</span> <span style="color: #f8f8f2">$factor);</span>
-  <span style="color: #f8f8f2">$out</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bcmul($out,</span> <span style="color: #f8f8f2">$k);</span>
-  <span style="color: #f8f8f2">$out</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bcadd($out,</span> <span style="color: #f8f8f2">$c);</span>
-  <span style="color: #f8f8f2">$out</span>  <span style="color: #f92672">=</span> <span style="color: #f8f8f2">bcmod($out,</span> <span style="color: #f8f8f2">$factor);</span>
+  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcpowmod</span>($base, $exponent, $factor);
+  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcmul</span>($out, $k);
+  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcadd</span>($out, $c);
+  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcmod</span>($out, $factor);
 
-  <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">$out</span><span style="color: #f92672">==</span><span style="color: #e6db74">&quot;0&quot;</span><span style="color: #f8f8f2">;</span>
+  <span style="color:#66d9ef">return</span> $out<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;0&#34;</span>;
 
-<span style="color: #f8f8f2">}</span>
+}
 
-<span style="color: #66d9ef">echo</span> <span style="color: #a6e22e">check_factor</span><span style="color: #f8f8f2">(</span><span style="color: #e6db74">&#39;28475025393798152885081&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;1&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;2&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #e6db74">&#39;3321931637&#39;</span><span style="color: #f8f8f2">)</span><span style="color: #f92672">?</span> <span style="color: #e6db74">&quot;True!&quot;</span><span style="color: #f92672">:</span> <span style="color: #e6db74">&quot;False!&quot;</span><span style="color: #f8f8f2">;</span>
+<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">check_factor</span>(<span style="color:#e6db74">&#39;28475025393798152885081&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;3321931637&#39;</span>)<span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;True!&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;False!&#34;</span>;
 
-<span style="color: #75715e">?&gt;</span>
-</pre></div>
-
+<span style="color:#75715e">?&gt;</span></code></pre></div>
 
   </article>
 

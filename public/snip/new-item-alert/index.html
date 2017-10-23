@@ -7,7 +7,7 @@
     <meta name="author" content="Phill Sparks" />
   	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
     <title>New Item Alert - Phill Sparks</title>
-    <meta name="generator" content="Hugo 0.27" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
@@ -39,77 +39,75 @@
   <article>
     <h2>New Item Alert</h2>
     <p class="post-date">Wednesday, 21 May 2008</p>
-    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">(*</span>
-<span style="color: #75715e">New Item Alert</span>
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#75715e">(*
+</span><span style="color:#75715e">New Item Alert
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">This Folder Action handler is triggered whenever items are added to the attached folder.
+</span><span style="color:#75715e">The script will display a growl message containing the number of items added.
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">Copyright © Phill Sparks 2008
+</span><span style="color:#75715e">http://milk-hub.net
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">You are free:
+</span><span style="color:#75715e">    * to copy, distribute, display, and perform the work
+</span><span style="color:#75715e">    * to make derivative works
+</span><span style="color:#75715e">
+</span><span style="color:#75715e">Under the following conditions:
+</span><span style="color:#75715e">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)
+</span><span style="color:#75715e">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
+</span><span style="color:#75715e">*)</span>
 
-<span style="color: #75715e">This Folder Action handler is triggered whenever items are added to the attached folder.</span>
-<span style="color: #75715e">The script will display a growl message containing the number of items added.</span>
+<span style="color:#66d9ef">property</span> dialog_timeout : <span style="color:#ae81ff">30</span> <span style="color:#75715e">-- set the amount of time before dialogs auto-answer.</span>
 
-<span style="color: #75715e">Copyright © Phill Sparks 2008</span>
-<span style="color: #75715e">http://milk-hub.net</span>
+<span style="color:#66d9ef">on</span> adding folder items <span style="color:#66d9ef">to</span> this_folder after receiving added_items
+    <span style="color:#66d9ef">try</span>
+        <span style="color:#75715e">-- Determine if Growl is running</span>
+        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;System Events&#34;</span>
+            <span style="color:#66d9ef">set</span> hasGrowl <span style="color:#66d9ef">to</span> (count <span style="color:#66d9ef">of</span> (every process whose <span style="color:#a6e22e">name</span> <span style="color:#f92672">is</span> <span style="color:#e6db74">&#34;GrowlHelperApp&#34;</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
+        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
 
+        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;Finder&#34;</span>
+            <span style="color:#75715e">-- Get the name of the folder</span>
+            <span style="color:#66d9ef">set</span> the folder_name <span style="color:#66d9ef">to</span> the <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">of</span> this_folder
+        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
 
-<span style="color: #75715e">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)</span>
+        <span style="color:#75715e">-- Find out how many new items have been placed in the folder</span>
+        <span style="color:#66d9ef">set</span> the item_count <span style="color:#66d9ef">to</span> the number <span style="color:#66d9ef">of</span> items <span style="color:#66d9ef">in</span> the added_items
 
-<span style="color: #75715e">You are free:</span>
-<span style="color: #75715e">    * to copy, distribute, display, and perform the work</span>
-<span style="color: #75715e">    * to make derivative works</span>
+        <span style="color:#75715e">-- Create the alert string</span>
+        <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> (<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#66d9ef">as </span><span style="color:#a6e22e">Unicode text</span>
+        <span style="color:#66d9ef">if</span> the item_count <span style="color:#f92672">is greater than</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span>
+            <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> (the item_count <span style="color:#66d9ef">as </span><span style="color:#a6e22e">text</span>) <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34; new items have &#34;</span>
+            <span style="color:#66d9ef">set</span> alert_title <span style="color:#66d9ef">to</span> <span style="color:#e6db74">&#34;New Items&#34;</span>
+        <span style="color:#66d9ef">else</span>
+            <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34;One new item has &#34;</span>
+            <span style="color:#66d9ef">set</span> alert_title <span style="color:#66d9ef">to</span> <span style="color:#e6db74">&#34;New Item&#34;</span>
+        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
+        <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34;been placed in the &#34;</span> <span style="color:#f92672">&amp;</span> «data utxt201C» <span style="color:#f92672">&amp;</span> the folder_name <span style="color:#f92672">&amp;</span> «data utxt201D» <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34; folder.&#34;</span>
 
-<span style="color: #75715e">Under the following conditions:</span>
-<span style="color: #75715e">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)</span>
-<span style="color: #75715e">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.</span>
-<span style="color: #75715e">*)</span>
+        <span style="color:#75715e">-- If Growl is running then show the notification, otherwise use a prompt</span>
+        <span style="color:#66d9ef">if</span> hasGrowl <span style="color:#66d9ef">then</span>
+            <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;GrowlHelperApp&#34;</span>
+                <span style="color:#75715e">-- List the notifications for Growl</span>
+                <span style="color:#66d9ef">set</span> the allNotificationsList <span style="color:#66d9ef">to</span> {<span style="color:#e6db74">&#34;New Item&#34;</span>}
 
-<span style="color: #66d9ef">property</span> <span style="color: #f8f8f2">dialog_timeout</span> <span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">30</span> <span style="color: #75715e">-- set the amount of time before dialogs auto-answer.</span>
+                <span style="color:#75715e">-- Enable the notfications</span>
+                <span style="color:#66d9ef">set</span> the enabledNotificationsList <span style="color:#66d9ef">to</span> {<span style="color:#e6db74">&#34;New Item&#34;</span>}
 
-<span style="color: #66d9ef">on</span> <span style="color: #f8f8f2">adding</span> <span style="color: #f8f8f2">folder</span> <span style="color: #f8f8f2">items</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">this_folder</span> <span style="color: #f8f8f2">after</span> <span style="color: #f8f8f2">receiving</span> <span style="color: #f8f8f2">added_items</span>
-    <span style="color: #66d9ef">try</span>
-        <span style="color: #75715e">-- Determine if Growl is running</span>
-        <span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;System Events&quot;</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">hasGrowl</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">(count</span> <span style="color: #66d9ef">of</span> <span style="color: #f8f8f2">(every</span> <span style="color: #f8f8f2">process</span> <span style="color: #f8f8f2">whose</span> <span style="color: #a6e22e">name</span> <span style="color: #f92672">is</span> <span style="color: #e6db74">&quot;GrowlHelperApp&quot;</span><span style="color: #f8f8f2">))</span> <span style="color: #f92672">&gt;</span> <span style="color: #ae81ff">0</span>
-        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
+                <span style="color:#75715e">-- Let Growl know who we are</span>
+                register <span style="color:#66d9ef">as</span> application <span style="color:#e6db74">&#34;Directory Monitor&#34;</span> all notifications allNotificationsList default notifications enabledNotificationsList icon <span style="color:#66d9ef">of</span> application <span style="color:#e6db74">&#34;Finder&#34;</span>
 
-        <span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;Finder&quot;</span>
-            <span style="color: #75715e">-- Get the name of the folder</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">folder_name</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">the</span> <span style="color: #a6e22e">name</span> <span style="color: #66d9ef">of</span> <span style="color: #f8f8f2">this_folder</span>
-        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
-
-        <span style="color: #75715e">-- Find out how many new items have been placed in the folder</span>
-        <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">item_count</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">number</span> <span style="color: #66d9ef">of</span> <span style="color: #f8f8f2">items</span> <span style="color: #66d9ef">in</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">added_items</span>
-
-        <span style="color: #75715e">-- Create the alert string</span>
-        <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">(</span><span style="color: #e6db74">&quot;&quot;</span><span style="color: #f8f8f2">)</span> <span style="color: #66d9ef">as </span><span style="color: #a6e22e">Unicode text</span>
-        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">item_count</span> <span style="color: #f92672">is greater than</span> <span style="color: #ae81ff">1</span> <span style="color: #66d9ef">then</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">(the</span> <span style="color: #f8f8f2">item_count</span> <span style="color: #66d9ef">as </span><span style="color: #a6e22e">text</span><span style="color: #f8f8f2">)</span> <span style="color: #f92672">&amp;</span> <span style="color: #e6db74">&quot; new items have &quot;</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_title</span> <span style="color: #66d9ef">to</span> <span style="color: #e6db74">&quot;New Items&quot;</span>
-        <span style="color: #66d9ef">else</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #f92672">&amp;</span> <span style="color: #e6db74">&quot;One new item has &quot;</span>
-            <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_title</span> <span style="color: #66d9ef">to</span> <span style="color: #e6db74">&quot;New Item&quot;</span>
-        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">if</span>
-        <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #f92672">&amp;</span> <span style="color: #e6db74">&quot;been placed in the &quot;</span> <span style="color: #f92672">&amp;</span> «<span style="color: #f8f8f2">data utxt201C</span>» <span style="color: #f92672">&amp;</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">folder_name</span> <span style="color: #f92672">&amp;</span> «<span style="color: #f8f8f2">data utxt201D</span>» <span style="color: #f92672">&amp;</span> <span style="color: #e6db74">&quot; folder.&quot;</span>
-
-        <span style="color: #75715e">-- If Growl is running then show the notification, otherwise use a prompt</span>
-        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">hasGrowl</span> <span style="color: #66d9ef">then</span>
-            <span style="color: #66d9ef">tell</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;GrowlHelperApp&quot;</span>
-                <span style="color: #75715e">-- List the notifications for Growl</span>
-                <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">allNotificationsList</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">{</span><span style="color: #e6db74">&quot;New Item&quot;</span><span style="color: #f8f8f2">}</span>
-
-                <span style="color: #75715e">-- Enable the notfications</span>
-                <span style="color: #66d9ef">set</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">enabledNotificationsList</span> <span style="color: #66d9ef">to</span> <span style="color: #f8f8f2">{</span><span style="color: #e6db74">&quot;New Item&quot;</span><span style="color: #f8f8f2">}</span>
-
-                <span style="color: #75715e">-- Let Growl know who we are</span>
-                <span style="color: #f8f8f2">register</span> <span style="color: #66d9ef">as</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;Directory Monitor&quot;</span> <span style="color: #f8f8f2">all</span> <span style="color: #f8f8f2">notifications</span> <span style="color: #f8f8f2">allNotificationsList</span> <span style="color: #f8f8f2">default</span> <span style="color: #f8f8f2">notifications</span> <span style="color: #f8f8f2">enabledNotificationsList</span> <span style="color: #f8f8f2">icon</span> <span style="color: #66d9ef">of</span> <span style="color: #f8f8f2">application</span> <span style="color: #e6db74">&quot;Finder&quot;</span>
-
-                <span style="color: #75715e">-- Do the notify</span>
-                <span style="color: #f8f8f2">notify</span> <span style="color: #f8f8f2">with</span> <span style="color: #a6e22e">name</span> <span style="color: #e6db74">&quot;New Item&quot;</span> <span style="color: #a6e22e">title</span> <span style="color: #f8f8f2">alert_title</span> <span style="color: #f8f8f2">description</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #f8f8f2">application</span> <span style="color: #a6e22e">name</span> <span style="color: #e6db74">&quot;Directory Monitor&quot;</span>
-            <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">tell</span>
-        <span style="color: #66d9ef">else</span>
-            <span style="color: #f8f8f2">display dialog</span> <span style="color: #f8f8f2">the</span> <span style="color: #f8f8f2">alert_message</span> <span style="color: #f8f8f2">with</span> <span style="color: #a6e22e">title</span> <span style="color: #f8f8f2">alert_title</span> <span style="color: #f8f8f2">buttons</span> <span style="color: #f8f8f2">{</span><span style="color: #e6db74">&quot;OK&quot;</span><span style="color: #f8f8f2">}</span> <span style="color: #f8f8f2">default</span> <span style="color: #f8f8f2">button</span> <span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">cancel</span> <span style="color: #f8f8f2">button</span> <span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">with</span> <span style="color: #f8f8f2">icon</span> <span style="color: #ae81ff">1</span> <span style="color: #f8f8f2">giving</span> <span style="color: #f8f8f2">up</span> <span style="color: #f8f8f2">after</span> <span style="color: #f8f8f2">dialog_timeout</span>
-        <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">if</span>
-    <span style="color: #66d9ef">end</span> <span style="color: #66d9ef">try</span>
-<span style="color: #66d9ef">end</span> <span style="color: #f8f8f2">adding</span> <span style="color: #f8f8f2">folder</span> <span style="color: #f8f8f2">items</span> <span style="color: #66d9ef">to</span>
-</pre></div>
-
+                <span style="color:#75715e">-- Do the notify</span>
+                notify with <span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#34;New Item&#34;</span> <span style="color:#a6e22e">title</span> alert_title description the alert_message application <span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#34;Directory Monitor&#34;</span>
+            <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+        <span style="color:#66d9ef">else</span>
+            display dialog the alert_message with <span style="color:#a6e22e">title</span> alert_title buttons {<span style="color:#e6db74">&#34;OK&#34;</span>} default button <span style="color:#ae81ff">1</span> cancel button <span style="color:#ae81ff">1</span> with icon <span style="color:#ae81ff">1</span> giving up after dialog_timeout
+        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
+    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">try</span>
+<span style="color:#66d9ef">end</span> adding folder items <span style="color:#66d9ef">to</span></code></pre></div>
 
   </article>
 

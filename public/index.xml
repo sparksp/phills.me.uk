@@ -332,7 +332,7 @@ Features included:
       <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/isync-reactor/</guid>
-      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal.  Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
     </item>
     
     <item>
@@ -351,7 +351,7 @@ Phlickr is an open source PHP5 based API kit used to access the Flickr API. It u
       <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/ssh-avahi-service/</guid>
-      <description>&amp;lt;?xml version=&amp;quot;1.0&amp;quot; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;quot;avahi-service.dtd&amp;quot;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt;  </description>
+      <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
     </item>
     
     <item>
@@ -360,7 +360,7 @@ Phlickr is an open source PHP5 based API kit used to access the Flickr API. It u
       <pubDate>Thu, 22 May 2008 00:28:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/js-page-navigation/</guid>
-      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;quot;&amp;#39; + rel + &amp;#39;&amp;quot;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); }  </description>
+      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); } </description>
     </item>
     
     <item>
@@ -378,7 +378,7 @@ Phlickr is an open source PHP5 based API kit used to access the Flickr API. It u
       <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/related-content/</guid>
-      <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5  </description>
+      <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
     </item>
     
     <item>
@@ -407,7 +407,7 @@ Here&amp;rsquo;s an example that will configure &amp;ldquo;server1.example.com&a
       <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/refitconf/</guid>
-      <description>timeout 10 hidebadges internal hideui banner shell tools label  </description>
+      <description>timeout 10 hidebadges internal hideui banner shell tools label </description>
     </item>
     
     <item>
@@ -426,7 +426,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/php-id/</guid>
-      <description>#!/bin/bash case $# in 1);; *) echo &amp;quot;Usage: $0file&amp;quot;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it? if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;quot;$1[skipped]&amp;quot; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;quot;$1&amp;quot; &amp;gt;/tmp/sk mv /tmp/sk &amp;quot;$1&amp;quot; echo &amp;quot;$1&amp;quot; fi else echo &amp;quot;$1[missing]&amp;quot; fi  </description>
+      <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
     </item>
     
     <item>
@@ -435,7 +435,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Fri, 07 Dec 2007 23:35:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/mp3-search/</guid>
-      <description>if (t = prompt(&amp;quot;Song Title&amp;quot;)) window.location.href=&amp;quot;http://google.co.uk/search?q=\&amp;quot;&amp;quot; + t +&amp;quot;\&amp;quot; last modified mp3 intitle:\&amp;quot;index of\&amp;quot; -html -htm -php -asp&amp;quot;  </description>
+      <description>if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
     </item>
     
     <item>
@@ -444,7 +444,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/factor-test/</guid>
-      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;quot;0&amp;quot;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;quot;True!&amp;quot;: &amp;quot;False!&amp;quot;; ?&amp;gt;  </description>
+      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>
@@ -453,7 +453,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/new-terminal/</guid>
-      <description>tell application &amp;quot;System Events&amp;quot; if (count (processes whose name is &amp;quot;Terminal&amp;quot;)) is 0 then tell application &amp;quot;Terminal&amp;quot; activate end tell else tell application &amp;quot;Terminal&amp;quot; activate do script &amp;quot;&amp;quot; end tell end if end tell  </description>
+      <description>tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
     </item>
     
     <item>
@@ -471,7 +471,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/tvrenamerrc/</guid>
-      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g;  </description>
+      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
     </item>
     
     <item>

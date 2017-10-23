@@ -7,7 +7,7 @@
     <meta name="author" content="Phill Sparks" />
   	<meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
     <title>SSH Avahi Service - Phill Sparks</title>
-    <meta name="generator" content="Hugo 0.27" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
@@ -39,25 +39,23 @@
   <article>
     <h2>SSH Avahi Service</h2>
     <p class="post-date">Monday, 16 June 2008</p>
-    <div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #75715e">&lt;?xml version=&quot;1.0&quot; standalone=&#39;no&#39;?&gt;</span>
-<span style="color: #75715e">&lt;!DOCTYPE service-group SYSTEM &quot;avahi-service.dtd&quot;&gt;</span>
-<span style="color: #f92672">&lt;service-group&gt;</span>
-    <span style="color: #f92672">&lt;name&gt;</span>My Server<span style="color: #f92672">&lt;/name&gt;</span>
-    <span style="color: #f92672">&lt;service&gt;</span>
-        <span style="color: #f92672">&lt;type&gt;</span>_ssh._tcp<span style="color: #f92672">&lt;/type&gt;</span>
-        <span style="color: #f92672">&lt;port&gt;</span>22<span style="color: #f92672">&lt;/port&gt;</span>
-    <span style="color: #f92672">&lt;/service&gt;</span>
-    <span style="color: #f92672">&lt;service&gt;</span>
-        <span style="color: #f92672">&lt;type&gt;</span>_fish._tcp<span style="color: #f92672">&lt;/type&gt;</span>
-        <span style="color: #f92672">&lt;port&gt;</span>22<span style="color: #f92672">&lt;/port&gt;</span>
-    <span style="color: #f92672">&lt;/service&gt;</span>
-    <span style="color: #f92672">&lt;service&gt;</span>
-        <span style="color: #f92672">&lt;type&gt;</span>_scp._tcp<span style="color: #f92672">&lt;/type&gt;</span>
-        <span style="color: #f92672">&lt;port&gt;</span>22<span style="color: #f92672">&lt;/port&gt;</span>
-    <span style="color: #f92672">&lt;/service&gt;</span>
-<span style="color: #f92672">&lt;/service-group&gt;</span>
-</pre></div>
-
+    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; standalone=&#39;no&#39;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE service-group SYSTEM &#34;avahi-service.dtd&#34;&gt;</span>
+<span style="color:#f92672">&lt;service-group&gt;</span>
+    <span style="color:#f92672">&lt;name&gt;</span>My Server<span style="color:#f92672">&lt;/name&gt;</span>
+    <span style="color:#f92672">&lt;service&gt;</span>
+        <span style="color:#f92672">&lt;type&gt;</span>_ssh._tcp<span style="color:#f92672">&lt;/type&gt;</span>
+        <span style="color:#f92672">&lt;port&gt;</span>22<span style="color:#f92672">&lt;/port&gt;</span>
+    <span style="color:#f92672">&lt;/service&gt;</span>
+    <span style="color:#f92672">&lt;service&gt;</span>
+        <span style="color:#f92672">&lt;type&gt;</span>_fish._tcp<span style="color:#f92672">&lt;/type&gt;</span>
+        <span style="color:#f92672">&lt;port&gt;</span>22<span style="color:#f92672">&lt;/port&gt;</span>
+    <span style="color:#f92672">&lt;/service&gt;</span>
+    <span style="color:#f92672">&lt;service&gt;</span>
+        <span style="color:#f92672">&lt;type&gt;</span>_scp._tcp<span style="color:#f92672">&lt;/type&gt;</span>
+        <span style="color:#f92672">&lt;port&gt;</span>22<span style="color:#f92672">&lt;/port&gt;</span>
+    <span style="color:#f92672">&lt;/service&gt;</span>
+<span style="color:#f92672">&lt;/service-group&gt;</span></code></pre></div>
 
   </article>
 

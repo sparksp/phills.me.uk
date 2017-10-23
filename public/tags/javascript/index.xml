@@ -26,7 +26,7 @@
       <pubDate>Thu, 22 May 2008 00:28:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/js-page-navigation/</guid>
-      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;quot;&amp;#39; + rel + &amp;#39;&amp;quot;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); }  </description>
+      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); } </description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Fri, 07 Dec 2007 23:35:00 +0000</pubDate>
       
       <guid>http://phills.me.uk/snip/mp3-search/</guid>
-      <description>if (t = prompt(&amp;quot;Song Title&amp;quot;)) window.location.href=&amp;quot;http://google.co.uk/search?q=\&amp;quot;&amp;quot; + t +&amp;quot;\&amp;quot; last modified mp3 intitle:\&amp;quot;index of\&amp;quot; -html -htm -php -asp&amp;quot;  </description>
+      <description>if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
     </item>
     
   </channel>
