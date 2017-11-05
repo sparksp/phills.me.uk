@@ -138,16 +138,12 @@ h3 + p {
 }
 
 .polaroid {
-  background: #F1B04B;
-  border-color: #e6af63;
+  background: #ffffff;
+  border-color: #eee;
   border-style: solid;
-  border-width: 15px 15px 25px 15px;
+  border-width: 1px;
 
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
-  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.4);
-
-  width: 15em;
+  width: 300px;
   box-sizing: border-box;
 }
 
