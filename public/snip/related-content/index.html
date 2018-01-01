@@ -39,14 +39,14 @@
   <article>
     <h2>Related Content</h2>
     <p class="post-date">Thursday, 1 May 2008</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">SELECT</span> uri, <span style="color:#66d9ef">COUNT</span>(tag) <span style="color:#66d9ef">AS</span> related_tag_count
-<span style="color:#66d9ef">FROM</span> milk_blog_tags prop
-<span style="color:#66d9ef">WHERE</span> uri <span style="color:#f92672">&lt;&gt;</span> <span style="color:#e6db74">&#39;posts/2008/01/17/finding_the_character_map_in_mac&#39;</span>
-<span style="color:#66d9ef">AND</span> tag <span style="color:#66d9ef">IN</span> (<span style="color:#e6db74">&#39;software&#39;</span>,<span style="color:#e6db74">&#39;Character Map&#39;</span>,<span style="color:#e6db74">&#39;Character Palette&#39;</span>,<span style="color:#e6db74">&#39;for:lsucs&#39;</span>,<span style="color:#e6db74">&#39;osx&#39;</span>)
-<span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> uri
-<span style="color:#66d9ef">HAVING</span> <span style="color:#66d9ef">COUNT</span>(tag) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> related_tag_count <span style="color:#66d9ef">DESC</span>, uri <span style="color:#66d9ef">DESC</span>
-<span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">5</span></code></pre></div>
+    <div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">SELECT</span> <span class="n">uri</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="k">AS</span> <span class="n">related_tag_count</span>
+<span class="k">FROM</span> <span class="n">milk_blog_tags</span> <span class="n">prop</span>
+<span class="k">WHERE</span> <span class="n">uri</span> <span class="o">&lt;&gt;</span> <span class="s1">&#39;posts/2008/01/17/finding_the_character_map_in_mac&#39;</span>
+<span class="k">AND</span> <span class="n">tag</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">&#39;software&#39;</span><span class="p">,</span><span class="s1">&#39;Character Map&#39;</span><span class="p">,</span><span class="s1">&#39;Character Palette&#39;</span><span class="p">,</span><span class="s1">&#39;for:lsucs&#39;</span><span class="p">,</span><span class="s1">&#39;osx&#39;</span><span class="p">)</span>
+<span class="k">GROUP</span> <span class="k">BY</span> <span class="n">uri</span>
+<span class="k">HAVING</span> <span class="k">COUNT</span><span class="p">(</span><span class="n">tag</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">related_tag_count</span> <span class="k">DESC</span><span class="p">,</span> <span class="n">uri</span> <span class="k">DESC</span>
+<span class="k">LIMIT</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span></code></pre></div>
 
   </article>
 

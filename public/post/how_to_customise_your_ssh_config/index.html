@@ -43,19 +43,15 @@
 
 <p>Here&rsquo;s an example that will configure &ldquo;server1.example.com&rdquo; with the user &ldquo;example&rdquo; and the port &ldquo;222&rdquo;.  I&rsquo;ll set this all up as &ldquo;ex1&rdquo;.  Just drop the following in to <code>~/.ssh/config</code>:</p>
 
-<div class="highlight"><pre>
-Host ex1
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Host ex1
 HostName server1.example.com
 User example
-Port 222
-</pre></div>
+Port 222</code></pre></div>
 
 <p>Now if I call <code>ssh ex1</code> it&rsquo;s just like calling <code>ssh server1.example.com -l example -p 222</code>.  You can set-up defaults by using the Host &ldquo;*&rdquo;, I often default the User where I can&rsquo;t have my preferred name&hellip;</p>
 
-<div class="highlight"><pre>
-Host *
-User example
-</pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">Host *
+User example</code></pre></div>
 
 <p>There are a lot of things you can configure in this way, for a full list check out the man page for ssh_config (5).</p>
 

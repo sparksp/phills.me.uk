@@ -39,27 +39,27 @@
   <article>
     <h2>JS Page Navigation</h2>
     <p class="post-date">Thursday, 22 May 2008</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">go</span>(<span style="color:#a6e22e">rel</span>) {
-    <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">url</span>;
-    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">url</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">evaluate</span>(<span style="color:#e6db74">&#39;//*[@rel=&#34;&#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">rel</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;&#34;]/href&#39;</span>, document, <span style="color:#66d9ef">null</span>, <span style="color:#a6e22e">XPathResult</span>.<span style="color:#a6e22e">STRING_TYPE</span>, <span style="color:#66d9ef">null</span>)).<span style="color:#a6e22e">stringValue</span>) {
-        window.<span style="color:#a6e22e">location</span>.<span style="color:#a6e22e">href</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">url</span>;
-        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">true</span>;
-    }
-    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">false</span>;
-}
+    <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">go</span><span class="p">(</span><span class="nx">rel</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">url</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">url</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="s1">&#39;//*[@rel=&#34;&#39;</span> <span class="o">+</span> <span class="nx">rel</span> <span class="o">+</span> <span class="s1">&#39;&#34;]/href&#39;</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">XPathResult</span><span class="p">.</span><span class="nx">STRING_TYPE</span><span class="p">,</span> <span class="kc">null</span><span class="p">)).</span><span class="nx">stringValue</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+<span class="p">}</span>
 
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">goFirst</span>() {
-    <span style="color:#a6e22e">go</span>(<span style="color:#e6db74">&#39;first&#39;</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;No first found.&#39;</span>);
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">goPrevious</span>() {
-    <span style="color:#a6e22e">go</span>(<span style="color:#e6db74">&#39;prev&#39;</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">go</span>(<span style="color:#e6db74">&#39;previous&#39;</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;No previous found.&#39;</span>);
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">goNext</span>() {
-    <span style="color:#a6e22e">go</span>(<span style="color:#e6db74">&#39;next&#39;</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;No next found.&#39;</span>);
-}
-<span style="color:#66d9ef">function</span> <span style="color:#a6e22e">goLast</span>() {
-    <span style="color:#a6e22e">go</span>(<span style="color:#e6db74">&#39;last&#39;</span>) <span style="color:#f92672">||</span> <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#39;No last found.&#39;</span>);
-}</code></pre></div>
+<span class="kd">function</span> <span class="nx">goFirst</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">go</span><span class="p">(</span><span class="s1">&#39;first&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;No first found.&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">goPrevious</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">go</span><span class="p">(</span><span class="s1">&#39;prev&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="nx">go</span><span class="p">(</span><span class="s1">&#39;previous&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;No previous found.&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">goNext</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">go</span><span class="p">(</span><span class="s1">&#39;next&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;No next found.&#39;</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="kd">function</span> <span class="nx">goLast</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">go</span><span class="p">(</span><span class="s1">&#39;last&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;No last found.&#39;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
 
   </article>
 

@@ -4,6 +4,7 @@ languageCode = "en-GB"
 theme = "phills"
 enableRobotsTxt = true
 googleAnalytics = "UA-2556883-4"
+pygmentsUseClasses = true
 
 [Params]
   Author = "Phill Sparks"

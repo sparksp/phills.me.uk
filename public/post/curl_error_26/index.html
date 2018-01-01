@@ -45,16 +45,16 @@
 
 <p>After much searching later I found the solution was very simple&hellip;  If you&rsquo;re not submitting any post fields then set <code>CURLOPT_POSTFIELDS</code> to blank, like this&hellip;</p>
 
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
-$ch <span style="color:#f92672">=</span> <span style="color:#a6e22e">curl_init</span>($url);
-<span style="color:#75715e">// make sure we submit this as a post
-</span><span style="color:#75715e"></span><span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POST</span>, <span style="color:#66d9ef">true</span>);
-<span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">isset</span>($postParams)) {
-    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTFIELDS</span>, $postParams);
-}
-<span style="color:#66d9ef">else</span> {
-    <span style="color:#a6e22e">curl_setopt</span>($ch, <span style="color:#a6e22e">CURLOPT_POSTFIELDS</span>, <span style="color:#e6db74">&#39;&#39;</span>);
-}</code></pre></div>
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="nv">$ch</span> <span class="o">=</span> <span class="nx">curl_init</span><span class="p">(</span><span class="nv">$url</span><span class="p">);</span>
+<span class="c1">// make sure we submit this as a post
+</span><span class="c1"></span><span class="nx">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POST</span><span class="p">,</span> <span class="k">true</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">isset</span><span class="p">(</span><span class="nv">$postParams</span><span class="p">))</span> <span class="p">{</span>
+    <span class="nx">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="nv">$postParams</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="k">else</span> <span class="p">{</span>
+    <span class="nx">curl_setopt</span><span class="p">(</span><span class="nv">$ch</span><span class="p">,</span> <span class="nx">CURLOPT_POSTFIELDS</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">);</span>
+<span class="p">}</span></code></pre></div>
 
 <p>I can see that this makes sense; a POST is used for submitting data to a server so you need to submit something, even if it&rsquo;s blank.  It would be nice if the error message was a bit more useful or better documented.</p>
 

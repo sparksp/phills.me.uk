@@ -39,62 +39,62 @@
   <article>
     <h2>iSync Reactor</h2>
     <p class="post-date">Thursday, 2 October 2008</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#75715e">(*
-</span><span style="color:#75715e">iSync Reactor
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">This script will launch iSync and ask it to syncronize and terminate.  It will also refresh calendars in iCal.  
-</span><span style="color:#75715e">Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Copyright © Phill Sparks 2008
-</span><span style="color:#75715e">http://milk-hub.net
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales
-</span><span style="color:#75715e">(http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">You are free:
-</span><span style="color:#75715e">    * to copy, distribute, display, and perform the work
-</span><span style="color:#75715e">    * to make derivative works
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Under the following conditions:
-</span><span style="color:#75715e">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/12)
-</span><span style="color:#75715e">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
-</span><span style="color:#75715e">*)</span>
+    <div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="cm">(*
+</span><span class="cm">iSync Reactor
+</span><span class="cm">
+</span><span class="cm">This script will launch iSync and ask it to syncronize and terminate.  It will also refresh calendars in iCal.  
+</span><span class="cm">Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running
+</span><span class="cm">
+</span><span class="cm">Copyright © Phill Sparks 2008
+</span><span class="cm">http://milk-hub.net
+</span><span class="cm">
+</span><span class="cm">
+</span><span class="cm">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales
+</span><span class="cm">(http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
+</span><span class="cm">
+</span><span class="cm">You are free:
+</span><span class="cm">    * to copy, distribute, display, and perform the work
+</span><span class="cm">    * to make derivative works
+</span><span class="cm">
+</span><span class="cm">Under the following conditions:
+</span><span class="cm">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/12)
+</span><span class="cm">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
+</span><span class="cm">*)</span>
 
 
-<span style="color:#66d9ef">property</span> sync_frequency : <span style="color:#ae81ff">900</span> <span style="color:#75715e">-- seconds</span>
+<span class="k">property</span> <span class="nv">sync_frequency</span> <span class="p">:</span> <span class="mi">900</span> <span class="c">-- seconds</span>
 
-<span style="color:#75715e">-- Find out if iCal and iSync are already running</span>
-<span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;System Events&#34;</span>
-    <span style="color:#66d9ef">set</span> iCalRunning <span style="color:#66d9ef">to</span> (count <span style="color:#66d9ef">of</span> (every process whose <span style="color:#a6e22e">name</span> <span style="color:#f92672">is</span> <span style="color:#e6db74">&#34;iCal&#34;</span>)) <span style="color:#f92672">is greater than</span> <span style="color:#ae81ff">0</span>
-    <span style="color:#66d9ef">set</span> iSyncRunning <span style="color:#66d9ef">to</span> (count <span style="color:#66d9ef">of</span> (every process whose <span style="color:#a6e22e">name</span> <span style="color:#f92672">is</span> <span style="color:#e6db74">&#34;iSync&#34;</span>)) <span style="color:#f92672">is greater than</span> <span style="color:#ae81ff">0</span>
-<span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+<span class="c">-- Find out if iCal and iSync are already running</span>
+<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;System Events&#34;</span>
+    <span class="k">set</span> <span class="nv">iCalRunning</span> <span class="k">to</span> <span class="p">(</span><span class="nb">count</span> <span class="k">of</span> <span class="p">(</span><span class="nb">every</span> <span class="nv">process</span> <span class="nb">whose</span> <span class="na">name</span> <span class="ow">is</span> <span class="s2">&#34;iCal&#34;</span><span class="p">))</span> <span class="ow">is greater than</span> <span class="mi">0</span>
+    <span class="k">set</span> <span class="nv">iSyncRunning</span> <span class="k">to</span> <span class="p">(</span><span class="nb">count</span> <span class="k">of</span> <span class="p">(</span><span class="nb">every</span> <span class="nv">process</span> <span class="nb">whose</span> <span class="na">name</span> <span class="ow">is</span> <span class="s2">&#34;iSync&#34;</span><span class="p">))</span> <span class="ow">is greater than</span> <span class="mi">0</span>
+<span class="k">end</span> <span class="k">tell</span>
 
-<span style="color:#75715e">-- Syncronize using iSync, at most every 15 minutes</span>
-<span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;iSync&#34;</span>
-    <span style="color:#66d9ef">if</span> last sync <span style="color:#f92672">is less than</span> ((current date) <span style="color:#f92672">-</span> sync_frequency) <span style="color:#66d9ef">then</span>
-        <span style="color:#75715e">-- Refresh all calendars</span>
-        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;iCal&#34;</span>
-            reload calendars
+<span class="c">-- Syncronize using iSync, at most every 15 minutes</span>
+<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;iSync&#34;</span>
+    <span class="k">if</span> <span class="nb">last</span> <span class="nv">sync</span> <span class="ow">is less than</span> <span class="p">((</span><span class="nb">current date</span><span class="p">)</span> <span class="o">-</span> <span class="nv">sync_frequency</span><span class="p">)</span> <span class="k">then</span>
+        <span class="c">-- Refresh all calendars</span>
+        <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;iCal&#34;</span>
+            <span class="nv">reload</span> <span class="nv">calendars</span>
 
-            <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> iCalRunning <span style="color:#66d9ef">then</span> quit
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nv">iCalRunning</span> <span class="k">then</span> <span class="nb">quit</span>
+        <span class="k">end</span> <span class="k">tell</span>
 
-        <span style="color:#75715e">-- Do the sync</span>
-        synchronize
-    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
+        <span class="c">-- Do the sync</span>
+        <span class="nb">synchronize</span>
+    <span class="k">end</span> <span class="k">if</span>
 
-    <span style="color:#75715e">-- If this script started iSync then hide it, wait for it to finish syncing and quit</span>
-    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> iSyncRunning <span style="color:#66d9ef">then</span>
-        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;System Events&#34;</span> <span style="color:#66d9ef">to</span> <span style="color:#66d9ef">set</span> <span style="color:#a6e22e">visible</span> <span style="color:#66d9ef">of</span> process <span style="color:#e6db74">&#34;iSync&#34;</span> <span style="color:#66d9ef">to</span> <span style="color:#66d9ef">false</span>
+    <span class="c">-- If this script started iSync then hide it, wait for it to finish syncing and quit</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nv">iSyncRunning</span> <span class="k">then</span>
+        <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;System Events&#34;</span> <span class="k">to</span> <span class="k">set</span> <span class="na">visible</span> <span class="k">of</span> <span class="nv">process</span> <span class="s2">&#34;iSync&#34;</span> <span class="k">to</span> <span class="no">false</span>
 
-        <span style="color:#66d9ef">repeat</span> <span style="color:#66d9ef">while</span> (syncing <span style="color:#f92672">is</span> <span style="color:#66d9ef">true</span>)
-            <span style="color:#75715e">-- Wait</span>
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">repeat</span>
+        <span class="k">repeat</span> <span class="k">while</span> <span class="p">(</span><span class="nv">syncing</span> <span class="ow">is</span> <span class="no">true</span><span class="p">)</span>
+            <span class="c">-- Wait</span>
+        <span class="k">end</span> <span class="k">repeat</span>
 
-        quit
-    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
-<span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span></code></pre></div>
+        <span class="nb">quit</span>
+    <span class="k">end</span> <span class="k">if</span>
+<span class="k">end</span> <span class="k">tell</span></code></pre></div>
 
   </article>
 

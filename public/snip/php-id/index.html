@@ -39,46 +39,46 @@
   <article>
     <h2>PHP Id</h2>
     <p class="post-date">Wednesday, 19 December 2007</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e">#!/bin/bash
-</span><span style="color:#75715e"></span>
-<span style="color:#66d9ef">case</span> $# in
-    <span style="color:#ae81ff">1</span><span style="color:#f92672">)</span>;;
-    *<span style="color:#f92672">)</span> echo <span style="color:#e6db74">&#34;Usage: </span>$0<span style="color:#e6db74"> file&#34;</span>;exit;;
-<span style="color:#66d9ef">esac</span>;
+    <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="k">case</span> <span class="nv">$#</span> in
+    <span class="m">1</span><span class="o">)</span><span class="p">;;</span>
+    *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> file&#34;</span><span class="p">;</span>exit<span class="p">;;</span>
+<span class="k">esac</span><span class="p">;</span>
 
-<span style="color:#75715e"># File exists?
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">if</span> <span style="color:#f92672">[[</span> -e $1 <span style="color:#f92672">]]</span>; <span style="color:#66d9ef">then</span>
+<span class="c1"># File exists?
+</span><span class="c1"></span><span class="k">if</span> <span class="o">[[</span> -e <span class="nv">$1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
 
-    <span style="color:#75715e"># File already has $Id$ in it?
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> grep -q <span style="color:#e6db74">&#39;\$Id.*\$$&#39;</span> $1 ; <span style="color:#66d9ef">then</span>
-        echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74"> [skipped]&#34;</span>
-    <span style="color:#66d9ef">else</span>
+    <span class="c1"># File already has $Id$ in it?
+</span><span class="c1"></span>    <span class="k">if</span> grep -q <span class="s1">&#39;\$Id.*\$$&#39;</span> <span class="nv">$1</span> <span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2"> [skipped]&#34;</span>
+    <span class="k">else</span>
 
-        <span style="color:#75715e"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment
-</span><span style="color:#75715e"></span>        sed <span style="color:#e6db74">&#39;
-</span><span style="color:#e6db74">        /&lt;?php/ {
-</span><span style="color:#e6db74">            /?&gt;/ !{
-</span><span style="color:#e6db74">                x
-</span><span style="color:#e6db74">                /^$/ {
-</span><span style="color:#e6db74">                    g
-</span><span style="color:#e6db74">                    a \
-</span><span style="color:#e6db74">/*\
-</span><span style="color:#e6db74"> * $Id$\
-</span><span style="color:#e6db74"> */
-</span><span style="color:#e6db74">                    h
-</span><span style="color:#e6db74">                }
-</span><span style="color:#e6db74">                g
-</span><span style="color:#e6db74">            }
-</span><span style="color:#e6db74">        }
-</span><span style="color:#e6db74">        &#39;</span> <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span> &gt;/tmp/sk
-        mv /tmp/sk <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
-        echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74">&#34;</span>
+        <span class="c1"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment
+</span><span class="c1"></span>        sed <span class="s1">&#39;
+</span><span class="s1">        /&lt;?php/ {
+</span><span class="s1">            /?&gt;/ !{
+</span><span class="s1">                x
+</span><span class="s1">                /^$/ {
+</span><span class="s1">                    g
+</span><span class="s1">                    a \
+</span><span class="s1">/*\
+</span><span class="s1"> * $Id$\
+</span><span class="s1"> */
+</span><span class="s1">                    h
+</span><span class="s1">                }
+</span><span class="s1">                g
+</span><span class="s1">            }
+</span><span class="s1">        }
+</span><span class="s1">        &#39;</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> &gt;/tmp/sk
+        mv /tmp/sk <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
 
-    <span style="color:#66d9ef">fi</span>
+    <span class="k">fi</span>
 
-<span style="color:#66d9ef">else</span>
-    echo <span style="color:#e6db74">&#34;</span>$1<span style="color:#e6db74"> [missing]&#34;</span>
-<span style="color:#66d9ef">fi</span></code></pre></div>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2"> [missing]&#34;</span>
+<span class="k">fi</span></code></pre></div>
 
   </article>
 

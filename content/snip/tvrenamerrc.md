@@ -8,7 +8,7 @@ tags = ["tvrenamer.rc"]
   [menu.main]
     parent = "snip"
 +++
-{{< highlight text >}}
+{{< highlight bash >}}
 --include_series
 --cache
 --pad=2

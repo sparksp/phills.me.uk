@@ -39,22 +39,22 @@
   <article>
     <h2>Factor Test (by lavalamp)</h2>
     <p class="post-date">Monday, 19 November 2007</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">&lt;?php</span>
+    <div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
 
-<span style="color:#66d9ef">function</span> <span style="color:#f92672"></span><span style="color:#a6e22e">check_factor</span>($factor, $k, $base, $exponent, $c<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;-1&#39;</span>){
+<span class="k">function</span> <span class="o"></span><span class="nf">check_factor</span><span class="p">(</span><span class="nv">$factor</span><span class="p">,</span> <span class="nv">$k</span><span class="p">,</span> <span class="nv">$base</span><span class="p">,</span> <span class="nv">$exponent</span><span class="p">,</span> <span class="nv">$c</span><span class="o">=</span><span class="s1">&#39;-1&#39;</span><span class="p">){</span>
 
-  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcpowmod</span>($base, $exponent, $factor);
-  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcmul</span>($out, $k);
-  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcadd</span>($out, $c);
-  $out  <span style="color:#f92672">=</span> <span style="color:#a6e22e">bcmod</span>($out, $factor);
+  <span class="nv">$out</span>  <span class="o">=</span> <span class="nx">bcpowmod</span><span class="p">(</span><span class="nv">$base</span><span class="p">,</span> <span class="nv">$exponent</span><span class="p">,</span> <span class="nv">$factor</span><span class="p">);</span>
+  <span class="nv">$out</span>  <span class="o">=</span> <span class="nx">bcmul</span><span class="p">(</span><span class="nv">$out</span><span class="p">,</span> <span class="nv">$k</span><span class="p">);</span>
+  <span class="nv">$out</span>  <span class="o">=</span> <span class="nx">bcadd</span><span class="p">(</span><span class="nv">$out</span><span class="p">,</span> <span class="nv">$c</span><span class="p">);</span>
+  <span class="nv">$out</span>  <span class="o">=</span> <span class="nx">bcmod</span><span class="p">(</span><span class="nv">$out</span><span class="p">,</span> <span class="nv">$factor</span><span class="p">);</span>
 
-  <span style="color:#66d9ef">return</span> $out<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;0&#34;</span>;
+  <span class="k">return</span> <span class="nv">$out</span><span class="o">==</span><span class="s2">&#34;0&#34;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-<span style="color:#66d9ef">echo</span> <span style="color:#a6e22e">check_factor</span>(<span style="color:#e6db74">&#39;28475025393798152885081&#39;</span>, <span style="color:#e6db74">&#39;1&#39;</span>, <span style="color:#e6db74">&#39;2&#39;</span>, <span style="color:#e6db74">&#39;3321931637&#39;</span>)<span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;True!&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;False!&#34;</span>;
+<span class="k">echo</span> <span class="nx">check_factor</span><span class="p">(</span><span class="s1">&#39;28475025393798152885081&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3321931637&#39;</span><span class="p">)</span><span class="o">?</span> <span class="s2">&#34;True!&#34;</span><span class="o">:</span> <span class="s2">&#34;False!&#34;</span><span class="p">;</span>
 
-<span style="color:#75715e">?&gt;</span></code></pre></div>
+<span class="cp">?&gt;</span></code></pre></div>
 
   </article>
 

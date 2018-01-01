@@ -39,75 +39,75 @@
   <article>
     <h2>New Item Alert</h2>
     <p class="post-date">Wednesday, 21 May 2008</p>
-    <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-applescript" data-lang="applescript"><span style="color:#75715e">(*
-</span><span style="color:#75715e">New Item Alert
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">This Folder Action handler is triggered whenever items are added to the attached folder.
-</span><span style="color:#75715e">The script will display a growl message containing the number of items added.
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Copyright © Phill Sparks 2008
-</span><span style="color:#75715e">http://milk-hub.net
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">You are free:
-</span><span style="color:#75715e">    * to copy, distribute, display, and perform the work
-</span><span style="color:#75715e">    * to make derivative works
-</span><span style="color:#75715e">
-</span><span style="color:#75715e">Under the following conditions:
-</span><span style="color:#75715e">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)
-</span><span style="color:#75715e">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
-</span><span style="color:#75715e">*)</span>
+    <div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="cm">(*
+</span><span class="cm">New Item Alert
+</span><span class="cm">
+</span><span class="cm">This Folder Action handler is triggered whenever items are added to the attached folder.
+</span><span class="cm">The script will display a growl message containing the number of items added.
+</span><span class="cm">
+</span><span class="cm">Copyright © Phill Sparks 2008
+</span><span class="cm">http://milk-hub.net
+</span><span class="cm">
+</span><span class="cm">
+</span><span class="cm">Creative Commons Attribution-Share Alike 2.0 UK: England &amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
+</span><span class="cm">
+</span><span class="cm">You are free:
+</span><span class="cm">    * to copy, distribute, display, and perform the work
+</span><span class="cm">    * to make derivative works
+</span><span class="cm">
+</span><span class="cm">Under the following conditions:
+</span><span class="cm">    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)
+</span><span class="cm">    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
+</span><span class="cm">*)</span>
 
-<span style="color:#66d9ef">property</span> dialog_timeout : <span style="color:#ae81ff">30</span> <span style="color:#75715e">-- set the amount of time before dialogs auto-answer.</span>
+<span class="k">property</span> <span class="nv">dialog_timeout</span> <span class="p">:</span> <span class="mi">30</span> <span class="c">-- set the amount of time before dialogs auto-answer.</span>
 
-<span style="color:#66d9ef">on</span> adding folder items <span style="color:#66d9ef">to</span> this_folder after receiving added_items
-    <span style="color:#66d9ef">try</span>
-        <span style="color:#75715e">-- Determine if Growl is running</span>
-        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;System Events&#34;</span>
-            <span style="color:#66d9ef">set</span> hasGrowl <span style="color:#66d9ef">to</span> (count <span style="color:#66d9ef">of</span> (every process whose <span style="color:#a6e22e">name</span> <span style="color:#f92672">is</span> <span style="color:#e6db74">&#34;GrowlHelperApp&#34;</span>)) <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+<span class="k">on</span> <span class="nv">adding</span> <span class="nv">folder</span> <span class="nb">items</span> <span class="k">to</span> <span class="nv">this_folder</span> <span class="nb">after</span> <span class="nv">receiving</span> <span class="nv">added_items</span>
+    <span class="k">try</span>
+        <span class="c">-- Determine if Growl is running</span>
+        <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;System Events&#34;</span>
+            <span class="k">set</span> <span class="nv">hasGrowl</span> <span class="k">to</span> <span class="p">(</span><span class="nb">count</span> <span class="k">of</span> <span class="p">(</span><span class="nb">every</span> <span class="nv">process</span> <span class="nb">whose</span> <span class="na">name</span> <span class="ow">is</span> <span class="s2">&#34;GrowlHelperApp&#34;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">0</span>
+        <span class="k">end</span> <span class="k">tell</span>
 
-        <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;Finder&#34;</span>
-            <span style="color:#75715e">-- Get the name of the folder</span>
-            <span style="color:#66d9ef">set</span> the folder_name <span style="color:#66d9ef">to</span> the <span style="color:#a6e22e">name</span> <span style="color:#66d9ef">of</span> this_folder
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
+        <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;Finder&#34;</span>
+            <span class="c">-- Get the name of the folder</span>
+            <span class="k">set</span> <span class="nb">the</span> <span class="nv">folder_name</span> <span class="k">to</span> <span class="nb">the</span> <span class="na">name</span> <span class="k">of</span> <span class="nv">this_folder</span>
+        <span class="k">end</span> <span class="k">tell</span>
 
-        <span style="color:#75715e">-- Find out how many new items have been placed in the folder</span>
-        <span style="color:#66d9ef">set</span> the item_count <span style="color:#66d9ef">to</span> the number <span style="color:#66d9ef">of</span> items <span style="color:#66d9ef">in</span> the added_items
+        <span class="c">-- Find out how many new items have been placed in the folder</span>
+        <span class="k">set</span> <span class="nb">the</span> <span class="nv">item_count</span> <span class="k">to</span> <span class="nb">the</span> <span class="nv">number</span> <span class="k">of</span> <span class="nb">items</span> <span class="k">in</span> <span class="nb">the</span> <span class="nv">added_items</span>
 
-        <span style="color:#75715e">-- Create the alert string</span>
-        <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> (<span style="color:#e6db74">&#34;&#34;</span>) <span style="color:#66d9ef">as </span><span style="color:#a6e22e">Unicode text</span>
-        <span style="color:#66d9ef">if</span> the item_count <span style="color:#f92672">is greater than</span> <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">then</span>
-            <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> (the item_count <span style="color:#66d9ef">as </span><span style="color:#a6e22e">text</span>) <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34; new items have &#34;</span>
-            <span style="color:#66d9ef">set</span> alert_title <span style="color:#66d9ef">to</span> <span style="color:#e6db74">&#34;New Items&#34;</span>
-        <span style="color:#66d9ef">else</span>
-            <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34;One new item has &#34;</span>
-            <span style="color:#66d9ef">set</span> alert_title <span style="color:#66d9ef">to</span> <span style="color:#e6db74">&#34;New Item&#34;</span>
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
-        <span style="color:#66d9ef">set</span> alert_message <span style="color:#66d9ef">to</span> alert_message <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34;been placed in the &#34;</span> <span style="color:#f92672">&amp;</span> «data utxt201C» <span style="color:#f92672">&amp;</span> the folder_name <span style="color:#f92672">&amp;</span> «data utxt201D» <span style="color:#f92672">&amp;</span> <span style="color:#e6db74">&#34; folder.&#34;</span>
+        <span class="c">-- Create the alert string</span>
+        <span class="k">set</span> <span class="nv">alert_message</span> <span class="k">to</span> <span class="p">(</span><span class="s2">&#34;&#34;</span><span class="p">)</span> <span class="k">as </span><span class="nc">Unicode text</span>
+        <span class="k">if</span> <span class="nb">the</span> <span class="nv">item_count</span> <span class="ow">is greater than</span> <span class="mi">1</span> <span class="k">then</span>
+            <span class="k">set</span> <span class="nv">alert_message</span> <span class="k">to</span> <span class="nv">alert_message</span> <span class="o">&amp;</span> <span class="p">(</span><span class="nb">the</span> <span class="nv">item_count</span> <span class="k">as </span><span class="nc">text</span><span class="p">)</span> <span class="o">&amp;</span> <span class="s2">&#34; new items have &#34;</span>
+            <span class="k">set</span> <span class="nv">alert_title</span> <span class="k">to</span> <span class="s2">&#34;New Items&#34;</span>
+        <span class="k">else</span>
+            <span class="k">set</span> <span class="nv">alert_message</span> <span class="k">to</span> <span class="nv">alert_message</span> <span class="o">&amp;</span> <span class="s2">&#34;One new item has &#34;</span>
+            <span class="k">set</span> <span class="nv">alert_title</span> <span class="k">to</span> <span class="s2">&#34;New Item&#34;</span>
+        <span class="k">end</span> <span class="k">if</span>
+        <span class="k">set</span> <span class="nv">alert_message</span> <span class="k">to</span> <span class="nv">alert_message</span> <span class="o">&amp;</span> <span class="s2">&#34;been placed in the &#34;</span> <span class="o">&amp;</span> «<span class="nb">data utxt201C</span>» <span class="o">&amp;</span> <span class="nb">the</span> <span class="nv">folder_name</span> <span class="o">&amp;</span> «<span class="nb">data utxt201D</span>» <span class="o">&amp;</span> <span class="s2">&#34; folder.&#34;</span>
 
-        <span style="color:#75715e">-- If Growl is running then show the notification, otherwise use a prompt</span>
-        <span style="color:#66d9ef">if</span> hasGrowl <span style="color:#66d9ef">then</span>
-            <span style="color:#66d9ef">tell</span> application <span style="color:#e6db74">&#34;GrowlHelperApp&#34;</span>
-                <span style="color:#75715e">-- List the notifications for Growl</span>
-                <span style="color:#66d9ef">set</span> the allNotificationsList <span style="color:#66d9ef">to</span> {<span style="color:#e6db74">&#34;New Item&#34;</span>}
+        <span class="c">-- If Growl is running then show the notification, otherwise use a prompt</span>
+        <span class="k">if</span> <span class="nv">hasGrowl</span> <span class="k">then</span>
+            <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;GrowlHelperApp&#34;</span>
+                <span class="c">-- List the notifications for Growl</span>
+                <span class="k">set</span> <span class="nb">the</span> <span class="nv">allNotificationsList</span> <span class="k">to</span> <span class="p">{</span><span class="s2">&#34;New Item&#34;</span><span class="p">}</span>
 
-                <span style="color:#75715e">-- Enable the notfications</span>
-                <span style="color:#66d9ef">set</span> the enabledNotificationsList <span style="color:#66d9ef">to</span> {<span style="color:#e6db74">&#34;New Item&#34;</span>}
+                <span class="c">-- Enable the notfications</span>
+                <span class="k">set</span> <span class="nb">the</span> <span class="nv">enabledNotificationsList</span> <span class="k">to</span> <span class="p">{</span><span class="s2">&#34;New Item&#34;</span><span class="p">}</span>
 
-                <span style="color:#75715e">-- Let Growl know who we are</span>
-                register <span style="color:#66d9ef">as</span> application <span style="color:#e6db74">&#34;Directory Monitor&#34;</span> all notifications allNotificationsList default notifications enabledNotificationsList icon <span style="color:#66d9ef">of</span> application <span style="color:#e6db74">&#34;Finder&#34;</span>
+                <span class="c">-- Let Growl know who we are</span>
+                <span class="nb">register</span> <span class="k">as</span> <span class="nb">application</span> <span class="s2">&#34;Directory Monitor&#34;</span> <span class="nv">all</span> <span class="nv">notifications</span> <span class="nv">allNotificationsList</span> <span class="nv">default</span> <span class="nv">notifications</span> <span class="nv">enabledNotificationsList</span> <span class="nv">icon</span> <span class="k">of</span> <span class="nb">application</span> <span class="s2">&#34;Finder&#34;</span>
 
-                <span style="color:#75715e">-- Do the notify</span>
-                notify with <span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#34;New Item&#34;</span> <span style="color:#a6e22e">title</span> alert_title description the alert_message application <span style="color:#a6e22e">name</span> <span style="color:#e6db74">&#34;Directory Monitor&#34;</span>
-            <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">tell</span>
-        <span style="color:#66d9ef">else</span>
-            display dialog the alert_message with <span style="color:#a6e22e">title</span> alert_title buttons {<span style="color:#e6db74">&#34;OK&#34;</span>} default button <span style="color:#ae81ff">1</span> cancel button <span style="color:#ae81ff">1</span> with icon <span style="color:#ae81ff">1</span> giving up after dialog_timeout
-        <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">if</span>
-    <span style="color:#66d9ef">end</span> <span style="color:#66d9ef">try</span>
-<span style="color:#66d9ef">end</span> adding folder items <span style="color:#66d9ef">to</span></code></pre></div>
+                <span class="c">-- Do the notify</span>
+                <span class="nv">notify</span> <span class="nv">with</span> <span class="na">name</span> <span class="s2">&#34;New Item&#34;</span> <span class="na">title</span> <span class="nv">alert_title</span> <span class="nv">description</span> <span class="nb">the</span> <span class="nv">alert_message</span> <span class="nb">application</span> <span class="na">name</span> <span class="s2">&#34;Directory Monitor&#34;</span>
+            <span class="k">end</span> <span class="k">tell</span>
+        <span class="k">else</span>
+            <span class="nb">display dialog</span> <span class="nb">the</span> <span class="nv">alert_message</span> <span class="nv">with</span> <span class="na">title</span> <span class="nv">alert_title</span> <span class="nb">buttons</span> <span class="p">{</span><span class="s2">&#34;OK&#34;</span><span class="p">}</span> <span class="nv">default</span> <span class="nb">button</span> <span class="mi">1</span> <span class="nv">cancel</span> <span class="nb">button</span> <span class="mi">1</span> <span class="nv">with</span> <span class="nv">icon</span> <span class="mi">1</span> <span class="nv">giving</span> <span class="nv">up</span> <span class="nb">after</span> <span class="nv">dialog_timeout</span>
+        <span class="k">end</span> <span class="k">if</span>
+    <span class="k">end</span> <span class="k">try</span>
+<span class="k">end</span> <span class="nv">adding</span> <span class="nv">folder</span> <span class="nb">items</span> <span class="k">to</span></code></pre></div>
 
   </article>
 
