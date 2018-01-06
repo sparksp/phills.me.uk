@@ -1,7 +1,6 @@
 +++
 date = "2010-11-02T09:09:42Z"
 title = "Hybrid City"
-image = "hybrid-city.jpg"
 [menu]
   [menu.main]
     parent = "project"

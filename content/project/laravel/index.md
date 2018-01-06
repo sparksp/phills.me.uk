@@ -1,7 +1,6 @@
 +++
 date = "2011-11-02T09:09:23Z"
 title = "Laravel"
-image = "laravel.jpg"
 [menu]
   [menu.main]
     parent = "project"

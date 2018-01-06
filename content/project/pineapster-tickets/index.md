@@ -1,7 +1,6 @@
 +++
 date = "2010-11-02T09:05:02Z"
 title = "Pineapster Tickets"
-image = "pineapster-tickets.png"
 [menu]
   [menu.main]
     parent = "project"
