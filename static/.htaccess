@@ -33,6 +33,7 @@ RewriteRule ^(pb|snips)/13(-htodo-user-script)?/?$ http://phills.me.uk/snip/htod
 RewriteRule ^blog/tag/(.*)$ http://phills.me.uk/tags/$1/ [redirect=permanent,last]
 
 RewriteCond %{HTTP_HOST} ^www [OR]
+RewriteCond %{HTTP_HOST} phils.me.uk [OR]
 RewriteCond %{HTTP_HOST} phillsparks.me.uk [NC]
 RewriteRule ^(.*)$ http://phills.me.uk/$1 [redirect=permanent,last]
 
