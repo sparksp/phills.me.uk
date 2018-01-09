@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sql on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/sql/</link>
+    <link>https://phills.me.uk/tags/sql/</link>
     <description>Recent content in Sql on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Thu, 01 May 2008 19:47:00 +0000</lastBuildDate>
     
-	<atom:link href="http://phills.me.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phills.me.uk/tags/sql/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Related Content</title>
-      <link>http://phills.me.uk/snip/related-content/</link>
+      <link>https://phills.me.uk/snip/related-content/</link>
       <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/related-content/</guid>
+      <guid>https://phills.me.uk/snip/related-content/</guid>
       <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
     </item>
     

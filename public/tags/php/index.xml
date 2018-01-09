@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/php/</link>
+    <link>https://phills.me.uk/tags/php/</link>
     <description>Recent content in Php on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Tue, 26 Aug 2008 12:55:00 +0000</lastBuildDate>
     
-	<atom:link href="http://phills.me.uk/tags/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phills.me.uk/tags/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>cURL Error 26: Failed to open/read local data from file/application</title>
-      <link>http://phills.me.uk/post/curl_error_26/</link>
+      <link>https://phills.me.uk/post/curl_error_26/</link>
       <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/curl_error_26/</guid>
+      <guid>https://phills.me.uk/post/curl_error_26/</guid>
       <description>Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems. Most were simple quirks of site5 fixed by getting the permissions right. The thing that kept bugging me was Phlickr, and more specifically its use of cURL.
 Phlickr is an open source PHP5 based API kit used to access the Flickr API. It uses the REST method which requires that some actions are POSTs. The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).</description>
     </item>
     
     <item>
       <title>PHP: Late Static Bindings</title>
-      <link>http://phills.me.uk/post/php_late_static_bindings/</link>
+      <link>https://phills.me.uk/post/php_late_static_bindings/</link>
       <pubDate>Wed, 23 Jan 2008 12:09:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/php_late_static_bindings/</guid>
+      <guid>https://phills.me.uk/post/php_late_static_bindings/</guid>
       <description>New to PHP 5.3.0 will be late static bindings. Currently you can use the self keyword in PHP to access static methods of the current class, the new static keyword allows you to access static methods through the inheritance tree. This example from the PHP website explains best&amp;hellip;
 Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } public static function test() { static::who(); // Here comes Late Static Bindings  } } class B extends A { public static function who() { echo __CLASS__; } } A::test(); B::test(); ?</description>
     </item>
     
     <item>
       <title>Factor Test (by lavalamp)</title>
-      <link>http://phills.me.uk/snip/factor-test/</link>
+      <link>https://phills.me.uk/snip/factor-test/</link>
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/factor-test/</guid>
+      <guid>https://phills.me.uk/snip/factor-test/</guid>
       <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>
       <title>Dynamic Cacher</title>
-      <link>http://phills.me.uk/snip/dynamic-cacher/</link>
+      <link>https://phills.me.uk/snip/dynamic-cacher/</link>
       <pubDate>Tue, 02 Oct 2007 13:38:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/dynamic-cacher/</guid>
+      <guid>https://phills.me.uk/snip/dynamic-cacher/</guid>
       <description>&amp;lt;?php set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.php&amp;#39;) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } else if (is_dir($path)) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } // Make dir for file if (!is_dir(dirname($path))) mkdir(dirname($path), 0755, true); // Do the fetch $date = (file_exists($path) &amp;amp;&amp;amp; file_exists($nfopath)) ?</description>
     </item>
     

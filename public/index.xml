@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phill Sparks</title>
-    <link>http://phills.me.uk/</link>
+    <link>https://phills.me.uk/</link>
     <description>Recent content on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Wed, 02 Nov 2016 09:11:20 +0000</lastBuildDate>
     
-	<atom:link href="http://phills.me.uk/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phills.me.uk/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Qualifications</title>
-      <link>http://phills.me.uk/experience/climbing/climbing-qualifications/</link>
+      <link>https://phills.me.uk/experience/climbing/climbing-qualifications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/climbing-qualifications/</guid>
+      <guid>https://phills.me.uk/experience/climbing/climbing-qualifications/</guid>
       <description> ITC Certificate in Outdoor First Aid Climbing Wall Leading Award since 2015 Single Pitch Award since 2013 Climbing Wall Award (with Abseiling) since 2012  </description>
     </item>
     
     <item>
       <title>Chief Instructor</title>
-      <link>http://phills.me.uk/experience/climbing/the-climbing-station-chief-instructor/</link>
+      <link>https://phills.me.uk/experience/climbing/the-climbing-station-chief-instructor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/the-climbing-station-chief-instructor/</guid>
+      <guid>https://phills.me.uk/experience/climbing/the-climbing-station-chief-instructor/</guid>
       <description>Coordinating instructed sessions and being responsible for running NIBAS and NICAS within the Gibbon and Academy groups. Helping to ensure that the centre has adequate staff cover to run efficiently and that instructor lead sessions have the appropriate instructor ratios. Ensuring that instructing staff receive the appropriate training to do their job efficiently and that they adhere to the centre&amp;rsquo;s policies and procedures. Working with the directors and other staff to ensure the centre continues to develop both in reputation and enhanced turnover.</description>
     </item>
     
     <item>
       <title>Freelance Climbing Instructor in the Midlands</title>
-      <link>http://phills.me.uk/experience/climbing/freelance-and-casual/</link>
+      <link>https://phills.me.uk/experience/climbing/freelance-and-casual/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/freelance-and-casual/</guid>
+      <guid>https://phills.me.uk/experience/climbing/freelance-and-casual/</guid>
       <description>I lead sessions at various venues around Leicestershire and the Midlands including:
 Beaudesert Activity Centre (2017 onwards) Delivering have-a-go climbing and abseiling sessions to young people in school groups and organised youth groups.
 Beaumanor Hall (2017 onwards) Working with groups of young people (mostly Primary School age) to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering.</description>
@@ -42,219 +42,219 @@ Beaumanor Hall (2017 onwards) Working with groups of young people (mostly Primar
     
     <item>
       <title>Technical Skills</title>
-      <link>http://phills.me.uk/experience/programming/technical-skills/</link>
+      <link>https://phills.me.uk/experience/programming/technical-skills/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/technical-skills/</guid>
+      <guid>https://phills.me.uk/experience/programming/technical-skills/</guid>
       <description>RESTful API Design Test Driven Development PHP &amp;amp; Laravel Framework Ruby on Rails PostgreSQL &amp;amp; MySQL Nginx, Apache &amp;amp; Lighttpd Linux (CentOS &amp;amp; Debian) Ansible Mac OS X Sidekiq (Workers) JavaScript Git (GitHub &amp;amp; Bitbucket)  </description>
     </item>
     
     <item>
       <title>Queen&#39;s Scout Award Coordinator</title>
-      <link>http://phills.me.uk/experience/volunteering/qsa-coordinator/</link>
+      <link>https://phills.me.uk/experience/volunteering/qsa-coordinator/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/qsa-coordinator/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/qsa-coordinator/</guid>
       <description>I support the administration of the Queen’s Scout Award for Leicestershire Scouts. Advising members, leaders and commissioners about the award and helping to ensure that candidates meet the strict standards.</description>
     </item>
     
     <item>
       <title>Volunteer Climbing Assessor</title>
-      <link>http://phills.me.uk/experience/climbing/climbing-assessor/</link>
+      <link>https://phills.me.uk/experience/climbing/climbing-assessor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/climbing-assessor/</guid>
+      <guid>https://phills.me.uk/experience/climbing/climbing-assessor/</guid>
       <description>I assess candidates for artificial climbing and abseiling permits.</description>
     </item>
     
     <item>
       <title>API Engineer &amp; Tech Team Lead</title>
-      <link>http://phills.me.uk/experience/programming/crowdlab/</link>
+      <link>https://phills.me.uk/experience/programming/crowdlab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/crowdlab/</guid>
+      <guid>https://phills.me.uk/experience/programming/crowdlab/</guid>
       <description>Initially migrating the CrowdLab API from CodeIgniter (PHP) &amp;amp; MySQL to Ruby on Rails &amp;amp; PostgreSQL; designing and implementing new features from the API / Database point of view, while also considering the wider reaching effects of elements. I facilitated the implementation and continued use of Scrum within CrowdLab. I became an interface between the Market Research and the Technical teams.
 My responsibilities gradually expanded from leading (in 2014) to managing (from late 2015) the development team at CrowdLab.</description>
     </item>
     
     <item>
       <title>Volunteer Climbing Manager</title>
-      <link>http://phills.me.uk/experience/climbing/climbing-manager/</link>
+      <link>https://phills.me.uk/experience/climbing/climbing-manager/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/climbing-manager/</guid>
+      <guid>https://phills.me.uk/experience/climbing/climbing-manager/</guid>
       <description>I manage the climbing team at Fox Coverts Scout Campsite, where I run climbing and abseiling sessions for groups, and train new instructors from any experience up to Scout/Guide qualified level.</description>
     </item>
     
     <item>
       <title>County Scout Network Commissioner</title>
-      <link>http://phills.me.uk/experience/volunteering/network-commissioner/</link>
+      <link>https://phills.me.uk/experience/volunteering/network-commissioner/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/network-commissioner/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/network-commissioner/</guid>
       <description>After 18 months as a Network Leader, I took the step up to Commissioner where I managed the other Network Leaders and supported the Network Chairman. I attended County Scout Executive meetings and worked to grow and develop Scout Network in the county by creating new opportunities for young people to engage with Scout Network.</description>
     </item>
     
     <item>
       <title>Programmer</title>
-      <link>http://phills.me.uk/experience/programming/bulb-studios/</link>
+      <link>https://phills.me.uk/experience/programming/bulb-studios/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/bulb-studios/</guid>
+      <guid>https://phills.me.uk/experience/programming/bulb-studios/</guid>
       <description>I developed APIs and back-end systems to support mobile applications and client facing websites. I worked with front end developers, mobile developers and designers to ensure a joined-up approach to project work. I liaised with external companies regarding hardware requirements and managed a varying number of servers hosting the company’s projects.</description>
     </item>
     
     <item>
       <title>County Scout Network Leader</title>
-      <link>http://phills.me.uk/experience/volunteering/network-leader/</link>
+      <link>https://phills.me.uk/experience/volunteering/network-leader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/network-leader/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/network-leader/</guid>
       <description>I set up the Network in Hinckley Area, forming links with local groups and Explorer units.</description>
     </item>
     
     <item>
       <title>Volunteer Climbing Instructor</title>
-      <link>http://phills.me.uk/experience/climbing/climbing-instructor/</link>
+      <link>https://phills.me.uk/experience/climbing/climbing-instructor/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/climbing-instructor/</guid>
+      <guid>https://phills.me.uk/experience/climbing/climbing-instructor/</guid>
       <description>I lead and supervise groups climbing and abseiling on artificial walls &amp;amp; towers, and on natural rock.</description>
     </item>
     
     <item>
       <title>Assistant &amp; Scout Leader</title>
-      <link>http://phills.me.uk/experience/volunteering/sapcote-scout-leader/</link>
+      <link>https://phills.me.uk/experience/volunteering/sapcote-scout-leader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/sapcote-scout-leader/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/sapcote-scout-leader/</guid>
       <description>During my time as a Leader with 1st Sapcote Scouts, I completed my leader training and achieved the Wood Badge. I helped to grow the section from a minimum of 2 scouts up to 9 scouts at the start of 2012. The section continues to grow under new leadership.</description>
     </item>
     
     <item>
       <title>Graduate Developer</title>
-      <link>http://phills.me.uk/experience/programming/cuttlefish/</link>
+      <link>https://phills.me.uk/experience/programming/cuttlefish/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/cuttlefish/</guid>
+      <guid>https://phills.me.uk/experience/programming/cuttlefish/</guid>
       <description>I worked on a range of projects including implementing designs, building page structures, creating databases, writing APIs, and working with a wide variety of data sources. I helped Cuttlefish to develop their in-house CMSs and Frameworks, adding new and extending existing features, with a focus on enabling new ways of reading data in and sharing data out. I supported the projects I had developed after launch and regularly recommended improvements.</description>
     </item>
     
     <item>
       <title>Developer</title>
-      <link>http://phills.me.uk/experience/programming/churchhill-systems/</link>
+      <link>https://phills.me.uk/experience/programming/churchhill-systems/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/churchhill-systems/</guid>
+      <guid>https://phills.me.uk/experience/programming/churchhill-systems/</guid>
       <description>A summer job where I developed and maintained a few internal MS Access databases, and some improvements to their website.</description>
     </item>
     
     <item>
       <title>Assistant Youth Work Leader</title>
-      <link>http://phills.me.uk/experience/volunteering/leicestershire-youth-service/</link>
+      <link>https://phills.me.uk/experience/volunteering/leicestershire-youth-service/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/leicestershire-youth-service/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/leicestershire-youth-service/</guid>
       <description>I supported Youth Councils with both administrative tasks (taking notes, circulating papers, etc.) and supported the Youth Workers in facilitating meetings and activities. I worked closely with the young people to enable them to maintain their sections on The Jitty website by training them to use the content management tools.</description>
     </item>
     
     <item>
       <title>Senior Sessional Support Worker</title>
-      <link>http://phills.me.uk/experience/volunteering/connexions-leicester-shire/</link>
+      <link>https://phills.me.uk/experience/volunteering/connexions-leicester-shire/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/connexions-leicester-shire/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/connexions-leicester-shire/</guid>
       <description>A part-time job where I supported and led groups of young people to carry out various activities including attending meetings.</description>
     </item>
     
     <item>
       <title>Youth Democracy in Leicestershire</title>
-      <link>http://phills.me.uk/experience/volunteering/youth-democracy/</link>
+      <link>https://phills.me.uk/experience/volunteering/youth-democracy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/youth-democracy/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/youth-democracy/</guid>
       <description>From 2001 through 2011 I was heavily involved in Youth Democracy in Leicestershire through volunteering with the County Youth Council for Leicestershire (CYCLe) and Connexions Leicester Shire’s Youth Executive, which later became part-time paid work.</description>
     </item>
     
     <item>
       <title>Climbing Experience</title>
-      <link>http://phills.me.uk/experience/climbing/</link>
+      <link>https://phills.me.uk/experience/climbing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/climbing/</guid>
+      <guid>https://phills.me.uk/experience/climbing/</guid>
       <description>In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor. I am now Chief Instructor at The Climbing Station where I am continuing to develop my instructor training and client coaching skills.</description>
     </item>
     
     <item>
       <title>Volunteering &amp; Youth Experience</title>
-      <link>http://phills.me.uk/experience/volunteering/</link>
+      <link>https://phills.me.uk/experience/volunteering/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/volunteering/</guid>
+      <guid>https://phills.me.uk/experience/volunteering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming Experience</title>
-      <link>http://phills.me.uk/experience/programming/</link>
+      <link>https://phills.me.uk/experience/programming/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/programming/</guid>
+      <guid>https://phills.me.uk/experience/programming/</guid>
       <description>I have been involved in web development since arriving at university in 2003, I have worked with several programming languages and I have a working knowledge of Unix systems. I have most recently worked with Ruby on Rails, PostgreSQL and Nginx. Before that I was working with PHP (Laravel Framework) and MySQL. I prefer to plan and build back end systems, allowing others to design and craft the front end.</description>
     </item>
     
     <item>
       <title>Education</title>
-      <link>http://phills.me.uk/experience/education/</link>
+      <link>https://phills.me.uk/experience/education/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/education/</guid>
+      <guid>https://phills.me.uk/experience/education/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Loughborough University</title>
-      <link>http://phills.me.uk/experience/education/loughborough-university/</link>
+      <link>https://phills.me.uk/experience/education/loughborough-university/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/education/loughborough-university/</guid>
+      <guid>https://phills.me.uk/experience/education/loughborough-university/</guid>
       <description> Degree 2:1 Computer Science MComp  </description>
     </item>
     
     <item>
       <title>William Bradford CC, Earl Shilton</title>
-      <link>http://phills.me.uk/experience/education/william-bradford/</link>
+      <link>https://phills.me.uk/experience/education/william-bradford/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/experience/education/william-bradford/</guid>
+      <guid>https://phills.me.uk/experience/education/william-bradford/</guid>
       <description> A-Level B Computer Studies B Mathematics C Physics AS-Level C Business Studies Duke of Edinburgh&amp;rsquo;s Award Bronze and Silver GCSE 5 A&amp;rsquo;s, 2 B&amp;rsquo;s and 2 C&amp;rsquo;s; including English and Double Science  </description>
     </item>
     
     <item>
       <title>CrowdLab</title>
-      <link>http://phills.me.uk/project/crowdlab/</link>
+      <link>https://phills.me.uk/project/crowdlab/</link>
       <pubDate>Wed, 02 Nov 2016 09:11:20 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/crowdlab/</guid>
+      <guid>https://phills.me.uk/project/crowdlab/</guid>
       <description>Initially, I migrated the CrowdLab API from CodeIgniter (PHP) &amp;amp; MySQL to Ruby on Rails &amp;amp; PostgreSQL - re-engineering many of the features based on the company’s experiences of having run the system for a year.
 One of the biggest improvements was enabling content additions and amends to be made by the client services team through a web interface. In the early versions of CrowdLab, such work was done by the development team.</description>
     </item>
     
     <item>
       <title>Womble</title>
-      <link>http://phills.me.uk/project/womble/</link>
+      <link>https://phills.me.uk/project/womble/</link>
       <pubDate>Fri, 02 Nov 2012 09:04:32 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/womble/</guid>
+      <guid>https://phills.me.uk/project/womble/</guid>
       <description>Womble was a new Scouting event in 2012. The website featured some basic information about the activities and an online group booking form. In subsequent years the event content was moved to WordPress to allow the organisers to quickly make updates, while the bookings site was redeveloped using Laravel. The event also had an active Facebook and Twitter presence from the start, with design elements shared across both where possible.</description>
     </item>
     
     <item>
       <title>High Adventure</title>
-      <link>http://phills.me.uk/project/high-adventure/</link>
+      <link>https://phills.me.uk/project/high-adventure/</link>
       <pubDate>Fri, 02 Nov 2012 09:03:59 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/high-adventure/</guid>
+      <guid>https://phills.me.uk/project/high-adventure/</guid>
       <description>High Adventure is an annual mountain exercise, taking place at a different, secret location each year.
 I joined the team in 2012 to develop a website giving details of each upcoming event and holding a record of past events. I created the design, inspired by the Scout Association website, and customised it to suit the content. Finally, I populated the site before training other users to update information themselves.
 Visit high-adventure.</description>
@@ -262,29 +262,29 @@ Visit high-adventure.</description>
     
     <item>
       <title>Domigoals 2012</title>
-      <link>http://phills.me.uk/project/domigoals/</link>
+      <link>https://phills.me.uk/project/domigoals/</link>
       <pubDate>Sat, 02 Jun 2012 15:41:45 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/domigoals/</guid>
+      <guid>https://phills.me.uk/project/domigoals/</guid>
       <description>Domino&amp;rsquo;s UK wanted to give away vouchers for every goal scored during Euro 2012. The first 1000 people to tap the &amp;ldquo;Goal!&amp;rdquo; button would win a voucher – &amp;pound;5 for the first goal, &amp;pound;10 for the second by the same player, and &amp;pound;20 for a hat-trick.
 My role was to develop the server infrastructure to support the apps, including fetching the game data from a 3rd party, registering new users, serving game data to the apps, and correctly awarding vouchers for each goal.</description>
     </item>
     
     <item>
       <title>Laravel</title>
-      <link>http://phills.me.uk/project/laravel/</link>
+      <link>https://phills.me.uk/project/laravel/</link>
       <pubDate>Wed, 02 Nov 2011 09:09:23 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/laravel/</guid>
+      <guid>https://phills.me.uk/project/laravel/</guid>
       <description>A clean and classy framework for PHP 5.3 web development. I was an active member of the community where I reviewed commits, submitted patches, moderated the forums, and discussed code topics with other users.</description>
     </item>
     
     <item>
       <title>Pantheon</title>
-      <link>http://phills.me.uk/project/pantheon/</link>
+      <link>https://phills.me.uk/project/pantheon/</link>
       <pubDate>Wed, 02 Nov 2011 09:08:53 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/pantheon/</guid>
+      <guid>https://phills.me.uk/project/pantheon/</guid>
       <description>I built this app for Pantheon’s 2011 Annual Investor Meeting. The app was installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
 Features included:
  A 10 question survey A short feedback form A photo gallery downloaded from the web on launch A tabbed view of event information Two map screens with information points  The app was written in JavaScript using the Appcelerator Titanium mobile SDK.</description>
@@ -292,194 +292,194 @@ Features included:
     
     <item>
       <title>Hybrid City</title>
-      <link>http://phills.me.uk/project/hybrid-city/</link>
+      <link>https://phills.me.uk/project/hybrid-city/</link>
       <pubDate>Tue, 02 Nov 2010 09:09:42 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/hybrid-city/</guid>
+      <guid>https://phills.me.uk/project/hybrid-city/</guid>
       <description>In 2010 I attended a workshop and conference in Athens to test the Empedia platform with a group of creative academics. During my visit, I worked with some non-technical people to build a guide and verify the platform with as many people as possible.</description>
     </item>
     
     <item>
       <title>Pineapster Tickets</title>
-      <link>http://phills.me.uk/project/pineapster-tickets/</link>
+      <link>https://phills.me.uk/project/pineapster-tickets/</link>
       <pubDate>Tue, 02 Nov 2010 09:05:02 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/pineapster-tickets/</guid>
+      <guid>https://phills.me.uk/project/pineapster-tickets/</guid>
       <description>An event aggregator that imports from various ticket sources, including Ticketline and WeGotTickets, then it removes any duplicates. Every morning it tweets the day’s events to many city-based Twitter accounts.</description>
     </item>
     
     <item>
       <title>My Charnwood</title>
-      <link>http://phills.me.uk/project/my-charnwood/</link>
+      <link>https://phills.me.uk/project/my-charnwood/</link>
       <pubDate>Mon, 02 Nov 2009 08:58:55 +0000</pubDate>
       
-      <guid>http://phills.me.uk/project/my-charnwood/</guid>
+      <guid>https://phills.me.uk/project/my-charnwood/</guid>
       <description>A site for residents of Charnwood to find out about their house and local area. Data is mined from over ten different sources and presented to the user in a concise manner. Property-based information was presented in a collection of overview widgets, and a map was available to explore locative information across the borough. I refined My Charnwood over some iterations &amp;mdash; adding and improving functionality at each step. My Charnwood was so successful that we continued to build &amp;ldquo;My&amp;rdquo; services for two more councils.</description>
     </item>
     
     <item>
       <title>hTodo User Script</title>
-      <link>http://phills.me.uk/snip/htodo-user-script/</link>
+      <link>https://phills.me.uk/snip/htodo-user-script/</link>
       <pubDate>Fri, 29 May 2009 13:05:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/htodo-user-script/</guid>
+      <guid>https://phills.me.uk/snip/htodo-user-script/</guid>
       <description>/** * Adds hTodo support to the operator toolbar * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @version 1.1, 2010-01-11 * @see http://microformats.org/wiki/htodo * @see http://www.kaply.com/weblog/operator/ */ function hTodo(node) { if (node) { Microformats.parser.newMicroformat(this, node, &amp;#39;hTodo&amp;#39;); } } hTodo.prototype.toString = function() { return this.summary; } var hTodo_definition = { mfVersion: 0.8, description: &amp;#39;Tasks&amp;#39;, mfObject: hTodo, className: &amp;#39;vtodo&amp;#39;, required: [&amp;#39;summary&amp;#39;], properties: { &amp;#39;attach&amp;#39;: { plural: true, datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;category&amp;#39;: { plural: true, datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;tag&amp;#39;, microformat_property: &amp;#39;tag&amp;#39; }, &amp;#39;class&amp;#39;: { values: [&amp;#39;public&amp;#39;, &amp;#39;private&amp;#39;, &amp;#39;confidential&amp;#39;] }, &amp;#39;completed&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;description&amp;#39;: { datatype: &amp;#39;HTML&amp;#39; }, &amp;#39;dtstart&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;dtstamp&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;due&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;duration&amp;#39;: { }, &amp;#39;geo&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;geo&amp;#39; }, &amp;#39;last-modified&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;location&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;organizer&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;percent-completed&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 100 */ }, &amp;#39;priority&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 9 */ }, &amp;#39;summary&amp;#39;: {}, &amp;#39;status&amp;#39;: { values: [&amp;#39;active&amp;#39;, &amp;#39;in-process&amp;#39;, &amp;#39;completed&amp;#39;, &amp;#39;cancelled&amp;#39;] }, &amp;#39;uid&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;url&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, /* Borrow this from the hCalendar_definition */ &amp;#39;rrule&amp;#39;: hCalendar_definition.</description>
     </item>
     
     <item>
       <title>iSync Reactor</title>
-      <link>http://phills.me.uk/snip/isync-reactor/</link>
+      <link>https://phills.me.uk/snip/isync-reactor/</link>
       <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/isync-reactor/</guid>
+      <guid>https://phills.me.uk/snip/isync-reactor/</guid>
       <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
     </item>
     
     <item>
       <title>cURL Error 26: Failed to open/read local data from file/application</title>
-      <link>http://phills.me.uk/post/curl_error_26/</link>
+      <link>https://phills.me.uk/post/curl_error_26/</link>
       <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/curl_error_26/</guid>
+      <guid>https://phills.me.uk/post/curl_error_26/</guid>
       <description>Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems. Most were simple quirks of site5 fixed by getting the permissions right. The thing that kept bugging me was Phlickr, and more specifically its use of cURL.
 Phlickr is an open source PHP5 based API kit used to access the Flickr API. It uses the REST method which requires that some actions are POSTs. The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).</description>
     </item>
     
     <item>
       <title>SSH Avahi Service</title>
-      <link>http://phills.me.uk/snip/ssh-avahi-service/</link>
+      <link>https://phills.me.uk/snip/ssh-avahi-service/</link>
       <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/ssh-avahi-service/</guid>
+      <guid>https://phills.me.uk/snip/ssh-avahi-service/</guid>
       <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
     </item>
     
     <item>
       <title>JS Page Navigation</title>
-      <link>http://phills.me.uk/snip/js-page-navigation/</link>
+      <link>https://phills.me.uk/snip/js-page-navigation/</link>
       <pubDate>Thu, 22 May 2008 00:28:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/js-page-navigation/</guid>
+      <guid>https://phills.me.uk/snip/js-page-navigation/</guid>
       <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); } </description>
     </item>
     
     <item>
       <title>New Item Alert</title>
-      <link>http://phills.me.uk/snip/new-item-alert/</link>
+      <link>https://phills.me.uk/snip/new-item-alert/</link>
       <pubDate>Wed, 21 May 2008 22:13:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/new-item-alert/</guid>
+      <guid>https://phills.me.uk/snip/new-item-alert/</guid>
       <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
     </item>
     
     <item>
       <title>Related Content</title>
-      <link>http://phills.me.uk/snip/related-content/</link>
+      <link>https://phills.me.uk/snip/related-content/</link>
       <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/related-content/</guid>
+      <guid>https://phills.me.uk/snip/related-content/</guid>
       <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
     </item>
     
     <item>
       <title>How-To: Customise your SSH Config</title>
-      <link>http://phills.me.uk/post/how_to_customise_your_ssh_config/</link>
+      <link>https://phills.me.uk/post/how_to_customise_your_ssh_config/</link>
       <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/how_to_customise_your_ssh_config/</guid>
+      <guid>https://phills.me.uk/post/how_to_customise_your_ssh_config/</guid>
       <description>I am someone who feels more comfortable using the command-line than many GUI set-ups and who is often SSH-ing between servers; many of these servers have lengthy host names and require various different usernames; luckily the SSH developers thought ahead and came up with a way of pre-setting most options per-host.
 Here&amp;rsquo;s an example that will configure &amp;ldquo;server1.example.com&amp;rdquo; with the user &amp;ldquo;example&amp;rdquo; and the port &amp;ldquo;222&amp;rdquo;. I&amp;rsquo;ll set this all up as &amp;ldquo;ex1&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>How-To: Stop iPhoto From Opening Automatically</title>
-      <link>http://phills.me.uk/post/how_to_stop_iphoto_from_opening_automatically/</link>
+      <link>https://phills.me.uk/post/how_to_stop_iphoto_from_opening_automatically/</link>
       <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/how_to_stop_iphoto_from_opening_automatically/</guid>
+      <guid>https://phills.me.uk/post/how_to_stop_iphoto_from_opening_automatically/</guid>
       <description>I&amp;rsquo;ve stopped using iPhoto recently in favour of Flickr but every time I plug in a camera, or something that looks like it could be a camera, iPhoto opens. A quick hunt around the Internet and I found the solution&amp;hellip;
  Open &amp;ldquo;Image Capture&amp;rdquo; In &amp;ldquo;Preferences&amp;rdquo;, choose &amp;ldquo;No application&amp;rdquo; for the option &amp;ldquo;When a camera is connected, open&amp;rdquo; That&amp;rsquo;s it! You can quit Image Capture now.  How easy was that?</description>
     </item>
     
     <item>
       <title>refit.conf</title>
-      <link>http://phills.me.uk/snip/refitconf/</link>
+      <link>https://phills.me.uk/snip/refitconf/</link>
       <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/refitconf/</guid>
+      <guid>https://phills.me.uk/snip/refitconf/</guid>
       <description>timeout 10 hidebadges internal hideui banner shell tools label </description>
     </item>
     
     <item>
       <title>PHP: Late Static Bindings</title>
-      <link>http://phills.me.uk/post/php_late_static_bindings/</link>
+      <link>https://phills.me.uk/post/php_late_static_bindings/</link>
       <pubDate>Wed, 23 Jan 2008 12:09:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/php_late_static_bindings/</guid>
+      <guid>https://phills.me.uk/post/php_late_static_bindings/</guid>
       <description>New to PHP 5.3.0 will be late static bindings. Currently you can use the self keyword in PHP to access static methods of the current class, the new static keyword allows you to access static methods through the inheritance tree. This example from the PHP website explains best&amp;hellip;
 Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } public static function test() { static::who(); // Here comes Late Static Bindings  } } class B extends A { public static function who() { echo __CLASS__; } } A::test(); B::test(); ?</description>
     </item>
     
     <item>
       <title>PHP Id</title>
-      <link>http://phills.me.uk/snip/php-id/</link>
+      <link>https://phills.me.uk/snip/php-id/</link>
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/php-id/</guid>
+      <guid>https://phills.me.uk/snip/php-id/</guid>
       <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
     </item>
     
     <item>
       <title>MP3 Search</title>
-      <link>http://phills.me.uk/snip/mp3-search/</link>
+      <link>https://phills.me.uk/snip/mp3-search/</link>
       <pubDate>Fri, 07 Dec 2007 23:35:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/mp3-search/</guid>
+      <guid>https://phills.me.uk/snip/mp3-search/</guid>
       <description>if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
     </item>
     
     <item>
       <title>Factor Test (by lavalamp)</title>
-      <link>http://phills.me.uk/snip/factor-test/</link>
+      <link>https://phills.me.uk/snip/factor-test/</link>
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/factor-test/</guid>
+      <guid>https://phills.me.uk/snip/factor-test/</guid>
       <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>
       <title>New Terminal</title>
-      <link>http://phills.me.uk/snip/new-terminal/</link>
+      <link>https://phills.me.uk/snip/new-terminal/</link>
       <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/new-terminal/</guid>
+      <guid>https://phills.me.uk/snip/new-terminal/</guid>
       <description>tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
     </item>
     
     <item>
       <title>Dynamic Cacher</title>
-      <link>http://phills.me.uk/snip/dynamic-cacher/</link>
+      <link>https://phills.me.uk/snip/dynamic-cacher/</link>
       <pubDate>Tue, 02 Oct 2007 13:38:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/dynamic-cacher/</guid>
+      <guid>https://phills.me.uk/snip/dynamic-cacher/</guid>
       <description>&amp;lt;?php set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.php&amp;#39;) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } else if (is_dir($path)) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } // Make dir for file if (!is_dir(dirname($path))) mkdir(dirname($path), 0755, true); // Do the fetch $date = (file_exists($path) &amp;amp;&amp;amp; file_exists($nfopath)) ?</description>
     </item>
     
     <item>
       <title>tvrenamer.rc</title>
-      <link>http://phills.me.uk/snip/tvrenamerrc/</link>
+      <link>https://phills.me.uk/snip/tvrenamerrc/</link>
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/tvrenamerrc/</guid>
+      <guid>https://phills.me.uk/snip/tvrenamerrc/</guid>
       <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
     </item>
     
     <item>
       <title>CSS for Poker Players</title>
-      <link>http://phills.me.uk/post/css_for_poker_players/</link>
+      <link>https://phills.me.uk/post/css_for_poker_players/</link>
       <pubDate>Sat, 14 Apr 2007 13:27:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/post/css_for_poker_players/</guid>
+      <guid>https://phills.me.uk/post/css_for_poker_players/</guid>
       <description>I&amp;rsquo;ve just read an excellent explanation of CSS Specificity using a poker analogy and it just makes it so clear to hear it like that. The author covers everything in terms of the basic hands available in a game of poker. This can help explain some of the many mysteries of CSS!
 Carl wrote:
  Some folks getting on board with CSS tend to get stuck on CSS specificity. The descriptions of which rules override other rules tend to make more sense to programmers than designers, since programmers are used to the concepts of inheritance and overriding properties.</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on Phill Sparks</title>
-    <link>http://phills.me.uk/tags/bash/</link>
+    <link>https://phills.me.uk/tags/bash/</link>
     <description>Recent content in Bash on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Wed, 19 Dec 2007 15:29:00 +0000</lastBuildDate>
     
-	<atom:link href="http://phills.me.uk/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://phills.me.uk/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>PHP Id</title>
-      <link>http://phills.me.uk/snip/php-id/</link>
+      <link>https://phills.me.uk/snip/php-id/</link>
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
-      <guid>http://phills.me.uk/snip/php-id/</guid>
+      <guid>https://phills.me.uk/snip/php-id/</guid>
       <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
     </item>
     
