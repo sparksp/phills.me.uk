@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"os"
 	"path"
+	"net/url"
 
 	"golang.org/x/net/html"
 )
@@ -14,7 +15,15 @@ type Redirect struct {
 }
 
 func (r Redirect) String() string {
-	return fmt.Sprintf("RewriteRule ^%s?$ %s [redirect=permanent,last]", r.from, r.to)
+	return fmt.Sprintf("/%s  %s", r.from, r.to)
+}
+
+func stripDomain(href string) string {
+	u, err := url.Parse(href)
+	if err != nil {
+		return ""
+	}
+	return u.Path
 }
 
 func getCanonical(t html.Token) (href string, ok bool) {
@@ -27,7 +36,7 @@ func getCanonical(t html.Token) (href string, ok bool) {
 				return "", false
 			}
 		case "href":
-			href = a.Val
+			href = stripDomain(a.Val)
 		}
 	}
 	return
