@@ -1,0 +1,48 @@
+/about  /   301
+
+/blog/:year/:month/:date/:slug /post/:slug/  301
+/blog/tag/* /tags/:splat/    301
+/blog   /post/   301
+
+/experience/climbing/beaumanor-hall /experience/climbing/freelance-and-casual/ 301
+/experience/climbing/the-climbing-station /experience/climbing/freelance-and-casual/ 301
+/experience/climbing/the-tower-climbing-centre /experience/climbing/freelance-and-casual/ 301
+
+/projects   /project/   301
+
+/pb/* /snip/:splat/ 301
+/snips/*    /snip/:splat/    301
+
+/snip/1* /snip/tvrenamerrc/ 301
+/snip/01* /snip/tvrenamerrc/ 301
+/snip/2* /snip/dynamic-cacher/ 301
+/snip/02* /snip/dynamic-cacher/ 301
+/snip/3* /snip/new-terminal/ 301
+/snip/03* /snip/new-terminal/ 301
+/snip/4* /snip/factor-test/ 301
+/snip/04* /snip/factor-test/ 301
+/snip/5* /snip/mp3-search/ 301
+/snip/05* /snip/mp3-search/ 301
+/snip/6* /snip/php-id/ 301
+/snip/06* /snip/php-id/ 301
+/snip/7* /snip/refitconf/ 301
+/snip/07* /snip/refitconf/ 301
+/snip/8* /snip/related-content/ 301
+/snip/08* /snip/related-content/ 301
+/snip/9* /snip/new-item-alert/ 301
+/snip/09* /snip/new-item-alert/ 301
+/snip/10* /snip/js-page-navigation/ 301
+/snip/11* /snip/ssh-avahi-service/ 301
+/snip/12* /snip/isync-reactor/ 301
+/snip/13* /snip/htodo-user-script/ 301
+
+# Gone
+/bookmarks  /404.html   410
+/changelog  /404.html   410
+/comments   /404.html   410
+/directory  /404.html   410
+/fortune    /404.html   410
+/login      /404.html   410
+/mods       /404.html   410
+/register   /404.html   410
+/users      /404.html   410
