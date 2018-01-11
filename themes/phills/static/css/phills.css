@@ -48,7 +48,10 @@ a:hover, a:focus {
 }
 .header .pure-menu {
   margin-bottom: -1px;
-  margin-left: 1em;
+  padding: 0;
+}
+.header .pure-menu-list {
+  margin: 0 1em;
 }
 .header .pure-menu-item {
   border: 1px solid transparent;
