@@ -246,6 +246,11 @@
   </url>
   
   <url>
+    <loc>https://phills.me.uk/post/</loc>
+    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://phills.me.uk/categories/</loc>
     <priority>0</priority>
   </url>
@@ -316,12 +321,6 @@
   
   <url>
     <loc>https://phills.me.uk/tags/php/</loc>
-    <lastmod>2008-08-26T12:55:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://phills.me.uk/post/</loc>
     <lastmod>2008-08-26T12:55:00+00:00</lastmod>
     <priority>0</priority>
   </url>
