@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Curl on Phill Sparks</title>
+    <title>cURL on Phill Sparks</title>
     <link>https://phills.me.uk/tags/curl/</link>
-    <description>Recent content in Curl on Phill Sparks</description>
+    <description>Recent content in cURL on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
     <lastBuildDate>Tue, 26 Aug 2008 12:55:00 +0000</lastBuildDate>

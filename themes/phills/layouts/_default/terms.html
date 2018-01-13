@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    <ul class="panel-body">
+      {{- range .Data.Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+      {{ end }}
+    </ul>
+  </article>
+
+</div></div>
+{{ end }}

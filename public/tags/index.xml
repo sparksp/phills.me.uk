@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>Applescript</title>
+      <title>AppleScript</title>
       <link>https://phills.me.uk/tags/applescript/</link>
       <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
       
@@ -26,6 +26,15 @@
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>https://phills.me.uk/tags/css/</link>
+      <pubDate>Sat, 14 Apr 2007 13:27:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/css/</guid>
       <description></description>
     </item>
     
@@ -48,24 +57,6 @@
     </item>
     
     <item>
-      <title>Css</title>
-      <link>https://phills.me.uk/tags/css/</link>
-      <pubDate>Sat, 14 Apr 2007 13:27:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/css/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Curl</title>
-      <link>https://phills.me.uk/tags/curl/</link>
-      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/curl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Error</title>
       <link>https://phills.me.uk/tags/error/</link>
       <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
@@ -75,7 +66,7 @@
     </item>
     
     <item>
-      <title>Howto</title>
+      <title>How-To</title>
       <link>https://phills.me.uk/tags/howto/</link>
       <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
       
@@ -84,16 +75,7 @@
     </item>
     
     <item>
-      <title>Iphoto</title>
-      <link>https://phills.me.uk/tags/iphoto/</link>
-      <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/iphoto/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Javascript</title>
+      <title>JavaScript</title>
       <link>https://phills.me.uk/tags/javascript/</link>
       <pubDate>Fri, 29 May 2009 13:05:00 +0000</pubDate>
       
@@ -102,7 +84,7 @@
     </item>
     
     <item>
-      <title>Osx</title>
+      <title>OS X</title>
       <link>https://phills.me.uk/tags/osx/</link>
       <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
       
@@ -111,7 +93,7 @@
     </item>
     
     <item>
-      <title>Php</title>
+      <title>PHP</title>
       <link>https://phills.me.uk/tags/php/</link>
       <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
       
@@ -129,6 +111,24 @@
     </item>
     
     <item>
+      <title>SQL</title>
+      <link>https://phills.me.uk/tags/sql/</link>
+      <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/sql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSH</title>
+      <link>https://phills.me.uk/tags/ssh/</link>
+      <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Software</title>
       <link>https://phills.me.uk/tags/software/</link>
       <pubDate>Wed, 23 Jan 2008 12:09:00 +0000</pubDate>
@@ -138,25 +138,7 @@
     </item>
     
     <item>
-      <title>Sql</title>
-      <link>https://phills.me.uk/tags/sql/</link>
-      <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ssh</title>
-      <link>https://phills.me.uk/tags/ssh/</link>
-      <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tvrenamer.rc</title>
+      <title>TVRenamer.rc</title>
       <link>https://phills.me.uk/tags/tvrenamer.rc/</link>
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
@@ -183,11 +165,29 @@
     </item>
     
     <item>
-      <title>Xml</title>
+      <title>XML</title>
       <link>https://phills.me.uk/tags/xml/</link>
       <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/xml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cURL</title>
+      <link>https://phills.me.uk/tags/curl/</link>
+      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/curl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPhoto</title>
+      <link>https://phills.me.uk/tags/iphoto/</link>
+      <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/iphoto/</guid>
       <description></description>
     </item>
     
