@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Params.Author }}" />
     <meta name="dcterms.rights" content="Copyright (c) {{ .Site.Params.Author }}. All rights reserved.">
-    {{- with .Site.Params.Description }}
+    {{- with .Description }}
     <meta name="description" content="{{ . }}">
     {{- end }}
     <title>{{ block "title" . }}
