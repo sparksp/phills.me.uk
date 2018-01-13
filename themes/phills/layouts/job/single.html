@@ -1,4 +1,9 @@
-{{ partial "header" . }}
+{{ define "title" }}
+  {{- .Title -}}
+  {{- with .Params.company }} at {{ .name }}
+  {{- end }} - {{ .Site.Title -}}
+{{ end }}
+{{ define "main" }}
 <div class="content pure-u-1"><div class="content-inner">
 
   <article>
@@ -7,4 +12,4 @@
   </article>
 
 </div></div>
-{{ partial "footer" . }}
+{{ end }}

@@ -1,7 +1,7 @@
-{{ partial "header" . }}
+{{ define "main" }}
 <div class="content pure-u-1"><div class="content-inner">
 
   {{- .Render "item" -}}
 
 </div></div>
-{{ partial "footer" . }}
+{{ end }}
