@@ -23,6 +23,18 @@ a:hover, a:focus {
   padding-top: 1px;
 }
 
+.sidebar-inner, article > h2 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-top: 8px;
+}
+article > h2 {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
 .header-inner, .content-inner, .footer-inner, .sidebar-inner {
   margin-left: 1em;
 }
@@ -105,16 +117,16 @@ a:hover, a:focus {
 #layout {
   line-height: 1.2;
 }
-h2 {
-  margin-top: 2em;
+h2, .sidebar-inner {
+  margin-top: 24px; /* 1.5em */
   margin-bottom: 0;
 }
 h3 {
-  margin-top: 1em;
+  margin-top: 16px; /* 1em */
   margin-bottom: 0;
 }
 p, figure, .highlight {
-  margin-top: .5em;
+  margin-top: 8px; /* .5em */
   margin-bottom: 0;
 }
 
