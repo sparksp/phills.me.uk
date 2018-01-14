@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Snips on Phill Sparks</title>
+    <link>https://phills.me.uk/snip/</link>
+    <description>Recent content in Snips on Phill Sparks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Fri, 29 May 2009 13:05:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://phills.me.uk/snip/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>hTodo User Script</title>
+      <link>https://phills.me.uk/snip/htodo-user-script/</link>
+      <pubDate>Fri, 29 May 2009 13:05:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/htodo-user-script/</guid>
+      <description>/** * Adds hTodo support to the operator toolbar * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @version 1.1, 2010-01-11 * @see http://microformats.org/wiki/htodo * @see http://www.kaply.com/weblog/operator/ */ function hTodo(node) { if (node) { Microformats.parser.newMicroformat(this, node, &amp;#39;hTodo&amp;#39;); } } hTodo.prototype.toString = function() { return this.summary; } var hTodo_definition = { mfVersion: 0.8, description: &amp;#39;Tasks&amp;#39;, mfObject: hTodo, className: &amp;#39;vtodo&amp;#39;, required: [&amp;#39;summary&amp;#39;], properties: { &amp;#39;attach&amp;#39;: { plural: true, datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;category&amp;#39;: { plural: true, datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;tag&amp;#39;, microformat_property: &amp;#39;tag&amp;#39; }, &amp;#39;class&amp;#39;: { values: [&amp;#39;public&amp;#39;, &amp;#39;private&amp;#39;, &amp;#39;confidential&amp;#39;] }, &amp;#39;completed&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;description&amp;#39;: { datatype: &amp;#39;HTML&amp;#39; }, &amp;#39;dtstart&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;dtstamp&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;due&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;duration&amp;#39;: { }, &amp;#39;geo&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;geo&amp;#39; }, &amp;#39;last-modified&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;location&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;organizer&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;percent-completed&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 100 */ }, &amp;#39;priority&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 9 */ }, &amp;#39;summary&amp;#39;: {}, &amp;#39;status&amp;#39;: { values: [&amp;#39;active&amp;#39;, &amp;#39;in-process&amp;#39;, &amp;#39;completed&amp;#39;, &amp;#39;cancelled&amp;#39;] }, &amp;#39;uid&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;url&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, /* Borrow this from the hCalendar_definition */ &amp;#39;rrule&amp;#39;: hCalendar_definition.</description>
+    </item>
+    
+    <item>
+      <title>iSync Reactor</title>
+      <link>https://phills.me.uk/snip/isync-reactor/</link>
+      <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/isync-reactor/</guid>
+      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+    </item>
+    
+    <item>
+      <title>SSH Avahi Service</title>
+      <link>https://phills.me.uk/snip/ssh-avahi-service/</link>
+      <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/ssh-avahi-service/</guid>
+      <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>JS Page Navigation</title>
+      <link>https://phills.me.uk/snip/js-page-navigation/</link>
+      <pubDate>Thu, 22 May 2008 00:28:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/js-page-navigation/</guid>
+      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); } </description>
+    </item>
+    
+    <item>
+      <title>New Item Alert</title>
+      <link>https://phills.me.uk/snip/new-item-alert/</link>
+      <pubDate>Wed, 21 May 2008 22:13:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/new-item-alert/</guid>
+      <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+    </item>
+    
+    <item>
+      <title>Related Content</title>
+      <link>https://phills.me.uk/snip/related-content/</link>
+      <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/related-content/</guid>
+      <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
+    </item>
+    
+    <item>
+      <title>refit.conf</title>
+      <link>https://phills.me.uk/snip/refitconf/</link>
+      <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/refitconf/</guid>
+      <description>timeout 10 hidebadges internal hideui banner shell tools label </description>
+    </item>
+    
+    <item>
+      <title>PHP Id</title>
+      <link>https://phills.me.uk/snip/php-id/</link>
+      <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/php-id/</guid>
+      <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
+    </item>
+    
+    <item>
+      <title>MP3 Search</title>
+      <link>https://phills.me.uk/snip/mp3-search/</link>
+      <pubDate>Fri, 07 Dec 2007 23:35:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/mp3-search/</guid>
+      <description>if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
+    </item>
+    
+    <item>
+      <title>Factor Test (by lavalamp)</title>
+      <link>https://phills.me.uk/snip/factor-test/</link>
+      <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/factor-test/</guid>
+      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
+    </item>
+    
+    <item>
+      <title>New Terminal</title>
+      <link>https://phills.me.uk/snip/new-terminal/</link>
+      <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/new-terminal/</guid>
+      <description>tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
+    </item>
+    
+    <item>
+      <title>Dynamic Cacher</title>
+      <link>https://phills.me.uk/snip/dynamic-cacher/</link>
+      <pubDate>Tue, 02 Oct 2007 13:38:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/dynamic-cacher/</guid>
+      <description>&amp;lt;?php set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.php&amp;#39;) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } else if (is_dir($path)) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } // Make dir for file if (!is_dir(dirname($path))) mkdir(dirname($path), 0755, true); // Do the fetch $date = (file_exists($path) &amp;amp;&amp;amp; file_exists($nfopath)) ?</description>
+    </item>
+    
+    <item>
+      <title>tvrenamer.rc</title>
+      <link>https://phills.me.uk/snip/tvrenamerrc/</link>
+      <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/tvrenamerrc/</guid>
+      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code on Phill Sparks</title>
+    <link>https://phills.me.uk/tags/code/</link>
+    <description>Recent content in Code on Phill Sparks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Tue, 26 Aug 2008 12:55:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://phills.me.uk/tags/code/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>cURL Error 26: Failed to open/read local data from file/application</title>
+      <link>https://phills.me.uk/post/curl_error_26/</link>
+      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/post/curl_error_26/</guid>
+      <description>Last night I started working on Lilly&amp;rsquo;s 365 and very quickly ran into a few problems. Most were simple quirks of site5 fixed by getting the permissions right. The thing that kept bugging me was Phlickr, and more specifically its use of cURL.
+Phlickr is an open source PHP5 based API kit used to access the Flickr API. It uses the REST method which requires that some actions are POSTs. The cURL functions in PHP can happily handle this but for some reason they were failing every time&amp;hellip; &amp;ldquo;Failed to open/read local data from file/application&amp;rdquo; (Error 26).</description>
+    </item>
+    
+  </channel>
+</rss>

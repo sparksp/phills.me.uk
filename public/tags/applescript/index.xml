@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AppleScript on Phill Sparks</title>
+    <link>https://phills.me.uk/tags/applescript/</link>
+    <description>Recent content in AppleScript on Phill Sparks</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-GB</language>
+    <lastBuildDate>Thu, 02 Oct 2008 19:56:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://phills.me.uk/tags/applescript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>iSync Reactor</title>
+      <link>https://phills.me.uk/snip/isync-reactor/</link>
+      <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/isync-reactor/</guid>
+      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+    </item>
+    
+    <item>
+      <title>New Item Alert</title>
+      <link>https://phills.me.uk/snip/new-item-alert/</link>
+      <pubDate>Wed, 21 May 2008 22:13:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/new-item-alert/</guid>
+      <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+    </item>
+    
+    <item>
+      <title>New Terminal</title>
+      <link>https://phills.me.uk/snip/new-terminal/</link>
+      <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/new-terminal/</guid>
+      <description>tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
+    </item>
+    
+  </channel>
+</rss>

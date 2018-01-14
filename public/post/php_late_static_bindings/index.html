@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-config" content="none"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Phill Sparks" />
+    <meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
+    <title>PHP: Late Static Bindings - Phill Sparks</title>
+    <meta name="generator" content="Hugo 0.32.4" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/phills.css" media="screen">
+    <link rel="self" href="https://phills.me.uk/post/php_late_static_bindings/" title="PHP: Late Static Bindings">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="site-title"><a href="/">Phill S<em>parks</em></a></h1>
+        </div>
+        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/">About</a></li>
+            <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link" href="/post/">Blog</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/project/">Projects</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/snip/">Snips</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/sparksp/">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="layout">
+      <div class="pure-g">
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h2>PHP: Late Static Bindings</h2>
+    <p class="post-date">Wednesday, 23 January 2008</p>
+    
+
+<p>New to PHP 5.3.0 will be <strong>late static bindings</strong>.  Currently you can use the <code>self</code> keyword in PHP to access static methods of the current class, the new <code>static</code> keyword allows you to access static methods through the inheritance tree.  This example from the PHP website explains best&hellip;</p>
+
+<h3 id="code">Code</h3>
+
+<div class="highlight"><pre class="chroma"><code class="language-php" data-lang="php"><span class="cp">&lt;?php</span>
+<span class="k">class</span> <span class="nc">A</span> <span class="p">{</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="o"></span><span class="nf">who</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">echo</span> <span class="no">__CLASS__</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="o"></span><span class="nf">test</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">static</span><span class="o">::</span><span class="na">who</span><span class="p">();</span> <span class="c1">// Here comes Late Static Bindings     
+</span><span class="c1"></span>    <span class="p">}</span>  
+<span class="p">}</span>  
+<span class="k">class</span> <span class="nc">B</span> <span class="k">extends</span> <span class="nx">A</span> <span class="p">{</span>      
+    <span class="k">public</span> <span class="k">static</span> <span class="k">function</span> <span class="o"></span><span class="nf">who</span><span class="p">()</span> <span class="p">{</span>
+         <span class="k">echo</span> <span class="no">__CLASS__</span><span class="p">;</span>
+    <span class="p">}</span>  
+<span class="p">}</span>   
+<span class="nx">A</span><span class="o">::</span><span class="na">test</span><span class="p">();</span>
+<span class="nx">B</span><span class="o">::</span><span class="na">test</span><span class="p">();</span>
+<span class="cp">?&gt;</span></code></pre></div>
+
+<h3 id="output">Output</h3>
+
+<blockquote>
+<p>AB</p>
+</blockquote>
+
+<p>There are more examples in the PHP manual about <a href="http://uk3.php.net/manual/en/language.oop5.late-static-bindings.php">Late Static Bindings</a>.</p>
+
+  </article>
+
+</div></div>
+
+      </div>
+      <div class="footer"><div class="footer-inner">
+        <p class="footer-menu">
+          <span class="footer-menu-item">
+            &copy; <a href="https://phills.me.uk/">Phill Sparks</a>.
+            Built with <a href="https://gohugo.io">Hugo</a>.
+            Hosted on <a href="https://www.netlify.com/">Netlify</a>.
+          </span>
+          <span class="footer-menu-item footer-menu-right">
+            <a href="#">Back to top</a>
+          </span>
+        </p>
+      </div></div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-2556883-4', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

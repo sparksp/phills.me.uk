@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="msapplication-config" content="none"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Phill Sparks" />
+    <meta name="dcterms.rights" content="Copyright (c) Phill Sparks. All rights reserved.">
+    <title>PHP Id - Phill Sparks</title>
+    <meta name="generator" content="Hugo 0.32.4" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/phills.css" media="screen">
+    <link rel="self" href="https://phills.me.uk/snip/php-id/" title="PHP Id">
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="site-title"><a href="/">Phill S<em>parks</em></a></h1>
+        </div>
+        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+          <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/">About</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/post/">Blog</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="/project/">Projects</a></li>
+            <li class="pure-menu-item pure-menu-selected"><a class="pure-menu-link" href="/snip/">Snips</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="https://github.com/sparksp/">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="layout">
+      <div class="pure-g">
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h2>PHP Id</h2>
+    <p class="post-date">Wednesday, 19 December 2007</p>
+    <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
+</span><span class="cp"></span>
+<span class="k">case</span> <span class="nv">$#</span> in
+    <span class="m">1</span><span class="o">)</span><span class="p">;;</span>
+    *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> file&#34;</span><span class="p">;</span>exit<span class="p">;;</span>
+<span class="k">esac</span><span class="p">;</span>
+
+<span class="c1"># File exists?
+</span><span class="c1"></span><span class="k">if</span> <span class="o">[[</span> -e <span class="nv">$1</span> <span class="o">]]</span><span class="p">;</span> <span class="k">then</span>
+
+    <span class="c1"># File already has $Id$ in it?
+</span><span class="c1"></span>    <span class="k">if</span> grep -q <span class="s1">&#39;\$Id.*\$$&#39;</span> <span class="nv">$1</span> <span class="p">;</span> <span class="k">then</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2"> [skipped]&#34;</span>
+    <span class="k">else</span>
+
+        <span class="c1"># After the first &lt;?php (that does not have a ?&gt; on the same line) add the $Id$ comment
+</span><span class="c1"></span>        sed <span class="s1">&#39;
+</span><span class="s1">        /&lt;?php/ {
+</span><span class="s1">            /?&gt;/ !{
+</span><span class="s1">                x
+</span><span class="s1">                /^$/ {
+</span><span class="s1">                    g
+</span><span class="s1">                    a \
+</span><span class="s1">/*\
+</span><span class="s1"> * $Id$\
+</span><span class="s1"> */
+</span><span class="s1">                    h
+</span><span class="s1">                }
+</span><span class="s1">                g
+</span><span class="s1">            }
+</span><span class="s1">        }
+</span><span class="s1">        &#39;</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span> &gt;/tmp/sk
+        mv /tmp/sk <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+        <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2">&#34;</span>
+
+    <span class="k">fi</span>
+
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&#34;</span><span class="nv">$1</span><span class="s2"> [missing]&#34;</span>
+<span class="k">fi</span></code></pre></div>
+
+  </article>
+
+</div></div>
+
+      </div>
+      <div class="footer"><div class="footer-inner">
+        <p class="footer-menu">
+          <span class="footer-menu-item">
+            &copy; <a href="https://phills.me.uk/">Phill Sparks</a>.
+            Built with <a href="https://gohugo.io">Hugo</a>.
+            Hosted on <a href="https://www.netlify.com/">Netlify</a>.
+          </span>
+          <span class="footer-menu-item footer-menu-right">
+            <a href="#">Back to top</a>
+          </span>
+        </p>
+      </div></div>
+    </div>
+    
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-2556883-4', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

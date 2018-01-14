@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/monkeyphill
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://phills.me.uk
+  * I am monkeyphill (https://keybase.io/monkeyphill) on keybase.
+  * I have a public key with fingerprint E1F6 9C04 2276 70D9 B93A  128E 769F DBA7 278B 84A9
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01014582c58547dd4be7e4e8083da15a14cff716244c06b4662b1cac1d3b06936ddb0a",
+            "fingerprint": "e1f69c04227670d9b93a128e769fdba7278b84a9",
+            "host": "keybase.io",
+            "key_id": "769fdba7278b84a9",
+            "kid": "01014582c58547dd4be7e4e8083da15a14cff716244c06b4662b1cac1d3b06936ddb0a",
+            "uid": "82b278e8d792d6367625b262b9263319",
+            "username": "monkeyphill"
+        },
+        "revoke": {
+            "sig_ids": [
+                "486a506c45c00df3ede26db7f14ec953689a80e7b524bf010d8e425a61da8c5c0f"
+            ]
+        },
+        "service": {
+            "hostname": "phills.me.uk",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1478254384,
+    "expire_in": 157680000,
+    "prev": "77e12ae36ec5cefb3c629cad60919bbdb8e2e304e5e9cb30343460b0b91ef092",
+    "seqno": 6,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMJyAnicrZJPbBVFHMdfrUhsUm0UosYm4rQcjLXOzs7Ozr5oQY+gryoGTSgs8+e3
+r5u2u8/dfQ9JqX8I1RiFxHqwph5MbBUTTDE2CgkQKtVoK5pUidGAqIkSETEEqAcI
+dfYFbx7dy2Znv38+85uZaW4sNDX8sO7k2L6Rl1sa5qYvVgtPtvp4EMlYb0XFQdQH
+9Rf0a0gzvy/UqIiwhS3qcKIc7lBXayrBBQocc1sLyxEWVUHgWoxQqjCTlDEiLSWU
+pW2JmWczrSUWqAMFYVSGpJKEUWZiwQqYpzAlxGUu1p70bGERDi7zAi2FS1wuORWe
+MfbGae4wcFKk0BnGZs18+HW8/9D/z9zVehwn0lQA165HNLOZy4gjifF4hNm2lfdW
+U0giMQBGPRBHhrDSG/b3o6EOlEAt7oN8tGlYNtwpKm5AlDPhYKaoozDWgQ0aCNPS
+DSwKynNsxj3BMbjSIVQGZjuaAyWOYJYWXBlTgDaabFNaC1U9PB/UVYB6ddo5AJ3V
+PoNWSeIsVnG/+dObZZViDpVtreTKLSD9qxm+DCNtTskYapCkYRyhomWUKgvzUIu6
+nDjU5rQDwdOVMAE/zBWOyzg2T14DtfxMXLCIAJuBwYRA2ooRTwnNsGd5UmrJgYCN
+KTjgKWljm9qUYYmlZ0GAPYLyXT0VxajIDKYom0gzt0hk1QTQ0CeHe64tNDQVrlty
+TX57C03Xt/x7pw+9svSK9+0HfjQ5JWdunz4nLg+vHp07uHZiciH7aNeS9jd/Pjdy
+6o+pH0tDPaXusc9Wn31xP1K3PDEI58Wj80n5vgl86U//ptKyt5eRqdavlq9tOfPX
+2Q9Ll9Y17tl5c9uxHQ9+/9rO4Vtn57ZfHt+87c5d03Bg04kvPr14V21hclG8P8HT
+3y/s+XhjeuWxHb03LO7tfv7u8UdOHC+v7Dr529ya0fnX3/VXzZ6+d+qFcWfzG+Lx
+0aHTs8O/PNe1/8j5VStuW3+kW23/rtTcPvZS+8wDi8u7vNFtZ56dX7lloevUNz99
++d79D/199OvWjt2v3rGiQu/5/PjD6MIzIwd/fae5bdPuG2fa3tqwZl+j6Dmmjtr/
+ACynZJQ=
+=O57E
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/monkeyphill
+
+==================================================================
