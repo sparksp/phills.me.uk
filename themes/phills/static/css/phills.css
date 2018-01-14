@@ -41,9 +41,6 @@ article > h2 {
 .header-inner, .content-inner, .footer-inner {
   margin-right: 1em;
 }
-.sidebar-inner {
-  margin-top: 3em;
-}
 
 .sidebar-menu {
   margin-top: 2em;
@@ -82,6 +79,20 @@ article > h2 {
 .header .pure-menu-selected .pure-menu-link:hover,
 .header .pure-menu-selected .pure-menu-link:focus {
   background: inherit;
+}
+
+.social-menu {
+  width: 300px;
+  max-width: 100%;
+  text-align: center;
+}
+.social-menu .pure-menu-link {
+  padding: .5em;
+}
+.social-menu .pure-menu-link:hover,
+.social-menu .pure-menu-link:focus {
+  color: #de641a;
+  background: transparent;
 }
 
 .footer {
