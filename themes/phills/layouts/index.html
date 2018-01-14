@@ -2,28 +2,5 @@
   {{- .Title -}}
 {{ end }}
 {{ define "main" }}
-<div class="sidebar pure-u-1 pure-u-md-1-4">
-  <div class="sidebar-inner">
-    <img src="{{ "/img/phills.jpg" | relURL }}" class="polaroid pure-img" alt="Phill Sparks Avatar">
-
-    <div class="pure-menu sidebar-menu">
-      <ul class="pure-menu-list">
-        {{- range where .Data.Pages ".Type" "experience-list" }}
-          <li class="pure-menu-item"><a href="#{{ .Title | urlize }}" class="pure-menu-link">{{ .LinkTitle }}</a></li>
-        {{- end }}
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="content pure-u-1 pure-u-md-3-4">
-  <div class="content-inner">
-
-    {{- range where .Data.Pages ".Type" "experience-list" }}
-      <a name="{{ .Title | urlize }}"></a>
-      {{- .Render "item" -}}
-    {{- end }}
-
-  </div>
-</div>
+{{ partial "experience" . }}
 {{ end }}
