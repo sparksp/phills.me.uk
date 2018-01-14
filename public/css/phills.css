@@ -26,7 +26,7 @@ a:hover, a:focus {
 .sidebar-inner, article > h2 {
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  top: -1px;
   padding-top: 8px;
 }
 article > h2 {
