@@ -9,6 +9,8 @@ pygmentsUseClasses = true
 
 [Params]
   Author = "Phill Sparks"
+  Twitter = "@PhillSparks"
+  Facebook = "sparks.phill"
 
 [[menu.main]]
   name = "About"
