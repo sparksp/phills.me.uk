@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="{{ .Site.Params.Author }}" />
     <meta name="dcterms.rights" content="Copyright (c) {{ .Site.Params.Author }}. All rights reserved.">
-    {{- with .Description }}
-    <meta name="description" content="{{ . }}">
-    {{- end }}
     <title>{{ block "title" . }}
       {{- .Title }} - {{ .Site.Title -}}
     {{ end }}</title>
+    {{- partial "seo" . }}
     {{ .Hugo.Generator }}
     <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | relURL }}">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css" integrity="sha384-b92sF+wDNTHrfEtRaYo+EpcA8FUyHOSXrdxKc9XB9kaaX1rSQAgMevW6cYeE5Bdv" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ "/css/phills.css" | relURL }}" media="screen">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
     <link rel="self" href="{{ .Permalink }}" title="{{ .Title }}">
     {{- range .AlternativeOutputFormats }}
-    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+    <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .RelPermalink | safeURL }}">
     {{- end }}
   </head>
   <body>
@@ -42,15 +41,10 @@
         {{- block "main" . }}{{ end }}
       </div>
       <div class="footer"><div class="footer-inner">
-        <p class="footer-menu">
-          <span class="footer-menu-item">
-            &copy; <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Author }}</a>.
-            Built with <a href="https://gohugo.io">Hugo</a>.
-            Hosted on <a href="https://www.netlify.com/">Netlify</a>.
-          </span>
-          <span class="footer-menu-item footer-menu-right">
-            <a href="#">Back to top</a>
-          </span>
+        <p>
+          Copyright &copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Params.Author }}.
+          Built with <a href="https://gohugo.io">Hugo</a>.
+          Hosted on <a href="https://www.netlify.com/">Netlify</a>.
         </p>
       </div></div>
     </div>

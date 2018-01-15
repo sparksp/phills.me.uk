@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Phill Sparks</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-GB</language>
-    <lastBuildDate>Thu, 02 Oct 2008 19:56:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Jan 2018 22:50:28 +0000</lastBuildDate>
     
 	<atom:link href="https://phills.me.uk/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>AppleScript</title>
       <link>https://phills.me.uk/tags/applescript/</link>
-      <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/applescript/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>CSS</title>
       <link>https://phills.me.uk/tags/css/</link>
-      <pubDate>Sat, 14 Apr 2007 13:27:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/css/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>How-To</title>
       <link>https://phills.me.uk/tags/howto/</link>
-      <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/howto/</guid>
       <description></description>
@@ -77,7 +77,7 @@
     <item>
       <title>JavaScript</title>
       <link>https://phills.me.uk/tags/javascript/</link>
-      <pubDate>Fri, 29 May 2009 13:05:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/javascript/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>OS X</title>
       <link>https://phills.me.uk/tags/osx/</link>
-      <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/osx/</guid>
       <description></description>
@@ -95,25 +95,16 @@
     <item>
       <title>PHP</title>
       <link>https://phills.me.uk/tags/php/</link>
-      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/php/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Refit.conf</title>
-      <link>https://phills.me.uk/tags/refit.conf/</link>
-      <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
-      
-      <guid>https://phills.me.uk/tags/refit.conf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SQL</title>
       <link>https://phills.me.uk/tags/sql/</link>
-      <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/sql/</guid>
       <description></description>
@@ -122,7 +113,7 @@
     <item>
       <title>SSH</title>
       <link>https://phills.me.uk/tags/ssh/</link>
-      <pubDate>Sun, 13 Apr 2008 21:30:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/ssh/</guid>
       <description></description>
@@ -140,7 +131,7 @@
     <item>
       <title>TVRenamer.rc</title>
       <link>https://phills.me.uk/tags/tvrenamer.rc/</link>
-      <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/tvrenamer.rc/</guid>
       <description></description>
@@ -167,7 +158,7 @@
     <item>
       <title>XML</title>
       <link>https://phills.me.uk/tags/xml/</link>
-      <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/xml/</guid>
       <description></description>
@@ -176,7 +167,7 @@
     <item>
       <title>cURL</title>
       <link>https://phills.me.uk/tags/curl/</link>
-      <pubDate>Tue, 26 Aug 2008 12:55:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/curl/</guid>
       <description></description>
@@ -185,9 +176,18 @@
     <item>
       <title>iPhoto</title>
       <link>https://phills.me.uk/tags/iphoto/</link>
-      <pubDate>Sun, 13 Apr 2008 12:36:00 +0000</pubDate>
+      <pubDate>Sat, 13 Jan 2018 22:50:28 +0000</pubDate>
       
       <guid>https://phills.me.uk/tags/iphoto/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>refit.conf</title>
+      <link>https://phills.me.uk/tags/refit.conf/</link>
+      <pubDate>Mon, 15 Jan 2018 13:38:05 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/tags/refit.conf/</guid>
       <description></description>
     </item>
     

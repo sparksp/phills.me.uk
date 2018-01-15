@@ -1,6 +1,7 @@
 +++
 date = "2007-11-19T16:05:00Z"
 title = "Factor Test (by lavalamp)"
+description = "PHP factor test for very large numbers, by lavalamp."
 aliases = ["/snips/4-factor-test", "/snips/4"]
 tags = ["php"]
 [menu]

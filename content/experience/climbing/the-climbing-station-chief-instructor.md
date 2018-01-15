@@ -4,6 +4,7 @@ type = "job"
 title = "Chief Instructor"
 category = "Climbing Experience"
 duration = "2017–Present"
+date = "2017-09-01"
 
 [company]
   name = "The Climbing Station"

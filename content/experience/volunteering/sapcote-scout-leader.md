@@ -5,6 +5,7 @@ title = "Assistant & Scout Leader"
 linktitle = "Scout Leader at Sapcote"
 category = "Volunteering & Youth Experience"
 duration = "2009–2012"
+date = "2009-08-09"
 [company]
   name = "1st Sapcote Scouts"
 [menu]

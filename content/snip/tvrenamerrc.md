@@ -2,6 +2,7 @@
 date = "2007-08-18T12:48:00Z"
 modified = "2011-11-17T12:48:00Z"
 title = "tvrenamer.rc"
+description = "My preferred settings for TVRenamer."
 aliases = ["/snips/1-tvrenamerrc", "/snips/1"]
 tags = ["tvrenamer.rc"]
 [menu]
