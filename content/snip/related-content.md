@@ -2,6 +2,7 @@
 date = "2008-05-01T19:47:00Z"
 modified = "2008-05-02T19:47:00Z"
 title = "Related Content"
+description = "SQL to hunt down the 5 most relevant pieces of content by tag."
 aliases = ["/snips/8-related-content", "/snips/8"]
 tags = ["sql"]
 [menu]

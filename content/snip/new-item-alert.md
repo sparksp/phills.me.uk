@@ -2,6 +2,7 @@
 date = "2008-05-21T22:13:00Z"
 modified = "2008-05-22T22:13:00Z"
 title = "New Item Alert"
+description = "This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added."
 aliases = ["/snips/9-new-item-alert", "/snips/9"]
 tags = ["applescript"]
 [menu]

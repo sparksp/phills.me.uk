@@ -2,6 +2,7 @@
 date = "2008-05-22T00:28:00Z"
 modified = "2011-10-09T00:28:00Z"
 title = "JS Page Navigation"
+description = "Simple script to find first/prev/next/last links and nagivate to them."
 aliases = ["/snips/10-js-page-navigation", "/snips/10"]
 tags = ["javascript"]
 [menu]

@@ -2,6 +2,7 @@
 date = "2009-05-29T13:05:00Z"
 modified = "2010-07-13T13:05:00Z"
 title = "hTodo User Script"
+description = "Adds hTodo support to the operator toolbar."
 aliases = ["/snips/13-htodo-user-script", "/snips/13"]
 tags = ["javascript"]
 [menu]

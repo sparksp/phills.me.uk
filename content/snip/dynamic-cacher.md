@@ -1,6 +1,7 @@
 +++
 date = "2007-10-02T13:38:00Z"
 title = "Dynamic Cacher"
+description = "My own simple cache service written in PHP.  More a proof of concept than anything else."
 aliases = ["/snips/2-dynamic-cacher", "/snips/2"]
 tags = ["php"]
 [menu]

@@ -2,6 +2,7 @@
 date = "2008-10-02T19:56:00Z"
 modified = "2008-10-20T19:56:00Z"
 title = "iSync Reactor"
+description = "This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running."
 aliases = ["/snips/12-isync-reactor", "/snips/12"]
 tags = ["applescript"]
 [menu]
