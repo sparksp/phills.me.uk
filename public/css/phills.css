@@ -100,21 +100,6 @@ article > h2 {
   margin-top: 1em;
   margin-bottom: .5em;
 }
-.footer-menu {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-.footer-menu-item {
-  display: inline-block;
-  width: 100%;
-}
-.footer-menu-right {
-  width: auto;
-	margin-left: auto;
-  white-space: nowrap;
-  padding-left: 1em;
-}
 
 .site-title, .site-title a {
   color: #333;
