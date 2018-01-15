@@ -36,9 +36,3 @@ pygmentsUseClasses = true
   weight = 10
   identifier = "snip"
   url = "/snip/"
-
-[[menu.main]]
-  name = "GitHub"
-  weight = 100
-  identifier = "github"
-  url = "https://github.com/sparksp/"
