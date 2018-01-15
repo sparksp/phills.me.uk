@@ -5,6 +5,8 @@ title = "Programmer"
 linktitle = "Programmer at Bulb Studios"
 category = "Programming Experience"
 duration = "2012–2013"
+date = "2012-05-01"
+
 [company]
   name = "Bulb Studios"
   url = "http://bulbstudios.com"
