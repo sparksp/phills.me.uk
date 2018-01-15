@@ -12,4 +12,4 @@ clean :
 
 .PHONY : serve
 serve :
-	HUGO_GOOGLE_ANALYTICS=dev hugo serve --buildDrafts --watch
+	HUGO_GOOGLE_ANALYTICS=dev hugo serve --buildDrafts --navigateToChanged --watch
