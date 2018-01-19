@@ -6,9 +6,11 @@
       {{ .Content }}
     </div>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-4">
-      {{ if $image := .Resources.GetByPrefix "screenshot" }}
-      <figure><img src="{{ $image.RelPermalink }}" class="pure-img" alt="Screenshot of {{ .Title }}"></figure>
-      {{ end }}
+      {{- with .Resources.ByType "image" }}
+      {{- range first 1 . }}
+      <figure><img src="{{ .RelPermalink }}" class="pure-img" alt="{{ .Title }}"></figure>
+      {{- end }}
+      {{- end }}
     </div>
   </div>
 </article>

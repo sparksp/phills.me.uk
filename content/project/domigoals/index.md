@@ -4,6 +4,9 @@ title = "Domigoals 2012"
 [menu]
   [menu.main]
     parent = "project"
+[[resources]]
+  src = "domigoals.jpg"
+  title = "Three screens from the Domigoals 2012 app"
 +++
 Domino's UK wanted to give away vouchers for every goal scored during Euro 2012.  The first 1000 people to tap the "Goal!" button would win a voucher – &pound;5 for the first goal, &pound;10 for the second by the same player, and &pound;20 for a hat-trick.
 

@@ -4,6 +4,9 @@ title = "High Adventure"
 [menu]
   [menu.main]
     parent = "project"
+[[resources]]
+  src = "high-adventure.jpg"
+  title = "Screenshot of High Adventure website from 2012"
 +++
 High Adventure is an annual mountain exercise, taking place at a different, secret location each year.
 

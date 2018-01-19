@@ -4,6 +4,9 @@ title = "CrowdLab"
 [menu]
   [menu.main]
     parent = "project"
+[[resources]]
+  src = "crowdlab.jpg"
+  title = "Screenshot of CrowdLab website"
 +++
 Initially, I migrated the CrowdLab API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL - re-engineering many of the features based on the company’s experiences of having run the system for a year.
 
