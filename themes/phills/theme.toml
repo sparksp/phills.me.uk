@@ -5,7 +5,7 @@ description = "Theme for my website"
 homepage = "https://phills.me.uk/"
 tags = ["personal", "cv"]
 features = []
-min_version = 0.24
+min_version = 0.34
 
 [author]
     name = "Phill Sparks"

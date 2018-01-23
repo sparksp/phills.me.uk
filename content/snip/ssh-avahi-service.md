@@ -3,7 +3,8 @@ date = "2008-06-16T22:54:00Z"
 title = "SSH Avahi Service"
 description = "Simple Avahi definitions for SSH services including Fish and SCP."
 aliases = ["/snips/11-ssh-avahi-service", "/snips/11"]
-tags = ["xml"]
+tags = ["xml", "unix", "code"]
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "snip"

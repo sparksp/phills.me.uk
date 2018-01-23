@@ -1,0 +1,10 @@
+[Categories]
+one = "Category"
+other = "Categories"
+
+["Posted on"]
+other = "Posted on"
+
+[Tags]
+one = "Tag"
+other = "Tags"

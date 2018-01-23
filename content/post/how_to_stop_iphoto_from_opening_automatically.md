@@ -2,7 +2,7 @@
 date = "2008-04-13T12:36:00Z"
 title = "How-To: Stop iPhoto From Opening Automatically"
 slug = "how_to_stop_iphoto_from_opening_automatically"
-tags = ["osx", "howto", "iPhoto"]
+tags = ["howto", "iPhoto", "osx"]
 aliases = ["/blog/2008/04/13/how_to_stop_iphoto_from_opening_automatically"]
 [menu]
   [menu.main]

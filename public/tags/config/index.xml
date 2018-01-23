@@ -21,5 +21,25 @@
 Here&amp;rsquo;s an example that will configure &amp;ldquo;server1.example.com&amp;rdquo; with the user &amp;ldquo;example&amp;rdquo; and the port &amp;ldquo;222&amp;rdquo;. I&amp;rsquo;ll set this all up as &amp;ldquo;ex1&amp;rdquo;.</description>
     </item>
     
+    <item>
+      <title>refit.conf</title>
+      <link>https://phills.me.uk/snip/refitconf/</link>
+      <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/refitconf/</guid>
+      <description>My preferred settings for rEFIt.
+timeout 10 hidebadges internal hideui banner shell tools label </description>
+    </item>
+    
+    <item>
+      <title>tvrenamer.rc</title>
+      <link>https://phills.me.uk/snip/tvrenamerrc/</link>
+      <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
+      
+      <guid>https://phills.me.uk/snip/tvrenamerrc/</guid>
+      <description>My preferred settings for TVRenamer.
+--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
+    </item>
+    
   </channel>
 </rss>

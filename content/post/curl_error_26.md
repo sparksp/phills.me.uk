@@ -3,6 +3,7 @@ date = "2008-08-26T12:55:00Z"
 slug = "curl_error_26"
 title = "cURL Error 26: Failed to open/read local data from file/application"
 tags = ["php", "curl", "error", "web design", "code"]
+categories = ["programming"]
 aliases = ["/blog/2008/08/26/curl_error_26"]
 [menu]
   [menu.main]

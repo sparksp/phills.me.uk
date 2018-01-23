@@ -4,7 +4,8 @@ modified = "2010-07-13T13:05:00Z"
 title = "hTodo User Script"
 description = "Adds hTodo support to the operator toolbar."
 aliases = ["/snips/13-htodo-user-script", "/snips/13"]
-tags = ["javascript"]
+tags = ["javascript", "code"]
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "snip"

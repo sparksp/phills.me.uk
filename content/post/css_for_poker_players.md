@@ -3,6 +3,7 @@ aliases = ["/blog/2007/04/14/css_for_poker_players"]
 date = "2007-04-14T13:27:00Z"
 slug = "css_for_poker_players"
 tags = ["css", "web design"]
+categories = ["programming"]
 title = "CSS for Poker Players"
 [menu]
   [menu.main]

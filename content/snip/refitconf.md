@@ -4,7 +4,8 @@ modified = "2011-10-09T14:58:00Z"
 title = "refit.conf"
 description = "My preferred settings for rEFIt."
 aliases = ["/snips/7-refitconf", "/snips/7"]
-tags = ["refit.conf"]
+tags = ["refit.conf", "config", "code"]
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "snip"

@@ -154,6 +154,13 @@ h3 + p {
   box-sizing: border-box;
 }
 
+a.tag {
+  display: inline-block;
+  background: #de641a;
+  color: white;
+  padding: 2px 4px;
+}
+
 @media (min-width: 600px) {
   .columns {
     column-count: 2;

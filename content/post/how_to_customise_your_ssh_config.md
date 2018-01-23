@@ -2,7 +2,8 @@
 date = "2008-04-13T21:30:00Z"
 slug = "how_to_customise_your_ssh_config"
 title = "How-To: Customise your SSH Config"
-tags = ["SSH", "unix", "howto", "config"]
+tags = ["howto", "SSH", "config", "unix"]
+categories = ["programming"]
 aliases = ["/blog/2008/04/13/how_to_customise_your_ssh_config"]
 [menu]
   [menu.main]

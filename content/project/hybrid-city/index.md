@@ -1,6 +1,7 @@
 +++
 date = "2010-11-02T09:09:42Z"
 title = "Hybrid City"
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "project"

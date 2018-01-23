@@ -1,6 +1,7 @@
 +++
 date = "2012-11-02T09:03:59Z"
 title = "High Adventure"
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "project"

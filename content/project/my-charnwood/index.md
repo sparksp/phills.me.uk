@@ -1,6 +1,7 @@
 +++
 date = "2009-11-02T08:58:55Z"
 title = "My Charnwood"
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "project"

@@ -4,7 +4,7 @@ target = public
 all : $(target) ;
 
 $(target) :
-	hugo -d $@
+	hugo --i18n-warnings -d $@
 
 .PHONY : clean
 clean :
@@ -12,4 +12,4 @@ clean :
 
 .PHONY : serve
 serve :
-	HUGO_GOOGLE_ANALYTICS=dev hugo serve --buildDrafts --navigateToChanged --watch
+	HUGO_GOOGLE_ANALYTICS=dev hugo serve --buildDrafts --navigateToChanged --i18n-warnings --watch

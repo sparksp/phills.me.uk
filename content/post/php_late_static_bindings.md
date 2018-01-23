@@ -2,7 +2,8 @@
 date = "2008-01-23T12:09:00Z"
 slug = "php_late_static_bindings"
 title = "PHP: Late Static Bindings"
-tags = ["web design", "php", "software"]
+tags = ["php", "web design", "code"]
+categories = ["programming"]
 aliases = ["/blog/2008/01/23/php_late_static_bindings"]
 [menu]
   [menu.main]

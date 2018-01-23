@@ -4,7 +4,8 @@ modified = "2008-11-01T23:47:00Z"
 title = "New Terminal"
 description = "Launch a new terminal window, regardless of Terminal already running."
 aliases = ["/snips/3-new-terminal", "/snips/3"]
-tags = ["applescript"]
+tags = ["applescript", "osx", "code"]
+categories = ["programming"]
 [menu]
   [menu.main]
     parent = "snip"
