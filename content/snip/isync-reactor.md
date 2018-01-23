@@ -16,20 +16,9 @@ iSync Reactor
 This script will launch iSync and ask it to syncronize and terminate.  It will also refresh calendars in iCal.  
 Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running
 
-Copyright © Phill Sparks 2008
-http://milk-hub.net
-
-
-Creative Commons Attribution-Share Alike 2.0 UK: England & Wales
-(http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
-
-You are free:
-    * to copy, distribute, display, and perform the work
-    * to make derivative works
-
-Under the following conditions:
-    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/12)
-    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
+Author: Phill Sparks <me@phills.me.uk>
+License: Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/
 *)
 
 

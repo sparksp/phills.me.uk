@@ -9,6 +9,11 @@ tags = ["javascript"]
     parent = "snip"
 +++
 {{< highlight javascript >}}
+/**
+ * A quick JS snippet to search Google for MP3 files with the given name.
+ *
+ * @author Phill Sparks <me@phills.me.uk>
+ */
 if (t = prompt("Song Title"))
     window.location.href="http://google.co.uk/search?q=\"" + t +"\" last modified mp3 intitle:\"index of\" -html -htm -php -asp"
 {{< /highlight >}}

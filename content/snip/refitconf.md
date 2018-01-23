@@ -9,6 +9,9 @@ tags = ["refit.conf"]
   [menu.main]
     parent = "snip"
 +++
+
+My preferred settings for [rEFIt](http://refit.sourceforge.net/).
+
 {{< highlight text >}}
 timeout 10
 hidebadges internal

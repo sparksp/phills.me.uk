@@ -19,8 +19,8 @@
   <meta property="og:image:alt" content="Photo of Phill Sparks drinking a cup of coffee">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
-  <meta property="og:updated_time" content="2018-01-15T13:38:05&#43;00:00">
-  <meta property="article:modified_time" content="2018-01-15 13:38:05 &#43;0000 GMT">
+  <meta property="og:updated_time" content="2018-01-23T10:26:43&#43;00:00">
+  <meta property="article:modified_time" content="2018-01-23 10:26:43 &#43;0000 GMT">
   <meta name="description" content="Launch a new terminal window, regardless of Terminal already running.">
   <meta itemprop="description" content="Launch a new terminal window, regardless of Terminal already running.">
     <meta property="og:description" content="Launch a new terminal window, regardless of Terminal already running.">
@@ -30,7 +30,7 @@
     <meta property="article:author" content="https://www.facebook.com/sparks.phill">
   <meta property="article:section" content="Snips">
   <meta property="article:tag" content="applescript">
-<meta itemprop="wordCount" content="34">
+<meta itemprop="wordCount" content="64">
     <meta name="generator" content="Hugo 0.34" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -62,7 +62,16 @@
   <article>
     <h2>New Terminal</h2>
     <p class="post-date">Sunday, 11 November 2007</p>
-    <div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;System Events&#34;</span>
+    <div class="highlight"><pre class="chroma"><code class="language-applescript" data-lang="applescript"><span class="cm">(*
+</span><span class="cm">New Terminal
+</span><span class="cm">
+</span><span class="cm">Launch a new Terminal window, regardless of Terminal already running.
+</span><span class="cm">
+</span><span class="cm">Author: Phill Sparks &lt;me@phills.me.uk&gt;
+</span><span class="cm">License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp; Wales
+</span><span class="cm">License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/
+</span><span class="cm">*)</span>
+<span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;System Events&#34;</span>
     <span class="k">if</span> <span class="p">(</span><span class="nb">count</span> <span class="p">(</span><span class="nv">processes</span> <span class="nb">whose</span> <span class="na">name</span> <span class="ow">is</span> <span class="s2">&#34;Terminal&#34;</span><span class="p">))</span> <span class="ow">is</span> <span class="mi">0</span> <span class="k">then</span>
         <span class="k">tell</span> <span class="nb">application</span> <span class="s2">&#34;Terminal&#34;</span>
             <span class="nb">activate</span>

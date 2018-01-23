@@ -9,6 +9,9 @@ tags = ["tvrenamer.rc"]
   [menu.main]
     parent = "snip"
 +++
+
+My preferred settings for [TVRenamer](http://tvrenamer.org/).
+
 {{< highlight bash >}}
 --include_series
 --cache

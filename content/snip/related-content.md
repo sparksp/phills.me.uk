@@ -10,6 +10,13 @@ tags = ["sql"]
     parent = "snip"
 +++
 {{< highlight sql >}}
+/**
+ * SQL to hunt down the 5 most relevant pieces of content by tag.  This schema
+ * uses `uri` as the primary key for content (a foreign key in the tags table).
+ *
+ * @author Phill Sparks <me@phills.me.uk>
+ * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+ */
 SELECT uri, COUNT(tag) AS related_tag_count
 FROM milk_blog_tags prop
 WHERE uri <> 'posts/2008/01/17/finding_the_character_map_in_mac'

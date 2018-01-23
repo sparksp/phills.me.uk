@@ -11,9 +11,10 @@ tags = ["javascript"]
 +++
 {{< highlight javascript >}}
 /**
- * Adds hTodo support to the operator toolbar
+ * Adds hTodo support to the operator toolbar.
  *
  * @author Phill Sparks <me@phills.me.uk>
+ * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
  * @version 1.1, 2010-01-11
  * @see http://microformats.org/wiki/htodo
  * @see http://www.kaply.com/weblog/operator/

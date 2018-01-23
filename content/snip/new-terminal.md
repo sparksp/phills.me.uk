@@ -10,6 +10,15 @@ tags = ["applescript"]
     parent = "snip"
 +++
 {{< highlight applescript >}}
+(*
+New Terminal
+
+Launch a new Terminal window, regardless of Terminal already running.
+
+Author: Phill Sparks <me@phills.me.uk>
+License: Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/
+*)
 tell application "System Events"
     if (count (processes whose name is "Terminal")) is 0 then
         tell application "Terminal"

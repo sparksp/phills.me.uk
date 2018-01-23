@@ -37,7 +37,8 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/factor-test/</guid>
-      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
+      <description>PHP factor test for very large numbers.
+&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>
@@ -46,7 +47,7 @@ Code &amp;lt;?php class A { public static function who() { echo __CLASS__; } pub
       <pubDate>Tue, 02 Oct 2007 13:38:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/dynamic-cacher/</guid>
-      <description>&amp;lt;?php set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.php&amp;#39;) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } else if (is_dir($path)) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } // Make dir for file if (!is_dir(dirname($path))) mkdir(dirname($path), 0755, true); // Do the fetch $date = (file_exists($path) &amp;amp;&amp;amp; file_exists($nfopath)) ?</description>
+      <description>&amp;lt;?php /** * My own simple cache service written in PHP. More a proof of concept than anything else. * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales */ set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.</description>
     </item>
     
   </channel>

@@ -17,7 +17,7 @@
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/php-id/</guid>
-      <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
+      <description>#!/bin/bash  # A handy script to insert $Id$ comments in PHP files. # # Author: Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; # License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales # License URL: http://creativecommons.org/licenses/by-sa/2.0/uk/  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?</description>
     </item>
     
   </channel>

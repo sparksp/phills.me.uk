@@ -17,7 +17,7 @@
       <pubDate>Fri, 29 May 2009 13:05:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/htodo-user-script/</guid>
-      <description>/** * Adds hTodo support to the operator toolbar * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @version 1.1, 2010-01-11 * @see http://microformats.org/wiki/htodo * @see http://www.kaply.com/weblog/operator/ */ function hTodo(node) { if (node) { Microformats.parser.newMicroformat(this, node, &amp;#39;hTodo&amp;#39;); } } hTodo.prototype.toString = function() { return this.summary; } var hTodo_definition = { mfVersion: 0.8, description: &amp;#39;Tasks&amp;#39;, mfObject: hTodo, className: &amp;#39;vtodo&amp;#39;, required: [&amp;#39;summary&amp;#39;], properties: { &amp;#39;attach&amp;#39;: { plural: true, datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;category&amp;#39;: { plural: true, datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;tag&amp;#39;, microformat_property: &amp;#39;tag&amp;#39; }, &amp;#39;class&amp;#39;: { values: [&amp;#39;public&amp;#39;, &amp;#39;private&amp;#39;, &amp;#39;confidential&amp;#39;] }, &amp;#39;completed&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;description&amp;#39;: { datatype: &amp;#39;HTML&amp;#39; }, &amp;#39;dtstart&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;dtstamp&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;due&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;duration&amp;#39;: { }, &amp;#39;geo&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;geo&amp;#39; }, &amp;#39;last-modified&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;location&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;organizer&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;percent-completed&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 100 */ }, &amp;#39;priority&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 9 */ }, &amp;#39;summary&amp;#39;: {}, &amp;#39;status&amp;#39;: { values: [&amp;#39;active&amp;#39;, &amp;#39;in-process&amp;#39;, &amp;#39;completed&amp;#39;, &amp;#39;cancelled&amp;#39;] }, &amp;#39;uid&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;url&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, /* Borrow this from the hCalendar_definition */ &amp;#39;rrule&amp;#39;: hCalendar_definition.</description>
+      <description>/** * Adds hTodo support to the operator toolbar. * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales * @version 1.1, 2010-01-11 * @see http://microformats.org/wiki/htodo * @see http://www.kaply.com/weblog/operator/ */ function hTodo(node) { if (node) { Microformats.parser.newMicroformat(this, node, &amp;#39;hTodo&amp;#39;); } } hTodo.prototype.toString = function() { return this.summary; } var hTodo_definition = { mfVersion: 0.8, description: &amp;#39;Tasks&amp;#39;, mfObject: hTodo, className: &amp;#39;vtodo&amp;#39;, required: [&amp;#39;summary&amp;#39;], properties: { &amp;#39;attach&amp;#39;: { plural: true, datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;category&amp;#39;: { plural: true, datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;tag&amp;#39;, microformat_property: &amp;#39;tag&amp;#39; }, &amp;#39;class&amp;#39;: { values: [&amp;#39;public&amp;#39;, &amp;#39;private&amp;#39;, &amp;#39;confidential&amp;#39;] }, &amp;#39;completed&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;description&amp;#39;: { datatype: &amp;#39;HTML&amp;#39; }, &amp;#39;dtstart&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;dtstamp&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;due&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;duration&amp;#39;: { }, &amp;#39;geo&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;geo&amp;#39; }, &amp;#39;last-modified&amp;#39;: { datatype: &amp;#39;dateTime&amp;#39; }, &amp;#39;location&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;organizer&amp;#39;: { datatype: &amp;#39;microformat&amp;#39;, microformat: &amp;#39;hCard&amp;#39; }, &amp;#39;percent-completed&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 100 */ }, &amp;#39;priority&amp;#39;: { /* datatype: &amp;#39;int&amp;#39;, min: 0, max: 9 */ }, &amp;#39;summary&amp;#39;: {}, &amp;#39;status&amp;#39;: { values: [&amp;#39;active&amp;#39;, &amp;#39;in-process&amp;#39;, &amp;#39;completed&amp;#39;, &amp;#39;cancelled&amp;#39;] }, &amp;#39;uid&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, &amp;#39;url&amp;#39;: { datatype: &amp;#39;anyURI&amp;#39; }, /* Borrow this from the hCalendar_definition */ &amp;#39;rrule&amp;#39;: hCalendar_definition.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Thu, 02 Oct 2008 19:56:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/isync-reactor/</guid>
-      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+      <description>(* iSync Reactor This script will launch iSync and ask it to syncronize and terminate. It will also refresh calendars in iCal. Protection is added to prevent frequent syncing and leave iCal/iSync running if they were already running Author: Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/ *) property sync_frequency : 900 -- seconds -- Find out if iCal and iSync are already running tell application &amp;#34;System Events&amp;#34; set iCalRunning to (count of (every process whose name is &amp;#34;iCal&amp;#34;)) is greater than 0 set iSyncRunning to (count of (every process whose name is &amp;#34;iSync&amp;#34;)) is greater than 0 end tell -- Syncronize using iSync, at most every 15 minutes tell application &amp;#34;iSync&amp;#34; if last sync is less than ((current date) - sync_frequency) then -- Refresh all calendars tell application &amp;#34;iCal&amp;#34; reload calendars if not iCalRunning then quit end tell -- Do the sync synchronize end if -- If this script started iSync then hide it, wait for it to finish syncing and quit if not iSyncRunning then tell application &amp;#34;System Events&amp;#34; to set visible of process &amp;#34;iSync&amp;#34; to false repeat while (syncing is true) -- Wait end repeat quit end if end tell </description>
     </item>
     
     <item>
@@ -35,7 +35,8 @@
       <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/ssh-avahi-service/</guid>
-      <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
+      <description>Simple Avahi definitions for SSH services including Fish and SCP.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
     </item>
     
     <item>
@@ -44,7 +45,7 @@
       <pubDate>Thu, 22 May 2008 00:28:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/js-page-navigation/</guid>
-      <description>function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.&amp;#39;); } function goLast() { go(&amp;#39;last&amp;#39;) || alert(&amp;#39;No last found.&amp;#39;); } </description>
+      <description>/** * Simple script to find first/prev/next/last links and nagivate to them. * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; */ function go(rel) { var url; if (url = document.evaluate(&amp;#39;//*[@rel=&amp;#34;&amp;#39; + rel + &amp;#39;&amp;#34;]/href&amp;#39;, document, null, XPathResult.STRING_TYPE, null)).stringValue) { window.location.href = url; return true; } return false; } function goFirst() { go(&amp;#39;first&amp;#39;) || alert(&amp;#39;No first found.&amp;#39;); } function goPrevious() { go(&amp;#39;prev&amp;#39;) || go(&amp;#39;previous&amp;#39;) || alert(&amp;#39;No previous found.&amp;#39;); } function goNext() { go(&amp;#39;next&amp;#39;) || alert(&amp;#39;No next found.</description>
     </item>
     
     <item>
@@ -53,7 +54,7 @@
       <pubDate>Wed, 21 May 2008 22:13:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/new-item-alert/</guid>
-      <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Copyright © Phill Sparks 2008 http://milk-hub.net Creative Commons Attribution-Share Alike 2.0 UK: England &amp;amp; Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode) You are free: * to copy, distribute, display, and perform the work * to make derivative works Under the following conditions: * You must attribute this work to Phill Sparks (with link http://milk-hub.</description>
+      <description>(* New Item Alert This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added. Author: Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/ *) property dialog_timeout : 30 -- set the amount of time before dialogs auto-answer. on adding folder items to this_folder after receiving added_items try -- Determine if Growl is running tell application &amp;#34;System Events&amp;#34; set hasGrowl to (count of (every process whose name is &amp;#34;GrowlHelperApp&amp;#34;)) &amp;gt; 0 end tell tell application &amp;#34;Finder&amp;#34; -- Get the name of the folder set the folder_name to the name of this_folder end tell -- Find out how many new items have been placed in the folder set the item_count to the number of items in the added_items -- Create the alert string set alert_message to (&amp;#34;&amp;#34;) as Unicode text if the item_count is greater than 1 then set alert_message to alert_message &amp;amp; (the item_count as text) &amp;amp; &amp;#34; new items have &amp;#34; set alert_title to &amp;#34;New Items&amp;#34; else set alert_message to alert_message &amp;amp; &amp;#34;One new item has &amp;#34; set alert_title to &amp;#34;New Item&amp;#34; end if set alert_message to alert_message &amp;amp; &amp;#34;been placed in the &amp;#34; &amp;amp; «data utxt201C» &amp;amp; the folder_name &amp;amp; «data utxt201D» &amp;amp; &amp;#34; folder.</description>
     </item>
     
     <item>
@@ -62,7 +63,7 @@
       <pubDate>Thu, 01 May 2008 19:47:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/related-content/</guid>
-      <description>SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
+      <description>/** * SQL to hunt down the 5 most relevant pieces of content by tag. This schema * uses `uri` as the primary key for content (a foreign key in the tags table). * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales */ SELECT uri, COUNT(tag) AS related_tag_count FROM milk_blog_tags prop WHERE uri &amp;lt;&amp;gt; &amp;#39;posts/2008/01/17/finding_the_character_map_in_mac&amp;#39; AND tag IN (&amp;#39;software&amp;#39;,&amp;#39;Character Map&amp;#39;,&amp;#39;Character Palette&amp;#39;,&amp;#39;for:lsucs&amp;#39;,&amp;#39;osx&amp;#39;) GROUP BY uri HAVING COUNT(tag) &amp;gt; 0 ORDER BY related_tag_count DESC, uri DESC LIMIT 0, 5 </description>
     </item>
     
     <item>
@@ -71,7 +72,8 @@
       <pubDate>Wed, 12 Mar 2008 14:58:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/refitconf/</guid>
-      <description>timeout 10 hidebadges internal hideui banner shell tools label </description>
+      <description>My preferred settings for rEFIt.
+timeout 10 hidebadges internal hideui banner shell tools label </description>
     </item>
     
     <item>
@@ -80,7 +82,7 @@
       <pubDate>Wed, 19 Dec 2007 15:29:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/php-id/</guid>
-      <description>#!/bin/bash  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?php (that does not have a ?&amp;gt; on the same line) add the $Id$ comment  sed &amp;#39; /&amp;lt;?php/ { /?&amp;gt;/ !{ x /^$/ { g a \ /*\ * $Id$\ */ h } g } } &amp;#39; &amp;#34;$1&amp;#34; &amp;gt;/tmp/sk mv /tmp/sk &amp;#34;$1&amp;#34; echo &amp;#34;$1&amp;#34; fi else echo &amp;#34;$1[missing]&amp;#34; fi </description>
+      <description>#!/bin/bash  # A handy script to insert $Id$ comments in PHP files. # # Author: Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; # License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales # License URL: http://creativecommons.org/licenses/by-sa/2.0/uk/  case $# in 1);; *) echo &amp;#34;Usage: $0file&amp;#34;;exit;; esac; # File exists? if [[ -e $1 ]]; then # File already has $Id$ in it?  if grep -q &amp;#39;\$Id.*\$$&amp;#39; $1 ; then echo &amp;#34;$1[skipped]&amp;#34; else # After the first &amp;lt;?</description>
     </item>
     
     <item>
@@ -89,7 +91,7 @@
       <pubDate>Fri, 07 Dec 2007 23:35:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/mp3-search/</guid>
-      <description>if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
+      <description>/** * A quick JS snippet to search Google for MP3 files with the given name. * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; */ if (t = prompt(&amp;#34;Song Title&amp;#34;)) window.location.href=&amp;#34;http://google.co.uk/search?q=\&amp;#34;&amp;#34; + t +&amp;#34;\&amp;#34; last modified mp3 intitle:\&amp;#34;index of\&amp;#34; -html -htm -php -asp&amp;#34; </description>
     </item>
     
     <item>
@@ -98,7 +100,8 @@
       <pubDate>Mon, 19 Nov 2007 16:05:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/factor-test/</guid>
-      <description>&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
+      <description>PHP factor test for very large numbers.
+&amp;lt;?php function check_factor($factor, $k, $base, $exponent, $c=&amp;#39;-1&amp;#39;){ $out = bcpowmod($base, $exponent, $factor); $out = bcmul($out, $k); $out = bcadd($out, $c); $out = bcmod($out, $factor); return $out==&amp;#34;0&amp;#34;; } echo check_factor(&amp;#39;28475025393798152885081&amp;#39;, &amp;#39;1&amp;#39;, &amp;#39;2&amp;#39;, &amp;#39;3321931637&amp;#39;)? &amp;#34;True!&amp;#34;: &amp;#34;False!&amp;#34;; ?&amp;gt; </description>
     </item>
     
     <item>
@@ -107,7 +110,7 @@
       <pubDate>Sun, 11 Nov 2007 23:47:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/new-terminal/</guid>
-      <description>tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
+      <description>(* New Terminal Launch a new Terminal window, regardless of Terminal already running. Author: Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/ *) tell application &amp;#34;System Events&amp;#34; if (count (processes whose name is &amp;#34;Terminal&amp;#34;)) is 0 then tell application &amp;#34;Terminal&amp;#34; activate end tell else tell application &amp;#34;Terminal&amp;#34; activate do script &amp;#34;&amp;#34; end tell end if end tell </description>
     </item>
     
     <item>
@@ -116,7 +119,7 @@
       <pubDate>Tue, 02 Oct 2007 13:38:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/dynamic-cacher/</guid>
-      <description>&amp;lt;?php set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.php&amp;#39;) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } else if (is_dir($path)) { header(&amp;#39;HTTP/1.0 403 &amp;#39;.statusmessage(403)); echo &amp;#39;403 &amp;#39;. statusmessage(403); exit; } // Make dir for file if (!is_dir(dirname($path))) mkdir(dirname($path), 0755, true); // Do the fetch $date = (file_exists($path) &amp;amp;&amp;amp; file_exists($nfopath)) ?</description>
+      <description>&amp;lt;?php /** * My own simple cache service written in PHP. More a proof of concept than anything else. * * @author Phill Sparks &amp;lt;me@phills.me.uk&amp;gt; * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England &amp;amp; Wales */ set_time_limit(3600); global $fp, $headers; $fp = null; $headers = array(); $url = &amp;#39;http://milk-hub.net/&amp;#39;.($path = trim($_SERVER[&amp;#39;REQUEST_URI&amp;#39;], &amp;#39;/&amp;#39;)); if ($path == &amp;#39;&amp;#39;) $path = &amp;#39;index&amp;#39;; $nfopath = dirname($path).&amp;#39;/._&amp;#39;.basename($path); if ($path[0] == &amp;#39;.&amp;#39; || $path == &amp;#39;index.</description>
     </item>
     
     <item>
@@ -125,7 +128,8 @@
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/tvrenamerrc/</guid>
-      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
+      <description>My preferred settings for TVRenamer.
+--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
     </item>
     
   </channel>

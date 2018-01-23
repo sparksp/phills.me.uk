@@ -11,6 +11,13 @@ tags = ["php"]
 {{< highlight php >}}
 <?php
 
+/**
+ * My own simple cache service written in PHP.  More a proof of concept than anything else.
+ *
+ * @author Phill Sparks <me@phills.me.uk>
+ * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+ */
+
 set_time_limit(3600);
 
 global $fp, $headers;

@@ -17,7 +17,8 @@
       <pubDate>Mon, 16 Jun 2008 22:54:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/ssh-avahi-service/</guid>
-      <description>&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
+      <description>Simple Avahi definitions for SSH services including Fish and SCP.
+&amp;lt;?xml version=&amp;#34;1.0&amp;#34; standalone=&amp;#39;no&amp;#39;?&amp;gt; &amp;lt;!DOCTYPE service-group SYSTEM &amp;#34;avahi-service.dtd&amp;#34;&amp;gt; &amp;lt;service-group&amp;gt; &amp;lt;name&amp;gt;My Server&amp;lt;/name&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_ssh._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_fish._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;service&amp;gt; &amp;lt;type&amp;gt;_scp._tcp&amp;lt;/type&amp;gt; &amp;lt;port&amp;gt;22&amp;lt;/port&amp;gt; &amp;lt;/service&amp;gt; &amp;lt;/service-group&amp;gt; </description>
     </item>
     
   </channel>

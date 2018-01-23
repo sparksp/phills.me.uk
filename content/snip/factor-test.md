@@ -8,6 +8,9 @@ tags = ["php"]
   [menu.main]
     parent = "snip"
 +++
+
+PHP factor test for very large numbers.
+
 {{< highlight php >}}
 <?php
 

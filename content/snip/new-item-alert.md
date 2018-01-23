@@ -16,19 +16,9 @@ New Item Alert
 This Folder Action handler is triggered whenever items are added to the attached folder.
 The script will display a growl message containing the number of items added.
 
-Copyright © Phill Sparks 2008
-http://milk-hub.net
-
-
-Creative Commons Attribution-Share Alike 2.0 UK: England & Wales (http://creativecommons.org/licenses/by-sa/2.0/uk/legalcode)
-
-You are free:
-    * to copy, distribute, display, and perform the work
-    * to make derivative works
-
-Under the following conditions:
-    * You must attribute this work to Phill Sparks (with link http://milk-hub.net/pb/09)
-    * Share Alike. If you alter, transform, or build upon this work, you may distribute the resulting work only under a licence identical to this one.
+Author: Phill Sparks <me@phills.me.uk>
+License: Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+License URL: https://creativecommons.org/licenses/by-sa/2.0/uk/
 *)
 
 property dialog_timeout : 30 -- set the amount of time before dialogs auto-answer.

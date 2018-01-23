@@ -8,6 +8,8 @@ tags = ["xml"]
   [menu.main]
     parent = "snip"
 +++
+Simple [Avahi](https://www.avahi.org/) definitions for SSH services including Fish and SCP.
+
 {{< highlight xml >}}
 <?xml version="1.0" standalone='no'?>
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">

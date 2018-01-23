@@ -19,18 +19,18 @@
   <meta property="og:image:alt" content="Photo of Phill Sparks drinking a cup of coffee">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
-  <meta property="og:updated_time" content="2018-01-15T13:38:05&#43;00:00">
-  <meta property="article:modified_time" content="2018-01-15 13:38:05 &#43;0000 GMT">
-  <meta name="description" content="Handy script to insert $Id$ comments in PHP files.">
-  <meta itemprop="description" content="Handy script to insert $Id$ comments in PHP files.">
-    <meta property="og:description" content="Handy script to insert $Id$ comments in PHP files.">
+  <meta property="og:updated_time" content="2018-01-23T10:26:43&#43;00:00">
+  <meta property="article:modified_time" content="2018-01-23 10:26:43 &#43;0000 GMT">
+  <meta name="description" content="A handy script to insert $Id$ comments in PHP files.">
+  <meta itemprop="description" content="A handy script to insert $Id$ comments in PHP files.">
+    <meta property="og:description" content="A handy script to insert $Id$ comments in PHP files.">
   <meta itemprop="datePublished" content="2007-12-19 15:29:00 &#43;0000 UTC">
     <meta property="article:published_time" content="2007-12-19 15:29:00 &#43;0000 UTC">
     <meta property="og:site_name" content="Phill Sparks">
     <meta property="article:author" content="https://www.facebook.com/sparks.phill">
   <meta property="article:section" content="Snips">
   <meta property="article:tag" content="bash">
-<meta itemprop="wordCount" content="89">
+<meta itemprop="wordCount" content="120">
     <meta name="generator" content="Hugo 0.34" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -64,6 +64,12 @@
     <p class="post-date">Wednesday, 19 December 2007</p>
     <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="cp">#!/bin/bash
 </span><span class="cp"></span>
+<span class="c1"># A handy script to insert $Id$ comments in PHP files.
+</span><span class="c1">#
+</span><span class="c1"># Author: Phill Sparks &lt;me@phills.me.uk&gt;
+</span><span class="c1"># License: Creative Commons Attribution-ShareAlike 2.0 UK: England &amp; Wales
+</span><span class="c1"># License URL: http://creativecommons.org/licenses/by-sa/2.0/uk/
+</span><span class="c1"></span>
 <span class="k">case</span> <span class="nv">$#</span> in
     <span class="m">1</span><span class="o">)</span><span class="p">;;</span>
     *<span class="o">)</span> <span class="nb">echo</span> <span class="s2">&#34;Usage: </span><span class="nv">$0</span><span class="s2"> file&#34;</span><span class="p">;</span>exit<span class="p">;;</span>

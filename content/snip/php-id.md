@@ -1,7 +1,7 @@
 +++
 date = "2007-12-19T15:29:00Z"
 title = "PHP Id"
-description = "Handy script to insert $Id$ comments in PHP files."
+description = "A handy script to insert $Id$ comments in PHP files."
 aliases = ["/snips/6-php-id", "/snips/6"]
 tags = ["bash"]
 [menu]
@@ -10,6 +10,12 @@ tags = ["bash"]
 +++
 {{< highlight bash >}}
 #!/bin/bash
+
+# A handy script to insert $Id$ comments in PHP files.
+#
+# Author: Phill Sparks <me@phills.me.uk>
+# License: Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
+# License URL: http://creativecommons.org/licenses/by-sa/2.0/uk/
 
 case $# in
     1);;

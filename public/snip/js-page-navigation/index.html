@@ -19,8 +19,8 @@
   <meta property="og:image:alt" content="Photo of Phill Sparks drinking a cup of coffee">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
-  <meta property="og:updated_time" content="2018-01-15T13:38:05&#43;00:00">
-  <meta property="article:modified_time" content="2018-01-15 13:38:05 &#43;0000 GMT">
+  <meta property="og:updated_time" content="2018-01-23T10:26:43&#43;00:00">
+  <meta property="article:modified_time" content="2018-01-23 10:26:43 &#43;0000 GMT">
   <meta name="description" content="Simple script to find first/prev/next/last links and nagivate to them.">
   <meta itemprop="description" content="Simple script to find first/prev/next/last links and nagivate to them.">
     <meta property="og:description" content="Simple script to find first/prev/next/last links and nagivate to them.">
@@ -30,7 +30,7 @@
     <meta property="article:author" content="https://www.facebook.com/sparks.phill">
   <meta property="article:section" content="Snips">
   <meta property="article:tag" content="javascript">
-<meta itemprop="wordCount" content="65">
+<meta itemprop="wordCount" content="84">
     <meta name="generator" content="Hugo 0.34" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -62,7 +62,12 @@
   <article>
     <h2>JS Page Navigation</h2>
     <p class="post-date">Thursday, 22 May 2008</p>
-    <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">go</span><span class="p">(</span><span class="nx">rel</span><span class="p">)</span> <span class="p">{</span>
+    <div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="cm">/**
+</span><span class="cm"> * Simple script to find first/prev/next/last links and nagivate to them.
+</span><span class="cm"> *
+</span><span class="cm"> * @author Phill Sparks &lt;me@phills.me.uk&gt;
+</span><span class="cm"> */</span>
+<span class="kd">function</span> <span class="nx">go</span><span class="p">(</span><span class="nx">rel</span><span class="p">)</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nx">url</span><span class="p">;</span>
     <span class="k">if</span> <span class="p">(</span><span class="nx">url</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">evaluate</span><span class="p">(</span><span class="s1">&#39;//*[@rel=&#34;&#39;</span> <span class="o">+</span> <span class="nx">rel</span> <span class="o">+</span> <span class="s1">&#39;&#34;]/href&#39;</span><span class="p">,</span> <span class="nb">document</span><span class="p">,</span> <span class="kc">null</span><span class="p">,</span> <span class="nx">XPathResult</span><span class="p">.</span><span class="nx">STRING_TYPE</span><span class="p">,</span> <span class="kc">null</span><span class="p">)).</span><span class="nx">stringValue</span><span class="p">)</span> <span class="p">{</span>
         <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span> <span class="o">=</span> <span class="nx">url</span><span class="p">;</span>

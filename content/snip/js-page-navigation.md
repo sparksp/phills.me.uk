@@ -10,6 +10,11 @@ tags = ["javascript"]
     parent = "snip"
 +++
 {{< highlight javascript >}}
+/**
+ * Simple script to find first/prev/next/last links and nagivate to them.
+ *
+ * @author Phill Sparks <me@phills.me.uk>
+ */
 function go(rel) {
     var url;
     if (url = document.evaluate('//*[@rel="' + rel + '"]/href', document, null, XPathResult.STRING_TYPE, null)).stringValue) {

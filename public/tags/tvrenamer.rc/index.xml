@@ -17,7 +17,8 @@
       <pubDate>Sat, 18 Aug 2007 12:48:00 +0000</pubDate>
       
       <guid>https://phills.me.uk/snip/tvrenamerrc/</guid>
-      <description>--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
+      <description>My preferred settings for TVRenamer.
+--include_series --cache --pad=2 --detailed --gap= - --nogroup --postproc=s/\((\d+)\)/(Part $1)/g;s/, Part (\d+)/ (Part $1)/g; </description>
     </item>
     
   </channel>
