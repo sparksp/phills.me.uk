@@ -1,8 +1,0 @@
-/* TEAM */
-	Developer: Phill Sparks
-	Twitter: @PhillSparks
-	Location: Leicester, UK
-
-/* SITE */
-	Language: en-GB
-	Software: Hugo
