@@ -11,10 +11,10 @@
   command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --i18n-warnings"
 
 [context.deploy-preview.environment]
-  HUGO_GOOGLE_ANALYTICS = "dev"
+  HUGO_GOOGLEANALYTICS = "dev"
 
 [context.branch-deploy]
   command = "HUGO_BASEURL=$DEPLOY_PRIME_URL hugo --buildDrafts --i18n-warnings"
 
 [context.branch-deploy.environment]
-  HUGO_GOOGLE_ANALYTICS = "dev"
+  HUGO_GOOGLEANALYTICS = "dev"
