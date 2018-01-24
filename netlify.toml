@@ -1,2 +1,16 @@
+[build]
+  publish = "public"
+  command = "hugo"
+
+  [environment]
+    HUGO_VERSION = "0.34"
+
+[context.production.environment]
+
 [context.deploy-preview.environment]
-  HUGO_VERSION = "0.34"
+  command = "hugo --i18n-warnings"
+  HUGO_GOOGLE_ANALYTICS = "dev"
+
+[context.branch-deploy.environment]
+  command = "hugo --buildDrafts --i18n-warnings"
+  HUGO_GOOGLE_ANALYTICS = "dev"
