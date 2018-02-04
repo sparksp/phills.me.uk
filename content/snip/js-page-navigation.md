@@ -6,9 +6,8 @@ description = "Simple script to find first/prev/next/last links and nagivate to 
 aliases = ["/snips/10-js-page-navigation", "/snips/10"]
 tags = ["javascript", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight javascript >}}
 /**

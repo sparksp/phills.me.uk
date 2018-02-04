@@ -5,9 +5,8 @@ title = "How-To: Customise your SSH Config"
 tags = ["howto", "SSH", "config", "unix"]
 categories = ["programming"]
 aliases = ["/blog/2008/04/13/how_to_customise_your_ssh_config"]
-[menu]
-  [menu.main]
-    parent = "post"
+[menu.main]
+  parent = "post"
 +++
 I am someone who feels more comfortable using the command-line than many GUI set-ups and who is often SSH-ing between servers; many of these servers have lengthy host names and require various different usernames; luckily the SSH developers thought ahead and came up with a way of pre-setting most options per-host.
 

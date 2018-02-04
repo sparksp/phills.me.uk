@@ -2,9 +2,8 @@
 date = "2016-11-02T09:11:20Z"
 title = "CrowdLab"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "crowdlab.jpg"
   title = "Screenshot of CrowdLab website"

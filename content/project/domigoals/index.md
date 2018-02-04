@@ -2,9 +2,8 @@
 date = "2012-06-02T15:41:45Z"
 title = "Domigoals 2012"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "domigoals.jpg"
   title = "Three screens from the Domigoals 2012 app"

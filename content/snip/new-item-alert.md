@@ -6,9 +6,8 @@ description = "This Folder Action handler is triggered whenever items are added 
 aliases = ["/snips/9-new-item-alert", "/snips/9"]
 tags = ["applescript", "osx", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight applescript >}}
 (*

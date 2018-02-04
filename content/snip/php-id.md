@@ -5,9 +5,8 @@ description = "A handy script to insert $Id$ comments in PHP files."
 aliases = ["/snips/6-php-id", "/snips/6"]
 tags = ["bash", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight bash >}}
 #!/bin/bash

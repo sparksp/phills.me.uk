@@ -6,9 +6,8 @@ description = "My preferred settings for TVRenamer."
 aliases = ["/snips/1-tvrenamerrc", "/snips/1"]
 tags = ["tvrenamer.rc", "config", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 
 My preferred settings for [TVRenamer](http://tvrenamer.org/).

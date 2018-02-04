@@ -5,9 +5,8 @@ slug = "css_for_poker_players"
 tags = ["css", "web design"]
 categories = ["programming"]
 title = "CSS for Poker Players"
-[menu]
-  [menu.main]
-    parent = "post"
+[menu.main]
+  parent = "post"
 +++
 
 I've just read an excellent explanation of [CSS Specificity using a poker analogy](http://carl.camera/?id=95) and it just makes it so clear to hear it like that.  The author covers everything in terms of the basic hands available in a game of poker.  This can help explain some of the many mysteries of CSS!

@@ -5,9 +5,8 @@ description = "My own simple cache service written in PHP.  More a proof of conc
 aliases = ["/snips/2-dynamic-cacher", "/snips/2"]
 tags = ["php", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight php >}}
 <?php

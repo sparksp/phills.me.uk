@@ -6,9 +6,8 @@ description = "SQL to hunt down the 5 most relevant pieces of content by tag."
 aliases = ["/snips/8-related-content", "/snips/8"]
 tags = ["sql", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight sql >}}
 /**

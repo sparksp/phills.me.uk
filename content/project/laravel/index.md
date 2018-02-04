@@ -2,9 +2,8 @@
 date = "2011-11-02T09:09:23Z"
 title = "Laravel"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "laravel.jpg"
   title = "Screenshot of Laravel homepage"
