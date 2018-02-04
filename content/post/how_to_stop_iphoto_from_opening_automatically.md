@@ -4,9 +4,8 @@ title = "How-To: Stop iPhoto From Opening Automatically"
 slug = "how_to_stop_iphoto_from_opening_automatically"
 tags = ["howto", "iPhoto", "osx"]
 aliases = ["/blog/2008/04/13/how_to_stop_iphoto_from_opening_automatically"]
-[menu]
-  [menu.main]
-    parent = "post"
+[menu.main]
+  parent = "post"
 +++
 I've stopped using iPhoto recently in favour of [Flickr](http://flic.kr) but every time I plug in a camera, or something that looks like it could be a camera, iPhoto opens.  A quick hunt around the Internet and I found the solution...
 

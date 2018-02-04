@@ -12,30 +12,6 @@ pygmentsUseClasses = true
   Twitter = "@PhillSparks"
   Facebook = "sparks.phill"
 
-[[menu.main]]
-  name = "About"
-  weight = -10
-  identifier = "experience"
-  url = "/"
-
-[[menu.main]]
-  name = "Blog"
-  weight = 10
-  identifier = "post"
-  url = "/post/"
-
-[[menu.main]]
-  name = "Projects"
-  weight = 10
-  identifier = "project"
-  url = "/project/"
-
-[[menu.main]]
-  name = "Snips"
-  weight = 10
-  identifier = "snip"
-  url = "/snip/"
-
 [[menu.social]]
   name = "Facebook"
   identifier = "facebook"

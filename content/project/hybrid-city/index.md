@@ -2,9 +2,8 @@
 date = "2010-11-02T09:09:42Z"
 title = "Hybrid City"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "hybrid-city.jpg"
   title = "Screenshot of Hybrid City map within Empedia"

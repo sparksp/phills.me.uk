@@ -5,9 +5,8 @@ description = "A quick JS snippet to search Google for MP3 files with the given 
 aliases = ["/snips/5-mp3-search", "/snips/5"]
 tags = ["javascript", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight javascript >}}
 /**

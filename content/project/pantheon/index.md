@@ -2,9 +2,8 @@
 date = "2011-11-02T09:08:53Z"
 title = "Pantheon"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "pantheon.jpg"
   title = "Screenshot of the Pantheon main menu"

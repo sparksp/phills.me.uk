@@ -6,9 +6,8 @@ description = "This script will launch iSync and ask it to syncronize and termin
 aliases = ["/snips/12-isync-reactor", "/snips/12"]
 tags = ["applescript", "osx", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 {{< highlight applescript >}}
 (*

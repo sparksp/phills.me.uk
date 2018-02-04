@@ -5,9 +5,8 @@ description = "Simple Avahi definitions for SSH services including Fish and SCP.
 aliases = ["/snips/11-ssh-avahi-service", "/snips/11"]
 tags = ["xml", "unix", "code"]
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "snip"
+[menu.main]
+  parent = "snip"
 +++
 Simple [Avahi](https://www.avahi.org/) definitions for SSH services including Fish and SCP.
 

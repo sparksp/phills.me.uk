@@ -2,9 +2,8 @@
 date = "2009-11-02T08:58:55Z"
 title = "My Charnwood"
 categories = ["programming"]
-[menu]
-  [menu.main]
-    parent = "project"
+[menu.main]
+  parent = "project"
 [[resources]]
   src = "my-charnwood.jpg"
   title = "Screenshot of My Charnwood's map showing nearby recycling centres"
