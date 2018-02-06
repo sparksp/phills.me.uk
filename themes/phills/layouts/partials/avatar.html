@@ -1,1 +1,5 @@
-<img src="{{ "/img/phills.jpg" | relURL }}" class="polaroid pure-img" alt="Phill Sparks Avatar">
+{{- with $.Site.GetPage "page" "about/index.md" }}
+{{- range .Resources.ByType "image" }}
+<img src="{{ .Permalink }}" class="polaroid pure-img" alt="{{ .Title }}" height="{{ .Height }}" width="{{ .Width }}">
+{{- end }}
+{{- end }}
