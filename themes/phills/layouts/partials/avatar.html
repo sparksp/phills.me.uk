@@ -1,5 +1,6 @@
 {{- with $.Site.GetPage "page" "about/index.md" }}
 {{- range .Resources.ByType "image" }}
-<img src="{{ .Permalink }}" class="polaroid pure-img" alt="{{ .Title }}" height="{{ .Height }}" width="{{ .Width }}">
+{{- $image := .Fill "300x300" }}
+<img src="{{ $image.Permalink }}" class="polaroid pure-img" alt="{{ $image.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
 {{- end }}
 {{- end }}
