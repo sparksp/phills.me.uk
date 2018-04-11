@@ -9,11 +9,5 @@ date = "2012-10-25"
     parent = "climbing"
 +++
 
-- ITC Certificate in Outdoor First Aid
-- [Climbing Wall Leading Award][CWLA] since 2015
-- [Single Pitch Award][SPA] since 2013
-- [Climbing Wall Award][CWA] (with Abseiling) since 2012
-
-[CWA]: http://www.mountain-training.org/award-schemes/cwa
-[SPA]: http://www.mountain-training.org/award-schemes/spa
-[CWLA]: http://www.mountain-training.org/award-schemes/cwla
+<div class="tahdah-badge" data-candidateid="151331" data-branding="mta" data-colour="#de641a" subDomain="mt"></div>
+<script src="https://cms.tahdah.me/scripts/publicbadge.js"></script>
