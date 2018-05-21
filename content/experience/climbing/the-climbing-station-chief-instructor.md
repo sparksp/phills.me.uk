@@ -3,7 +3,7 @@ weight = -502017
 type = "job"
 title = "Chief Instructor"
 category = "Climbing Experience"
-duration = "2017–Present"
+duration = "2017–2018"
 date = "2017-09-01"
 
 [company]
