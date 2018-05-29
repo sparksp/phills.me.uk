@@ -4,8 +4,23 @@ languageCode = "en-GB"
 theme = "phills"
 enableRobotsTxt = true
 enableGitInfo = true
-googleAnalytics = "UA-2556883-4"
 pygmentsUseClasses = true
+
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.speakerDeck]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
 
 [Params]
   Author = "Phill Sparks"
