@@ -4,7 +4,6 @@ languageCode = "en-GB"
 theme = "phills"
 enableRobotsTxt = true
 enableGitInfo = true
-googleAnalytics = "UA-2556883-4"
 pygmentsUseClasses = true
 
 [privacy]
