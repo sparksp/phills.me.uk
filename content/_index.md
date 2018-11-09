@@ -1,6 +1,6 @@
 +++
 title = "Phill Sparks"
-description = "Phill is Chief Instructor at The Climbing Station, Loughborough"
+description = "Phill is a Climbing Coach, Instructor and Trainer in Leicester."
 
 [menu.main]
   name = "About"
