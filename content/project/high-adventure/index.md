@@ -2,8 +2,6 @@
 date = "2012-11-02T09:03:59Z"
 title = "High Adventure"
 categories = ["programming"]
-[menu.main]
-  parent = "project"
 [[resources]]
   src = "high-adventure.jpg"
   title = "Screenshot of High Adventure website from 2012"

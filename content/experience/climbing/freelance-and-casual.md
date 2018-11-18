@@ -6,10 +6,6 @@ description = "I lead sessions at various venues around Leicestershire and the M
 duration = "2012–Present"
 aliases = ["/experience/climbing/the-tower-climbing-centre/", "/experience/climbing/the-climbing-station/", "/experience/climbing/beaumanor-hall/"]
 date = "2012-10-25"
-
-[menu]
-  [menu.main]
-    parent = "climbing"
 +++
 
 I lead sessions at various venues around Leicestershire and the Midlands including:

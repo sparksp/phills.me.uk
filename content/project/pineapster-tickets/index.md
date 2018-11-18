@@ -2,8 +2,6 @@
 date = "2010-11-02T09:05:02Z"
 title = "Pineapster Tickets"
 categories = ["programming"]
-[menu.main]
-  parent = "project"
 [[resources]]
   src = "pineapster-tickets.png"
   title = "Screenshot of the Pineapster Tickets homepage showing popular locations and today's events"

@@ -6,8 +6,6 @@ description = "Launch a new terminal window, regardless of Terminal already runn
 aliases = ["/snips/3-new-terminal", "/snips/3"]
 tags = ["applescript", "osx", "code"]
 categories = ["programming"]
-[menu.main]
-  parent = "snip"
 +++
 {{< highlight applescript >}}
 (*

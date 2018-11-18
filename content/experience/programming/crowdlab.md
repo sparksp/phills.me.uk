@@ -8,9 +8,6 @@ date = "2013-02-01"
 [company]
   name = "CrowdLab"
   url = "http://crowdlab.com"
-[menu]
-  [menu.main]
-    parent = "programming"
 +++
 Initially migrating the CrowdLab API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL; designing and implementing new features from the API / Database point of view, while also considering the wider reaching effects of elements.  I facilitated the implementation and continued use of Scrum within CrowdLab.  I became an interface between the Market Research and the Technical teams.
 

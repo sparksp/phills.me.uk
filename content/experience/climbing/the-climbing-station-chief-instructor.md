@@ -8,10 +8,6 @@ date = "2017-09-01"
 [company]
   name = "The Climbing Station"
   url = "http://theclimbingstation.com/"
-
-[menu]
-  [menu.main]
-    parent = "climbing"
 +++
 
 1. Coordinating instructed sessions and being responsible for running NIBAS and NICAS within the Gibbon and Academy groups.

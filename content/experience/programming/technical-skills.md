@@ -3,9 +3,6 @@ weight = -2100
 title = "Technical Skills"
 markup = "mmark"
 date = "2017-02-02T10:51:05Z"
-[menu]
-  [menu.main]
-    parent = "programming"
 +++
 
 {.columns}

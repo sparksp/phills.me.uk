@@ -6,8 +6,6 @@ description = "Adds hTodo support to the operator toolbar."
 aliases = ["/snips/13-htodo-user-script", "/snips/13"]
 tags = ["javascript", "code"]
 categories = ["programming"]
-[menu.main]
-  parent = "snip"
 +++
 {{< highlight javascript >}}
 /**

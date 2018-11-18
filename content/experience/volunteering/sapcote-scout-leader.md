@@ -7,9 +7,6 @@ duration = "2009–2012"
 date = "2009-08-09"
 [company]
   name = "1st Sapcote Scouts"
-[menu]
-  [menu.main]
-    parent = "volunteering"
 +++
 During my time as a Leader with 1st Sapcote Scouts, I completed my leader training and achieved the [Wood Badge][Wood Badge]. I helped to grow the section from a minimum of 2 scouts up to 9 scouts at the start of 2012. The section continues to grow under new leadership.
 
