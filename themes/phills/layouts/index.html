@@ -2,7 +2,17 @@
   {{- .Title -}}
 {{ end }}
 {{ define "main" }}
-{{- with .Site.GetPage "section" "experience" }}
-{{ partial "experience" . }}
-{{- end }}
+<div class="content pure-u-1"><div class="content-inner">
+  <div class="tiles tiles-4">
+  {{- range $page := where .Site.RegularPages "Section" "photo" }}
+    {{- range first 1 (.Resources.ByType "image") }}
+    <figure class="tile">
+      {{- $image := .Fill "400x400" -}}
+      <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
+      <figcaption>{{ $page.Title }}</figcaption>
+    </figure>
+    {{- end }}
+  {{- end }}
+  </div>
+</div></div>
 {{ end }}
