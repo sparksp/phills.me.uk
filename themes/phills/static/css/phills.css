@@ -86,6 +86,7 @@ article > h2 {
   width: 300px;
   max-width: 100%;
   text-align: center;
+  margin: 0 auto; /* centered */
 }
 .social-menu .pure-menu-link {
   padding: .5em;
@@ -150,6 +151,7 @@ h3 + p {
   border-color: #eee;
   border-style: solid;
   border-width: 1px;
+  margin: 0 auto; /* centered */
 
   width: 300px;
   box-sizing: border-box;
