@@ -1,0 +1,4 @@
+{{- with index .Params "course-search" }}
+<div class="course_search_container"{{ if index . "provider-id" }} provider-id="{{ index . "provider-id" }}"{{ end }}{{ if .awards }} awards="{{ .awards }}"{{ end }}{{ if .venue }} awards="{{ .venue }}"{{ end }}{{ if index . "hide-residential" }} hide-residential{{ end }}{{ if index . "hide-filter" }} hide-filter{{ end }}{{ if index . "hide-spaces" }} hide-spaces{{ end }}{{ if index . "hide-bookings" }} hide-bookings{{ end }}{{ if index . "provider-links" }} provider-links{{ end }}{{ if index . "months-to-show" }} months-to-show="{{ index . "months-to-show" }}"{{ end }}></div>
+<script src="https://cms.tahdah.me/scripts/publiccoursesearch.js"></script>
+{{- end }}

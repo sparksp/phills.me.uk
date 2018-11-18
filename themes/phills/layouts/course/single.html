@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    {{ partial "course-search" . }}
+  </article>
+
+</div></div>
+{{ end }}
