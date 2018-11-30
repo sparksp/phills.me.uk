@@ -5,7 +5,7 @@
 
     <div class="pure-menu sidebar-menu">
       <ul class="pure-menu-list">
-        {{- range where .Data.Pages ".Type" "experience-list" }}
+        {{- range .Sections }}
           <li class="pure-menu-item"><a href="#{{ .Title | urlize }}" class="pure-menu-link">{{ .LinkTitle }}</a></li>
         {{- end }}
       </ul>
@@ -15,7 +15,7 @@
 
 <div class="content pure-u-1 pure-u-md-3-4">
   <div class="content-inner">
-    {{- range where .Data.Pages ".Type" "experience-list" }}
+    {{- range .Sections }}
       <a name="{{ .Title | urlize }}"></a>
       {{- .Render "item" -}}
     {{- end }}
