@@ -1,0 +1,9 @@
+{{- with .Parent }}
+{{- partial "breadcrumb/item" . }}
+{{- end }}
+{{- if .IsHome }}
+<li class="pure-menu-item"><a class="pure-menu-link" href="{{ .RelPermalink }}"><i class="fa fa-home" title="{{ .LinkTitle | markdownify }}"></i></a></li>
+{{- else }}
+<li class="pure-menu-item"><a class="pure-menu-link" href="{{ .RelPermalink }}">{{ .LinkTitle | markdownify }}</a></li>
+{{- end }}
+<li class="pure-menu-item separator"><i class="fa fa-chevron-right"></i></li>
