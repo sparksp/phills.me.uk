@@ -39,6 +39,7 @@
     </div>
     <div id="layout">
       <div class="pure-g">
+        {{- partial "breadcrumbs" . }}
         {{- block "main" . }}{{ end }}
       </div>
       <div class="footer"><div class="footer-inner">

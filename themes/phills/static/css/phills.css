@@ -97,6 +97,16 @@ article > h2 {
   background: transparent;
 }
 
+.breadcrumbs {
+  padding-top: .5em;
+}
+.breadcrumbs .pure-menu-link {
+  padding: 0;
+}
+.breadcrumbs .pure-menu-link:hover {
+  background-color: transparent;
+}
+
 .footer {
   border-top: 1px solid #ddd;
   margin-top: 1em;
