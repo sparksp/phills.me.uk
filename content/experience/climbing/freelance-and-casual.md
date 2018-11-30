@@ -3,7 +3,6 @@ weight = -200000
 type = "job"
 title = "Freelance Climbing Instructor in the Midlands"
 description = "I lead sessions at various venues around Leicestershire and the Midlands"
-category = "Climbing Experience"
 duration = "2012–Present"
 aliases = ["/experience/climbing/the-tower-climbing-centre/", "/experience/climbing/the-climbing-station/", "/experience/climbing/beaumanor-hall/"]
 date = "2012-10-25"

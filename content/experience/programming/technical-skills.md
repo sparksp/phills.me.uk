@@ -1,7 +1,6 @@
 +++
 weight = -2100
 title = "Technical Skills"
-category = "Programming Experience"
 markup = "mmark"
 date = "2017-02-02T10:51:05Z"
 [menu]

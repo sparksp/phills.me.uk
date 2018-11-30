@@ -3,7 +3,6 @@ weight = -2012
 type = "job"
 title = "County Scout Network Commissioner"
 linktitle = "Leicestershire Network Commissioner"
-category = "Volunteering & Youth Experience"
 duration = "2012–2016"
 date = "2012-07-02"
 [company]

@@ -3,7 +3,6 @@ weight = -2013
 type = "job"
 title = "API Engineer & Tech Team Lead"
 linktitle = "Tech Team Lead at CrowdLab"
-category = "Programming Experience"
 duration = "2013 &amp; 2014–2016"
 date = "2013-02-01"
 [company]

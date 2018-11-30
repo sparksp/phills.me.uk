@@ -3,7 +3,6 @@ weight = -2015
 type = "job"
 title = "Queen's Scout Award Coordinator"
 linktitle = "Leicestershire QSA Coordinator"
-category = "Volunteering & Youth Experience"
 duration = "2015–Present"
 date = "2015-05-11"
 [company]

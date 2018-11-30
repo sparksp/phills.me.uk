@@ -3,7 +3,6 @@ weight = -2006
 type = "job"
 title = "Graduate Developer"
 linktitle = "Developer at Cuttlefish"
-category = "Programming Experience"
 duration = "2005–2012"
 date = "2006-04-01"
 [company]

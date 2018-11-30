@@ -3,7 +3,6 @@ weight = -2012
 type = "job"
 title = "Programmer"
 linktitle = "Programmer at Bulb Studios"
-category = "Programming Experience"
 duration = "2012–2013"
 date = "2012-05-01"
 
