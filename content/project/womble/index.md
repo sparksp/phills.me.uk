@@ -2,8 +2,6 @@
 date = "2012-11-02T09:04:32Z"
 title = "Womble"
 categories = ["programming"]
-[menu.main]
-  parent = "project"
 [[resources]]
   src = "womble.jpg"
   title = "Screenshot of the Womble homepage"

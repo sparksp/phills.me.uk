@@ -7,8 +7,5 @@ duration = "2004–2006"
 date = "2004-01-01"
 [company]
   name = "Connexions Leicester Shire"
-[menu]
-  [menu.main]
-    parent = "volunteering"
 +++
 A part-time job where I supported and led groups of young people to carry out various activities including attending meetings.

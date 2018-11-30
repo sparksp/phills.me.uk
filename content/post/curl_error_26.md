@@ -5,8 +5,6 @@ title = "cURL Error 26: Failed to open/read local data from file/application"
 tags = ["php", "curl", "error", "web design", "code"]
 categories = ["programming"]
 aliases = ["/blog/2008/08/26/curl_error_26"]
-[menu.main]
-  parent = "post"
 +++
 
 Last night I started working on Lilly's 365 and very quickly ran into a few problems.  Most were simple quirks of [site5](http://www.site5.com/in.php?id=51960) fixed by getting the permissions right.  The thing that kept bugging me was Phlickr, and more specifically its use of [cURL](http://curl.haxx.se/).

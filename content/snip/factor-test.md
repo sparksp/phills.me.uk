@@ -5,8 +5,6 @@ description = "PHP factor test for very large numbers, by lavalamp."
 aliases = ["/snips/4-factor-test", "/snips/4"]
 tags = ["php", "code"]
 categories = ["programming"]
-[menu.main]
-  parent = "snip"
 +++
 
 PHP factor test for very large numbers.

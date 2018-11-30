@@ -6,8 +6,6 @@ description = "My preferred settings for rEFIt."
 aliases = ["/snips/7-refitconf", "/snips/7"]
 tags = ["refit.conf", "config", "code"]
 categories = ["programming"]
-[menu.main]
-  parent = "snip"
 +++
 
 My preferred settings for [rEFIt](http://refit.sourceforge.net/).
