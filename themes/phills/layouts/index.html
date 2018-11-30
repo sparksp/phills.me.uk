@@ -2,5 +2,7 @@
   {{- .Title -}}
 {{ end }}
 {{ define "main" }}
+{{- with .Site.GetPage "section" "experience" }}
 {{ partial "experience" . }}
+{{- end }}
 {{ end }}

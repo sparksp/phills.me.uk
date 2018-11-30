@@ -2,7 +2,6 @@
 weight = -502018
 type = "job"
 title = "Course Director"
-category = "Climbing Experience"
 duration = "2018–Present"
 date = "2018-05-21"
 

@@ -3,7 +3,6 @@ weight = -2016
 type = "job"
 title = "Volunteer Climbing Assessor"
 linktitle = "Scout Climbing Assessor"
-category = "Climbing Experience"
 duration = "2016–Present"
 date = "2016-01-06"
 [company]

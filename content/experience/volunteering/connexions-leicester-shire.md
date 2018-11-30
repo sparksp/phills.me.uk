@@ -3,7 +3,6 @@ weight = -2004
 type = "job"
 title = "Senior Sessional Support Worker"
 linktitle = "Sessional Worker at Connexions"
-category = "Volunteering & Youth Experience"
 duration = "2004–2006"
 date = "2004-01-01"
 [company]

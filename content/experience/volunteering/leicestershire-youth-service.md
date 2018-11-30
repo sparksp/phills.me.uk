@@ -3,7 +3,6 @@ weight = -2005
 type = "job"
 title = "Assistant Youth Work Leader"
 linktitle = "Youth Worker at Leicestershire Youth Service"
-category = "Volunteering & Youth Experience"
 duration = "2005–2011"
 date = "2006-04-01"
 [company]
