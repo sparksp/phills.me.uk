@@ -3,9 +3,7 @@
   {{ .Content }}
 
   {{- $title := .Title -}}
-  {{- with where .Site.Pages "Section" "experience" }}
-    {{- range where . ".Params.category" $title }}
-      {{- .Render "item" }}
-    {{- end }}
+  {{- range .Pages }}
+    {{- .Render "item" }}
   {{- end }}
 </article>
