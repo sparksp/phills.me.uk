@@ -43,6 +43,13 @@ article > h2 {
   margin-right: 1em;
 }
 
+.header-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sidebar-menu {
   margin-top: 2em;
 }
