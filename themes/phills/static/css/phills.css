@@ -181,6 +181,37 @@ a.tag {
   padding: 2px 4px;
 }
 
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  margin: .5em 0;
+}
+
+.tile {
+  position: relative;
+  margin: .5em;
+}
+
+.tile img {
+  opacity: .9;
+}
+.tile :hover img {
+  opacity: 1;
+}
+
+.tile figcaption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .5em;
+  background-color: #de641a; /* fallback */
+  background-color: rgba(222,100,26, .6);
+  color: white;
+  text-align: center;
+}
+
 @media (min-width: 600px) {
   .columns {
     column-count: 2;

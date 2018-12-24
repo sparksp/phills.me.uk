@@ -1,0 +1,10 @@
+<figure class="tile">
+  {{- $page := . -}}
+  {{- range first 1 (.Resources.ByType "image") }}
+  {{- $image := .Resize "400x" -}}
+  <a href="{{ $page.RelPermalink }}">
+    <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
+    <figcaption>{{ $page.Title }}</figcaption>
+  </a>
+  {{- end }}
+</figure>

@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h2>{{ .Title }}</h2>
+    {{ .Content }}
+    <div class="tiles">
+    {{- range .Data.Pages }}
+      {{- .Render "item" -}}
+    {{- end }}
+    </div>
+  </article>
+
+</div></div>
+{{ end }}
