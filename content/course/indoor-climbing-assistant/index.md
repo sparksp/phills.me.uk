@@ -8,6 +8,9 @@ date = 2018-11-09T19:18:18Z
   hide-residential=true
   hide-filter=true
   months-to-show="6"
+[[resources]]
+  src = "assistants.jpg"
+  title = "A child climbing an artificial wall with three adults helping to hold the ropes."
 +++
 
 *This new scheme is currently being developed and will be launched in January 2019.  The information below is designed to give you an insight into what's coming and should not be considered definitive at this stage.*
