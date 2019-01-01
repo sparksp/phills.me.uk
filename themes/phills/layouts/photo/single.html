@@ -22,7 +22,7 @@
 
     {{- range .Resources.ByType "image" }}
     {{- $image := .Resize "1280x" }}
-    <figure><img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}"></figure>
+    <figure class="full"><img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}"></figure>
     {{- end }}
 
     {{ .Content }}

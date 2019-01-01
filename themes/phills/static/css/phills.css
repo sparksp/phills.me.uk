@@ -144,6 +144,10 @@ p, figure, .highlight {
   margin-top: 8px; /* .5em */
   margin-bottom: 0;
 }
+figure.full {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 
 h3 > small {
