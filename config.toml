@@ -24,7 +24,7 @@ pygmentsUseClasses = true
 
 [Params]
   Author = "Phill Sparks"
-  Twitter = "@PhillSparks"
+  Twitter = "@SparksPhill"
   Facebook = "sparks.phill"
 
 [[menu.social]]
@@ -45,4 +45,4 @@ pygmentsUseClasses = true
 [[menu.social]]
   name = "Twitter"
   identifier = "twitter"
-  url = "https://twitter.com/PhillSparks"
+  url = "https://twitter.com/SparksPhill"

@@ -1,6 +1,6 @@
 /* TEAM */
 	Developer: Phill Sparks
-	Twitter: @PhillSparks
+	Twitter: @SparksPhill
 	Location: Leicester, UK
 
 /* SITE */
