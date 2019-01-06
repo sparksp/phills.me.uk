@@ -44,7 +44,8 @@
         {{- block "main" . }}{{ end }}
       </div>
       <div class="footer"><div class="footer-inner">
-        <p>
+        {{ partial "social-menu" . }}
+        <p align="center">
           Copyright &copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Params.Author }}.
           Built with <a href="https://gohugo.io">Hugo</a>.
           Hosted on <a href="https://www.netlify.com/">Netlify</a>.
