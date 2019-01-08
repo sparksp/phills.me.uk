@@ -1,0 +1,6 @@
+{{ if .IsNamedParams }}
+<div class="tahdah-badge" data-candidateid="{{ .Get "candidateid" }}"{{ with .Get "branding" }} data-branding="{{ . }}"{{ end }}{{ with .Get "colour" }} data-colour="{{ . }}"{{ end }}{{ with .Get "sub-domain" | default "mt" }} subDomain="{{ . }}"{{ end }}></div>
+{{ else }}
+<div class="tahdah-badge" data-candidateid="{{ .Get 0 }}" subDomain="mt"></div>
+{{ end }}
+<script src="https://cms.tahdah.me/scripts/publicbadge.js"></script>
