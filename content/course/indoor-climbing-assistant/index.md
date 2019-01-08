@@ -13,9 +13,7 @@ date = 2018-11-09T19:18:18Z
   title = "A child climbing an artificial wall with three adults helping to hold the ropes."
 +++
 
-*This new scheme is currently being developed and will be launched in January 2019.  The information below is designed to give you an insight into what's coming and should not be considered definitive at this stage.*
-
-The Indoor Climbing Assistant qualification is for those with competence in the basic skills of climbing who wish to assist qualiﬁed climbing instructors and coaches in the management of their sessions. Indoor Climbing Assistants are assessed as being competent in their role supporting qualiﬁed instructors and coaches but are not qualiﬁed to manage groups independently.
+The Indoor Climbing Assistant is designed for people who want to support qualified instructors with climbing sessions on artificial structures. People interested in this scheme might be parents, youth workers, young leaders or teachers and the focus is on assisting with core tasks within a session. Indoor Climbing Assistants are not qualified to manage groups independently. Use of the phrase 'indoor climbing walls' in this context refers to all artificial structures, including outdoor artificial climbing towers and mobile walls.
 
 ### Is it for me?
 
@@ -24,7 +22,7 @@ The prerequisites for registration are as follows:
 * Be at least 16 years old.
 * Have an interest in assisting qualified instructors on indoor climbing walls.
 
-If the above applies to you, when registrations open in January 2019 you will be able to register for the scheme. This will give you access to DLOG (our digital logbook) where you can record your experience and keep track of your progress.
+If the above applies to you, create an account on the [candidate management system][mt-cms] or log in if you already have one. The registration fee is £20 and covers access to DLOG (the digital logbook) where you can record your experience and keep track of your progress, a quality assured course delivered by an approved provider, an online training record and an official certificate.
 
 ### Training and Assessment
 
@@ -45,8 +43,11 @@ After the course you will be given an assessment result of either Pass or Defer 
 
 ### Handbook
 
-You can [download the draft handbook](http://www.mountain-training.org/download.aspx?f=1442) from the Mountain Training website.
+You can [download the handbook][ica-handbook] from the Mountain Training website.
 
 ### Courses
 
-Courses will be available from January 2019 and you will then be able to search for one using the course finder.
+The scheme is now live!  If you would like to arrange a course for your school / group then please get in touch with me.  Any courses organised will be listed below in the course finder:
+
+[mt-cms]: https://mt.tahdah.me/
+[ica-handbook]: http://www.mountain-training.org/download.aspx?f=1442
