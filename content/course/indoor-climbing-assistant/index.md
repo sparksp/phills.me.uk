@@ -3,11 +3,6 @@ title = "Indoor Climbing Assistant"
 date = 2018-11-09T19:18:18Z
 [menu.main]
   parent = "course"
-[course-search]
-  provider-id="11331"
-  hide-residential=true
-  hide-filter=true
-  months-to-show="6"
 [[resources]]
   src = "assistants.jpg"
   title = "A child climbing an artificial wall with three adults helping to hold the ropes."
@@ -48,6 +43,13 @@ You can [download the handbook][ica-handbook] from the Mountain Training website
 ### Courses
 
 The scheme is now live!  If you would like to arrange a course for your school / group then please get in touch with me.  Any courses organised will be listed below in the course finder:
+
+{{< tahdah/course-search
+  provider-id="11331"
+  hide-residential="true"
+  hide-filter="true"
+  months-to-show="6"
+>}}
 
 [mt-cms]: https://mt.tahdah.me/
 [ica-handbook]: http://www.mountain-training.org/download.aspx?f=1442
