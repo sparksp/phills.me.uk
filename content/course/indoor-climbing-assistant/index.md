@@ -4,8 +4,8 @@ date = 2018-11-09T19:18:18Z
 [menu.main]
   parent = "course"
 [[resources]]
-  src = "assistants.jpg"
-  title = "A child climbing an artificial wall with three adults helping to hold the ropes."
+  src = "climbing-assistant.jpg"
+  title = "A young person learning to belay with an assistant holding their rope."
 +++
 
 The Indoor Climbing Assistant is designed for people who want to support qualified instructors with climbing sessions on artificial structures. People interested in this scheme might be parents, youth workers, young leaders or teachers and the focus is on assisting with core tasks within a session. Indoor Climbing Assistants are not qualified to manage groups independently. Use of the phrase 'indoor climbing walls' in this context refers to all artificial structures, including outdoor artificial climbing towers and mobile walls.
