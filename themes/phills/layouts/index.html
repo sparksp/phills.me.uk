@@ -3,7 +3,7 @@
 {{ end }}
 {{ define "main" }}
 <div class="content pure-u-1"><div class="content-inner">
-  <div class="tiles tiles-4">
+  <div class="tiles">
   {{- range $page := where .Site.RegularPages "Section" "photo" }}
     {{- range first 1 (.Resources.ByType "image") }}
     <figure class="tile">

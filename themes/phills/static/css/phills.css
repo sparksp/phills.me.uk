@@ -98,10 +98,10 @@ h2 {
   margin: 0 .5em;
 }
 .article-content {
-  flex: 30 0 380px;
+  flex: 10 1 250px;
 }
 .article-sidebar {
-  flex: 1 1 250px;
+  flex: 1 1 150px;
   order: -1;
 }
 .article-content h2 {
@@ -205,16 +205,14 @@ a.tag {
 }
 
 .tiles {
-  display: flex;
-  flex-wrap: wrap;
-  margin: .5em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
 }
 .tile {
   position: relative;
-  margin: .5em;
-}
-.tiles-4 .tile {
-  flex: 1 1 250px;
+  margin: 0;
 }
 .tile img {
   width: 100%;
