@@ -23,14 +23,14 @@ a:hover, a:focus {
   padding-top: 1px;
 }
 
-.sidebar-inner, article > h2 {
+.sidebar-inner, h2 {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
   padding-top: 8px;
   z-index: 1;
 }
-article > h2 {
+h2 {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   padding-bottom: 4px;
@@ -87,6 +87,25 @@ article > h2 {
 .header .pure-menu-selected .pure-menu-link:hover,
 .header .pure-menu-selected .pure-menu-link:focus {
   background: inherit;
+}
+
+.article-layout {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em .5em;
+}
+.article-content, .article-sidebar {
+  margin: 0 .5em;
+}
+.article-content {
+  flex: 10 1 250px;
+}
+.article-sidebar {
+  flex: 1 1 150px;
+  order: -1;
+}
+.article-content h2 {
+  margin-top: 0;
 }
 
 .social-menu {
@@ -174,7 +193,7 @@ h3 + p {
   border-width: 1px;
   margin: 0 auto; /* centered */
 
-  width: 300px;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
@@ -186,16 +205,15 @@ a.tag {
 }
 
 .tiles {
-  display: flex;
-  flex-wrap: wrap;
-  margin: .5em 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin-top: 1em;
 }
 .tile {
+  display: inline-block;
   position: relative;
-  margin: .5em;
-}
-.tiles-4 .tile {
-  flex: 1 1 250px;
+  margin: 0;
 }
 .tile img {
   width: 100%;
