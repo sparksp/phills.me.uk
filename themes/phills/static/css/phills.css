@@ -211,6 +211,7 @@ a.tag {
   margin-top: 1em;
 }
 .tile {
+  display: inline-block;
   position: relative;
   margin: 0;
 }
