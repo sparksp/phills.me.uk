@@ -1,3 +1,3 @@
-<form{{ with .Get "name" }} name="{{ . }}"{{ end }} method="POST" data-netlify="true" class="pure-form pure-form-stacked">
+<form{{ with .Get "name" }} name="{{ . }}"{{ end }}{{ with .Get "action" }} action="{{ . }}"{{ end }} method="POST" data-netlify="true" class="pure-form pure-form-stacked">
     {{ .Inner }}
 </form>

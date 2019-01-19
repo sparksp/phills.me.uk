@@ -14,7 +14,7 @@ To book a session or for more information on any of my courses, please fill in t
 [07764498307](tel:07764498307)
 
 {{% /grid/column %}}{{< grid/column md-1-2 >}}
-  {{< form name="contact" >}}
+  {{< form name="contact" action="/contact/success/" >}}
     {{< form/text name="name" label="Name" required="yes" autofocus="yes" >}}
     {{< form/email name="email" label="E-mail address" required="yes" >}}
     {{< form/tel name="tel" label="Phone number" >}}
