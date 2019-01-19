@@ -1,0 +1,1 @@
+<input type="text"{{ if .Get "autofocus" }} autofocus{{ end }}{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "label" }} placeholder="{{ . }}" aria-label="{{ . }}"{{ end }}{{ with .Get "value" }} value="{{ . }}"{{ end }} class="pure-input-1">
