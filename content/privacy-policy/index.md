@@ -2,6 +2,9 @@
 title = "Privacy Policy"
 date = 2019-01-20T11:38:00
 layout = "page"
+
+[menu.footer]
+  name = "Privacy"
 +++
 I am committed to protecting your personal information and your right to privacy. If you have any questions or concerns about my policy, or my practices with regards to your personal information, please [contact me](/contact/).
 

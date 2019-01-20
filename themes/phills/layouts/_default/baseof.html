@@ -45,10 +45,16 @@
       </div>
       <div class="footer"><div class="footer-inner">
         {{ partial "social-menu" . }}
-        <p align="center">
-          Copyright &copy; {{ .Site.LastChange.Format "2006" }} {{ .Site.Params.Author }}.
-          Built with <a href="https://gohugo.io">Hugo</a>.
-          Hosted on <a href="https://www.netlify.com/">Netlify</a>.
+        <div class="phills-menu">
+          <ul class="phills-menu-list">
+            {{- range .Site.Menus.footer }}
+            <li class="phills-menu-item"><a href="{{ .URL }}">{{ .Name }}</a>
+            {{- end }}
+            <li class="phills-menu-item">Hosted on <a href="https://www.netlify.com/">Netlify</a>
+          </ul>
+        </div>
+        <p class="copyright">
+          {{ .Site.Params.Author }} &copy; {{ .Site.LastChange.Format "2006" }}
         </p>
       </div></div>
     </div>
