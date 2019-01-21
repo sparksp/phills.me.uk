@@ -24,19 +24,19 @@
   </head>
   <body>
     <div class="header-wrapper">
-      <div class="header">
+      <header class="header" role="banner">
         <div class="header-inner">
           <h1 class="site-title"><a href="{{ "/" | relURL }}">Phill S<em>parks</em></a></h1>
           {{- partial "association-menu" . -}}
         </div>
-        <div class="pure-menu pure-menu-horizontal pure-menu-scrollable">
+        <nav class="pure-menu pure-menu-horizontal pure-menu-scrollable">
           <ul class="pure-menu-list">
             {{- range .Site.Menus.main }}
             <li class="pure-menu-item{{if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} pure-menu-selected{{end}}"><a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a></li>
             {{- end }}
           </ul>
-        </div>
-      </div>
+        </nav>
+      </header>
     </div>
     <div id="layout">
       <div class="pure-g">

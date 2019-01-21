@@ -23,20 +23,20 @@ a:hover, a:focus {
   padding-top: 1px;
 }
 
-.sidebar-inner, h2 {
+.page-title, .sidebar-inner {
   position: -webkit-sticky;
   position: sticky;
   top: -1px;
   padding-top: 8px;
   z-index: 1;
 }
-h2 {
+.page-title {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   padding-bottom: 4px;
 }
 
-.header-inner, .content-inner, .footer-inner, .sidebar-inner {
+.header-inner, .content-inner, .footer-inner, .sidebar .sidebar-inner {
   margin-left: 1em;
 }
 .header-inner, .content-inner, .footer-inner {
@@ -59,7 +59,10 @@ h2 {
 }
 .pure-menu-link:hover,
 .pure-menu-link:focus {
+  box-sizing: border-box;
   color: #333;
+  display: inline-block;
+  min-width: 100%;
   overflow: visible;
   text-decoration: none;
 }
@@ -104,7 +107,7 @@ h2 {
   flex: 1 1 150px;
   order: -1;
 }
-.article-content h2 {
+.article-content h1 {
   margin-top: 0;
 }
 
@@ -170,15 +173,15 @@ h2 {
 #layout {
   line-height: 1.2;
 }
-h2, .sidebar-inner {
+.page-title, .sidebar .sidebar-inner {
   margin-top: 24px; /* 1.5em */
   margin-bottom: 0;
 }
-h3 {
+h2 {
   margin-top: 16px; /* 1em */
   margin-bottom: 0;
 }
-p, figure, .highlight {
+p, figure, .highlight, .tahdah-badge {
   margin-top: 8px; /* .5em */
   margin-bottom: 0;
 }
@@ -188,14 +191,14 @@ figure.full {
 }
 
 
-h3 > small {
+h2 > small {
   font-weight: normal;
   float: right;
   margin-left: .5em;
   line-height: 1.7;
   color: #999;
 }
-h3 + p {
+h2 + p {
   clear: right;
 }
 

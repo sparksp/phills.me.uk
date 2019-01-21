@@ -2,10 +2,12 @@
 <div class="content pure-u-1">
   <article class="article-layout">
     <div class="article-content">
-      <h2>{{ .Title }}</h2>
+      <h1 class="page-title">{{ .Title }}</h1>
       {{ .Content }}
     </div>
-    <div class="article-sidebar">{{ partial "avatar" . }}</div>
+    <div class="article-sidebar"><div class="sidebar-inner">
+      {{ partial "avatar" . }}
+    </div></div>
   </article>
 </div>
 {{ end }}

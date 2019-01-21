@@ -2,10 +2,13 @@
 <div class="content pure-u-1"><div class="content-inner">
 
   <article>
-    <h2>{{ .Title }}</h2>
+    <h1 class="page-title">{{ .Title }}</h1>
     {{ .Content }}
     {{ range .Data.Pages }}
-      {{ .Render "item" }}
+      <article class="project">
+        <h2>{{ .Title }}</h2>
+        {{ .Render "item" }}
+      </article>
     {{ end }}
   </article>
 
