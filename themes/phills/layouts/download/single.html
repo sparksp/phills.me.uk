@@ -1,0 +1,24 @@
+{{ define "main" }}
+<div class="content pure-u-1"><div class="content-inner">
+
+  <article>
+    <h1 class="page-title">{{ .Title }}</h1>
+    {{ .Content }}
+    {{- with .Resources }}
+        {{- if gt (len .) 1 }}
+        <ul>
+            {{- range . }}
+            <li>Download: <a href="{{ .Permalink }}" download>{{ .Title }}</a></li>
+            {{- end }}
+        </ul>
+        {{- else }}
+            {{- range . }}
+            <p>Download: <a href="{{ .Permalink }}" download>{{ .Title }}</a></p>
+            {{- end }}
+        {{- end }}
+    {{- end }}
+    <p>Last updated on <time datetime="{{ .Lastmod }}">{{ .Lastmod.Format "Monday, 2 January 2006" }}</time>.</p>
+  </article>
+
+</div></div>
+{{ end }}
