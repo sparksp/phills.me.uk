@@ -2,6 +2,7 @@
 title = "Mountain Training Association"
 date = "2018-12-22T17:08:00Z"
 link = "//www.mountain-training.org/associations/mountain-training-association"
+menu = "association"
 
 [[resources]]
   src = "mta.png"

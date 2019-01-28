@@ -1,11 +1,12 @@
 <div class="association">
-{{- range where .Site.RegularPages "Section" "association" }}
-  {{- $page := . }}
-  {{- range first 1 (.Resources.ByType "image") }}
-    {{- $image := .Resize "50x" }}
-    <a href="{{ $page.Params.link | default $page.RelPermalink }}">
-      <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
-    </a>
+{{- range .Site.Menus.association }}
+  {{- with $page := .Page }}
+    {{- range first 1 (.Resources.ByType "image") }}
+      {{- $image := .Resize "50x" }}
+      <a href="{{ $page.Params.link | default $page.RelPermalink }}">
+        <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
+      </a>
+    {{- end }}
   {{- end }}
 {{- end }}
 </div>
