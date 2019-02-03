@@ -50,6 +50,12 @@ a:hover, a:focus {
   align-items: center;
 }
 
+.association .menu-link {
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: top;
+}
+
 .sidebar-menu {
   margin-top: 2em;
 }
