@@ -26,7 +26,10 @@
     <div class="header-wrapper">
       <header class="header" role="banner">
         <div class="header-inner">
-          <h1 class="site-title"><a href="{{ "/" | relURL }}">Phill S<em>parks</em></a></h1>
+          <div class="site-title">
+            <h1><a href="{{ "/" | relURL }}">Phill S<em>parks</em></a></h1>
+            <p>{{ $.Site.Params.Description }}</p>
+          </div>
           {{- partial "association-menu" . -}}
         </div>
         <nav class="pure-menu pure-menu-horizontal pure-menu-scrollable">

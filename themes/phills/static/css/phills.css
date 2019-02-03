@@ -161,6 +161,9 @@ a:hover, a:focus {
   color: #999;
 }
 
+.site-title {
+  margin: .5em 0;
+}
 .site-title, .site-title a {
   color: #333;
   text-decoration: none;
@@ -168,6 +171,15 @@ a:hover, a:focus {
 .site-title em {
   font-style: normal;
   color: #de641a;
+}
+.site-title h1, .site-title p {
+  margin: 0;
+  margin-bottom: .25em;
+}
+@media screen and (max-width: 25em) {
+  .site-title p {
+    font-size: 3.5vw;
+  }
 }
 
 #layout {
