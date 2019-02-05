@@ -1,0 +1,7 @@
+{{- with where (.Site.RegularPages.Related .) "Section" "association" }}
+<nav class="association">
+{{- range . }}
+  {{ .Render "icon-link" }}
+{{- end }}
+</nav>    
+{{- end }}

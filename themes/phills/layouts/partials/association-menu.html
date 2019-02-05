@@ -1,12 +1,7 @@
 <div class="association">
 {{- range .Site.Menus.association }}
-  {{- with $page := .Page }}
-    {{- range first 1 (.Resources.ByType "image") }}
-      {{- $image := .Resize "50x" }}
-      <a href="{{ $page.Params.link | default $page.RelPermalink }}" class="menu-link">
-        <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
-      </a>
-    {{- end }}
+  {{- with .Page }}
+    {{- .Render "icon-link" }}
   {{- end }}
 {{- end }}
 </div>

@@ -6,6 +6,15 @@ enableRobotsTxt = true
 enableGitInfo = true
 pygmentsUseClasses = true
 
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+
+[[related.indices]]
+  name = "association"
+  weight = 1
+
 [privacy]
   [privacy.disqus]
     disable = true
