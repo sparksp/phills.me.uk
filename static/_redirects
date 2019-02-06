@@ -8,6 +8,8 @@
 
 /projects  /project/
 
+/privacy-policy/ /policy/privacy/
+
 /pb/*      /snip/:splat/
 /snips/*   /snip/:splat/
 
