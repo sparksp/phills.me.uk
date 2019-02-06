@@ -43,11 +43,17 @@ a:hover, a:focus {
   margin-right: 1em;
 }
 
-.header-inner {
+.header-inner, .page-title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.association .menu-link {
+  display: inline-block;
+  margin-left: .5em;
+  vertical-align: top;
 }
 
 .sidebar-menu {
@@ -188,6 +194,9 @@ a:hover, a:focus {
 .page-title, .sidebar .sidebar-inner {
   margin-top: 24px; /* 1.5em */
   margin-bottom: 0;
+}
+.page-title h1 {
+  margin: 0;
 }
 h2 {
   margin-top: 16px; /* 1em */

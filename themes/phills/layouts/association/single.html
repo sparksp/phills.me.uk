@@ -4,8 +4,11 @@
   <article>
     <header class="page-title">
       <h1>{{ .Title }}</h1>
-      {{- partial "related-associations" . }}
+      <nav class="association">
+        {{- .Render "icon-link" }}
+      </nav>
     </header>
+
     {{ .Content }}
   </article>
 
