@@ -1,11 +1,11 @@
 {{- if .Parent }}
 {{- if not .Parent.IsHome }}
-<div class="breadcrumbs pure-u-1">
-    <nav class="content-inner pure-menu pure-menu-horizontal">
+<div class="breadcrumbs pure-u-1"><div class="content-inner">
+    <nav class="pure-menu pure-menu-horizontal">
         <ul class="pure-menu-list">
             {{ partial "breadcrumb/item" .Parent }}
         </ul>
     </nav>
-</div>
+</div></div>
 {{- end }}
 {{- end }}
