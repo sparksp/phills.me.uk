@@ -5,11 +5,24 @@
 <div class="content pure-u-1"><div class="content-inner">
   <div class="tiles">
   {{- range $page := where .Site.RegularPages "Section" "photo" }}
+    {{- $link := "" }}
+    {{- with $link = $page.Params.link }}
+    {{- with $.Site.GetPage $link }}
+    {{- $link = .Permalink }}
+    {{- end }}
+    {{- end }}
+
     {{- range first 1 (.Resources.ByType "image") }}
     <figure class="tile">
       {{- $image := .Fill "400x400" -}}
+      {{- if $link }}<a href="{{ $link }}">{{ end -}}
       <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
-      <figcaption>{{ $page.Title }}</figcaption>
+      {{- if $link }}</a>{{ end -}}
+      <figcaption>
+        {{- if $link }}<a href="{{ $link }}">{{ end -}}
+          {{ $page.Title }}
+        {{- if $link }}</a>{{ end -}}
+      </figcaption>
     </figure>
     {{- end }}
   {{- end }}

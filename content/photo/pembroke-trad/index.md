@@ -1,6 +1,7 @@
 +++
 title = "Trad Climbing in Pembrokeshire"
 date = 2018-10-19T09:18:53Z
+link = "/about"
 
 [[resources]]
     src = "*.jpg"

@@ -265,7 +265,7 @@ a.tag {
 .tile :link img {
   opacity: .9;
 }
-.tile :hover img {
+.tile :hover img, .tile:hover img {
   opacity: 1;
 }
 
@@ -283,6 +283,10 @@ a.tag {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.tile figcaption a {
+  display: block;
+  color: white;
 }
 
 @media (min-width: 600px) {

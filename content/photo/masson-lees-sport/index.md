@@ -1,6 +1,7 @@
 +++
 title = "Sport Climbing at Masson Lees"
 date = 2014-08-30T14:01:55Z
+link = "/about"
 
 [[resources]]
     src = "*.jpg"
