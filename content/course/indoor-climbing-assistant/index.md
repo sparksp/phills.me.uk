@@ -2,6 +2,7 @@
 title = "Indoor Climbing Assistant"
 date = 2018-11-09T19:18:18Z
 association = "mountain-training"
+aliases = ["/ica"]
 
 [menu.main]
   parent = "course"

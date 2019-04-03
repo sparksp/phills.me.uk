@@ -6,9 +6,11 @@
 /experience/climbing/the-climbing-station  /experience/climbing/freelance-and-casual/
 /experience/climbing/the-tower-climbing-centre  /experience/climbing/freelance-and-casual/
 
-/projects  /project/
+/ica /course/indoor-climbing-assistant/
 
 /privacy-policy/ /policy/privacy/
+
+/projects  /project/
 
 /pb/*      /snip/:splat/
 /snips/*   /snip/:splat/
