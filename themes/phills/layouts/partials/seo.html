@@ -3,8 +3,8 @@
 <meta property="og:title" content="{{ .Title }}">
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta name="twitter:site" content="{{ .Site.Params.Twitter }}">
-<meta name="twitter:creator" content="{{ .Site.Params.Twitter }}">
+<meta name="twitter:site" content="{{ site.Params.Twitter }}">
+<meta name="twitter:creator" content="{{ site.Params.Twitter }}">
 {{- with .Resources.ByType "image" }}
   <meta name="twitter:card" content="summary_large_image">
   {{- range . }}
@@ -15,7 +15,7 @@
   {{- end }}
 {{- else }}
   <meta name="twitter:card" content="summary">
-  {{- with $.Site.GetPage "page" "about/index.md" }}
+  {{- with site.GetPage "page" "about/index.md" }}
   {{- range .Resources.ByType "image" }}
   <meta property="og:image" content="{{ .Permalink }}">
   <meta property="og:image:alt" content="{{ .Title }}">
@@ -50,10 +50,10 @@
   {{- end }}
 {{- end }}
 {{- if .IsPage }}
-  {{- with .Site.Title }}
+  {{- with site.Title }}
     <meta property="og:site_name" content="{{ . }}">
   {{- end }}
-  {{- with .Site.Params.Facebook }}
+  {{- with site.Params.Facebook }}
     <meta property="article:author" content="https://www.facebook.com/{{ . }}">
   {{- end }}
   <meta property="article:section" content="{{ .CurrentSection.Title }}">

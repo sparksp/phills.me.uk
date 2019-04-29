@@ -4,10 +4,10 @@
 {{ define "main" }}
 <div class="content pure-u-1"><div class="content-inner">
   <div class="tiles">
-  {{- range $page := where .Site.RegularPages "Section" "photo" }}
+  {{- range $page := where site.RegularPages "Section" "photo" }}
     {{- $link := "" }}
     {{- with $link = $page.Params.link }}
-    {{- with $.Site.GetPage $link }}
+    {{- with site.GetPage $link }}
     {{- $link = .Permalink }}
     {{- end }}
     {{- end }}

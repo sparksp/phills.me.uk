@@ -1,5 +1,5 @@
 {{ if .IsNamedParams }}
-<div class="course_search_container"{{ with .Get "provider-id" }} provider-id="{{ . }}"{{ end }}{{ with .Get "awards" }} awards="{{ . }}"{{ end }}{{ with .Get "venue" }} venue="{{ . }}"{{ end }}{{ if .Get "hide-residential" }} hide-residential{{ end }}{{ if .Get "hide-filter" }} hide-filter{{ end }}{{ if .Get "hide-spaces" }} hide-spaces{{ end }}{{ if .Get "hide-bookings" }} hide-bookings{{ end }}{{ if .Get "provider-links" }} provider-links{{ end }}{{ with .Get "months-to-show" }} months-to-show="{{ . }}"{{ end }}></div>
+<div class="course_search_container"{{ with .Get "provider-id" }} provider-id="{{ . }}"{{ end }}{{ with .Get "awards" }} awards="{{ . }}"{{ end }}{{ with .Get "venue" }} venue="{{ . }}"{{ end }}{{ if .Get "hide-residential" }} hide-residential{{ end }}{{ if .Get "hide-filter" }} hide-filter{{ end }}{{ if .Get "hide-spaces" }} hide-spaces{{ end }}{{ if .Get "hide-bookings" }} hide-bookings{{ end }}{{ if .Get "provider-links" }} provider-links{{ end }}{{ with .Get "months-to-show" }} months-to-show="{{ . }}"{{ end }} subDomain="{{ default "mt" (.Get "sub-domain") }}"></div>
 {{ else }}
 <div class="course_search_container" awards="{{ .Get 0 }}" subDomain="mt"></div>
 {{ end }}

@@ -1,4 +1,4 @@
-{{- with $.Site.GetPage "page" "about/index.md" }}
+{{- with site.GetPage "page" "about/index.md" }}
 {{- range .Resources.ByType "image" }}
 {{- $image := .Fill "400x400" }}
 <img src="{{ $image.Permalink }}" class="polaroid pure-img" alt="{{ $image.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
