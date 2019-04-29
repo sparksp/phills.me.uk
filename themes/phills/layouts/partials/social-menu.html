@@ -1,7 +1,7 @@
 <div class="pure-menu pure-menu-horizontal pure-menu-scrollable social-menu">
   <ul class="pure-menu-list">
-    {{- range .Site.Menus.social }}
-    <li class="pure-menu-item"><a class="pure-menu-link" href="{{ .URL }}"><i title="{{ .Name }}" class="{{ index $.Site.Data.social.icons .Identifier }} fa-lg"></i></a></li>
+    {{- range site.Menus.social }}
+    <li class="pure-menu-item"><a class="pure-menu-link" href="{{ .URL }}"><i title="{{ .Name }}" class="{{ index site.Data.social.icons .Identifier }} fa-lg"></i></a></li>
     {{- end }}
   </ul>
 </div>

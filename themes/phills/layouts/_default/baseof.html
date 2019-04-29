@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html prefix="og: http://ogp.me/ns#" lang="{{ .Site.LanguageCode }}">
+<html prefix="og: http://ogp.me/ns#" lang="{{ site.LanguageCode }}">
   <head>
     <meta charset="utf-8">
     <meta name="msapplication-config" content="none">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="{{ .Site.Params.Author }}">
-    <meta name="dcterms.rights" content="Copyright (c) {{ .Site.Params.Author }}. All rights reserved.">
+    <meta name="author" content="{{ site.Params.Author }}">
+    <meta name="dcterms.rights" content="Copyright (c) {{ site.Params.Author }}. All rights reserved.">
     <meta name="Content-Type" content="text/html; charset=UTF-8">
     <title>{{ block "title" . }}
-      {{- .Title }} - {{ .Site.Title -}}
+      {{- .Title }} - {{ site.Title -}}
     {{ end }}</title>
     {{- partial "seo" . }}
-    {{ .Hugo.Generator }}
+    {{ hugo.Generator }}
     {{ $icon := resources.Get "favicon.ico" -}}
     <link rel="icon" type="{{ $icon.MediaType }}" href="{{ $icon.Permalink }}">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
@@ -30,13 +30,13 @@
         <div class="header-inner">
           <div class="site-title">
             <h1><a href="{{ "/" | relURL }}">Phill S<em>parks</em></a></h1>
-            <p>{{ $.Site.Params.Description }}</p>
+            <p>{{ site.Params.Description }}</p>
           </div>
           {{- partial "association-menu" . -}}
         </div>
         <nav class="pure-menu pure-menu-horizontal pure-menu-scrollable">
           <ul class="pure-menu-list">
-            {{- range .Site.Menus.main }}
+            {{- range site.Menus.main }}
             <li class="pure-menu-item{{if or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }} pure-menu-selected{{end}}"><a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a></li>
             {{- end }}
           </ul>
@@ -52,14 +52,14 @@
         {{ partial "social-menu" . }}
         <div class="phills-menu">
           <ul class="phills-menu-list">
-            {{- range .Site.Menus.footer }}
+            {{- range site.Menus.footer }}
             <li class="phills-menu-item"><a href="{{ .URL }}">{{ .Name }}</a>
             {{- end }}
             <li class="phills-menu-item">Hosted on <a href="https://www.netlify.com/">Netlify</a>
           </ul>
         </div>
         <p class="copyright">
-          {{ .Site.Params.Author }} &copy; {{ .Site.LastChange.Format "2006" }}
+          {{ site.Params.Author }} &copy; {{ site.LastChange.Format "2006" }}
         </p>
       </div></div>
     </div>

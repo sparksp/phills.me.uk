@@ -1,4 +1,4 @@
-{{- with where (.Site.RegularPages.Related .) "Section" "association" }}
+{{- with where (site.RegularPages.Related .) "Section" "association" }}
 <nav class="association">
 {{- range . }}
   {{ .Render "icon-link" }}
