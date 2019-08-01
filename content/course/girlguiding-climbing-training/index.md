@@ -38,4 +38,4 @@ You can download the [scheme handbook][girlguiding-scheme-download] from the [Gi
 
 [mountain-training-climbing]: https://www.mountain-training.org/climbing
 [girlguiding-scheme]: https://www.girlguiding.org.uk/making-guiding-happen/learning-and-development/leading-outdoor-adventures/climbing-and-abseiling-scheme/
-[girlguiding-scheme-download]: https://www.girlguiding.org.uk/link/672f1908909540fbb3a4e6b5a2a09946.aspx
+[girlguiding-scheme-download]: https://www.girlguiding.org.uk/link/70a1a59dc6754f189167ca05184a3458.aspx
