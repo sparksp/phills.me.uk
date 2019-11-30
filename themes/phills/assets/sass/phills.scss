@@ -305,7 +305,7 @@ a.tag {
   }
 }
 
-.columns {
+.columns, .technical-skills ul {
   @media (min-width: 600px) {
     column-count: 2;
     column-gap: 40px;

@@ -1,4 +1,4 @@
-<article>
+<article class="{{ .Type }} {{ .LinkTitle | default .Title | urlize }}">
   <h2>
     {{ .Title }}
     {{ with .Params.company -}}
