@@ -1,11 +1,9 @@
 +++
 weight = -2100
 title = "Technical Skills"
-markup = "mmark"
 date = "2017-02-02T10:51:05Z"
 +++
 
-{.columns}
 - RESTful API Design
 - Test Driven Development
 - PHP & Laravel Framework
