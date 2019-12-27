@@ -2,7 +2,7 @@
 date = "2007-12-07T23:35:00Z"
 title = "MP3 Search"
 description = "A quick JS snippet to search Google for MP3 files with the given name."
-aliases = ["/snips/5-mp3-search", "/snips/5"]
+aliases = ["/snip/5*", "/snip/05*"]
 tags = ["javascript", "code"]
 categories = ["programming"]
 +++

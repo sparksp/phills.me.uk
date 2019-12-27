@@ -3,7 +3,7 @@ date = "2008-03-12T14:58:00Z"
 modified = "2011-10-09T14:58:00Z"
 title = "refit.conf"
 description = "My preferred settings for rEFIt."
-aliases = ["/snips/7-refitconf", "/snips/7"]
+aliases = ["/snip/7*", "/snip/07*"]
 tags = ["refit.conf", "config", "code"]
 categories = ["programming"]
 +++
