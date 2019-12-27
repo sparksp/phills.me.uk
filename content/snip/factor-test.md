@@ -2,7 +2,7 @@
 date = "2007-11-19T16:05:00Z"
 title = "Factor Test (by lavalamp)"
 description = "PHP factor test for very large numbers, by lavalamp."
-aliases = ["/snips/4-factor-test", "/snips/4"]
+aliases = ["/snip/4*", "/snip/04*"]
 tags = ["php", "code"]
 categories = ["programming"]
 +++
