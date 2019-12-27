@@ -3,7 +3,7 @@ date = "2007-08-18T12:48:00Z"
 modified = "2011-11-17T12:48:00Z"
 title = "tvrenamer.rc"
 description = "My preferred settings for TVRenamer."
-aliases = ["/snip/01*"]
+aliases = ["/snip/1*", "/snip/01*"]
 tags = ["tvrenamer.rc", "config", "code"]
 categories = ["programming"]
 +++

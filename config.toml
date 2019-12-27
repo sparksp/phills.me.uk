@@ -62,7 +62,6 @@ pygmentsUseClasses = true
     "/blog/tag/*" = "/tags/:splat/"
     "/pb/*" = "/snip/:splat/"
     "/snips/*" = "/snip/:splat/"
-    "/snip/1*" = "/snip/tvrenamerrc/"
 
 
 [[menu.social]]
