@@ -9,7 +9,7 @@
 {{- range .Site.Pages }}
 {{- $page := . -}}
 {{- range .Aliases }}
-{{ . }}  {{ $page.RelPermalink }}
+{{ . }}  {{ $page.RelPermalink }}  301!
 {{- end }}
 {{- end }}
 
