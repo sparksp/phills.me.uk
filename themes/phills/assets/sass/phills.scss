@@ -277,12 +277,6 @@ a.tag {
   img {
     width: 100%;
   }
-  :link img {
-    opacity: .9;
-  }
-  :hover img, &:hover img {
-    opacity: 1;
-  }
 
   figcaption {
     display: block;
@@ -296,12 +290,8 @@ a.tag {
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
+    text-decoration: inherit;
     text-overflow: ellipsis;
-  
-    a {
-      display: block;
-      color: white;
-    }
   }
 }
 
