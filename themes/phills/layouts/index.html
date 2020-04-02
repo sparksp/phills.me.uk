@@ -17,12 +17,10 @@
       {{- $image := .Fill "400x400" -}}
       {{- if $link }}<a href="{{ $link }}">{{ end -}}
       <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
-      {{- if $link }}</a>{{ end -}}
       <figcaption>
-        {{- if $link }}<a href="{{ $link }}">{{ end -}}
           {{ $page.Title }}
-        {{- if $link }}</a>{{ end -}}
       </figcaption>
+      {{- if $link }}</a>{{ end -}}
     </figure>
     {{- end }}
   {{- end }}
