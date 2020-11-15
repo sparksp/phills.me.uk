@@ -26,6 +26,6 @@ Leading sessions of bouldering and top-rope climbing with groups of children, yo
 
 Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
 
-#### [The Tower Climbing Centre](http://thetowerclimbingcentre.co.uk/) <small>(2013 onwards)</small>
+#### [The Tower Climbing Centre](https://leicester.gov.uk/climbing/) <small>(2013 onwards)</small>
 
 Instructing groups and parties of varying ages and abilities as required, including 4 week introductory courses, 4 week learn to lead climb courses and NICAS levels 1–4. Also responsible for greeting customers, conducting competency tests for new members and maintaining health and safety standards within the facility.
