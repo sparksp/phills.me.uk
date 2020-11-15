@@ -23,4 +23,4 @@ I enjoy climbing in all forms, especially sport and trad climbing when the weath
 [nicas]: https://www.nicas.co.uk/
 [scout-permits]: /course/scouts-climbing-permits/
 [thescouts]: https://scouts.org.uk/
-[tower]: https://towerclimbingcentre.wordpress.com/
+[tower]: https://leicester.gov.uk/climbing/
