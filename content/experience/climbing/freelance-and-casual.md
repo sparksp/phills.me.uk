@@ -26,6 +26,10 @@ Leading sessions of bouldering and top-rope climbing with groups of children, yo
 
 Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
 
+#### [The Peak Climbing School](https://www.peakclimbingschool.co.uk/) <small>(2019 onwards)</small>
+
+Focussing on giving small groups the skills necessary to become independent outdoor climbers. I develop the climber's experience of top-rope climbing, bouldering and abseiling; including anchor building for top-rope setups, seconding skills and problem solving tools.
+
 #### [The Tower Climbing Centre](https://leicester.gov.uk/climbing/) <small>(2013 onwards)</small>
 
 Instructing groups and parties of varying ages and abilities as required, including 4 week introductory courses, 4 week learn to lead climb courses and NICAS levels 1–4. Also responsible for greeting customers, conducting competency tests for new members and maintaining health and safety standards within the facility.
