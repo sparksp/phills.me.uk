@@ -1,8 +1,8 @@
 +++
-weight = -502018
+weight = -2018
 type = "job"
 title = "Course Director"
-duration = "2018–Present"
+duration = "2018–2021"
 date = "2018-05-21"
 
 [company]

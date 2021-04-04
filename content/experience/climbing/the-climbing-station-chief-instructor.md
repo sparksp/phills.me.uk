@@ -1,5 +1,5 @@
 +++
-weight = -502017
+weight = -2017
 type = "job"
 title = "Chief Instructor"
 duration = "2017–2018"
