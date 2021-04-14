@@ -10,7 +10,7 @@ layout = "page"
 {{< grid >}}{{% grid/column md-11-24 %}}
 Please get in touch if you'd like more information about any of my courses...
 
-Send me an email to [climbing@phills.me.uk](mailto:climbing@phills.me.uk?subject=Course+Enquiry).
+Email me at [hello@phills.me.uk](mailto:hello@phills.me.uk?subject=Climbing+Course+Enquiry).
 
 Leave me a voicemail on [07764498307](tel:07764498307).
 
