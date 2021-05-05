@@ -1,1 +1,1 @@
-<textarea{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "label" }} placeholder="{{ . }}" aria-label="{{ . }}"{{ end }} class="pure-input-1" rows="4"></textarea>
+<textarea{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "label" }} placeholder="{{ . }}" aria-label="{{ . }}"{{ end }}{{ with .Get "autocomplete" }} autocomplete="{{ . }}"{{ end }} class="pure-input-1" rows="4"></textarea>

@@ -1,4 +1,4 @@
 <label class="pure-input-1">
-    <input type="checkbox"{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }} value="{{ .Inner }}">
+    <input type="checkbox"{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "autocomplete" }} autocomplete="{{ . }}"{{ end }} value="{{ .Inner }}">
     {{ .Inner }}
 </label>
