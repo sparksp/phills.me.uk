@@ -306,4 +306,17 @@ a.tag {
   }
 }
 
+.pure-form fieldset {
+    margin: 1em 0;
+    padding: 0;
+}
+
+.pure-form legend {
+    font-size: larger;
+}
+
+.pure-form p {
+    margin: .3em 0 .6em;
+}
+
 @import 'monokai';
