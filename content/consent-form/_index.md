@@ -17,24 +17,29 @@ layout = "page"
 
   {{< form/fieldset legend="Medical Details" >}}
     <p>Please detail below any physical, mental or medical conditions that may affect the participant's ability to participate in the activities being provided or <strong>state <q>none</q> if no issues</strong>. (Please discuss with me if you are unsure about this).</p>
+
     {{< form/textarea name="medical-details" label="Medical Details" required="yes" autocomplete="off" >}}
   {{< /form/fieldset >}}
 
   {{< form/fieldset legend="Emergency Contact" >}}
     <p>Please provide the name and phone number of someone I can contact if you have an emergency and are unable to contact someone yourself.</p>
+
     {{< form/text name="emergency-name" label="Emergency Contact Name" required="yes" autocomplete="section-emergency name" >}}
     {{< form/tel name="emergency-tel" label="Emergency Contact Number" required="yes" autocomplete="section-emergency tel" >}}
   {{< /form/fieldset >}}
 
   {{< form/fieldset legend="Participation Statement" >}}
+    <p>Climbing can be mentally and physically demanding, with inherent risks and hazards. Our activities are run and supervised by appropriately qualified and experienced instructors. All necessary safety equipment is provided, this equipment is regularly checked and maintained. Small injuries (e.g., cuts and bruises) are likely, but more serious injuries cannot be ruled out. The instructor(s) will strive to keep you safe. Listen to them, and ask them if you have any questions. You may stop participating at any time. You must bring suitable clothing, food and drink. You must not be intoxicated.</p>
     <p>The <abbr title="British Mountaineering Council">BMC</abbr> recognises that climbing and mountaineering are activities with a danger of personal injury or death. Participants in these activities should be aware of and accept these risks and be responsible for their own actions.</p>
+
     {{< form/checkbox name="participation-statement" required="yes" >}}
       By ticking this box, you agree that the participant details above are correct and that you understand this Participation Statement.
     {{< /form/checkbox >}}
   {{< /form/fieldset >}}
 
   {{< form/fieldset legend="COVID-19 Statement" >}}
-    <p>I have taken all necessary precautions to keep you and myself safe from COVID-19, however cannot fully guarantee there will be no contamination. I will be adhering to the social distancing guidelines set out by the government, and the safety recommendations set out by our governing bodies at all times.<p>
+    <p>Your instructors will take all necessary precautions to keep you and themselves safe from COVID-19, however we cannot fully guarantee there will be no contamination. Your instructors will be adhering to the social distancing guidelines set out by the government, and the safety recommendations set out by our governing bodies at all times. When activities are taking place outside face coverings will not be required unless social distancing cannot be maintained.<p>
+
     {{< form/checkbox name="covid-statement" required="yes" >}}
       By ticking this box, you agree not to attend the course if you have symptoms of COVID-19 or have been advised to self-isolate by NHS Track & Trace.
     {{< /form/checkbox >}}
@@ -42,6 +47,7 @@ layout = "page"
 
   {{< form/fieldset legend="Electronic Waiver" >}}
     <p>By checking here, you are consenting to the use of your electronic signature in lieu of an original signature on paper. You have the right to request that you sign a paper copy instead. By checking here, you are waiving that right. After consent, you may, upon written request to me, obtain a paper copy of an electronic record. No fee will be charged for such copy and no special hardware or software is required to view it. Your agreement to use an electronic signature with me for any documents will continue until such time as you notify me in writing that you no longer wish to use an electronic signature. There is no penalty for withdrawing your consent. You should always make sure that I have a current email address in order to contact you regarding any changes, if necessary.</p>
+
     {{< form/checkbox name="electronic-waiver" required="yes" >}}
       I consent to using an electronic signature
     {{< /form/checkbox >}}
