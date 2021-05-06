@@ -6,7 +6,7 @@ layout = "page"
   name = "Consent Form"
 +++
 
-{{< form name="contact" action="/consent-form/success/" >}}
+{{< form name="consent-form" action="/consent-form/success/" >}}
   {{< form/fieldset legend="Participant Information" >}}
     {{< form/text name="first-name" label="First Name" required="yes" autocomplete="section-participant given-name" autofocus="yes" >}}
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
