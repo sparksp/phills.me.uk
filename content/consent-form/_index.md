@@ -12,7 +12,7 @@ layout = "page"
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
     {{< form/email name="email" label="E-mail address" required="yes" autocomplete="section-participant email" >}}
     {{< form/tel name="phone-number" label="Phone number" required="yes" autocomplete="section-participant tel" >}}
-    {{< form/date name="date-of-birth" label="Date of Birth" required="yes" autocomplete="section-participant bday" >}}
+    {{< form/date name="date-of-birth" label="Date of Birth (dd/mm/yyyy)" required="yes" autocomplete="section-participant bday" >}}
   {{< /form/fieldset >}}
 
   {{< form/fieldset legend="Medical Details" >}}
@@ -65,7 +65,7 @@ layout = "page"
     <p>I am or over the age of 18 years and I understand the terms of the booking. I have read Phill Sparks’ terms and conditions and fully agree with Phill Sparks' Policies and decisions.</p>
 
     {{< form/text name="declaration-full-name" label="Print Full Name" required="yes" autocomplete="section-declaration name" >}}
-    {{< form/date name="declaration-date" label="Today's Date" required="yes" >}}
+    {{< form/date name="declaration-date" label="Today's Date (dd/mm/yyyy)" required="yes" >}}
   {{< /form/fieldset >}}
 
   {{< form/recaptcha >}}
