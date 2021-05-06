@@ -3,7 +3,7 @@ title = "Consent Form"
 layout = "page"
 
 [menu.footer]
-name = "Consent Form"
+  name = "Consent Form"
 +++
 
 {{< form name="contact" action="/consent-form/success/" >}}
