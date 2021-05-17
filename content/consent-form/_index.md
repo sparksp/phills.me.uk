@@ -10,8 +10,8 @@ layout = "page"
   {{< form/fieldset legend="Participant Information" >}}
     {{< form/text name="first-name" label="First Name" required="yes" autocomplete="section-participant given-name" autofocus="yes" >}}
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
-    {{< form/email name="email" label="E-mail address" required="yes" autocomplete="section-participant email" >}}
-    {{< form/tel name="phone-number" label="Phone number" required="yes" autocomplete="section-participant tel" >}}
+    {{< form/email name="email" label="E-mail Address" required="yes" autocomplete="section-participant email" >}}
+    {{< form/tel name="phone-number" label="Phone Number" required="yes" autocomplete="section-participant tel" >}}
     {{< form/date name="date-of-birth" label="Date of Birth (dd/mm/yyyy)" required="yes" autocomplete="section-participant bday" >}}
   {{< /form/fieldset >}}
 
