@@ -306,17 +306,34 @@ a.tag {
   }
 }
 
-.pure-form fieldset {
+.pure-form {
+  fieldset {
     margin: 1em 0;
     padding: 0;
-}
+  }
 
-.pure-form legend {
+  legend {
     font-size: larger;
-}
+    font-weight: bolder;
+  }
 
-.pure-form p {
+  p {
     margin: .3em 0 .6em;
+  }
+
+  .required {
+    color: #666;
+  }
+
+  label {
+    margin: 1em 0;
+  }
+
+  label:hover {
+    input, textarea {
+      border-color: #129fea;
+    }
+  }
 }
 
 @import 'monokai';

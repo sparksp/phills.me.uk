@@ -10,9 +10,9 @@ layout = "page"
   {{< form/fieldset legend="Participant Information" >}}
     {{< form/text name="first-name" label="First Name" required="yes" autocomplete="section-participant given-name" autofocus="yes" >}}
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
-    {{< form/email name="email" label="E-mail address" required="yes" autocomplete="section-participant email" >}}
-    {{< form/tel name="phone-number" label="Phone number" required="yes" autocomplete="section-participant tel" >}}
-    {{< form/date name="date-of-birth" label="Date of Birth (dd/mm/yyyy)" required="yes" autocomplete="section-participant bday" >}}
+    {{< form/email name="email" label="E-mail Address" required="yes" autocomplete="section-participant email" >}}
+    {{< form/tel name="phone-number" label="Phone Number" required="yes" autocomplete="section-participant tel" >}}
+    {{< form/date name="date-of-birth" label="Date of Birth" placeholder="dd/mm/yyyy" required="yes" autocomplete="section-participant bday" >}}
   {{< /form/fieldset >}}
 
   {{< form/fieldset legend="Medical Details" >}}
@@ -56,7 +56,7 @@ layout = "page"
   {{< form/fieldset legend="Data Protection Policy" >}}
     <p>To comply with GDPR I am required to obtain your consent to collect and store your personal data. Phill Sparks is the Data Controller. I will store your data securely and will not disclose it to any third party. At any time you can request a copy of your data free of charge. GDPR makes provision for you to request to have your data removed and erased. This is known as the ‘Right to erasure/ right to be forgotten’. When data is held for the establishment, exercise or defence of legal claims I have the right to refuse to erase the data. For this reason our insurers insist that I continue to hold your data for 3 years from the date of your most recent visit. In order to be allowed to use the facilities and services provided by Phill Sparks you are required to consent to our <a href="{{< ref "/policy/privacy" >}}" target="_blank">Privacy Policy</a>.</p>
 
-    {{< form/checkbox name="data-protection-policy" >}}
+    {{< form/checkbox name="data-protection-policy" required="yes" >}}
       I agree to the data protection policy
     {{< /form/checkbox >}}
   {{< /form/fieldset >}}
@@ -65,7 +65,7 @@ layout = "page"
     <p>I am or over the age of 18 years and I understand the terms of the booking. I have read Phill Sparks’ terms and conditions and fully agree with Phill Sparks' Policies and decisions.</p>
 
     {{< form/text name="declaration-full-name" label="Print Full Name" required="yes" autocomplete="section-declaration name" >}}
-    {{< form/date name="declaration-date" label="Today's Date (dd/mm/yyyy)" required="yes" >}}
+    {{< form/date name="declaration-date" label="Today's Date" placeholder="dd/mm/yyyy" required="yes" >}}
   {{< /form/fieldset >}}
 
   {{< form/recaptcha >}}
