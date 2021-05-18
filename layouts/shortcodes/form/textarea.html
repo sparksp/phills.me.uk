@@ -1,3 +1,4 @@
-{{ with .Get "label" }}<label>{{ . }}{{ end }}
-<textarea{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "label" }} placeholder="{{ . }}" aria-label="{{ . }}"{{ end }}{{ with .Get "autocomplete" }} autocomplete="{{ . }}"{{ end }} class="pure-input-1" rows="4"></textarea>
+{{- $required := .Get "required" -}}
+{{ with .Get "label" }}<label>{{ . }}{{ with $required }} <span class="required">(required)</span>{{ end }}{{ end }}
+    <textarea{{ if .Get "required" }} required{{ end }}{{ with .Get "name" }} id="{{ . }}" name="{{ . }}"{{ end }}{{ with .Get "placeholder" }} placeholder="{{ . }}"{{ end }}{{ with .Get "autocomplete" }} autocomplete="{{ . }}"{{ end }} class="pure-input-1" rows="4"></textarea>
 {{ with .Get "label" }}</label>{{ end }}
