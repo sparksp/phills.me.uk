@@ -1,11 +1,9 @@
 +++
-title = "Adult Consent Form"
-linktitle = "Consent Form"
+title = "Junior Consent Form"
 layout = "page"
-menu = "footer"
 +++
 
-This consent form is for anyone 18 years old and over. If the participant is under 18 years old please ask the participant's parent or legal guardian to complete the [Junior Consent Form]({{< ref "/consent-form/junior" >}}).
+This consent form is for anyone under 18 years old and must be completed by the participant's parent or legal guardian. If the participant is over 18 years old please complete the [Adult Consent Form]({{< ref "/consent-form/" >}}).
 
 {{< form name="consent-form" action="/consent-form/success/" >}}
   {{< form/fieldset legend="Participant Information" >}}
@@ -63,10 +61,11 @@ This consent form is for anyone 18 years old and over. If the participant is und
     {{< /form/checkbox >}}
   {{< /form/fieldset >}}
 
-  {{< form/fieldset legend="Declaration" >}}
-    <p>I am or over the age of 18 years and I understand the terms of the booking. I have read Phill Sparks’ terms and conditions and fully agree with Phill Sparks' Policies and decisions.</p>
+  {{< form/fieldset legend="Parental Declaration" >}}
+    <p>I am the parent or legal guardian of the participant named above and I understand the terms of the booking. I have read Phill Sparks’ terms and conditions and fully agree with Phill Sparks' Policies and decisions.</p>
 
     {{< form/text name="declaration-full-name" label="Print Full Name" required="yes" autocomplete="section-declaration name" >}}
+    {{< form/text name="declaration-relationship" label="Relationship to the Participant" placeholder="Parent or Legal Guardian" required="yes" >}}
     {{< form/date name="declaration-date" label="Today's Date" placeholder="dd/mm/yyyy" required="yes" >}}
   {{< /form/fieldset >}}
 
