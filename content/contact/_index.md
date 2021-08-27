@@ -1,11 +1,11 @@
 +++
 title = "Contact Phill"
+linktitle = "Contact"
 layout = "page"
-
-[menu.main]
-  name = "Contact"
-[menu.footer]
-  name = "Contact"
+menu = [
+  "main",
+  "footer"
+]
 +++
 {{< grid >}}{{% grid/column md-11-24 %}}
 Please get in touch if you'd like more information about any of my courses...
