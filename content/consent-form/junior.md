@@ -5,7 +5,7 @@ layout = "page"
 
 This consent form is for anyone under 18 years old and must be completed by the participant's parent or legal guardian. If the participant is over 18 years old please complete the [Adult Consent Form]({{< ref "/consent-form/" >}}).
 
-{{< form name="consent-form" action="/consent-form/success/" >}}
+{{< form name="consent-form-junior" action="/consent-form/success/" >}}
   {{< form/fieldset legend="Participant Information" >}}
     {{< form/text name="first-name" label="First Name" required="yes" autocomplete="section-participant given-name" autofocus="yes" >}}
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
