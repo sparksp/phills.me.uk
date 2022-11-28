@@ -7,9 +7,13 @@ layout = "about"
   name = "About"
 
 [[resources]]
+  name = "featured-image"
   src = "phills.jpg"
   title = "Photo of Phill Sparks drinking a cup of coffee"
 +++
+
+![Photo of Phill Sparks drinking a cup of coffee](phills.jpg)
+{.circle .center}
 
 ### Climber • Instructor • Coach
 
