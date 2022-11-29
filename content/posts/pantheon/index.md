@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/pantheon"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "pantheon.jpg"

@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/hybrid-city"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "hybrid-city.jpg"

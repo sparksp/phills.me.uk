@@ -8,6 +8,7 @@ aliases = [
   "/blog/2007/04/14/css_for_poker_players",
   "/post/css_for_poker_players"
 ]
+toc.enable = false
 +++
 
 I've just read an excellent explanation of [CSS Specificity using a poker analogy](http://carl.camera/?id=95) and it just makes it so clear to hear it like that. The author covers everything in terms of the basic hands available in a game of poker. This can help explain some of the many mysteries of CSS!

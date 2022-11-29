@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "project/my-charnwood"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "my-charnwood.jpg"

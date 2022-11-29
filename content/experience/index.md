@@ -7,6 +7,7 @@ aliases = [
     "/experience/climbing/the-climbing-station/",
     "/experience/climbing/beaumanor-hall/"
 ]
+toc.enable = true
 +++
 
 ## Climbing Experience

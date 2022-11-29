@@ -11,6 +11,10 @@
         @include transform(translateY(-.75rem));
       }
 }
+.small img {
+    width: 250px;
+    height: 250px;
+}
 
 .wrapper .course_search_container .course_search {
     .titles {

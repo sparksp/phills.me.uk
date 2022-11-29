@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/womble"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "womble.jpg"

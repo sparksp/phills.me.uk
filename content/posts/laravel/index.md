@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/laravel"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "software-design-patterns-in-laravel.png"

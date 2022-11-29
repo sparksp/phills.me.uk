@@ -11,11 +11,10 @@ aliases = [
 tags = ["refit.conf", "config", "code"]
 categories = ["programming", "snip"]
 license = "<a href=\"https://unlicense.org\">Unlicense</a>"
+toc.enable = false
 +++
 
 My preferred settings for [rEFIt](http://refit.sourceforge.net/).
-
-### Code
 
 ```text
 timeout 10

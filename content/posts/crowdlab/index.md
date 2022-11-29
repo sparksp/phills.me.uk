@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/crowdlab"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "crowdlab.jpg"

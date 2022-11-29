@@ -10,11 +10,10 @@ aliases = [
 tags = ["php", "code"]
 categories = ["programming", "snip"]
 author = "lavalamp"
+toc.enable = false
 +++
 
 PHP factor test for very large numbers.
-
-### Code
 
 ```php
 <?php

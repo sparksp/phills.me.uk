@@ -11,11 +11,10 @@ aliases = [
 tags = ["applescript", "osx", "code"]
 categories = ["programming", "snip"]
 license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 Launch a new Terminal window, regardless of Terminal already running.
-
-### Code
 
 ```applescript
 (*

@@ -11,11 +11,10 @@ aliases = [
 tags = ["tvrenamer.rc", "config", "code"]
 categories = ["programming", "snip"]
 license = "<a href=\"https://unlicense.org\">Unlicense</a>"
+toc.enable = false
 +++
 
 My preferred settings for [TVRenamer](http://tvrenamer.org/).
-
-### Code
 
 ```bash
 --include_series

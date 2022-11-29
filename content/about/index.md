@@ -2,18 +2,18 @@
 title = "About Phill"
 date = 2018-12-29T18:05:23Z
 layout = "about"
+toc.enable = false
 
 [menu.main]
   name = "About"
 
 [[resources]]
-  name = "featured-image"
   src = "phills.jpg"
   title = "Photo of Phill Sparks drinking a cup of coffee"
 +++
 
 ![Photo of Phill Sparks drinking a cup of coffee](phills.jpg)
-{.circle .center}
+{.circle .center .small}
 
 ### Climber • Instructor • Coach
 

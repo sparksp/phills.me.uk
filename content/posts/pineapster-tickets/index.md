@@ -5,6 +5,8 @@ categories = ["programming", "project"]
 aliases = [
   "/project/pineapster-tickets"
 ]
+toc.enable = false
+
 [[resources]]
   name = "featured-image"
   src = "pineapster-tickets.png"

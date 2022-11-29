@@ -11,11 +11,10 @@ aliases = [
 tags = ["applescript", "osx", "code"]
 categories = ["programming", "snip"]
 license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a [Growl](https://growl.github.io/growl/) message containing the number of items added.
-
-### Code
 
 ```applescript
 (*
