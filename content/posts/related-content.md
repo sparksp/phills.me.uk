@@ -10,9 +10,12 @@ aliases = [
 ]
 tags = ["sql", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
 +++
 
 SQL to hunt down the 5 most relevant pieces of content by tag. This schema uses `uri` as the primary key for content (a foreign key in the tags table).
+
+### Code
 
 ```sql
 /**

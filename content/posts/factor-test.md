@@ -14,6 +14,8 @@ author = "lavalamp"
 
 PHP factor test for very large numbers.
 
+### Code
+
 ```php
 <?php
 

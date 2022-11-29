@@ -9,9 +9,12 @@ aliases = [
 ]
 tags = ["javascript", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
 +++
 
 A quick JS snippet to search Google for MP3 files with the given name.
+
+### Code
 
 ```javascript
 /**
