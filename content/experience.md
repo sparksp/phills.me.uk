@@ -7,7 +7,6 @@ aliases = [
     "/experience/climbing/the-climbing-station/",
     "/experience/climbing/beaumanor-hall/"
 ]
-layout = "page"
 +++
 
 ## Climbing Experience
