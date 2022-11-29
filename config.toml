@@ -23,7 +23,7 @@ pygmentsUseClasses = false
   Author = "Phill Sparks"
   Description = "Climbing Training • Instruction • Coaching"
   fingerprint = "sha512"
-  gitRepo = "https://gibhut.com/sparksp/phills.me.uk.git"
+  gitRepo = "https://github.com/sparksp/phills.me.uk"
 
   [Params.header.title]
     name = "Phill Sparks"
