@@ -6,11 +6,10 @@ aliases = [
   "/project/crowdlab"
 ]
 [[resources]]
+  name = "featured-image"
   src = "crowdlab.jpg"
   title = "Screenshot of CrowdLab website"
 +++
-
-![Screenshot of CrowdLab website](crowdlab.jpg)
 
 Initially, I migrated the CrowdLab API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL - re-engineering many of the features based on the company’s experiences of having run the system for a year.
 

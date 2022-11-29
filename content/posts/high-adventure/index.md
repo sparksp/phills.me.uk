@@ -6,11 +6,10 @@ aliases = [
   "/project/high-adventure"
 ]
 [[resources]]
+  name = "featured-image"
   src = "high-adventure.jpg"
   title = "Screenshot of High Adventure website from 2012"
 +++
-
-![Screenshot of High Adventure website from 2012](high-adventure.jpg)
 
 High Adventure is an annual mountain exercise, taking place at a different, secret location each year.
 
