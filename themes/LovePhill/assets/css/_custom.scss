@@ -33,7 +33,24 @@ dt {
     font-weight: bold;
 }
 
-.technical-skills ul {
-    column-count: 3;
-    column-gap: 40px;
+@media screen and (min-width: 400px) {
+    .technical-skills ul {
+        column-count: 2;
+        column-gap: 40px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .technical-skills ul {
+        column-count: 3;
+    }    
+}
+@media screen and (min-width: 960px) {
+    .technical-skills ul {
+        column-count: 2;
+    }
+}
+@media screen and (min-width: 1300px) {
+    .technical-skills ul {
+        column-count: 3;
+    }
 }
