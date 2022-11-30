@@ -1,0 +1,29 @@
+{{- define "title" }}
+    {{- .Params.Title | default (T .Section) | default .Section }} - {{ .Site.Title -}}
+{{- end -}}
+
+{{- define "content" -}}
+<div class="page courses">
+    {{- /* Title */ -}}
+    <h2 class="single-title animate__animated animate__pulse animate__faster">
+        {{- .Params.Title | default (T .Section) | default .Section -}}
+    </h2>
+
+    <div class="course-list">
+    {{- range .Pages -}}
+        <article class="course-item">
+            <a href="{{ .RelPermalink }}" class="archive-item-link">
+                {{- $image := .Params.featuredimage -}}
+                {{- with .Resources.GetMatch "featured-image" -}}
+                    {{- $image = .RelPermalink -}}
+                {{- end -}}
+                {{- with $image -}}
+                    {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+                {{- end -}}
+                <span class="course-title">{{- .Title -}}</span>
+            </a>
+        </article>
+    {{- end -}}
+    </div>
+</div>
+{{- end -}}
