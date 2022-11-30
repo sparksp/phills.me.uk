@@ -54,6 +54,10 @@ dt {
         padding: .4em;
         position: absolute;
         bottom: 0; left: 0; right: 0;
+
+        [theme=dark] & {
+            background: rgba(#000, .8);
+        }
     }
 
     &:hover {
@@ -62,6 +66,10 @@ dt {
 
         .course-title {
             background: rgba(#fff, .9);
+
+            [theme=dark] & {
+                background: rgba(#000, .7);
+            }
         }
     }
 }
