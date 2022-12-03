@@ -7,6 +7,7 @@ aliases = [
 [menu.main]
   parent = "course"
 [[resources]]
+  name = "featured-image"
   src = "assessment.jpg"
   title = "A child climbing an artificial wall with three adults helping to hold the ropes."
 +++

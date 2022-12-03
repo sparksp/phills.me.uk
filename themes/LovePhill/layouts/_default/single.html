@@ -19,38 +19,45 @@
     {{- end -}}
 
     <article class="page single">
-        {{- /* Title */ -}}
-        <h1 class="single-title animate__animated animate__flipInX">{{ .Title }}</h1>
+        <header>
+            <div class="titles">
+                <h1 class="single-title animate__animated animate__flipInX">{{ .Title }}</h1>
 
-        {{- /* Subtitle */ -}}
-        {{- with $params.subtitle -}}
-            <h2 class="single-subtitle">{{ . }}</h2>
-        {{- end -}}
-
-        {{- /* Meta */ -}}
-        {{ if ne $params.meta false }}
-        <div class="post-meta">
-            <div class="post-meta-line">
-                <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp;
-                {{- $comment := .Scratch.Get "comment" | default dict -}}
-                {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
-                    <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
-                        <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;{{ T "views" }}
-                    </span>&nbsp;
+                {{- /* Subtitle */ -}}
+                {{- with $params.subtitle -}}
+                    <h2 class="single-subtitle">{{ . }}</h2>
                 {{- end -}}
+        
+                {{- /* Meta */ -}}
+                {{ if ne $params.meta false }}
+                <div class="post-meta">
+                    <div class="post-meta-line">
+                        <i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;{{ T "wordCount" .WordCount }}&nbsp;
+                        <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;{{ T "readingTime" .ReadingTime }}&nbsp;
+                        {{- $comment := .Scratch.Get "comment" | default dict -}}
+                        {{- if $comment.enable | and $comment.valine.enable | and $comment.valine.visitor -}}
+                            <span id="{{ .RelPermalink }}" class="leancloud_visitors" data-flag-title="{{ .Title }}">
+                                <i class="far fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class=leancloud-visitors-count></span>&nbsp;{{ T "views" }}
+                            </span>&nbsp;
+                        {{- end -}}
+                    </div>
+                </div>
+                {{ end }}
             </div>
-        </div>
-        {{ end }}
+    
+            {{- partial "related-associations" . }}
+        </header>
 
         {{- /* Featured image */ -}}
         {{- $image := $params.featuredimage -}}
+        {{- $alt := $.Title -}}
         {{- with .Resources.GetMatch "featured-image" -}}
             {{- $image = .RelPermalink -}}
+            {{- $alt = .Title -}}
         {{- end -}}
         {{- with $image -}}
             <div class="featured-image">
-                {{- dict "Src" . "Title" $.Description "Resources" $.Resources | partial "plugin/image.html" -}}
+                {{- dict "Src" . "Alt" $alt "Resources" $.Resources | partial "plugin/image.html" -}}
             </div>
         {{- end -}}
 

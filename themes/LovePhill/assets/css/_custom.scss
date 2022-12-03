@@ -1,6 +1,32 @@
 @import '_pure/form';
 @import '_pure/button';
 
+article header {
+    display: flex;
+
+    /* Reset Page Header Styles */
+    &, [theme=dark] & {
+        background: transparent;
+    }
+    &:hover {
+        box-shadow: none;
+    }    
+
+    .titles {
+        flex: 1;
+    }
+
+    .association {
+        margin-top: 2rem;
+    }
+
+    img {
+        height: auto;
+        max-height: 4em;
+        max-width: 100%;
+    }
+}
+
 .center {
     text-align: center;
 }
@@ -19,7 +45,7 @@
     height: 250px;
 }
 
-.wrapper .course_search_container .course_search {
+.content .course_search_container .course_search {
     .titles {
         background-color: $primary-color;
     }
@@ -29,6 +55,21 @@
     a.info-icon:after {
         color: white;
         margin-left: -2px;
+    }
+    .courseTable {
+        margin-bottom: .5em;
+    }
+    .pagination {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .nextButton, .previousButton {
+        &>a>span {
+            color: $primary-color;
+            float: none;
+        }
     }
 }
 

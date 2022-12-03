@@ -1,0 +1,8 @@
+{{- with $page := . }}
+{{- with .Resources.GetMatch "logo" }}
+{{- $image := . }}
+<a href="{{ $page.Params.link | default $page.RelPermalink }}" class="association menu-link">
+  {{- dict "Src" $image.Permalink "Title" $page.Title "Alt" $image.Title "Resources" $page.Resources | partial "plugin/image.html" -}}
+</a>
+{{- end }}
+{{- end }}

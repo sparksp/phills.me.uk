@@ -13,6 +13,7 @@ weight = 100
 [menu.main]
   parent = "course"
 [[resources]]
+  name = "featured-image"
   src = "climbing-assistant.jpg"
   title = "A young person learning to belay with an assistant holding their rope."
 +++
