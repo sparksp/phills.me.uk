@@ -9,6 +9,7 @@ aliases = [
   "/ica"
 ]
 weight = 100
+hiddenFromHomePage = false
 
 [menu.main]
   parent = "course"

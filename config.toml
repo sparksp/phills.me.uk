@@ -53,11 +53,15 @@ Theme - <a href="//github.com/dillonzq/LoveIt"><i class="far fa-kiss-wink-heart 
   [Params.home.profile]
     enable = true
     avatarURL = "/about/phills.jpg"
-    subtitle = "Climbing Training • Instruction • Coaching"
+    title = "Phill Sparks"
+    subtitle = "Climber • Instructor • Coach"
     typeit = false
 
   [Params.home.posts]
-    enable = false
+    enable = true
+
+  [Params.page]
+    hiddenFromHomePage = true
 
   [Params.search]
     enable = true

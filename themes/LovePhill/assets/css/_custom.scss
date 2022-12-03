@@ -27,6 +27,18 @@ article header {
     }
 }
 
+.home .association {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+
+    img {
+        height: auto;
+        max-height: 6em;
+        max-width: 100%;
+    }
+}
+
 .center {
     text-align: center;
 }
@@ -80,6 +92,10 @@ dt {
 .course-list {
     max-width: 540px;
 }
+.home-featured-list {
+    max-width: 540px;
+    margin: 2em auto 0;
+}
 .course-item {
     margin-bottom: 1em;
     position: relative;
@@ -93,14 +109,27 @@ dt {
         overflow: hidden;
     }
     .course-title {
-        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         background: rgba(#fff, .8);   
-        padding: .4em;
         position: absolute;
         bottom: 0; left: 0; right: 0;
+        border-top: 1px solid white;
 
         [theme=dark] & {
-            background: rgba(#000, .8);
+            background: rgba(41, 42, 45, .8);
+            border-top-color: rgb(41, 42, 45);
+        }
+
+        .text {
+            flex: 1;
+            padding: .4em;
+        }
+        img {
+            max-height: 2em;
+            max-width: 100%;
+            margin: 1px .4em;
         }
     }
 
@@ -112,7 +141,7 @@ dt {
             background: rgba(#fff, .9);
 
             [theme=dark] & {
-                background: rgba(#000, .7);
+                background: rgba(41, 42, 45, .7);
             }
         }
     }
