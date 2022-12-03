@@ -1,13 +1,14 @@
 +++
 title = "Adult Consent Form"
 linktitle = "Consent Form"
-layout = "page"
+toc.enable = false
+meta = false
 menu = "footer"
 +++
 
-This consent form is for anyone 18 years old and over. If the participant is under 18 years old please ask the participant's parent or legal guardian to complete the [Junior Consent Form]({{< ref "/consent-form/junior" >}}).
+This consent form is for anyone 18 years old and over. If the participant is under 18 years old please ask the participant's parent or legal guardian to complete the [Junior Consent Form]({{< ref "/consent-form-junior" >}}).
 
-{{< form name="consent-form" action="/consent-form/success/" >}}
+{{< form name="consent-form" action="/consent-form-success/" >}}
   {{< form/fieldset legend="Participant Information" >}}
     {{< form/text name="first-name" label="First Name" required="yes" autocomplete="section-participant given-name" autofocus="yes" >}}
     {{< form/text name="last-name" label="Last Name" required="yes" autocomplete="section-participant family-name" >}}
