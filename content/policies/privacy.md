@@ -1,7 +1,6 @@
 +++
 title = "Privacy Policy"
 date = 2019-01-20T11:38:00
-layout = "page"
 aliases = [
   "/policy/privacy",
   "/privacy-policy/"
