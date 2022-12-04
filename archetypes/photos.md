@@ -1,8 +1,11 @@
 +++
 title = "{{ replace .Name "-" " " | title }}"
 date = {{ .Date }}
+toc.enable = false
+meta = false
 
 [[resources]]
+    name = "featured-image"
     src = "{{ .Name }}.jpg"
-    title = "Description of this photo."
+    title = "Photo of {{ replace .Name "-" " " | title }}"
 +++
