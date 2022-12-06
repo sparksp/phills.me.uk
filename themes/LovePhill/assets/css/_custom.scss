@@ -147,6 +147,26 @@ dt {
     }
 }
 
+.footer-container {
+    padding-bottom: .5em;
+}
+.footer-line {
+    .menu {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin: .5em 0;
+        padding: 0;
+    }
+    .menu-item {
+        padding: 0 .5em;
+        margin: .25em 0;
+    }
+    .menu-item + .menu-item {
+        border-left: 1px solid #000;
+    }
+}
+
 @media screen and (min-width: 400px) {
     .technical-skills ul {
         column-count: 2;

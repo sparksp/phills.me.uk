@@ -1,10 +1,7 @@
 +++
 title = "Contact Phill"
 linktitle = "Contact"
-menu = [
-  "main",
-  "footer"
-]
+menu = ["main"]
 toc.enable = false
 meta = false
 +++

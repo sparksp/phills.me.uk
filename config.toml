@@ -30,12 +30,7 @@ pygmentsUseClasses = false
 
   [Params.footer]
     since = 2016
-    hugo = false
-    custom = """
-Hosted on <a href="//netlify.com/">Netlify</a> | 
-Powered by <a href="//gohugo.io/">Hugo</a> | 
-Theme - <a href="//github.com/dillonzq/LoveIt"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
-"""
+    hugo = true
 
   [Params.app]
     title = "Phill Sparks"
