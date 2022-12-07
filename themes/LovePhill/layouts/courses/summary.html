@@ -13,7 +13,7 @@
         <span class="course-title">
             <span class="text">{{- .Title -}}</span>
             
-            {{- range where (site.RegularPages.RelatedTo ( keyVals "association" $item.Params.association )) "Section" "association" }}
+            {{- range where (site.RegularPages.RelatedTo ( keyVals "association" $item.Params.association )) "Section" "associations" }}
                 {{- range first 1 (.Resources.ByType "image") }}
                     {{- $image := . }}
                     {{- dict "Src" $image.Permalink "Title" $item.Title "Alt" $image.Title "Resources" $item.Resources | partial "plugin/image.html" -}}
