@@ -1,8 +1,0 @@
-{{- with $page := . }}
-{{- with .Resources.GetMatch "logo" }}
-{{- $image := .Resize "50x" }}
-<a href="{{ $page.Params.link | default $page.RelPermalink }}" class="menu-link">
-  <img src="{{ $image.Permalink }}" class="pure-img" alt="{{ $image.Title }}" title="{{ $page.Title }}" height="{{ $image.Height }}" width="{{ $image.Width }}">
-</a>
-{{- end }}
-{{- end }}
