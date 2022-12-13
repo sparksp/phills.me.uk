@@ -1,0 +1,9 @@
+{{- if .IsNamedParams -}}
+<div
+    {{- range $name, $value := .Params }} {{ $name }}="{{ $value }}"{{- end -}}
+>
+{{- else -}}
+<div{{ with .Get 0 }} class="{{ . }}"{{ end }}>
+{{- end -}}
+    {{- .Inner | markdownify -}}
+</div>

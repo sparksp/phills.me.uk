@@ -64,6 +64,7 @@ pygmentsUseClasses = true
       "/association/*" = "/associations/:splat"
       "/blog/:year/:month/:date/:slug" = "/post/:slug/"
       "/blog/tag/*" = "/tags/:splat/"
+      "/experience/*" = "/experience//"
       "/pb/*" = "/snip/:splat/"
       "/snips/*" = "/snip/:splat/"
 

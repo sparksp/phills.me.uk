@@ -1,9 +1,0 @@
-<article>
-  <h1 class="page-title">{{ .Title }}</h1>
-  {{ .Content }}
-
-  {{- $title := .Title -}}
-  {{- range .Pages }}
-    {{- .Render "item" }}
-  {{- end }}
-</article>
