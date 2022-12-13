@@ -2,13 +2,17 @@
 date = "2008-06-16T22:54:00Z"
 title = "SSH Avahi Service"
 description = "Simple Avahi definitions for SSH services including Fish and SCP."
-aliases = ["/snip/11*"]
+aliases = [
+  "/snip/11*",
+  "/snip/ssh-avahi-service"
+]
 tags = ["xml", "unix", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
+
 Simple [Avahi](https://www.avahi.org/) definitions for SSH services including Fish and SCP.
 
-{{< highlight xml >}}
+```xml
 <?xml version="1.0" standalone='no'?>
 <!DOCTYPE service-group SYSTEM "avahi-service.dtd">
 <service-group>
@@ -26,4 +30,4 @@ Simple [Avahi](https://www.avahi.org/) definitions for SSH services including Fi
         <port>22</port>
     </service>
 </service-group>
-{{< /highlight >}}
+```

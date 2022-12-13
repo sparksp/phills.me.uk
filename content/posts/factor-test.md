@@ -1,15 +1,20 @@
 +++
 date = "2007-11-19T16:05:00Z"
-title = "Factor Test (by lavalamp)"
+title = "Factor Test"
 description = "PHP factor test for very large numbers, by lavalamp."
-aliases = ["/snip/4*", "/snip/04*"]
+aliases = [
+  "/snip/4*",
+  "/snip/04*",
+  "/snip/factor-test"
+]
 tags = ["php", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
+author = "lavalamp"
 +++
 
 PHP factor test for very large numbers.
 
-{{< highlight php >}}
+```php
 <?php
 
 function check_factor($factor, $k, $base, $exponent, $c='-1'){
@@ -24,6 +29,4 @@ function check_factor($factor, $k, $base, $exponent, $c='-1'){
 }
 
 echo check_factor('28475025393798152885081', '1', '2', '3321931637')? "True!": "False!";
-
-?>
-{{< /highlight >}}
+```

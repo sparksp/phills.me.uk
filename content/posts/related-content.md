@@ -3,11 +3,18 @@ date = "2008-05-01T19:47:00Z"
 modified = "2008-05-02T19:47:00Z"
 title = "Related Content"
 description = "SQL to hunt down the 5 most relevant pieces of content by tag."
-aliases = ["/snip/8*", "/snip/08*"]
+aliases = [
+  "/snip/8*",
+  "/snip/08*",
+  "/snip/related-content"
+]
 tags = ["sql", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight sql >}}
+
+SQL to hunt down the 5 most relevant pieces of content by tag. This schema uses `uri` as the primary key for content (a foreign key in the tags table).
+
+```sql
 /**
  * SQL to hunt down the 5 most relevant pieces of content by tag.  This schema
  * uses `uri` as the primary key for content (a foreign key in the tags table).
@@ -23,4 +30,4 @@ GROUP BY uri
 HAVING COUNT(tag) > 0
 ORDER BY related_tag_count DESC, uri DESC
 LIMIT 0, 5
-{{< /highlight >}}
+```

@@ -70,7 +70,8 @@ pygmentsUseClasses = true
       "/policy/*" = "/policies/:splat/"
       "/post/*" = "/posts/:splat/"
       "/project/*" = "/posts/:splat/"
-      "/snips/*" = "/snip/:splat/"
+      "/snip/*" = "/posts/:splat/"
+      "/snips/*" = "/posts/:splat/"
 
 
 [[menu.social]]

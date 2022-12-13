@@ -3,11 +3,18 @@ date = "2007-11-11T23:47:00Z"
 modified = "2008-11-01T23:47:00Z"
 title = "New Terminal"
 description = "Launch a new terminal window, regardless of Terminal already running."
-aliases = ["/snip/3*", "/snip/03*"]
+aliases = [
+  "/snip/3*",
+  "/snip/03*",
+  "/snip/new-terminal"
+]
 tags = ["applescript", "osx", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight applescript >}}
+
+Launch a new Terminal window, regardless of Terminal already running.
+
+```applescript
 (*
 New Terminal
 
@@ -29,4 +36,4 @@ tell application "System Events"
         end tell
     end if
 end tell
-{{< /highlight >}}
+```

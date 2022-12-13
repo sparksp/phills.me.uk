@@ -2,11 +2,18 @@
 date = "2007-12-19T15:29:00Z"
 title = "PHP Id"
 description = "A handy script to insert $Id$ comments in PHP files."
-aliases = ["/snip/6*", "/snip/06*"]
+aliases = [
+  "/snip/6*",
+  "/snip/06*",
+  "/snip/php-id"
+]
 tags = ["bash", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight bash >}}
+
+A handy script to insert `$Id$` comments in PHP files.
+
+```bash
 #!/bin/bash
 
 # A handy script to insert $Id$ comments in PHP files.
@@ -53,4 +60,4 @@ if [[ -e $1 ]]; then
 else
     echo "$1 [missing]"
 fi
-{{< /highlight >}}
+```

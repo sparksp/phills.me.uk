@@ -2,16 +2,23 @@
 date = "2008-05-22T00:28:00Z"
 modified = "2011-10-09T00:28:00Z"
 title = "JS Page Navigation"
-description = "Simple script to find first/prev/next/last links and nagivate to them."
-aliases = ["/snip/10*"]
+description = "Simple script to find first/prev/next/last links and navigate to them."
+aliases = [
+  "/snip/10*",
+  "/snip/js-page-navigation"
+]
 tags = ["javascript", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight javascript >}}
+
+Simple script to find first/prev/next/last links and navigate to them.
+
+```javascript
 /**
- * Simple script to find first/prev/next/last links and nagivate to them.
+ * Simple script to find first/prev/next/last links and navigate to them.
  *
  * @author Phill Sparks <me@phills.me.uk>
+ * @license http://creativecommons.org/licenses/by-sa/2.0/uk/ Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales
  */
 function go(rel) {
     var url;
@@ -34,4 +41,4 @@ function goNext() {
 function goLast() {
     go('last') || alert('No last found.');
 }
-{{< /highlight >}}
+```

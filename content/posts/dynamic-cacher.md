@@ -2,11 +2,18 @@
 date = "2007-10-02T13:38:00Z"
 title = "Dynamic Cacher"
 description = "My own simple cache service written in PHP.  More a proof of concept than anything else."
-aliases = ["/snip/2*", "/snip/02*"]
+aliases = [
+  "/snip/2*",
+  "/snip/02*",
+  "/snip/dynamic-cacher"
+]
 tags = ["php", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight php >}}
+
+My own simple cache service written in PHP. More a proof of concept than anything else.
+
+```php
 <?php
 
 /**
@@ -241,4 +248,4 @@ function statusmessage($statuscode) {
             return 'Unknown';
     }
 }
-{{< /highlight >}}
+```

@@ -3,11 +3,18 @@ date = "2008-05-21T22:13:00Z"
 modified = "2008-05-22T22:13:00Z"
 title = "New Item Alert"
 description = "This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a growl message containing the number of items added."
-aliases = ["/snip/9*", "/snip/09*"]
+aliases = [
+  "/snip/9*",
+  "/snip/09*",
+  "/snip/new-item-alert"
+]
 tags = ["applescript", "osx", "code"]
-categories = ["programming"]
+categories = ["programming", "snip"]
 +++
-{{< highlight applescript >}}
+
+This Folder Action handler is triggered whenever items are added to the attached folder. The script will display a [Growl](https://growl.github.io/growl/) message containing the number of items added.
+
+```applescript
 (*
 New Item Alert
 
@@ -67,4 +74,4 @@ on adding folder items to this_folder after receiving added_items
         end if
     end try
 end adding folder items to
-{{< /highlight >}}
+```
