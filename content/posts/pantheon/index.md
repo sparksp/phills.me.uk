@@ -1,11 +1,17 @@
 +++
 date = "2011-11-02T09:08:53Z"
 title = "Pantheon"
-categories = ["programming"]
+categories = ["programming", "project"]
+aliases = [
+  "/project/pantheon"
+]
 [[resources]]
   src = "pantheon.jpg"
   title = "Screenshot of the Pantheon main menu"
 +++
+
+![Screenshot of the Pantheon main menu](pantheon.jpg)
+
 I built this app for Pantheon’s 2011 Annual Investor Meeting. The app was installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
 
 Features included:

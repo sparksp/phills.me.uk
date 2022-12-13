@@ -1,11 +1,17 @@
 +++
 date = "2016-11-02T09:11:20Z"
 title = "CrowdLab"
-categories = ["programming"]
+categories = ["programming", "project"]
+aliases = [
+  "/project/crowdlab"
+]
 [[resources]]
   src = "crowdlab.jpg"
   title = "Screenshot of CrowdLab website"
 +++
+
+![Screenshot of CrowdLab website](crowdlab.jpg)
+
 Initially, I migrated the CrowdLab API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL - re-engineering many of the features based on the company’s experiences of having run the system for a year.
 
 One of the biggest improvements was enabling content additions and amends to be made by the client services team through a web interface. In the early versions of CrowdLab, such work was done by the development team.

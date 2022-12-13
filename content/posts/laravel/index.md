@@ -2,10 +2,15 @@
 date = "2011-11-02T09:09:23Z"
 title = "Laravel"
 categories = ["programming"]
+aliases = [
+  "/project/laravel"
+]
 [[resources]]
   src = "laravel.jpg"
   title = "Screenshot of Laravel homepage"
 +++
+
+![Screenshot of old Laravel homepage](laravel.jpg)
 
 [Laravel](https://laravel.com/) is "a clean and classy framework for PHP web development."
 

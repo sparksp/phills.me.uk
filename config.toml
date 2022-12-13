@@ -69,6 +69,7 @@ pygmentsUseClasses = true
       "/pb/*" = "/snip/:splat/"
       "/policy/*" = "/policies/:splat/"
       "/post/*" = "/posts/:splat/"
+      "/project/*" = "/posts/:splat/"
       "/snips/*" = "/snip/:splat/"
 
 
