@@ -3,8 +3,12 @@ title = "Mountain Training"
 date = 2019-01-28T11:07:51Z
 link = "//www.mountain-training.org/"
 association = "mountain-training"
+aliases = [
+  "/association/mountain-training"
+]
 
 [[resources]]
+  name = "logo"
   src = "MT_rgb.png"
   title = "Mountain Training Logo"
 +++
