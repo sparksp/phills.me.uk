@@ -2,6 +2,9 @@
 title = "Child Protection Policy"
 date = 2019-02-06T14:04:48Z
 layout = "page"
+aliases = [
+  "/policy/child-protection"
+]
 +++
 **Phill Sparks** acknowledges the duty of care to safeguard and promote the welfare of children and is committed to ensuring safeguarding practice reflects statutory responsibilities, government guidance and complies with best practice and Mountain Training England’s requirements.
 
