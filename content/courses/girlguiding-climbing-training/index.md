@@ -1,6 +1,9 @@
 +++
 title = "Girlguiding Climbing and Abseiling Scheme"
 date = 2018-12-25T18:39:37Z
+aliases = [
+  "/course/girlguiding-climbing-training"
+]
 [menu.main]
   parent = "course"
 [[resources]]

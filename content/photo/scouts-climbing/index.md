@@ -1,7 +1,7 @@
 +++
 title = "Scouts Climbing"
 date = 2017-09-09T10:17:41Z
-link = "/course/scouts-climbing-permits"
+link = "/courses/scouts-climbing-permits"
 
 [[resources]]
     src = "*.jpg"

@@ -1,7 +1,7 @@
 +++
 title = "Group Climbing at Birchen Edge"
 date = 2016-08-04T11:18:04Z
-link = "/course/scouts-climbing-permits"
+link = "/courses/scouts-climbing-permits"
 
 [[resources]]
     src = "*.jpg"

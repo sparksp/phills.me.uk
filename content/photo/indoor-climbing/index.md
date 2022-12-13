@@ -1,7 +1,7 @@
 +++
 title = "Indoor Climbing"
 date = 2019-01-05T15:34:40Z
-link = "/course/indoor-climbing-assistant"
+link = "/courses/indoor-climbing-assistant"
 
 [[resources]]
     src = "*.jpg"

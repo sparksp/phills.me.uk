@@ -1,7 +1,7 @@
 +++
 title = "Indoor Bouldering"
 date = 2018-02-24T20:06:53Z
-link = "/course/indoor-climbing-assistant"
+link = "/courses/indoor-climbing-assistant"
 
 [[resources]]
     src = "*.jpg"

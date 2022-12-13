@@ -1,6 +1,9 @@
 +++
 title = "Scouts Climbing and Abseiling Permits"
 date = 2018-11-09T19:18:18Z
+aliases = [
+  "/course/scouts-climbing-permits"
+]
 [menu.main]
   parent = "course"
 [[resources]]
