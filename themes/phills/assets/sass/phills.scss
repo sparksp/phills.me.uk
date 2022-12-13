@@ -336,4 +336,32 @@ a.tag {
   }
 }
 
+.content .course_search_container .course_search {
+  .titles {
+      background-color: $primary-color;
+  }
+  a.info-icon {
+      background-color: $primary-color !important;
+  }
+  a.info-icon:after {
+      color: white;
+      margin-left: -2px;
+  }
+  .courseTable {
+    margin-bottom: .5em;
+  }
+  .pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nextButton, .previousButton {
+    &>a>span {
+      color: $primary-color;
+      float: none;
+    }
+  }
+}
+
 @import 'monokai';
