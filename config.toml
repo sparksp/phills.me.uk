@@ -62,12 +62,13 @@ pygmentsUseClasses = true
 
     [Params.Redirects.Custom]
       "/association/*" = "/associations/:splat"
-      "/blog/:year/:month/:date/:slug" = "/post/:slug/"
+      "/blog/:year/:month/:date/:slug" = "/posts/:slug/"
       "/blog/tag/*" = "/tags/:splat/"
       "/course/*" = "/courses/:splat"
       "/experience/*" = "/experience//"
       "/pb/*" = "/snip/:splat/"
       "/policy/*" = "/policies/:splat/"
+      "/post/*" = "/posts/:splat/"
       "/snips/*" = "/snip/:splat/"
 
 

@@ -256,13 +256,6 @@ h2 + p {
   box-sizing: border-box;
 }
 
-a.tag {
-  display: inline-block;
-  background: $primary-color;
-  color: white;
-  padding: 2px 4px;
-}
-
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -362,6 +355,10 @@ a.tag {
       float: none;
     }
   }
+}
+
+.category .svg-inline--fa {
+  padding-right: .1em;
 }
 
 @import 'monokai';
