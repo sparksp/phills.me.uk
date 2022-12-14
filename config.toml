@@ -46,22 +46,32 @@ pygmentsUseClasses = true
   Description = "Climbing Training • Instruction • Coaching"
   Twitter = "@SparksPhill"
   Facebook = "sparks.phill"
-[Params.Redirects]
-  Gone = [
-    "/bookmarks",
-    "/changelog",
-    "/comments",
-    "/directory",
-    "/fortune",
-    "/login",
-    "/mods",
-    "/register",
-    "/users"]
-  [Params.Redirects.Custom]
-    "/blog/:year/:month/:date/:slug" = "/post/:slug/"
-    "/blog/tag/*" = "/tags/:splat/"
-    "/pb/*" = "/snip/:splat/"
-    "/snips/*" = "/snip/:splat/"
+
+  [Params.Redirects]
+    Gone = [
+      "/bookmarks",
+      "/changelog",
+      "/comments",
+      "/directory",
+      "/fortune",
+      "/login",
+      "/mods",
+      "/register",
+      "/users"
+    ]
+
+    [Params.Redirects.Custom]
+      "/association/*" = "/associations/:splat"
+      "/blog/:year/:month/:date/:slug" = "/posts/:slug"
+      "/blog/tag/*" = "/tags/:splat"
+      "/course/*" = "/courses/:splat"
+      "/experience/*" = "/experience//"
+      "/pb/*" = "/snip/:splat"
+      "/photo/*" = "/photos/:splat"
+      "/policy/*" = "/policies/:splat"
+      "/post/*" = "/posts/:splat"
+      "/snip/*" = "/posts/:splat"
+      "/snips/*" = "/snip/:splat"
 
 
 [[menu.social]]

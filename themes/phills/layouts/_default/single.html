@@ -4,20 +4,22 @@
   <article>
     <h1 class="page-title">{{ .Title }}</h1>
     <p class="post-meta">
-      <i class="fa fa-calendar" title="{{ i18n "Posted on" }}"></i>
+      <i class="far fa-calendar-alt" title="{{ i18n "Posted on" }}"></i>
       <time datetime="{{ .Date }}">{{ .Date.Format "Monday, 2 January 2006" }}</time>
-    {{- with .Params.categories }}
-      <i class="fa fa-folder-open" title="{{ . | len | i18n "Categories" }}"></i>
-      {{- range . }}
-      <a href="{{ "categories/" | relURL }}{{ . | urlize }}" class="category category-{{ . | urlize }}">{{ . }}</a>
-      {{- end }}
-    {{- end }}
-    {{- with .Params.tags }}
-      <i class="fa fa-tags" title="{{ . | len | i18n "Tags" }}"></i>
-      {{- range . }}
-      <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag tag-{{ . | urlize }}">{{ . }}</a>
-      {{- end }}
-    {{- end }}
+
+      {{- range .Params.categories }}
+        {{- $category := partialCached "function/path.html" . . | printf "/categories/%v" | $.Site.GetPage -}}
+        &nbsp;<a href="{{ $category.RelPermalink }}" class="category"><i class="far fa-folder" aria-hidden="true"></i>{{ $category.Title }}</a>
+      {{- end -}}
+
+      {{- with .Params.tags -}}
+        &nbsp;<i class="fas fa-tags fa-fw" title="{{ . | len | i18n "Tags" }}" aria-hidden="true"></i>&nbsp;
+        {{- range $index, $value := . -}}
+          {{- if gt $index 0 }},&nbsp;{{ end -}}
+          {{- $tag := partialCached "function/path.html" $value $value | printf "/tags/%v" | $.Site.GetPage -}}
+          <a href="{{ $tag.RelPermalink }}" class="tag">{{ $tag.Title }}</a>
+        {{- end -}}
+      {{- end -}}
     </p>
     {{ .Content }}
   </article>

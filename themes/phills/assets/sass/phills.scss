@@ -256,13 +256,6 @@ h2 + p {
   box-sizing: border-box;
 }
 
-a.tag {
-  display: inline-block;
-  background: $primary-color;
-  color: white;
-  padding: 2px 4px;
-}
-
 .tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -334,6 +327,38 @@ a.tag {
       border-color: #129fea;
     }
   }
+}
+
+.content .course_search_container .course_search {
+  .titles {
+      background-color: $primary-color;
+  }
+  a.info-icon {
+      background-color: $primary-color !important;
+  }
+  a.info-icon:after {
+      color: white;
+      margin-left: -2px;
+  }
+  .courseTable {
+    margin-bottom: .5em;
+  }
+  .pagination {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .nextButton, .previousButton {
+    &>a>span {
+      color: $primary-color;
+      float: none;
+    }
+  }
+}
+
+.category .svg-inline--fa {
+  padding-right: .1em;
 }
 
 @import 'monokai';
