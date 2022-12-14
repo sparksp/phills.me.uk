@@ -62,17 +62,16 @@ pygmentsUseClasses = true
 
     [Params.Redirects.Custom]
       "/association/*" = "/associations/:splat"
-      "/blog/:year/:month/:date/:slug" = "/posts/:slug/"
-      "/blog/tag/*" = "/tags/:splat/"
+      "/blog/:year/:month/:date/:slug" = "/posts/:slug"
+      "/blog/tag/*" = "/tags/:splat"
       "/course/*" = "/courses/:splat"
       "/experience/*" = "/experience//"
-      "/pb/*" = "/snip/:splat/"
-      "/photo/*" = "/photos/:splat/"
-      "/policy/*" = "/policies/:splat/"
-      "/post/*" = "/posts/:splat/"
-      "/project/*" = "/posts/:splat/"
-      "/snip/*" = "/posts/:splat/"
-      "/snips/*" = "/posts/:splat/"
+      "/pb/*" = "/snip/:splat"
+      "/photo/*" = "/photos/:splat"
+      "/policy/*" = "/policies/:splat"
+      "/post/*" = "/posts/:splat"
+      "/snip/*" = "/posts/:splat"
+      "/snips/*" = "/snip/:splat"
 
 
 [[menu.social]]
