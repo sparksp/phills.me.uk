@@ -3,6 +3,6 @@ title = "{{ replace .Name "-" " " | title }}"
 date = {{ .Date }}
 
 [[resources]]
-    src = "*.jpg"
+    src = "{{ .Name }}.jpg"
     title = "Description of this photo."
 +++

@@ -67,6 +67,7 @@ pygmentsUseClasses = true
       "/course/*" = "/courses/:splat"
       "/experience/*" = "/experience//"
       "/pb/*" = "/snip/:splat/"
+      "/photo/*" = "/photos/:splat/"
       "/policy/*" = "/policies/:splat/"
       "/post/*" = "/posts/:splat/"
       "/project/*" = "/posts/:splat/"
