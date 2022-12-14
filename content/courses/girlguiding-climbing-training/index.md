@@ -43,7 +43,9 @@ Anyone who is interested in supporting girls and young women to climb and abseil
 
 **For level 2** - you must have experience of single pitch climbing and abseiling outdoors using in situ anchor points such as trees, bolts and stakes. You will also need to have an up-to-date first aid training, same as for level 1.
 
-Note: You must be at least 18 years old at the time of assessment for both levels.
+{{< admonition type=info >}}
+You must be at least 18 years old at the time of assessment for both levels.
+{{< /admonition >}}
 
 ### Level 1 Training
 
