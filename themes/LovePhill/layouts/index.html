@@ -38,6 +38,6 @@
             </div>
         {{- end -}}
 
-        {{- partial "related-associations" . }}
+        {{- range partial "related-associations" . }}{{ .Render "icon-link" }}{{ end -}}
     </div>
 {{- end -}}

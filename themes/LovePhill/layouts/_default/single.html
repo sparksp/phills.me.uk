@@ -45,7 +45,7 @@
                 {{ end }}
             </div>
     
-            {{- partial "related-associations" . }}
+            {{- range partial "related-associations" . }}{{ .Render "icon-link" }}{{ end -}}
         </header>
 
         {{- /* Featured image */ -}}

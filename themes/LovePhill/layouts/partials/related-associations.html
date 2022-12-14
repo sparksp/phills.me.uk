@@ -1,3 +1,1 @@
-{{- range where (site.RegularPages.RelatedTo ( keyVals "association" .Params.association )) "Section" "associations" }}
-  {{ .Render "icon-link" }}
-{{- end }}
+{{- return where (site.RegularPages.RelatedTo ( keyVals "association" .Params.association )) "Section" "associations" -}}
