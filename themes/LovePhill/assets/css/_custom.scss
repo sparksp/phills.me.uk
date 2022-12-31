@@ -83,6 +83,10 @@ article header {
             float: none;
         }
     }
+    .hidden {
+        display: none !important;
+        visibility: hidden;
+    }
 }
   
 dt {
