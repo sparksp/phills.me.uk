@@ -2,10 +2,11 @@
 title = "Scouts Climbing and Abseiling Permits"
 date = 2018-11-09T19:18:18Z
 aliases = [
-  "/course/scouts-climbing-permits"
+  "/course/scouts-climbing-permits",
+  "/courses/scouts-climbing-permits",
 ]
 [menu.main]
-  parent = "course"
+  parent = "services"
 [[resources]]
   name = "featured-image"
   src = "assessment.jpg"

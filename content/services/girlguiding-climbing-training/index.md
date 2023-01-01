@@ -3,10 +3,11 @@ title = "Girlguiding Climbing Scheme"
 subtitle = "Help girls reach the top with the Girlguiding Climbing scheme"
 date = 2018-12-25T18:39:37Z
 aliases = [
-  "/course/girlguiding-climbing-training"
+  "/course/girlguiding-climbing-training",
+  "/courses/girlguiding-climbing-training",
 ]
 [menu.main]
-  parent = "course"
+  parent = "services"
 [[resources]]
   name = "featured-image"
   src = "girlguiding-abseiling.jpg"

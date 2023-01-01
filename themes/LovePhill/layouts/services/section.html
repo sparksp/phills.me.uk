@@ -3,13 +3,13 @@
 {{- end -}}
 
 {{- define "content" -}}
-<div class="page courses">
+<div class="page services">
     {{- /* Title */ -}}
     <h2 class="single-title animate__animated animate__pulse animate__faster">
         {{- .Params.Title | default (T .Section) | default .Section -}}
     </h2>
 
-    <div class="course-list">
+    <div class="services-list">
     {{- range .Pages -}}
         {{- .Render "summary" -}}
     {{- end -}}
