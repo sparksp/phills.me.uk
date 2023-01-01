@@ -5,12 +5,13 @@ categories = ["programming", "project"]
 aliases = [
   "/project/pantheon"
 ]
+toc.enable = false
+
 [[resources]]
+  name = "featured-image"
   src = "pantheon.jpg"
   title = "Screenshot of the Pantheon main menu"
 +++
-
-![Screenshot of the Pantheon main menu](pantheon.jpg)
 
 I built this app for Pantheon’s 2011 Annual Investor Meeting. The app was installed on strategically-placed iPads; it was used throughout the conference weekend to provide information to and gather feedback from attendees.
 

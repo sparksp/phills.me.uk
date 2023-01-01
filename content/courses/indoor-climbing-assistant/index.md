@@ -9,10 +9,12 @@ aliases = [
   "/ica"
 ]
 weight = 100
+hiddenFromHomePage = false
 
 [menu.main]
   parent = "course"
 [[resources]]
+  name = "featured-image"
   src = "climbing-assistant.jpg"
   title = "A young person learning to belay with an assistant holding their rope."
 +++
@@ -70,7 +72,7 @@ Detailed information on each of the above topics can be found in the Indoor Clim
 
 The Indoor Climbing Assistant handbook has full details about the scheme including the syllabus and supporting guidance notes. You can [download the handbook][ica-handbook] from the Mountain Training website.
 
-### Courses {#course-search}
+### Find a Course
 
 If you would like to arrange a course for your school / group then please [get in touch with me][contact]. Any courses organised will be listed below in the course finder:
 

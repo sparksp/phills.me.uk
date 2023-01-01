@@ -2,6 +2,8 @@
 title = "About Phill"
 date = 2018-12-29T18:05:23Z
 layout = "about"
+toc.enable = false
+association = "mta"
 
 [menu.main]
   name = "About"
@@ -10,6 +12,9 @@ layout = "about"
   src = "phills.jpg"
   title = "Photo of Phill Sparks drinking a cup of coffee"
 +++
+
+![Photo of Phill Sparks drinking a cup of coffee](phills.jpg)
+{.circle .center .small}
 
 ### Climber • Instructor • Coach
 

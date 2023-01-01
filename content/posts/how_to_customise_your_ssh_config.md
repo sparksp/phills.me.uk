@@ -8,6 +8,7 @@ aliases = [
   "/blog/2008/04/13/how_to_customise_your_ssh_config",
   "/post/how_to_customise_your_ssh_config"
 ]
+toc.enable = false
 +++
 
 I am someone who feels more comfortable using the command-line than many GUI set-ups and who is often SSH-ing between servers; many of these servers have lengthy host names and require various different usernames; luckily the SSH developers thought ahead and came up with a way of pre-setting most options per-host.

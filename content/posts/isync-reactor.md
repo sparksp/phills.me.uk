@@ -9,6 +9,8 @@ aliases = [
 ]
 tags = ["applescript", "osx", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 This script will launch iSync and ask it to synchronize and terminate. It will also refresh calendars in iCal.

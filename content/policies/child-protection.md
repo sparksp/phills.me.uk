@@ -1,7 +1,6 @@
 +++
 title = "Child Protection Policy"
 date = 2019-02-06T14:04:48Z
-layout = "page"
 aliases = [
   "/policy/child-protection"
 ]

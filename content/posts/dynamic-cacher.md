@@ -9,6 +9,8 @@ aliases = [
 ]
 tags = ["php", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 My own simple cache service written in PHP. More a proof of concept than anything else.

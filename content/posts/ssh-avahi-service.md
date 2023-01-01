@@ -8,6 +8,8 @@ aliases = [
 ]
 tags = ["xml", "unix", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 Simple [Avahi](https://www.avahi.org/) definitions for SSH services including Fish and SCP.

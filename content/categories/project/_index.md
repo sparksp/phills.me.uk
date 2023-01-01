@@ -2,6 +2,6 @@
 title = "Projects"
 aliases = [
   "/project",
-  "/projects"
+  "/projects",
 ]
 +++

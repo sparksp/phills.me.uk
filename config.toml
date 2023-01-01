@@ -1,51 +1,65 @@
 baseurl = "https://phills.me.uk/"
+
+theme = [
+  "LovePhill",
+  "LoveIt",
+]
+
 title = "Phill Sparks"
+
 languageCode = "en-GB"
-theme = "phills"
+languageName = "English"
+
 enableRobotsTxt = true
 enableGitInfo = true
-pygmentsUseClasses = true
+pygmentsUseClasses = false
 
-[outputFormats]
-  [outputFormats.NetlifyRedirects]
-    name = "_Redirects"
-    baseName = "_redirects"
-    isPlainText = true
-    notAlternative = true
-
-[outputs]
-  home = ["HTML", "_Redirects"]
-
-[related]
-  threshold = 80
-  includeNewer = true
-  toLower = false
-
-[[related.indices]]
-  name = "association"
-  weight = 1
-
-[privacy]
-  [privacy.disqus]
-    disable = true
-  [privacy.googleAnalytics]
-    disable = true
-  [privacy.instagram]
-    disable = true
-  [privacy.speakerDeck]
-    disable = true
-  [privacy.twitter]
-    disable = true
-  [privacy.vimeo]
-    disable = true
-  [privacy.youtube]
-    disable = true
+[author]
+  name = "Phill Sparks"
+  email = "hello@phills.me.uk"
+  link = "https://phills.me.uk"
 
 [Params]
   Author = "Phill Sparks"
   Description = "Climbing Training • Instruction • Coaching"
-  Twitter = "@SparksPhill"
-  Facebook = "sparks.phill"
+  fingerprint = "sha512"
+  gitRepo = "https://github.com/sparksp/phills.me.uk"
+
+  [Params.header.title]
+    name = "Phill Sparks"
+
+  [Params.footer]
+    since = 2016
+    hugo = true
+
+  [Params.app]
+    title = "Phill Sparks"
+    iconColor = "#da532c"
+    themeColor = "#da532c"
+    tileColor = "#da532c"
+
+  [Params.social]
+    GitHub = "sparksp"
+    Facebook = "phills.climbing"
+    Instagram = "sparksphill"
+    Twitter = "SparksPhill"
+    Email = "hello@phills.me.uk?subject=Course+Enquiry"
+
+  [Params.home.profile]
+    enable = true
+    avatarURL = "/about/phills.jpg"
+    title = "Phill Sparks"
+    subtitle = "Climber • Instructor • Coach"
+    typeit = false
+
+  [Params.home.posts]
+    enable = true
+
+  [Params.page]
+    hiddenFromHomePage = true
+
+  [Params.search]
+    enable = true
 
   [Params.Redirects]
     Gone = [
@@ -73,23 +87,46 @@ pygmentsUseClasses = true
       "/snip/*" = "/posts/:splat"
       "/snips/*" = "/snip/:splat"
 
+[markup]
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
 
-[[menu.social]]
-  name = "Facebook"
-  identifier = "facebook"
-  url = "https://www.facebook.com/phills.climbing"
+  [markup.goldmark.parser.attribute]
+    block = true
+    title = true
 
-[[menu.social]]
-  name = "GitHub"
-  identifier = "github"
-  url = "https://github.com/sparksp/"
+[outputFormats]
+  [outputFormats.NetlifyRedirects]
+    name = "_Redirects"
+    baseName = "_redirects"
+    isPlainText = true
+    notAlternative = true
 
-[[menu.social]]
-  name = "Instagram"
-  identifier = "instagram"
-  url = "https://www.instagram.com/sparksphill/"
+[outputs]
+  home = ["HTML", "JSON", "_Redirects"]
 
-[[menu.social]]
-  name = "Twitter"
-  identifier = "twitter"
-  url = "https://twitter.com/SparksPhill"
+[privacy]
+  [privacy.disqus]
+    disable = true
+  [privacy.googleAnalytics]
+    disable = true
+  [privacy.instagram]
+    disable = true
+  [privacy.speakerDeck]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[related]
+  threshold = 80
+  includeNewer = true
+  toLower = false
+
+  [[related.indices]]
+    name = "association"
+    weight = 1

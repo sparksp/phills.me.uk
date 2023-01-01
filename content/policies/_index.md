@@ -1,0 +1,6 @@
++++
+title = "Policies"
+aliases = [
+    "/policy",
+]
++++

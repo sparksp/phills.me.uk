@@ -9,6 +9,8 @@ aliases = [
 ]
 tags = ["javascript", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 Adds hTodo support to the operator toolbar.

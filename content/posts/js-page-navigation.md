@@ -9,6 +9,8 @@ aliases = [
 ]
 tags = ["javascript", "code"]
 categories = ["programming", "snip"]
+license = "<a href=\"http://creativecommons.org/licenses/by-sa/2.0/uk/\">Creative Commons Attribution-ShareAlike 2.0 UK: England & Wales</a>"
+toc.enable = false
 +++
 
 Simple script to find first/prev/next/last links and navigate to them.
