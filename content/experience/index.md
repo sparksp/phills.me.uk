@@ -55,7 +55,7 @@ One of the core team at [The Peak Climbing School](https://www.peakclimbingschoo
 
 ### Provider & Course Director for Mountain Training (2019 onwards) {#course-provider-for-mountain-training}
 
-I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Tower Climbing Centre, Nottingham Climbing Centre and The Cragg Climbing Wall.
+I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Tower Climbing Centre, Nottingham Climbing Centre, The Foundry Climbing Centre and The Cragg Climbing Wall.
 
 ### Course Director at The Tower Climbing Centre (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
