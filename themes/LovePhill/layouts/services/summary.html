@@ -1,6 +1,6 @@
 {{- $item := . -}}
-<article class="course-item">
-    <a href="{{ .RelPermalink }}" class="course-item-link">
+<article class="service-item">
+    <a href="{{ .RelPermalink }}" class="service-item-link">
         {{- $image := $item.Params.featuredimage -}}
         {{- $description := $item.Title -}}
         {{- with $item.Resources.GetMatch "featured-image" -}}
@@ -10,7 +10,7 @@
         {{- with $image -}}
             {{- dict "Src" . "Title" $item.Title "Alt" $description "Resources" $item.Resources | partial "plugin/image.html" -}}
         {{- end -}}
-        <span class="course-title">
+        <span class="service-title">
             <span class="text">{{- .Title -}}</span>
 
             {{- range partial "related-associations" . }}{{ .Render "icon" }}{{ end -}}

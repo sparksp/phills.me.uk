@@ -29,7 +29,7 @@ Or fill in the contact form with your name, e-mail address and query.
 {{< form/recaptcha >}}
 
 {{< form/checkbox name="consent" required="yes" >}}
-I consent to this website storing this information so they can respond cordingly.
+I consent to this website storing this information so they can respond accordingly.
 {{< /form/checkbox >}}
 
 {{< form/submit label="Send" >}}

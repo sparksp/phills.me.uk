@@ -3,16 +3,17 @@ title = "Indoor Climbing Assistant"
 date = 2018-11-09T19:18:18Z
 association = "mountain-training"
 aliases = [
-  "/course/indoor-climbing-assistant",
   "/course/ica",
+  "/course/indoor-climbing-assistant",
   "/courses/ica",
-  "/ica"
+  "/courses/indoor-climbing-assistant",
+  "/ica",
 ]
 weight = 100
 hiddenFromHomePage = false
 
 [menu.main]
-  parent = "course"
+  parent = "services"
 [[resources]]
   name = "featured-image"
   src = "climbing-assistant.jpg"

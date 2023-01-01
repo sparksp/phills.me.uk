@@ -26,11 +26,11 @@ I'm a trainee Rock Climbing Development Instructor and Climbing Development Coac
 
 I enjoy climbing in all forms, especially sport and trad climbing when the weather is good, and indoor sport climbing throughout the year.
 
-[girlguiding-training]: {{< ref "/courses/girlguiding-climbing-training" >}}
+[girlguiding-training]: {{< ref "/services/girlguiding-climbing-training" >}}
 [girlguiding]: https://www.girlguiding.org.uk/
-[ica]: {{< ref "/courses/indoor-climbing-assistant" >}}
+[ica]: {{< ref "/services/indoor-climbing-assistant" >}}
 [mountain-training]: https://www.mountain-training.org/
 [nicas]: https://www.nicas.co.uk/
 [peakclimbingschool]: https://www.peakclimbingschool.co.uk/
-[scout-permits]: {{< ref "/courses/scouts-climbing-permits" >}}
+[scout-permits]: {{< ref "/services/scouts-climbing-permits" >}}
 [tower]: https://leicester.gov.uk/climbing/

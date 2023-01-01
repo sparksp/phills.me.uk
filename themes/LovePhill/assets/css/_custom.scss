@@ -93,14 +93,14 @@ dt {
     font-weight: bold;
 }
 
-.course-list {
+.services-list {
     max-width: 540px;
 }
 .home-featured-list {
     max-width: 540px;
     margin: 2em auto 0;
 }
-.course-item {
+.service-item {
     margin-bottom: 1em;
     position: relative;
     @include transition(all 0.1s ease-in);
@@ -112,7 +112,7 @@ dt {
         margin: 0 auto;
         overflow: hidden;
     }
-    .course-title {
+    .service-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -141,7 +141,7 @@ dt {
         @include box-shadow(0 0 .5em .2em rgba(0, 0, 0, .2));
         transform: translateY(-0.1rem);
 
-        .course-title {
+        .service-title {
             background: rgba(#fff, .9);
 
             [theme=dark] & {

@@ -35,7 +35,7 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 : Working with groups of young people (mostly Primary School age) to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering.
 
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
-: Leading sessions of bouldering and top-rope climbing with groups of children, young people and adults. Between 2012 and 2016 I regularly led the kids clubs, teaching NICAS 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed.
+: Leading sessions of bouldering and top-rope climbing with groups of children, young people and adults. Between 2012 and 2016 I regularly led the kids clubs, teaching NICAS Climbing and Bouldering 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed.
 
 [Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017 onwards)
 : Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
@@ -55,15 +55,15 @@ One of the core team at [The Peak Climbing School](https://www.peakclimbingschoo
 
 ### Provider & Course Director for Mountain Training (2019 onwards) {#course-provider-for-mountain-training}
 
-I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Tower Climbing Centre, Nottingham Climbing Centre and The Cragg Climbing Wall.
+I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Tower Climbing Centre, Nottingham Climbing Centre, The Foundry Climbing Centre and The Cragg Climbing Wall.
 
 ### Course Director at The Tower Climbing Centre (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
-Along with assisting with the general running of the centre, I also oversee NICAS Climbing and NICAS Bouldering here, including inducting staff, teaching courses and coaching candidates.
+Along with assisting with the general running of the centre, I also oversee NICAS Climbing and Bouldering here, including inducting staff, teaching courses and coaching candidates.
 
 ### Chief Instructor at The Climbing Station (2017-2018) {#chief-instructor-at-the-climbing-station}
 
-1. Coordinating instructed sessions and being responsible for running NIBAS and NICAS within the junior groups.
+1. Coordinating instructed sessions and being responsible for running NICAS Climbing and Bouldering within the junior groups.
 2. Helping to ensure that the centre has adequate staff cover to run efficiently and that instructor lead sessions have the appropriate instructor ratios.
 3. Ensuring that instructing staff receive the appropriate training to do their job efficiently and that they adhere to the centre's policies and procedures.
 4. Working with the directors and other staff to ensure the centre continues to develop both in reputation and enhanced turnover.
