@@ -18,7 +18,7 @@ In 2009 I started to help with climbing and crate stacking sessions at my local 
 
 - [ERCA Generic Rescuer](https://www.vertex-training.co.uk/course_generic_rescuer.html) (09/2022)
 - [ERCA High Ropes Course Instructor](https://www.vertex-training.co.uk/course_highropes.html) (09/2022)
-- [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020)
+- [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
 - [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach) (04/2018)
 - [Climbing Wall Leading Award](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-development-instructor) (06/2015)
 - [Single Pitch Award](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor) (10/2013)
