@@ -1,0 +1,41 @@
+{{/*
+    Possible methods...
+
+    {{< abbr "ABBR" "Full text" />}}
+    {{< abbr "ABBR" />}}
+
+    The first time an ABBR is found, it will produce:
+
+    <abbr>ABBR</abbr> (Full text)
+
+    And any other time the same ABBR is found, it will produce instead:
+
+    <abbr title="Full text">ABBR</abbr>
+
+*/}}
+{{- $page := .Page }}
+{{- $abbr := .Get 0 | string }}
+{{- $text := .Get 1 | string }}
+{{- $title := "" }}
+{{- if $abbr }}
+    {{- with $page.Scratch.Get "abbr" }}
+        {{- $title = index . $abbr }}
+        {{- if $text }}
+            {{- if ne $text $title | and $title }}
+                {{- warnf "ABBR: %q provides different full text through the document in %q" $abbr $page.RelPermalink }}
+                {{- $title = "" }}
+            {{- end }}
+            {{- $page.Scratch.SetInMap "abbr" $abbr $text }}
+        {{- end }}
+    {{- else }}
+        {{- if $text }}
+            {{- $page.Scratch.Set "abbr" (dict $abbr $text) }}
+        {{- end }}
+    {{- end }}
+
+    {{- if $title }}
+    <abbr{{ with $text | default $title }} title="{{ . }}"{{ end }}>{{ $abbr }}</abbr>
+    {{- else }}
+    <abbr>{{ $abbr }}</abbr>{{ with $text }} ({{ . }}){{ end }}
+    {{- end }}
+{{- end }}
