@@ -26,12 +26,11 @@ The Indoor Climbing Assistant is designed for people who want to support qualifi
 
 ### What can an assistant do?
 
-A qualified Indoor Climbing Assistant can operate on:
+While operating under the direct supervision of a qualified instructor, an Indoor Climbing Assistant can:
 
-- Indoor and outdoor artificial bouldering venues.
-- Indoor and outdoor climbing walls.
-
-Indoor Climbing Assistants are not qualified to manage groups independently.
+- Assist with the fitting of basic equipment such as harnesses, helmets and rock shoes.
+- Assist a qualified instructor with the supervision of core climbing techniques.
+- Assist a qualified instructor at indoor and outdoor bouldering venues and climbing walls.
 
 ### Getting started
 
@@ -52,9 +51,8 @@ The course involves one day (or potentially two evenings) of training and ongoin
 
 Prerequisites for attending the course are as follows:
 
-- Experience in the basic skills (belaying, harness fitting, tying on).
-- 5 indoor climbing sessions. (There is no personal climbing requirement, you can just belay, but it is useful to have experience of climbing.)
-- Belayed on a minimum of 5 indoor climbing sessions.
+- Competence in the basic skills of belaying, harness fitting and tying on; and
+- 5 indoor and/or 5 outdoor climbing sessions logged in DLOG. There is no personal climbing requirement for these sessions; you can have just belayed, but it is useful to have experience of climbing e.g. bottom roping or top roping.
 
 After the course you will be given an assessment result of either Pass or Defer (not yet mastered basic skills).
 
@@ -80,5 +78,5 @@ If you would like to arrange a course for your school / group then please [get i
 {{< tahdah/course-search provider-id="11331" hide-residential="true" hide-filter="true" months-to-show="6" >}}
 
 [contact]: {{< ref "/contact" >}}
-[ica-handbook]: http://www.mountain-training.org/download.aspx?f=1442
+[ica-handbook]: https://www.mountain-training.org/Content/Uploaded/Downloads/MLT/ef81ceb2-224b-4296-9f29-41ea926e9a63.pdf
 [mt-cms]: https://mt.tahdah.me/
