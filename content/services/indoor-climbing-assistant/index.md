@@ -80,5 +80,5 @@ If you would like to arrange a course for your school / group then please [get i
 {{< tahdah/course-search provider-id="11331" hide-residential="true" hide-filter="true" months-to-show="6" >}}
 
 [contact]: {{< ref "/contact" >}}
-[ica-handbook]: http://www.mountain-training.org/download.aspx?f=1442
+[ica-handbook]: https://www.mountain-training.org/Content/Uploaded/Downloads/MLT/ef81ceb2-224b-4296-9f29-41ea926e9a63.pdf
 [mt-cms]: https://mt.tahdah.me/
