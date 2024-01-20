@@ -1,6 +1,6 @@
 +++
 title = "Experience"
-description = "Phill is a Freelance Climbing Instructor in the Midlands"
+description = "Phill is a Freelance Climbing Coach in the Midlands"
 aliases = [
     "/cv",
     "/experience/climbing/the-tower-climbing-centre/",
@@ -10,64 +10,61 @@ aliases = [
 toc.enable = true
 +++
 
-## Climbing Experience
+## Climbing & Ropes Experience
 
-In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor and coach. I am now a [Freelance Climbing Instructor in the Midlands](#freelance-climbing-instructor-in-the-midlands), doing the majority of my work as a [Senior Instructor at The Peak Climbing School](#senior-instructor-at-the-peak-climbing-school) and as the [NICAS Course Director at The Tower Climbing Centre](#course-director-at-the-tower-climbing-centre) where I continue to develop my instructor training and client coaching skills.
+In 2009 I started to help with climbing and crate stacking sessions at my local Scout campsite and since then have worked hard to become a qualified climbing instructor and coach. I am now a [Freelance Climbing Coach](#freelance-climbing-coach-in-the-midlands), provide the [Indoor Climbing Assistant qualification](#course-provider-for-mountain-training), and [inspect Activity PPE](#freelance-ppe-inspector-in-the-midlands). I offer my experience to the Scouts in Leicestershire, providing training and permit assessments to climbing instructors. I continue to improve my coaching and instructor training experience so that I may be able to offer more (and better) instructor training courses in the future.
 
 ### Qualifications
 
-- [ERCA Generic Rescuer](https://www.vertex-training.co.uk/course_generic_rescuer.html) (09/2022)
-- [ERCA High Ropes Course Instructor](https://www.vertex-training.co.uk/course_highropes.html) (09/2022)
+- [ERCA Generic Rescuer](https://www.erca.uk/) (09/2022, refreshed 01/2024)
+- [ERCA High Ropes Course Instructor](https://www.erca.uk/) (09/2022, refreshed 01/2024)
 - [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
+- 16-hour Outdoor Activity First Aid (since 2011, latest 12/2021)
 - [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach) (04/2018)
-- [Climbing Wall Leading Award](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-development-instructor) (06/2015)
-- [Single Pitch Award](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor) (10/2013)
-- [Climbing Wall Award & Abseil Module](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-instructor) (10/2012)
+- [Climbing Wall Development Instructor](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-development-instructor) (06/2015)
+- [Rock Climbing Instructor](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor) (10/2013)
+- [Climbing Wall Instructor & Abseil Module](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-instructor) (10/2012)
 
-### Freelance Climbing Instructor in the Midlands
+### Freelance Climbing Coach in the Midlands (2012 onwards) {#freelance-climbing-coach-in-the-midlands}
 
 I lead sessions at various venues around Leicestershire and the Midlands including:
 
-[Beaudesert Activity Centre](http://www.beaudesert.org) (2017)
+[Beaudesert Activity Centre](https://beaudesert.org.uk/) (2017)
 : Delivering have-a-go climbing and abseiling sessions to young people in school groups and organised youth groups.
 
-[Beaumanor Hall](https://www.beaumanorhall.co.uk/youth-groups/) (2017 onwards)
-: Working with groups of young people (mostly Primary School age) to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering.
+[Beaumanor Hall](https://www.beaumanorhall.co.uk/outdoor-activities/) (2017 onwards)
+: Working with groups of children and adults to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering. Most groups are primary school age, with occasional older young people or adult groups.
+
+[Climb Leicester - The Tower Climbing Centre](https://leicester.gov.uk/climbing/) (2013 onwards)
+: Instructing groups and parties of varying ages and abilities as required, including introductory courses, learn to lead climb courses and NICAS Climbing levels 1–5. Also responsible for greeting customers, conducting competency tests for new members, and maintaining health and safety standards within the facility.
 
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
-: Leading sessions of bouldering and top-rope climbing with groups of children, young people and adults. Between 2012 and 2016 I regularly led the kids clubs, teaching NICAS Climbing and Bouldering 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed.
+: Leading sessions of bouldering and top rope climbing with groups of children, young people, and adults. Between 2012 and 2016 I regularly led the kid’s clubs, teaching NICAS Climbing and Bouldering 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed. I now deliver occasional sessions as needed.
 
 [Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017 onwards)
 : Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
 
 [The Outdoor Education Company](https://www.outdooreducationcompany.co.uk/) (2021 onwards)
-: Mostly running mobile climbing wall sessions for schools and corporate events, but also helping out with other activities provided including team building activities.
+: Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also a team leader and driver, with overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
 
 [The Peak Climbing School](https://www.peakclimbingschool.co.uk/) (2019 onwards)
-: Focussing on giving small groups the skills necessary to become independent outdoor climbers. I develop the climber's experience of top-rope climbing, lead climbing, bouldering and abseiling; including anchor building for top-rope setups, seconding skills, trad and sport leading skills, and problem solving tools.
+: Focussing on giving small groups the skills necessary to become independent outdoor climbers. I develop the climber’s experience of top-rope climbing, lead climbing, bouldering, and abseiling, including anchor building for top-rope setups, seconding skills, trad and sport leading skills, and problem-solving tools. I also support the freelancer instructors and provide thorough examinations of the school’s climbing equipment.
 
-[The Tower Climbing Centre](https://leicester.gov.uk/climbing/) (2013 onwards)
-: Instructing groups and parties of varying ages and abilities as required, including 4 week introductory courses, 4 week learn to lead climb courses and NICAS Climbing levels 1–5. Also responsible for greeting customers, conducting competency tests for new members and maintaining health and safety standards within the facility.
+### Freelance PPE Inspector in the Midlands (2020 onwards) {#freelance-ppe-inspector-in-the-midlands}
 
-### Senior Instructor at The Peak Climbing School (2021 onwards) {#senior-instructor-at-the-peak-climbing-school}
-
-One of the core team at [The Peak Climbing School](https://www.peakclimbingschool.co.uk/). I deliver technical climbing courses, support freelance instructors, and provide regular, thorough examinations of the school’s climbing equipment.
+I have always had an interest in climbing equipment. I did some in-house PPE inspection at The Climbing Station during my time as Chief Instructor, and in 2020 I took the Lyon Adventure Activities PPE Inspector Approved Competent Person course and have provided PPE inspection for climbing walls and activity centres in the Midlands since.
 
 ### Provider & Course Director for Mountain Training (2019 onwards) {#course-provider-for-mountain-training}
 
-I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Tower Climbing Centre, Nottingham Climbing Centre, The Foundry Climbing Centre and The Cragg Climbing Wall.
+I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Cragg Climbing Wall, The Foundry Climbing Centre, Nottingham Climbing Centre, The Tower Climbing Centre, and The Warehouse Climbing Centre.
 
-### Course Director at The Tower Climbing Centre (2018 onwards) {#course-director-at-the-tower-climbing-centre}
+### Lead Instructor at Climb Leicester (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
-Along with assisting with the general running of the centre, I also oversee NICAS Climbing and Bouldering here, including inducting staff, teaching courses and coaching candidates.
+Along with assisting with the general running of the centre, I oversee NICAS Climbing and Bouldering, including inducting staff, teaching courses and coaching candidates. I also provide regular, thorough examinations of the centre's climbing and route setting equipment.
 
 ### Chief Instructor at The Climbing Station (2017-2018) {#chief-instructor-at-the-climbing-station}
 
-1. Coordinating instructed sessions and being responsible for running NICAS Climbing and Bouldering within the junior groups.
-2. Helping to ensure that the centre has adequate staff cover to run efficiently and that instructor lead sessions have the appropriate instructor ratios.
-3. Ensuring that instructing staff receive the appropriate training to do their job efficiently and that they adhere to the centre's policies and procedures.
-4. Working with the directors and other staff to ensure the centre continues to develop both in reputation and enhanced turnover.
-5. Greeting customers, making bookings, and other general duties.
+Coordinating instructed sessions and being responsible for running NICAS Climbing and Bouldering within the junior groups. Helping to ensure that the centre has adequate staff cover to run efficiently and that instructor lead sessions have the appropriate instructor ratios. Ensuring that instructing staff receive the appropriate training to do their job efficiently and that they adhere to the centre’s policies and procedures. Working with the directors and other staff to ensure the centre continues to develop both in reputation and enhanced turnover. Greeting customers, making bookings, and other general duties.
 
 ### Volunteer Climbing Experience (2009 onwards) {#volunteer-climbing-experience}
 
@@ -84,7 +81,7 @@ Volunteer Climbing Instructor for Leicestershire Scouts (2009 onwards)
 
 ### Queen's Scout Award Coordinator for Leicestershire Scouts (2015 to 2019) {#qsa-coordinator-in-leicestershire}
 
-I supported the administration of the [Queen’s Scout Award](https://scouts.org.uk/qsa) for Leicestershire Scouts. Advising members, leaders and commissioners about the award and helping to ensure that candidates meet the strict standards. Since finishing the role I continue to provide advice and support to members.
+I supported the administration of the [Queen’s Scout Award](https://scouts.org.uk/ksa) for Leicestershire Scouts. Advising members, leaders and commissioners about the award and helping to ensure that candidates meet the strict standards. Since finishing the role I continue to provide advice and support to members.
 
 ### County Scout Network Commissioner for Leicestershire Scouts (2012 to 2016) {#network-commissioner-in-leicestershire}
 
@@ -135,7 +132,7 @@ I have been involved in web development since arriving at university in 2003, I 
 
 ### API Engineer & Tech Team Lead at CrowdLab (2013 & 2014 to 2016) {#engineer-at-crowdlab}
 
-Initially migrating the [CrowdLab](http://crowdlab.com/) API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL; designing and implementing new features from the API / Database point of view, while also considering the wider reaching effects of elements. I facilitated the implementation and continued use of Scrum within CrowdLab. I became an interface between the Market Research and the Technical teams.
+Initially migrating the CrowdLab API from CodeIgniter (PHP) & MySQL to Ruby on Rails & PostgreSQL; designing and implementing new features from the API / Database point of view, while also considering the wider reaching effects of elements. I facilitated the implementation and continued use of Scrum within CrowdLab. I became an interface between the Market Research and the Technical teams.
 
 My responsibilities gradually expanded from leading (in 2014) to managing (from late 2015) the development team at CrowdLab. This change in role resulted in me managing the team’s overall workload and ensuring that deadlines were met, conducting interviews with prospective team members, reviewing staff performance and recommending salary changes to the Managing Director.
 
