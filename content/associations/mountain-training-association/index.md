@@ -1,7 +1,7 @@
 +++
 title = "Mountain Training Association"
 date = "2018-12-22T17:08:00Z"
-link = "//www.mountain-training.org/associations/mountain-training-association"
+link = "//www.mountain-training.org/help/our-association/"
 association = "mta"
 aliases = [
   "/association/mta"
@@ -9,7 +9,7 @@ aliases = [
 
 [[resources]]
   name = "logo"
-  src = "mta.png"
+  src = "MTA Logo.png"
   title = "Mountain Training Association Logo"
 +++
 
@@ -29,10 +29,10 @@ Our vision is to continue leading the way in this field and to widen recognition
 
 ### Key aims
 
-- Promote good practice and professionalism.
-- Lead the way in providing quality personal development opportunities.
-- Develop a growing supply of valuable resources.
-- Provide a hub for communication and networking.
-- Provide regionally focused communities of support.
-- Build mutually beneficial links with other outdoor organisations.
-- Provide a structure for members to contribute to Mountain Training.
+-   Promote good practice and professionalism.
+-   Lead the way in providing quality personal development opportunities.
+-   Develop a growing supply of valuable resources.
+-   Provide a hub for communication and networking.
+-   Provide regionally focused communities of support.
+-   Build mutually beneficial links with other outdoor organisations.
+-   Provide a structure for members to contribute to Mountain Training.
