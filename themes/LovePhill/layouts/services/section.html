@@ -10,8 +10,10 @@
     </h2>
 
     <div class="services-list">
-    {{- range .Pages -}}
-        {{- .Render "summary" -}}
+    {{- range .Pages.GroupBy "Weight" "desc" -}}
+        {{- range .Pages.ByTitle -}}
+            {{- .Render "summary" -}}
+        {{- end -}}
     {{- end -}}
     </div>
 </div>
