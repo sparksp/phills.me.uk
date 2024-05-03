@@ -19,10 +19,10 @@ Activities are an integral part of Scouting, and what makes it so exciting for t
 
 I am authorised train and assess **single pitch climbing and abseiling** permits (natural and artificial). Courses are organised on demand and tailored to each individual/group's needs so please [get in touch]({{< ref "contact" >}}) if you'd like to discuss one. If you're looking for assessment there are a few things I'll ask you for:
 
-- [Permit application form][adactpermit]
-- Log of your experience (personal and instructional)
-- You must have an appropriate full adult role
-- Broadly, your availability to meet
+-   [Permit application form][adactpermit]
+-   Log of your experience (personal and instructional)
+-   You must have an appropriate full adult role
+-   Broadly, your availability to meet
 
 ### What are restrictive permits?
 
@@ -42,6 +42,6 @@ If you hold a relevant award from Mountain Training and have up to date logged e
 
 Yes, there is no minimum age to hold a permit, whether personal, leadership or supervisory. Perhaps the most typical example is where expeditions are being conducted. However, in these circumstances, the responsible commissioner may place restrictions on time, requiring perhaps that a responsible adult conducts daily visual checks on progress.
 
-[permit-scheme]: https://www.scouts.org.uk/volunteers/running-your-section/programme-guidance/activity-permit-scheme/
-[adactpermit]: https://cms.scouts.org.uk/media/11971/application-form-aap.doc
-[mountain-training-qualifications]: https://www.mountain-training.org/qualifications
+[permit-scheme]: https://www.scouts.org.uk/volunteers/running-your-section/programme-guidance/information-for-volunteers/activity-permit-scheme/
+[adactpermit]: https://prod-cms.scouts.org.uk/media/11971/application-form-aap.doc
+[mountain-training-qualifications]: https://www.mountain-training.org/qualifications/

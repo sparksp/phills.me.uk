@@ -20,7 +20,7 @@
             {{- range $pages.Pages -}}
                 <article class="archive-item">
                     <a href="{{ .RelPermalink }}" class="archive-item-link">
-                        {{- .Title -}}
+                        {{- .Title | emojify -}}
                     </a>
                 </article>
             {{- end -}}

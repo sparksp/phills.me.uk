@@ -16,14 +16,14 @@ In 2009 I started to help with climbing and crate stacking sessions at my local 
 
 ### Qualifications
 
-- [ERCA Generic Rescuer](https://www.erca.uk/) (09/2022, refreshed 01/2024)
-- [ERCA High Ropes Course Instructor](https://www.erca.uk/) (09/2022, refreshed 01/2024)
-- [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
-- 16-hour Outdoor Activity First Aid (since 2011, latest 12/2021)
-- [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach) (04/2018)
-- [Climbing Wall Development Instructor](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-development-instructor) (06/2015)
-- [Rock Climbing Instructor](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor) (10/2013)
-- [Climbing Wall Instructor & Abseil Module](https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-instructor) (10/2012)
+-   [ERCA Generic Rescuer](https://www.erca.uk/) (09/2022, refreshed 01/2024)
+-   [ERCA High Ropes Course Instructor](https://www.erca.uk/) (09/2022, refreshed 01/2024)
+-   [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
+-   16-hour Outdoor Activity First Aid (since 2011, latest 12/2021)
+-   [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach/) (04/2018)
+-   [Climbing Wall Development Instructor](https://www.mountain-training.org/qualifications/climbing/climbing-wall-development-instructor/) (06/2015)
+-   [Rock Climbing Instructor](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor/) (10/2013)
+-   [Climbing Wall Instructor & Abseil Module](https://www.mountain-training.org/qualifications/climbing/climbing-wall-instructor/) (10/2012)
 
 ### Freelance Climbing Coach in the Midlands (2012 onwards) {#freelance-climbing-coach-in-the-midlands}
 
@@ -35,7 +35,7 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 [Beaumanor Hall](https://www.beaumanorhall.co.uk/outdoor-activities/) (2017 onwards)
 : Working with groups of children and adults to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering. Most groups are primary school age, with occasional older young people or adult groups.
 
-[Climb Leicester - The Tower Climbing Centre](https://leicester.gov.uk/climbing/) (2013 onwards)
+[Climb Leicester - The Tower](https://leicester.gov.uk/climbing/) (2013 onwards)
 : Instructing groups and parties of varying ages and abilities as required, including introductory courses, learn to lead climb courses and NICAS Climbing levels 1–5. Also responsible for greeting customers, conducting competency tests for new members, and maintaining health and safety standards within the facility.
 
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
@@ -56,7 +56,7 @@ I have always had an interest in climbing equipment. I did some in-house PPE ins
 
 ### Provider & Course Director for Mountain Training (2019 onwards) {#course-provider-for-mountain-training}
 
-I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Cragg Climbing Wall, The Foundry Climbing Centre, Nottingham Climbing Centre, The Tower Climbing Centre, and The Warehouse Climbing Centre.
+I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant/) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Cragg Climbing Wall, The Foundry Climbing Centre, Nottingham Climbing Centre, Climb Leicester - The Tower, and The Warehouse Climbing Centre.
 
 ### Lead Instructor at Climb Leicester (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
@@ -115,18 +115,18 @@ I have been involved in web development since arriving at university in 2003, I 
 
 {{< wrap class="technical-skills" >}}
 
-- RESTful API Design
-- Test Driven Development
-- PHP & Laravel Framework
-- Ruby on Rails
-- PostgreSQL & MySQL
-- Nginx, Apache & Lighttpd
-- Linux (CentOS & Debian)
-- Ansible
-- Mac OS X
-- Sidekiq (Workers)
-- JavaScript
-- Git (GitHub & Bitbucket)
+-   RESTful API Design
+-   Test Driven Development
+-   PHP & Laravel Framework
+-   Ruby on Rails
+-   PostgreSQL & MySQL
+-   Nginx, Apache & Lighttpd
+-   Linux (CentOS & Debian)
+-   Ansible
+-   Mac OS X
+-   Sidekiq (Workers)
+-   JavaScript
+-   Git (GitHub & Bitbucket)
 
 {{< /wrap >}}
 
