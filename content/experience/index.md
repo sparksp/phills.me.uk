@@ -35,7 +35,7 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 [Beaumanor Hall](https://www.beaumanorhall.co.uk/outdoor-activities/) (2017 onwards)
 : Working with groups of children and adults to deliver team building, problem solving and challenge experiences in an outdoor setting. Activities include Climbing, Abseiling, High Ropes, Shelter Building, and Pioneering. Most groups are primary school age, with occasional older young people or adult groups.
 
-[Climb Leicester - The Tower Climbing Centre](https://leicester.gov.uk/climbing/) (2013 onwards)
+[Climb Leicester - The Tower](https://leicester.gov.uk/climbing/) (2013 onwards)
 : Instructing groups and parties of varying ages and abilities as required, including introductory courses, learn to lead climb courses and NICAS Climbing levels 1–5. Also responsible for greeting customers, conducting competency tests for new members, and maintaining health and safety standards within the facility.
 
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
@@ -56,7 +56,7 @@ I have always had an interest in climbing equipment. I did some in-house PPE ins
 
 ### Provider & Course Director for Mountain Training (2019 onwards) {#course-provider-for-mountain-training}
 
-I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant/) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Cragg Climbing Wall, The Foundry Climbing Centre, Nottingham Climbing Centre, The Tower Climbing Centre, and The Warehouse Climbing Centre.
+I have provided and delivered the [Indoor Climbing Assistant](https://www.mountain-training.org/qualifications/climbing/indoor-climbing-assistant/) scheme since it was introduced in 2019. I have run courses at a range of different centres including The Cragg Climbing Wall, The Foundry Climbing Centre, Nottingham Climbing Centre, Climb Leicester - The Tower, and The Warehouse Climbing Centre.
 
 ### Lead Instructor at Climb Leicester (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
