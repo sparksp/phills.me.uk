@@ -39,11 +39,11 @@ To get started on the Indoor Climbing Assistant qualification you need to meet t
 -   Be at least 16 years old.
 -   Have an interest in assisting qualified instructors on indoor climbing walls.
 
-If the above applies to you, create an account on the [candidate management system][mt-cms] or log in if you already have one. The registration fee is £20 and covers access to DLOG (the digital logbook) where you can record your experience and keep track of your progress, a quality assured course delivered by an approved provider, an online training record and an official certificate.
+If the above applies to you, create an account on the [candidate management system][mt-cms] or log in if you already have one. The registration fee is £25 and covers access to the digital logbook (DLOG) where you can record your experience and keep track of your progress, a quality assured course delivered by an approved provider, an online training record and an official certificate.
 
 #### Do you have additional needs?
 
-Do you have a physical or mental impairment or disability which may require a provider to make reasonable adjustments so that you can take part in a training or assessment course? [Find out how we can support you](https://www.mountain-training.org/help/resources/support-for-people-with-additional-needs)
+Do you have a physical or mental impairment or disability which may require a provider to make reasonable adjustments so that you can take part in a training or assessment course? [Find out how we can support you](https://www.mountain-training.org/help/support/reasonable-adjustments/)
 
 ### Training and Assessment
 
@@ -51,7 +51,7 @@ The course involves one day (or potentially two evenings) of training and ongoin
 
 Prerequisites for attending the course are as follows:
 
--   Competence in the basic skills of belaying, harness fitting and tying on; and
+-   Competence[^1] in the basic skills of belaying, harness fitting and tying on; and
 -   5 indoor and/or 5 outdoor climbing sessions logged in DLOG. There is no personal climbing requirement for these sessions; you can have just belayed, but it is useful to have experience of climbing e.g. bottom roping or top roping.
 
 After the course you will be given an assessment result of either Pass or Defer (not yet mastered basic skills).
@@ -75,7 +75,15 @@ The Indoor Climbing Assistant handbook has full details about the scheme includi
 
 If you would like to arrange a course for your school / group then please [get in touch with me][contact]. Any courses organised will be listed [in the course finder][course-finder].
 
+[^1]:
+    Competence is defined as meeting the ABC climbing wall membership standard or similar:
+
+    -   can put on a harness and fit it safely
+    -   can tie into a harness correctly using either a rethreaded figure of eight knot with a minimum 10cm tail or a bowline (single or double) with a stopper knot
+    -   can belay, lower and secure a falling climbing safely using a belay device
+    -   can check that their climbing partner has put on their harness and tied in properly
+
 [contact]: {{< ref "/contact" >}}
 [course-finder]: {{< ref "/services/mountain-training-courses/" >}}
-[ica-handbook]: https://www.mountain-training.org/Content/Uploaded/Downloads/MLT/ef81ceb2-224b-4296-9f29-41ea926e9a63.pdf
+[ica-handbook]: https://www.mountain-training.org/media/yenc3vd3/indoor-climbing-assistant-candidate-handbook-april-2024.pdf
 [mt-cms]: https://mt.tahdah.me/

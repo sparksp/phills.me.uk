@@ -58,7 +58,7 @@ I'm happy to come to you, so if you'd like me to run a course at your centre ple
 
 Read more about the scheme on the [Girlguiding website][girlguiding-scheme] where you can also download the [scheme handbook][girlguiding-scheme-download].
 
-[cwi]: https://www.mountain-training.org/qualifications/climbing/qualifications/climbing-wall-instructor
+[cwi]: https://www.mountain-training.org/qualifications/climbing/climbing-wall-instructor/
 [girlguiding-scheme-download]: https://www.girlguiding.org.uk/link/70a1a59dc6754f189167ca05184a3458.aspx
 [girlguiding-scheme]: https://www.girlguiding.org.uk/making-guiding-happen/learning-and-development/leading-outdoor-adventures/climbing-and-abseiling-scheme/
-[rci]: https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor
+[rci]: https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor/
