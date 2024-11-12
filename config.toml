@@ -2,6 +2,7 @@ baseurl = "https://phills.me.uk/"
 
 theme = [
   "LovePhill",
+  "LoveItFixed",
   "LoveIt",
 ]
 
@@ -20,7 +21,8 @@ pygmentsUseClasses = false
   link = "https://phills.me.uk"
 
 [Params]
-  Author = "Phill Sparks"
+  [Author]
+    name = "Phill Sparks"
   Description = "Climbing Training • Instruction • Coaching"
   fingerprint = "sha512"
   gitRepo = "https://github.com/sparksp/phills.me.uk"
