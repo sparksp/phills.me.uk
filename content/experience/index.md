@@ -18,8 +18,8 @@ In 2009 I started to help with climbing and crate stacking sessions at my local 
 
 -   [ERCA Generic Rescuer](https://www.erca.uk/) (09/2022, refreshed 01/2024)
 -   [ERCA High Ropes Course Instructor](https://www.erca.uk/) (09/2022, refreshed 01/2024)
--   [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
--   16-hour Outdoor Activity First Aid (since 2011, latest 12/2021)
+-   [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (since 2020, latest 01/2026)
+-   16-hour Outdoor Activity First Aid (since 2011, latest 01/2025)
 -   [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach/) (04/2018)
 -   [Climbing Wall Development Instructor](https://www.mountain-training.org/qualifications/climbing/climbing-wall-development-instructor/) (06/2015)
 -   [Rock Climbing Instructor](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor/) (10/2013)
@@ -41,11 +41,14 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
 : Leading sessions of bouldering and top rope climbing with groups of children, young people, and adults. Between 2012 and 2016 I regularly led the kid’s clubs, teaching NICAS Climbing and Bouldering 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed. I now deliver occasional sessions as needed.
 
-[Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017 onwards)
-: Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
+[Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017-2022)
+: Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to frequent centre users. Supported other staff to maintain standards of safe and engaging delivery of these activities.
+
+[The Mill Adventure Base](https://nottsoutdoors.nottinghamshire.gov.uk/schools-and-groups/centres/the-mill-adventure-base/) (2025 onwards)
+: Delivering have-a-go climbing and high rope sessions to young people in school groups, organised youth groups and holiday clubs.
 
 [The Outdoor Education Company](https://www.outdooreducationcompany.co.uk/) (2021 onwards)
-: Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also a team leader and driver, with overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
+: Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also an occasional team leader and driver where I have overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
 
 [The Peak Climbing School](https://www.peakclimbingschool.co.uk/) (2019 onwards)
 : Focussing on giving small groups the skills necessary to become independent outdoor climbers. I develop the climber’s experience of top-rope climbing, lead climbing, bouldering, and abseiling, including anchor building for top-rope setups, seconding skills, trad and sport leading skills, and problem-solving tools. I also support the freelancer instructors and provide thorough examinations of the school’s climbing equipment.
@@ -60,7 +63,7 @@ I have provided and delivered the [Indoor Climbing Assistant](https://www.mounta
 
 ### Lead Instructor at Climb Leicester (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
-Along with assisting with the general running of the centre, I oversee NICAS Climbing and Bouldering, including inducting staff, teaching courses and coaching candidates. I also provide regular, thorough examinations of the centre's climbing and route setting equipment.
+Along with assisting with the general running of the centre, I oversee NICAS Climbing, including inducting and mentoring instructors, moderating good practice, teaching courses and coaching candidates. I also provide regular, thorough examinations of the centre's climbing and route setting equipment.
 
 ### Chief Instructor at The Climbing Station (2017-2018) {#chief-instructor-at-the-climbing-station}
 
@@ -69,13 +72,13 @@ Coordinating instructed sessions and being responsible for running NICAS Climbin
 ### Volunteer Climbing Experience (2009 onwards) {#volunteer-climbing-experience}
 
 Volunteer Climbing Assessor for Leicestershire Scouts (2016 onwards)
-: I assess candidates for single pitch climbing and abseiling permits.
+: I assess candidates for Single Pitch Climbing and Abseiling permits on artificial walls and natural rock, and mentor instructors through the process. This can take the form of a formal assessment course with a group of candidate instructors, or more often happens alongside delivery of existing sessions.
 
 Volunteer Climbing Manager at Fox Coverts Campsite (2012 onwards)
-: I manage the climbing team at Fox Coverts Scout Campsite, where I run climbing and abseiling sessions for groups, and train new instructors from any experience up to Scout/Guide qualified level.
+: I manage a team of volunteer climbing instructors at Fox Coverts Scout Campsite, where we run climbing and abseiling sessions for groups. I train new instructors from any experience up to Scout qualified level. I also manage the annual inspection and replacement of the climbing equipment, help the team to set new routes on the tower each year, and work with the campsite committee to keep maintaining and improving the facilities.
 
-Volunteer Climbing Instructor for Leicestershire Scouts (2009 onwards)
-: I lead and supervise groups climbing and abseiling on artificial walls & towers, and on natural rock.
+Volunteer Climbing Instructor for The Scouts (2009 onwards)
+: I lead and supervise groups climbing and abseiling on artificial walls & towers, and on natural rock. I regularly deliver have-a-go sessions at the scout campsite towers in Leicestershire, and have also supported climbing, abseiling and crate stacking activities at large scout Jamborees around the UK.
 
 ## Volunteering & Youth Experience {#volunteering-and-youth-experience}
 
