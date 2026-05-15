@@ -18,8 +18,8 @@ In 2009 I started to help with climbing and crate stacking sessions at my local 
 
 -   [ERCA Generic Rescuer](https://www.erca.uk/) (09/2022, refreshed 01/2024)
 -   [ERCA High Ropes Course Instructor](https://www.erca.uk/) (09/2022, refreshed 01/2024)
--   [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (01/2020, 01/2023)
--   16-hour Outdoor Activity First Aid (since 2011, latest 12/2021)
+-   [PPE Inspection – Approved Competent Person](https://lyon.co.uk/ppe/adventure-activities-ppe-training-course/competent-person) (since 2020, latest 01/2026)
+-   16-hour Outdoor Activity First Aid (since 2011, latest 01/2025)
 -   [Foundation Coach (Climbing)](https://www.mountain-training.org/qualifications/climbing/foundation-coach/) (04/2018)
 -   [Climbing Wall Development Instructor](https://www.mountain-training.org/qualifications/climbing/climbing-wall-development-instructor/) (06/2015)
 -   [Rock Climbing Instructor](https://www.mountain-training.org/qualifications/climbing/rock-climbing-instructor/) (10/2013)
