@@ -41,8 +41,8 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 [The Climbing Station](http://theclimbingstation.com/) (2012 onwards)
 : Leading sessions of bouldering and top rope climbing with groups of children, young people, and adults. Between 2012 and 2016 I regularly led the kid’s clubs, teaching NICAS Climbing and Bouldering 1–3 and coaching bouldering. Until becoming Chief Instructor, I continued to supervise climbing parties, inductions, and other crash courses as needed. I now deliver occasional sessions as needed.
 
-[Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017 onwards)
-: Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
+[Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017-2022)
+: Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to frequent centre users. Supported other staff to maintain standards of safe and engaging delivery of these activities.
 
 [The Mill Adventure Base](https://nottsoutdoors.nottinghamshire.gov.uk/schools-and-groups/centres/the-mill-adventure-base/) (2025 onwards)
 : Delivering have-a-go climbing and high rope sessions to young people in school groups, organised youth groups and holiday clubs.
