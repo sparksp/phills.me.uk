@@ -44,6 +44,9 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 [Leicester Outdoor Pursuits Centre](https://www.lopc.co.uk) (2017 onwards)
 : Working with groups of any age to deliver challenge experiences including Climbing, Abseiling and High Ropes from no experience to regular centre users.
 
+[The Mill Adventure Base](https://nottsoutdoors.nottinghamshire.gov.uk/schools-and-groups/centres/the-mill-adventure-base/) (2025 onwards)
+: Delivering have-a-go climbing and high rope sessions to young people in school groups, organised youth groups and holiday clubs.
+
 [The Outdoor Education Company](https://www.outdooreducationcompany.co.uk/) (2021 onwards)
 : Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also a team leader and driver, with overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
 
