@@ -48,7 +48,7 @@ I lead sessions at various venues around Leicestershire and the Midlands includi
 : Delivering have-a-go climbing and high rope sessions to young people in school groups, organised youth groups and holiday clubs.
 
 [The Outdoor Education Company](https://www.outdooreducationcompany.co.uk/) (2021 onwards)
-: Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also a team leader and driver, with overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
+: Leading a variety of activities for schools and corporate events, including mobile climbing wall and team building. I am also an occasional team leader and driver where I have overall responsibility at events, including training team members in setup and delivery of activities, and working with clients to make sure they’re getting the best experience.
 
 [The Peak Climbing School](https://www.peakclimbingschool.co.uk/) (2019 onwards)
 : Focussing on giving small groups the skills necessary to become independent outdoor climbers. I develop the climber’s experience of top-rope climbing, lead climbing, bouldering, and abseiling, including anchor building for top-rope setups, seconding skills, trad and sport leading skills, and problem-solving tools. I also support the freelancer instructors and provide thorough examinations of the school’s climbing equipment.
