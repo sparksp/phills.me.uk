@@ -72,7 +72,7 @@ Coordinating instructed sessions and being responsible for running NICAS Climbin
 ### Volunteer Climbing Experience (2009 onwards) {#volunteer-climbing-experience}
 
 Volunteer Climbing Assessor for Leicestershire Scouts (2016 onwards)
-: I assess candidates for single pitch climbing and abseiling permits.
+: I assess candidates for Single Pitch Climbing and Abseiling permits on artificial walls and natural rock, and mentor instructors through the process. This can take the form of a formal assessment course with a group of candidate instructors, or more often happens alongside delivery of existing sessions.
 
 Volunteer Climbing Manager at Fox Coverts Campsite (2012 onwards)
 : I manage a team of volunteer climbing instructors at Fox Coverts Scout Campsite, where we run climbing and abseiling sessions for groups. I train new instructors from any experience up to Scout qualified level. I also manage the annual inspection and replacement of the climbing equipment, help the team to set new routes on the tower each year, and work with the campsite committee to keep maintaining and improving the facilities.
