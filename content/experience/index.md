@@ -63,7 +63,7 @@ I have provided and delivered the [Indoor Climbing Assistant](https://www.mounta
 
 ### Lead Instructor at Climb Leicester (2018 onwards) {#course-director-at-the-tower-climbing-centre}
 
-Along with assisting with the general running of the centre, I oversee NICAS Climbing and Bouldering, including inducting staff, teaching courses and coaching candidates. I also provide regular, thorough examinations of the centre's climbing and route setting equipment.
+Along with assisting with the general running of the centre, I oversee NICAS Climbing, including inducting and mentoring instructors, moderating good practice, teaching courses and coaching candidates. I also provide regular, thorough examinations of the centre's climbing and route setting equipment.
 
 ### Chief Instructor at The Climbing Station (2017-2018) {#chief-instructor-at-the-climbing-station}
 
