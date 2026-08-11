@@ -1,6 +1,12 @@
 @import '_pure/form';
 @import '_pure/button';
 
+.header-wrapper {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 article header {
     display: flex;
 
