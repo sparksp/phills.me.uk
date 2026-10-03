@@ -1,10 +1,11 @@
 SHELL = /bin/sh
 target = public
+HUGO ?= $(shell hvm status --printExecPathCached 2>/dev/null || command -v hugo)
 
 all : $(target) ;
 
 $(target) :
-	hugo --gc -d $@
+	$(HUGO) --gc -d $@
 
 .PHONY : clean
 clean :
@@ -12,4 +13,4 @@ clean :
 
 .PHONY : serve
 serve :
-	hugo serve --buildDrafts --navigateToChanged --watch
+	$(HUGO) serve --buildDrafts --navigateToChanged --watch
