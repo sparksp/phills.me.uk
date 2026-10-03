@@ -1,7 +1,8 @@
 +++
 title = "Consent Form"
+type = "page"
 sitemap_exclude = true
-toc.enable = false
+toc = false
 meta = false
 aliases = ["consent-form/success"]
 +++
