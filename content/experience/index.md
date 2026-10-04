@@ -1,6 +1,7 @@
 +++
 title = "Experience"
-description = "Phill Sparks is a Senior Outdoor Instructor, Mountain Training Course Director, and Operations Lead in the Midlands."
+seo_title = "Outdoor Leadership & Technical Coaching Experience | Phill Sparks"
+description = "Explore Phill Sparks's background as a Senior Outdoor Instructor, Mountain Training Course Director, Scout Climbing Assessor, and former Software Engineering Team Lead."
 aliases = [
   "/cv",
   "/experience/climbing/the-tower-climbing-centre/",
