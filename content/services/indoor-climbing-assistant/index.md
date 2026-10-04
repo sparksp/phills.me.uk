@@ -8,6 +8,7 @@ aliases = [
   "/courses/ica",
   "/courses/indoor-climbing-assistant",
   "/ica",
+  "/services/mountain-training-courses",
 ]
 weight = 100
 hiddenFromHomePage = false
@@ -18,7 +19,7 @@ hiddenFromHomePage = false
 [[resources]]
   name = "featured-image"
   src = "climbing-assistant.jpg"
-  title = "A young person learning to belay with an assistant holding their rope."
+  title = "A novice belayer under supervision of an assistant."
 +++
 
 The **Indoor Climbing Assistant** qualification is for those with competence in the basic skills of climbing who wish to assist qualified climbing instructors and coaches in the management of their sessions in the UK and Ireland. Indoor Climbing Assistants are assessed as being competent in their role supporting qualified instructors and coaches, but are not qualified to manage groups independently.
@@ -37,7 +38,8 @@ Delivering an in-house Indoor Climbing Assistant course allows your facility to:
 * **Standardize Safety Protocols:** Ensure all assistant instructors operate strictly to recognized Mountain Training standards.
 * **Flexible Delivery:** Courses can be delivered on-site at your venue in a single 6-hour day or split across two sessions to suit your timetable.
 
-[Get in touch to discuss booking a bespoke course for your group or facility]({{< ref "/contact" >}})
+[Discuss a Bespoke Course]({{< ref "/contact" >}})
+{.button}
 
 ---
 
@@ -100,10 +102,9 @@ For complete details regarding the scheme, syllabus, and candidate guidance, you
 
 ---
 
-## Find or Book a Course
+## Find a Course
 
-* **For Facilities & Groups:** [Get in touch with Phill]({{< ref "/contact" >}}) to arrange a private or in-house course for your venue or team.
-* **For Individuals:** Any upcoming public courses organized will be listed in the [Mountain Training course finder][course-finder].
+Whether you are looking to host an in-house course for your facility or join an upcoming intake as an individual candidate, [get in touch with Phill]({{< ref "/contact" >}}) to discuss dates and availability.
 
 [^1]: A session is defined as a minimum of one hour.
 
