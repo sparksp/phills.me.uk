@@ -1,16 +1,22 @@
 @import '_pure/form';
 @import '_pure/button';
 
+.hide-header-mark .header-mark {
+    display: none !important;
+}
+
 article header {
     display: flex;
 
     /* Reset Page Header Styles */
-    &, [theme=dark] & {
+    &,
+    [theme=dark] & {
         background: transparent;
     }
+
     &:hover {
         box-shadow: none;
-    }    
+    }
 
     .titles {
         flex: 1;
@@ -42,6 +48,7 @@ article header {
 .center {
     text-align: center;
 }
+
 .circle img {
     @include border-radius(100%);
     @include box-shadow(0 0 0 .3618em rgba(0, 0, 0, .05));
@@ -50,8 +57,9 @@ article header {
     &:hover {
         position: relative;
         @include transform(translateY(-.75rem));
-      }
+    }
 }
+
 .small img {
     width: 250px;
     height: 250px;
@@ -61,34 +69,41 @@ article header {
     .titles {
         background-color: $primary-color;
     }
+
     a.info-icon {
         background-color: $primary-color !important;
     }
+
     a.info-icon:after {
         color: white;
         margin-left: -2px;
     }
+
     .courseTable {
         margin-bottom: .5em;
     }
+
     .pagination {
         display: flex;
         list-style-type: none;
         padding: 0;
         margin: 0;
     }
-    .nextButton, .previousButton {
+
+    .nextButton,
+    .previousButton {
         &>a>span {
             color: $primary-color;
             float: none;
         }
     }
+
     .hidden {
         display: none !important;
         visibility: hidden;
     }
 }
-  
+
 dt {
     font-weight: bold;
 }
@@ -96,10 +111,36 @@ dt {
 .services-list {
     max-width: 540px;
 }
+
 .home-featured-list {
     max-width: 540px;
     margin: 2em auto 0;
 }
+
+.button {
+    display: block; // or inline-block
+    margin: 1.5rem 0;
+
+    a {
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: $primary-color !important;
+        border: 1.5px solid $primary-color;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-decoration: none !important;
+        transition: all 0.2s ease;
+
+        &:hover {
+            background-color: $primary-color !important;
+            color: #ffffff !important; // Forces clean light text on hover
+            text-decoration: none !important;
+        }
+    }
+}
+
 .service-item {
     margin-bottom: 1em;
     position: relative;
@@ -112,13 +153,16 @@ dt {
         margin: 0 auto;
         overflow: hidden;
     }
+
     .service-title {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: rgba(#fff, .8);   
+        background: rgba(#fff, .8);
         position: absolute;
-        bottom: 0; left: 0; right: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         border-top: 1px solid white;
 
         [theme=dark] & {
@@ -130,6 +174,7 @@ dt {
             flex: 1;
             padding: .4em;
         }
+
         img {
             max-height: 2em;
             max-width: 100%;
@@ -154,6 +199,7 @@ dt {
 .footer-container {
     padding-bottom: .5em;
 }
+
 .footer-line {
     .menu {
         display: flex;
@@ -163,11 +209,13 @@ dt {
         margin: .5em 0;
         padding: 0;
     }
+
     .menu-item {
         padding: 0 .5em;
         margin: .25em 0;
     }
-    .menu-item + .menu-item {
+
+    .menu-item+.menu-item {
         border-left: 1px solid #000;
     }
 }
@@ -178,16 +226,19 @@ dt {
         column-gap: 40px;
     }
 }
+
 @media screen and (min-width: 900px) {
     .technical-skills ul {
         column-count: 3;
-    }    
+    }
 }
+
 @media screen and (min-width: 960px) {
     .technical-skills ul {
         column-count: 2;
     }
 }
+
 @media screen and (min-width: 1300px) {
     .technical-skills ul {
         column-count: 3;
