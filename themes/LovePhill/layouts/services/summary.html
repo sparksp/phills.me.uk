@@ -8,7 +8,7 @@
             {{- $description = .Title -}}
         {{- end -}}
         {{- with $image -}}
-            {{- dict "Src" . "Title" $item.Title "Alt" $description "Resources" $item.Resources | partial "plugin/image.html" -}}
+            {{- dict "Src" . "Title" $item.Title "Alt" $description "Resources" $item.Resources | partial "plugin/img.html" -}}
         {{- end -}}
         <span class="service-title">
             <span class="text">{{- .Title -}}</span>

@@ -1,8 +1,11 @@
 +++
 title = "Junior Consent Form"
+description = "Parent and legal guardian consent form for participants under 18 years old taking part in climbing activities with Phill Sparks."
 type = "page"
 toc = false
 meta = false
+[sitemap]
+  disable = true
 aliases = ["consent-form/junior"]
 +++
 

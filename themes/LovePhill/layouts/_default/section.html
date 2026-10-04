@@ -9,6 +9,8 @@
             {{- .Params.Title | default (T .Section) | default .Section | dict "Some" | T "allSome" -}}
         </h2>
 
+        {{- .Content -}}
+
         {{- /* Paginate */ -}}
         {{- if .Pages -}}
             {{- $pages := .Pages -}}

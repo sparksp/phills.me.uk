@@ -1,5 +1,7 @@
 +++
 title = "Scouts Climbing and Abseiling Permits"
+seo_title = "Scout Climbing & Abseiling Permits Leicestershire | Phill Sparks"
+description = "Scout climbing and abseiling permit training and assessments in Leicestershire. Single Pitch Climbing and Abseiling permits for artificial and natural rock."
 date = 2018-11-09T19:18:18Z
 aliases = [
   "/course/scouts-climbing-permits",

@@ -1,5 +1,6 @@
 +++
 title = "Phill Sparks"
+seo_title = "Phill Sparks | Climbing Instructor & Coach | Leicestershire"
 description = "Senior Outdoor Instructor and Mountain Training Course Director providing hosted Indoor Climbing Assistant courses, technical climbing delivery, and coaching."
 association = "mta"
 +++
@@ -7,7 +8,6 @@ association = "mta"
 Welcome! I am a Senior Outdoor Instructor and Mountain Training Course Director based in Leicestershire. I work with climbing facilities, outdoor centres, schools, and youth organisations to deliver technical training, staff development, and safety oversight.
 
 ## Private Coaching & Progression
-{.hide-header-mark}
 
 Looking to refine your movement, build confidence leading, or advance your indoor climbing skills? I offer tailored coaching sessions for improvers and junior lead climbers focused on movement efficiency, safety systems, and personal development.
 
@@ -17,7 +17,6 @@ Looking to refine your movement, build confidence leading, or advance your indoo
 ---
 
 ## Background & Technical Leadership
-{.hide-header-mark}
 
 As Senior Instructor at Beaumanor Hall, I oversee rope activity operations, staff training, and technical delivery across climbing, high ropes, and safety equipment inspection. 
 
@@ -26,4 +25,3 @@ If you are interested in hosting an Indoor Climbing Assistant course at your ven
 ---
 
 ## Featured Training & Courses
-{.hide-header-mark}

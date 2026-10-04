@@ -1,5 +1,6 @@
 +++
 title = "Child Protection Policy"
+description = "Child protection and safeguarding policy for Phill Sparks, outlining safety procedures, Designated Safeguarding Lead roles, and Mountain Training England compliance."
 date = 2026-10-03T00:00:00
 aliases = [
   "/policy/child-protection"

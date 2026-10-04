@@ -1,9 +1,12 @@
 +++
 title = "Adult Consent Form"
 linktitle = "Consent Form"
+description = "Adult consent and medical declaration form for climbing activities with Phill Sparks."
 type = "page"
 toc = false
 meta = false
+[sitemap]
+  disable = true
 menu = "footer"
 +++
 

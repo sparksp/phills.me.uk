@@ -1,5 +1,6 @@
 +++
 title = "Private Climbing Coaching"
+seo_title = "Private Climbing Coaching & 1-to-1 Instruction | Phill Sparks"
 description = "Tailored 1-to-1 and small group climbing coaching focusing on indoor lead climbing, transitioning outdoors, movement technique, and mindset."
 date = 2026-10-04T00:00:00Z
 aliases = [

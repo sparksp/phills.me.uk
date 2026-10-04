@@ -1,5 +1,6 @@
 +++
 title = "Privacy Policy"
+description = "Privacy Policy for Phill Sparks (Sole Trader), outlining data protection practices, consent policies, and UK GDPR compliance."
 date = 2026-10-03T00:00:00
 aliases = [
   "/policy/privacy",

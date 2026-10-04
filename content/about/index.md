@@ -1,6 +1,7 @@
 +++
 title = "About Phill"
-description = "Phill Sparks is a qualified Rock Climbing Instructor (RCI), Climbing Wall Development Instructor (CWDI), and Course Director with over 15 years of coaching experience."
+seo_title = "About Phill Sparks | Climbing Instructor & Coach"
+description = "Learn about Phill Sparks, a Senior Outdoor Instructor and Mountain Training Course Director based in Leicestershire with 15+ years of climbing experience."
 date = 2026-10-03T00:00:00Z
 layout = "about"
 toc = false

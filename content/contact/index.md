@@ -1,6 +1,8 @@
 +++
 title = "Contact Phill"
 linktitle = "Contact"
+seo_title = "Contact Phill Sparks | Climbing Instructor & Course Director"
+description = "Get in touch with Phill Sparks for climbing course enquiries, private coaching, or technical consultancy in Leicestershire."
 menu = ["main"]
 toc = false
 meta = false

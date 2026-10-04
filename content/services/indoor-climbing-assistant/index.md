@@ -1,5 +1,7 @@
 +++
 title = "Indoor Climbing Assistant"
+seo_title = "Indoor Climbing Assistant Qualification & Training | Phill Sparks"
+description = "Book a Mountain Training Indoor Climbing Assistant course with Phill Sparks in Leicestershire. In-house group delivery and candidate training."
 date = 2018-11-09T19:18:18Z
 association = "mountain-training"
 aliases = [

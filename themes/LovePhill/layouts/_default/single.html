@@ -1,4 +1,6 @@
-{{- define "title" }}{{ .Title }} - {{ .Site.Title }}{{ end -}}
+{{- define "title" -}}
+  {{ .Params.seo_title | default (printf "%s - %s" .Title .Site.Title) }}
+{{- end -}}
 
 {{- define "content" -}}
     {{- $params := .Scratch.Get "params" -}}
@@ -57,7 +59,7 @@
         {{- end -}}
         {{- with $image -}}
             <div class="featured-image">
-                {{- dict "Src" . "Alt" $alt "Resources" $.Resources | partial "plugin/image.html" -}}
+                {{- dict "Src" . "Alt" $alt "Resources" $.Resources | partial "plugin/img.html" -}}
             </div>
         {{- end -}}
 
