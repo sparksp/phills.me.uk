@@ -1,8 +1,10 @@
 +++
 title = "About Phill"
-date = 2018-12-29T18:05:23Z
+seo_title = "About Phill Sparks | Climbing Instructor & Coach"
+description = "Learn about Phill Sparks, a Senior Outdoor Instructor and Mountain Training Course Director based in Leicestershire with 15+ years of climbing experience."
+date = 2026-10-03T00:00:00Z
 layout = "about"
-toc.enable = false
+toc = false
 association = "mta"
 
 [menu.main]
@@ -16,19 +18,19 @@ association = "mta"
 ![Photo of Phill Sparks drinking a cup of coffee](phills.jpg)
 {.circle .center .small}
 
-### Climber • Instructor • Coach
+## Climber • Instructor • Coach
 
-I have been climbing in some small way most of my life, whether the furniture at home, trees at the local park, taster sessions with scouts, or weeks away in the holidays. Around 10 years ago I rediscovered climbing with some friends at University and this started my regular, independent climbing.
+I have been climbing in some small way most of my life—whether on furniture at home, trees at the local park, taster sessions with Scouts, or weeks away on holiday. Over 15 years ago, I rediscovered climbing with friends while at university, which sparked my regular, independent climbing journey.
 
-A year later I started to help with climbing and crate stacking at the local scout campsite and since then have worked hard to become a qualified climbing instructor and coach. My qualifications allow me to instruct top-rope climbing and abseiling indoors and at natural rock crags, and to teach lead climbing indoors, all with an air of coaching about it. I am currently the [NICAS Course Director][nicas] at [Climb Leicester - The Tower][tower] where I continue to develop my coaching skills, and I work for the [Peak Climbing School][peakclimbingschool] where I introduce groups to outdoor climbing and teach them the skills to become independent. I deliver the new [Indoor Climbing Assistant][ica] scheme for [Mountain Training][mountain-training], and assess [Scout Climbing and Abseiling permits][scout-permits].
+Shortly after, I began assisting with climbing and crate stacking at a local Scout campsite. Since then, I have worked across local authority, commercial, and voluntary sectors as a Senior Outdoor Instructor, Course Director, and Coach. My qualifications allow me to instruct top-rope climbing and abseiling indoors and at natural rock crags, as well as teach lead climbing, all grounded in a supportive coaching approach.
 
-I'm a trainee Rock Climbing Development Instructor and Climbing Development Coach, where I'm now building up a portfolio of experiences that will enable me to safely coach single pitch lead climbing skills outside.
+As Senior Instructor at [Beaumanor Hall](https://www.beaumanorhall.co.uk), I oversee rope activities—including climbing, abseiling, high ropes, and zip wire—while supporting the wider outdoor activity programme, managing staff training, technical delivery, and safety equipment. Alongside this, I coach junior lead climbing and improver sessions at [Climb Leicester - The Tower](http://localhost:1313/about/#), deliver Mountain Training's [Indoor Climbing Assistant]({{< ref "/services/indoor-climbing-assistant" >}}) scheme as an approved Course Director, and assess [Scout Climbing and Abseiling permits]({{< ref "/services/scouts-climbing-permits" >}}).
 
-I enjoy climbing in all forms, especially sport and trad climbing when the weather is good, and indoor sport climbing throughout the year.
+I hold the Rock Climbing Instructor (RCI), Climbing Wall Development Instructor (CWDI), and Foundation Coach accreditations, alongside being an approved Lyon PPE Inspector and ERCA High Ropes Instructor.
 
+I enjoy climbing in all forms, especially sport and trad climbing outdoors when the weather allows, and indoor sport climbing year-round.
+
+[beaumanor]: https://www.beaumanorhall.co.uk
 [ica]: {{< ref "/services/indoor-climbing-assistant" >}}
-[mountain-training]: https://www.mountain-training.org/
-[nicas]: https://www.nicas.co.uk/
-[peakclimbingschool]: https://www.peakclimbingschool.co.uk/
 [scout-permits]: {{< ref "/services/scouts-climbing-permits" >}}
-[tower]: https://leicester.gov.uk/climbing/
+[tower]: http://localhost:1313/about/#

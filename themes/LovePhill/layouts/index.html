@@ -1,3 +1,7 @@
+{{- define "title" -}}
+    {{ .Params.seo_title | default .Title }}
+{{- end -}}
+
 {{- define "content" -}}
     {{- $params := .Scratch.Get "params" -}}
     {{- $profile := .Site.Params.home.profile -}}

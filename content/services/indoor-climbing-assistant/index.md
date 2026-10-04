@@ -1,5 +1,7 @@
 +++
 title = "Indoor Climbing Assistant"
+seo_title = "Indoor Climbing Assistant Qualification & Training | Phill Sparks"
+description = "Book a Mountain Training Indoor Climbing Assistant course with Phill Sparks in Leicestershire. In-house group delivery and candidate training."
 date = 2018-11-09T19:18:18Z
 association = "mountain-training"
 aliases = [
@@ -8,93 +10,108 @@ aliases = [
   "/courses/ica",
   "/courses/indoor-climbing-assistant",
   "/ica",
+  "/services/mountain-training-courses",
 ]
 weight = 100
 hiddenFromHomePage = false
 
 [menu.main]
   parent = "services"
+
 [[resources]]
   name = "featured-image"
   src = "climbing-assistant.jpg"
-  title = "A young person learning to belay with an assistant holding their rope."
+  title = "A novice belayer under supervision of an assistant."
 +++
 
-The Indoor Climbing Assistant qualification is for those with competence in the basic skills of climbing who wish to assist qualified climbing instructors and coaches in the management of their sessions in the UK and Ireland. Indoor Climbing Assistants are assessed as being competent in their role supporting qualified instructors and coaches but are not qualified to manage groups independently.
+The **Indoor Climbing Assistant** qualification is for those with competence in the basic skills of climbing who wish to assist qualified climbing instructors and coaches in the management of their sessions in the UK and Ireland. Indoor Climbing Assistants are assessed as being competent in their role supporting qualified instructors and coaches, but are not qualified to manage groups independently.
 
 <!--more-->
+Indoor Climbing Assistants can have an inspirational effect on individuals, groups, and communities. They work with participants, instructors, fellow climbing assistants, volunteers, parents, teachers, and youth workers to ensure the climbing experience is the very best it can be.
 
-Indoor Climbing Assistants can have an inspirational effect on individuals, groups and communities. They work with participants and a range of others such as instructors, other climbing assistants, colleagues, volunteers, parents, teachers, youth workers and health professionals to ensure the climbing experience is the very best it can be.
+---
 
-### What can an assistant do?
+## Deliver Indoor Climbing Assistant Training at Your Venue
 
-While operating under the direct supervision of a qualified instructor, an Indoor Climbing Assistant can:
+Are you a climbing wall manager, outdoor center operator, school, or voluntary organization looking to upskill your staff or volunteers? 
 
--   Assist with the fitting of basic equipment such as harnesses, helmets and rock shoes.
--   Assist a qualified instructor with the supervision of core climbing techniques.
--   Assist a qualified instructor at indoor and outdoor bouldering venues and climbing walls.
+Delivering an in-house Indoor Climbing Assistant course allows your facility to:
+* **Maximize Instructional Efficiency:** Empower assistants to handle equipment fitting, belay management, and session preparation under qualified supervision.
+* **Standardize Safety Protocols:** Ensure all assistant instructors operate strictly to recognized Mountain Training standards.
+* **Flexible Delivery:** Courses can be delivered on-site at your venue in a single 6-hour day or split across two sessions to suit your timetable.
 
-> **Assistants**
->
-> -   Need to be supervised by an instructor.
-> -   Need to follow an instructor's directions.
-> -   Need to refer to an instructor for extra guidance.
-> -   Need to be clear about their role.
+[Discuss a Bespoke Course]({{< ref "/contact" >}})
+{.button}
 
-### To register
+---
 
--   Be at least 16 years old.
--   Have an interest in assisting qualified instructors on indoor climbing walls.
--   You must [create an account with Mountain Training][mt-cms] and register for the Indoor Climbing Assistant qualification (cost: £25)
+## What Can an Assistant Do?
 
-Once you have registered for the scheme you will be given access to DLOG, Mountain Training’s digital logbook which has been developed to help you keep track of your climbing sessions and other experience. The Indoor Climbing Assistant scheme relies on experience and it is crucial that you record it so that it can be reviewed. If you need help using the DLOG there are some helpful pointers in the [frequently asked questions][mt-faq].
+While operating under the direct supervision of a qualified instructor, an Indoor Climbing Assistant can assist at:
+* Indoor and outdoor artificial climbing walls.
+* Indoor and outdoor artificial bouldering venues.
 
-### To book a combined training and assessment course
+An Indoor Climbing Assistant can:
+* Assist with fitting basic equipment such as harnesses, helmets, and rock shoes.
+* Assist a qualified instructor with the supervision of core climbing techniques.
+* Support group safety, session setup, and participant management.
 
--   You must be registered on the Indoor Climbing Assistant qualification.
--   You will be competent[^competence] in the basic skills (belaying, harness fitting and tying on).
--   You have recorded 5 indoor and/or 5 outdoor climbing sessions[^session] on DLOG. _There is no personal climbing requirement for these sessions; you can have just belayed, but it is useful to have experience of climbing e.g. bottom roping or top roping._
+*Scope & Boundaries:*
+* Assistants operate under direct supervision and follow the lead instructor's directions.
+* Assistants refer to the lead instructor for guidance and do not manage individuals or groups independently.
 
-### The course
+---
 
-The course involves a minimum of 6 hours at a climbing wall of training and ongoing assessment in a supportive learning environment. This is usually delivered in one day, but may be run over 2 evening sessions.
+## Qualification Requirements & Registration
 
-Your experience prior to attending the course will have a huge impact on the result and you should try to be as fully prepared as possible.
+To attend an Indoor Climbing Assistant course, candidates must meet the following Mountain Training prerequisites:
 
-At the end of the course you will receive one of two results: Pass or Defer. If you do not pass you will be given an action plan and guidance of further training and experience.
+1. **Age:** Be at least 16 years old.
+2. **Registration:** [Create an account with Mountain Training][mt-cms] and register for the Indoor Climbing Assistant qualification.
+3. **Personal Experience:** Record experience in basic climbing skills (belaying, harness fitting, tying on) and log at least **5 indoor and/or 5 outdoor climbing sessions**[^1] in DLOG across a variety of groups. *There is no personal climbing requirement for these sessions (belaying counts), though personal climbing experience is beneficial.*
+4. **Basic Competence:** Be competent in basic climbing skills:
+   * Safely fitting a harness.
+   * Tying into a harness correctly using either a rethreaded figure-of-eight knot with a minimum 10cm tail or a bowline (single or double) with a stopper knot.
+   * Safely belaying, holding a fall, and lowering using a belay device.
+   * Performing mutual buddy checks.
 
-### The syllabus
+*Note: There is no first aid requirement for this scheme.*
 
--   Technical competence (equipment, belaying, personal skills and background knowledge)
--   Management and decision making (managing participants under supervision, demonstrations and understanding your role)
--   Teaching and learning skills
--   The climbing environment (access, etiquette and ethics)
+---
 
-### Do you have additional needs?
+## Course Format & Syllabus
 
-If you have a physical or mental impairment or disability which may require a provider to make reasonable adjustments so that you can take part in a training or assessment course... [Find out how we can support you][mt-reasonable-adjustments]
+The course involves a minimum of **6 hours** of combined training and ongoing assessment delivered in a supportive learning environment. This is usually delivered in a single day or split across two sessions.
 
-### Candidate handbook
+* **Technical Competence:** Equipment checks, belaying, personal climbing skills, and background knowledge.
+* **Management & Decision Making:** Managing participants under direct supervision, demonstrations, and understanding assistant boundaries.
+* **Teaching & Learning Support:** Assisting instructors with participant progression and support.
+* **The Climbing Environment:** Access, etiquette, ethics, and venue care.
 
-The Indoor Climbing Assistant handbook has full details about the scheme including the syllabus and supporting guidance notes. You can [download the handbook][ica-handbook] from the Mountain Training website.
+At the end of the course, candidates receive one of two results: **Pass** or **Defer**. Candidates who receive a deferral are provided with a tailored action plan and guidance for further development.
 
-### Find a Course
+---
 
-If you would like to arrange a course for your school / group then please [get in touch with me][contact]. Any courses organised will be listed [in the course finder][course-finder].
+## Do You Have Additional Needs?
 
-[^competence]:
-    Competence is defined as meeting the ABC climbing wall membership standard or similar:
+If you have a physical or mental impairment or disability which may require a provider to make reasonable adjustments so that you can take part in a training or assessment course, [find out how we can support you][mt-reasonable-adjustments].
 
-    -   can put on a harness and fit it safely.
-    -   can tie into a harness correctly using either a rethreaded figure of eight knot with a minimum 10cm tail or a bowline (single or double) with a stopper knot.
-    -   can belay, lower and secure a falling climbing safely using a belay device.
-    -   can check that their climbing partner has put on their harness and tied in properly.
+---
 
-[^session]: A session is a minimum of an hour.
+## Candidate Handbook
 
-[contact]: {{< ref "/contact" >}}
-[course-finder]: {{< ref "/services/mountain-training-courses/" >}}
-[ica-handbook]: https://www.mountain-training.org/media/yenc3vd3/indoor-climbing-assistant-candidate-handbook-april-2024.pdf
+For complete details regarding the scheme, syllabus, and candidate guidance, you can [download the official candidate handbook][ica-handbook] directly from Mountain Training.
+
+---
+
+## Find a Course
+
+Whether you are looking to host an in-house course for your facility or join an upcoming intake as an individual candidate, [get in touch with Phill]({{< ref "/contact" >}}) to discuss dates and availability.
+
+[^1]: A session is defined as a minimum of one hour.
+
 [mt-cms]: https://mt.tahdah.me/
 [mt-faq]: https://www.mountain-training.org/help/frequently-asked-questions/
 [mt-reasonable-adjustments]: https://www.mountain-training.org/help/support/reasonable-adjustments/
+[ica-handbook]: https://www.mountain-training.org/media/yenc3vd3/indoor-climbing-assistant-candidate-handbook-feb-2025.pdf
+[course-finder]: {{< ref "/services/mountain-training-courses/" >}}
